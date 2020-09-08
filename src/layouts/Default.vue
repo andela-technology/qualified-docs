@@ -126,19 +126,19 @@ export default {
 
 <style lang="scss">
 :root {
-  --color-ui-background: theme('colors.white');
-  --color-ui-typo: theme('colors.gray.700');
-  --color-ui-sidebar: theme('colors.gray.200');
-  --color-ui-border: theme('colors.gray.300');
-  --color-ui-primary: theme('colors.indigo.600');
+  --color-ui-background: theme('colors.brand.complementBg');
+  --color-ui-typo: theme('colors.brand.complementDark');
+  --color-ui-sidebar: theme('colors.brand.complementBgDark');
+  --color-ui-border: theme('colors.brand.complementBgDarker');
+  --color-ui-primary: theme('colors.brand.primary');
 }
 
 html[lights-out] {
-  --color-ui-background: theme('colors.gray.900');
-  --color-ui-typo: theme('colors.gray.100');
-  --color-ui-sidebar: theme('colors.gray.800');
-  --color-ui-border: theme('colors.gray.800');
-  --color-ui-primary: theme('colors.indigo.500');
+  --color-ui-background: theme('colors.brand.dark');
+  --color-ui-typo: theme('colors.brand.darkText');
+  --color-ui-sidebar: theme('colors.brand.darker');
+  --color-ui-border: theme('colors.brand.black');
+  --color-ui-primary: theme('colors.brand.primary');
 
   pre[class*="language-"],
   code[class*="language-"] {
@@ -209,7 +209,7 @@ blockquote {
   h1, h2, h3, h4, h5, h6 {
     @apply -mt-12 pt-20;
   }
-    
+
   h2 + h3,
   h2 + h2,
   h3 + h3 {
