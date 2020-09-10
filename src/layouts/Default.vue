@@ -133,7 +133,7 @@ export default {
     --color-ui-typo: theme('colors.brand.complementDark');
     --color-ui-sidebar: theme('colors.brand.complementBgDark');
     --color-ui-border: theme('colors.brand.complementBgDarker');
-    --color-ui-primary: theme('colors.brand.primary');
+    --color-ui-primary: theme('colors.brand.primaryDark');
 }
 
 html[lights-out] {
@@ -158,14 +158,10 @@ html[lights-out] {
 }
 
 body {
-    background-color: var(--color-ui-background);
-
-    @media (min-width: 768px) {
-        background: var(--color-ui-background) var(--image-ui-background) repeat-y;
-        background-size: 1000px auto;
-        background-position: center top;
-        background-attachment: local;
-    }
+    background: var(--color-ui-background) var(--image-ui-background) repeat-y;
+    background-size: 1000px auto;
+    background-position: center top;
+    background-attachment: local;
 
     @media (min-width: 1000px) {
         background-size: 100% auto;

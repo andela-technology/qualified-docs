@@ -1,6 +1,11 @@
 module.exports = {
     theme: {
         extend: {
+            fontFamily: {
+                sans: ['Source Sans Pro', 'Helvetica', 'Arial', 'sans-serif'],
+                serif: ['Georgia', 'Times New Roman', 'Times', 'serif'],
+                mono: ['Menlo', 'Monaco', 'Consolas', "Courier New", 'monospace'],
+            },
             colors: {
                 brand: {
                     primary: '#6ABE79',

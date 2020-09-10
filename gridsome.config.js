@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-    siteName: 'Docc',
+    siteName: 'Qualified.io Docs',
     icon: {
         favicon: './src/assets/favicon.png',
         touchicon: './src/assets/favicon.png',
@@ -13,14 +13,7 @@ module.exports = {
     siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.qualified.io'),
     settings: {
         web: process.env.URL_WEB || 'https://www.qualified.io',
-        twitter: process.env.URL_TWITTER || false,
         github: process.env.URL_GITHUB || 'https://github.com/qualified/qualified-docs',
-        nav: {
-            links: [
-                { path: '/kb/', title: 'Reference' },
-                // { path: '/docs/', title: 'Docs' },
-            ],
-        },
         sidebar: [
             {
                 name: 'docs',

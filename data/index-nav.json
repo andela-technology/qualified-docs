@@ -1,0 +1,52 @@
+{
+    "primaryLinks": [
+        {
+            "id": "teams",
+            "path": "/kb/hire",
+            "title": "I'm an Employer or Educator",
+            "description": "If you are hiring or training developers, click here to learn more about how to use Qualified",
+            "icon": ""
+        },
+        {
+            "id": "candidates",
+            "path": "/kb/assess",
+            "title": "I'm a Candidate or Student",
+            "description": "If you are taking an assessment on Qualified, click here to learn about the platform",
+            "icon": ""
+        },
+        {
+            "id": "integrations",
+            "path": "/kb/integrations",
+            "title": "I'm Integrating with Qualified",
+            "description": "If you are adding Qualified to your current assessment solution, click here",
+            "icon": ""
+        },
+        {
+            "id": "content",
+            "path": "/kb/content",
+            "title": "I'm Developing Assessments",
+            "description": "If you are creating assessments with Qualified, click here to learn more",
+            "icon": ""
+        }
+    ],
+    "secondaryLinks": [
+        {
+            "id": "languages",
+            "path": "/kb/languages",
+            "title": "Language Reference",
+            "description": "Learn more about the supported languages and frameworks on Qualified"
+        },
+        {
+            "id": "changes",
+            "path": "/kb/changes",
+            "title": "Product Updates",
+            "description": "Learn about new features, fixes, and other improvements"
+        },
+        {
+            "id": "legal",
+            "path": "/kb/legal",
+            "title": "Legal Docs",
+            "description": "Learn more about our privacy policy, terms of service, and GDPR"
+        }
+    ]
+}
