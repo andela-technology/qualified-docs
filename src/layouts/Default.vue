@@ -161,7 +161,7 @@ body {
     background: var(--color-ui-background) var(--image-ui-background) repeat-y;
     background-size: 1000px auto;
     background-position: center top;
-    background-attachment: local;
+    background-attachment: fixed;
 
     @media (min-width: 1000px) {
         background-size: 100% auto;
