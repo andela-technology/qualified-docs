@@ -45,9 +45,18 @@ export default {
 
             return this.pages.find(page => page.path === this.page.next);
         },
+        parentPage() {
+            const pathParts = this.page.path.split('/').filter(p => p);
+            if(pathParts.length > 1) {
+                const parentPath = `/${pathParts.slice(0, -1).join('/')}/`;
+                return this.pages.find(page => page.path === parentPath);
+            } else {
+                return { path: '/', title: 'Docs Index'};
+            }
+        },
         prev() {
             if(this.pages && !this.page.prev) {
-                return false;
+                return this.parentPage || false;
             }
 
             return this.pages.find(page => page.path === this.page.prev);

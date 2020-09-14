@@ -3,7 +3,7 @@ summary: "Help for updating and modifying your Qualified subscription"
 bodyClass: 'employer-focused'
 ---
 
-# <span class="icon-plans"/> Billing Information
+# Billing Information
 
 If you have **Owner** or **Manager** rights, you can manage your team account billing status on this screen.
 

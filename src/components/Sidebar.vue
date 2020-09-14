@@ -57,6 +57,23 @@ query Sidebar {
 </static-query>
 
 <script>
+import {getRelatedPages} from '../utils/PageUtils';
+
+function pagesToItems(pages) {
+    return pages
+        .sort((a, b) => {
+            const aTitle = a.title.toLowerCase();
+            const bTitle = b.title.toLowerCase();
+            if(aTitle < bTitle) {
+                return -1;
+            } else if(aTitle > bTitle) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }).map(page => page.path)
+}
+
 export default {
     data() {
         return {
@@ -67,28 +84,55 @@ export default {
         pages() {
             return this.$page.allMarkdownPage.edges.map(edge => edge.node);
         },
+        staticSidebar() {
+            const sidebarName = this.$page.markdownPage.sidebar;
+            return sidebarName &&
+                this.$static.metadata.settings.sidebar.find(sidebar => sidebar.name === sidebarName);
+        },
+        autoSidebar() {
+            const sidebar = {name: 'auto', sections: []};
+
+            const {children, sibling} = getRelatedPages(this.currentPage, this.pages);
+
+            if(children.length) {
+                sidebar.sections.push({
+                    title: 'Sub Articles',
+                    items: pagesToItems(children),
+                });
+            }
+
+            if(sibling.length) {
+                sidebar.sections.push({
+                    title: 'Related Articles',
+                    items: pagesToItems(sibling),
+                });
+            }
+
+            if(sidebar.sections.length) {
+                return sidebar;
+            }
+        },
+        // returns the static sidebar, or generates one based on related links
         sidebar() {
-            return this.$static.metadata.settings.sidebar.find(
-                sidebar => sidebar.name === this.$page.markdownPage.sidebar,
-            );
+            return this.staticSidebar || this.autoSidebar;
         },
         showSidebar() {
-            return this.$page.markdownPage.sidebar
-                && this.sidebar;
+            return this.sidebar;
         },
         currentPage() {
             return this.$page.markdownPage;
         },
     },
     methods: {
-        getClassesForAnchor({ path }) {
+
+        getClassesForAnchor({path}) {
             return {
                 'text-ui-primary': this.currentPage.path === path,
                 'transition transform hover:translate-x-1 hover:text-ui-primary': !this.currentPage.path === path,
             };
         },
-        findPages(links) {
-            return links.map(link => this.pages.find(page => page.path === link));
+        findPages(paths) {
+            return paths.map(path => this.pages.find(page => page.path === path));
         },
     },
 };
