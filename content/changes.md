@@ -1,5 +1,6 @@
 ---
-order: 6
+title: Product Updates
+order: 10
 bodyClass: 'kb-changes'
 summary: 'Learn about new features, fixes, and other improvements'
 ---

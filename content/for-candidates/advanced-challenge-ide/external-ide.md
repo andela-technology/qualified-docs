@@ -1,11 +1,11 @@
 ---
-title: "Code Challenge Solver: Use Your Own IDE"
+title: "Use Your Own IDE"
 summary: "Use your own desktop IDE or editor to solve a challenge"
 tags:
   - external
   - ide
   - attach
-internal: true
+order: 2
 ---
 
 # Code Challenge Solver: Use Your Own IDE

@@ -8,8 +8,8 @@
                 <h1 class="text-2xl text-center">
                     Documentation &amp; Developer Portal
                 </h1>
-                <p class="text-xl font-medium text-center max-w-screen-lg">
-                    How can we help you use Qualified today?
+                <p class="text-lg mt-2 font-medium text-center max-w-screen-lg text-fade">
+                    How can we help you use Qualified?
                 </p>
             </div>
 
@@ -21,7 +21,7 @@
                             <component v-bind:is="link.icon"></component>
                         </div>
                         <div class="link-details">
-                            <h4>{{ link.title }}</h4>
+                            <h4 class="font-bold">{{ link.title }}</h4>
                             <p>{{ link.description }}</p>
                         </div>
                     </g-link>
@@ -87,7 +87,7 @@ export default {
                     id: 'integrations',
                     path: '/integrations',
                     title: `I'm Integrating with Qualified`,
-                    description: 'If you are adding Qualified to your current assessment solution, click here',
+                    description: 'If you are integrating Qualified into another application, click here',
                     icon: IntegrationsSectionGraphic,
                 },
                 {
@@ -103,22 +103,22 @@ export default {
             return [
                 {
                     id: 'languages',
-                    path: '/languages',
+                    path: '/reference/languages',
                     title: 'Language Reference',
                     description: 'Learn more about the supported languages and frameworks on Qualified',
                 },
-                {
-                    id: 'changes',
-                    path: '/changes',
-                    title: 'Product Updates',
-                    description: 'Learn about new features, fixes, and other improvements',
-                },
-                {
-                    id: 'legal',
-                    path: '/legal',
-                    title: 'Legal Docs',
-                    description: 'Learn more about our privacy policy, terms of service, and GDPR',
-                },
+                // {
+                //     id: 'changes',
+                //     path: '/changes',
+                //     title: 'Product Updates',
+                //     description: 'Learn about new features, fixes, and other improvements',
+                // },
+                // {
+                //     id: 'legal',
+                //     path: '/legal',
+                //     title: 'Legal Docs',
+                //     description: 'Learn more about our privacy policy, terms of service, and GDPR',
+                // },
             ];
         },
     },

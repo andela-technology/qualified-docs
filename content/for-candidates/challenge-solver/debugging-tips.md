@@ -1,6 +1,7 @@
 ---
-title: "Code Challenge Solver: Debugging Tips"
+title: "Debugging Tips"
 summary: "Learn some tricks for debugging your code during an assessment"
+order: 2
 ---
 
 # Challenge Solver: Debugging Tips

@@ -1,25 +1,25 @@
 <template>
-    <div class="mt-8 sm:pl-4 md:pl-6 md:pt-12 lg:pl-8 sm:pb-16 sm:border-l border-ui-border md:mt-0">
-        <h3 class="pt-0 mt-0 text-sm tracking-wide uppercase border-none">On this page</h3>
-        <div>
-            <ul>
+    <div class="on-this-page" v-if="headings.length">
+        <h3>On this page</h3>
+        <div class="pr-4">
+            <ul class="pb-4">
                 <li
                     v-for="(heading, index) in headings"
                     :key="`${page.path}${heading.anchor}`"
                     :class="{
-            'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
-            'font-semibold': heading.depth === 2,
-            [`depth-${heading.depth}`]: true,
-          }"
+                        'border-t border-dashed border-ui-border pt-2 mt-2': index > 0 && heading.depth === 2,
+                        'font-semibold': heading.depth === 2,
+                        [`depth-${heading.depth}`]: true,
+                    }"
                 >
                     <g-link
                         :to="`${page.path}${heading.anchor}`"
                         class="relative flex items-center py-1 text-sm transition transform hover:translate-x-1"
                         :class="{
               'pl-2': heading.depth === 3,
-              'pl-3': heading.depth === 4,
-              'pl-4': heading.depth === 5,
-              'pl-5': heading.depth === 6,
+              'pl-5': heading.depth === 4,
+              'pl-6': heading.depth === 5,
+              'pl-7': heading.depth === 6,
               'font-bold text-ui-primary': activeAnchor === heading.anchor
             }"
                     >
@@ -38,6 +38,9 @@
 </template>
 
 <script>
+import apiData from '../../content/api.json';
+import { groupBy } from '../utils/array-utils';
+import { kabobCase } from '../utils/string-utils';
 export default {
     data() {
         return {
@@ -51,7 +54,41 @@ export default {
             return this.$page.markdownPage;
         },
         headings() {
-            return this.page.headings.filter(h => h.depth > 1);
+            const headings = this.page.headings.filter(h => h.depth > 1);
+
+            // if apiRef, then add in the resources
+            if (this.$page.markdownPage.apiRef) {
+                headings.push({
+                    depth: 2,
+                    value: 'RESOURCES',
+                    anchor: '#resources'
+                })
+                
+                Object.keys(this.api).forEach(resource => {
+                    const anchor = `#${kabobCase(resource)}`;
+                    headings.push({
+                        depth: 3,
+                        value: resource,
+                        anchor
+                    })
+
+                    if (this.activeAnchor.indexOf(anchor) === 0) {
+                        const resources = this.api[ resource ];
+                        resources.forEach(endpoint => {
+                            headings.push({
+                                depth: 4,
+                                value: endpoint.description,
+                                anchor: `${ anchor }-${ kabobCase(endpoint.description) }`
+                            })
+                        })
+                    }
+                })
+            }
+
+            return headings;
+        },
+        api () {
+            return groupBy(apiData, 'resource')
         },
     },
 
@@ -118,3 +155,23 @@ export default {
     },
 };
 </script>
+<style>
+    .on-this-page {
+        @apply mt-8 border-ui-border;
+        display: none;
+
+        @screen md {
+            @apply pl-6 pt-12 mt-0;
+            display: block;
+        }
+
+        @screen lg {
+            @apply pl-8;
+            display: block;
+        }
+
+        h3 {
+            @apply pt-0 mt-0 text-sm tracking-wide uppercase border-none;
+        }
+    }
+</style>

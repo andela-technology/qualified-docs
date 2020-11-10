@@ -24,6 +24,7 @@
 
 <script>
 import { ArrowLeftIcon, ArrowRightIcon } from 'vue-feather-icons';
+import { getNextPrev } from '../utils/page-utils';
 
 export default {
     components: {
@@ -38,25 +39,29 @@ export default {
         pages() {
             return this.$page.allMarkdownPage.edges.map(edge => edge.node);
         },
+        autoPrevNext () {
+            return getNextPrev(this.page, this.pages)
+        },
         next() {
             if(this.pages && !this.page.next) {
+                if (this.autoPrevNext.next) {
+                    return this.autoPrevNext.next
+                }
+                let current = this.autoPrevNext.current
+                if (current && current.pages.length) {
+                    // skip depth 2 and go to 3
+                    if (current.depth === 1) {
+                        return current.pages[0].pages[0]
+                    }
+                    return current.pages[0];
+                }
                 return false;
             }
-
             return this.pages.find(page => page.path === this.page.next);
-        },
-        parentPage() {
-            const pathParts = this.page.path.split('/').filter(p => p);
-            if(pathParts.length > 1) {
-                const parentPath = `/${pathParts.slice(0, -1).join('/')}/`;
-                return this.pages.find(page => page.path === parentPath);
-            } else {
-                return { path: '/', title: 'Docs Index'};
-            }
         },
         prev() {
             if(this.pages && !this.page.prev) {
-                return this.parentPage || false;
+                return this.autoPrevNext.prev || false;
             }
 
             return this.pages.find(page => page.path === this.page.prev);

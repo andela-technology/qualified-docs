@@ -1,5 +1,5 @@
 ---
-internal: true
+order: 1
 ---
 
 # Challenge IDE

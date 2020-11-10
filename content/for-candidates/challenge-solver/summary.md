@@ -1,8 +1,8 @@
 ---
-internal: true
+order: 1
 ---
 
-# Challenge Solver
+# Challenge IDE
 
 The code challenge solver provides an in-browser IDE for editing, testing, and running assessments.
 

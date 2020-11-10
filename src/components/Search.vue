@@ -3,7 +3,7 @@
         @keydown.down="increment"
         @keydown.up="decrement"
         @keydown.enter="go"
-        class="relative"
+        class="search relative"
     >
         <label class="relative block">
             <span class="sr-only">Search Documentation</span>
@@ -25,7 +25,7 @@
         </label>
         <div
             v-if="showResult"
-            class="fixed inset-x-0 z-50 overflow-y-auto border-2 border-t-0 rounded-lg rounded-t-none shadow-lg results bg-ui-background bottom:0 sm:bottom-auto sm:absolute border-ui-sidebar"
+            class="search__results fixed inset-x-0 z-50 overflow-y-auto border-2 border-t-0 rounded-lg rounded-t-none shadow-lg bg-ui-background bottom:0 sm:bottom-auto sm:absolute border-ui-sidebar"
             style="max-height: calc(100vh - 120px)"
         >
             <ul class="px-4 py-2 m-0">
@@ -41,15 +41,15 @@
                     @mousedown="go"
                     class="border-ui-sidebar"
                     :class="{
-            'border-b': index + 1 !== results.length
-          }"
+                      'border-b': index + 1 !== results.length
+                    }"
                 >
                     <g-link
                         :to="result.path + result.anchor"
                         class="block p-2 -mx-2 text-base font-bold rounded-lg"
                         :class="{
-              'bg-ui-sidebar text-ui-primary': focusIndex === index,
-            }"
+                          'bg-ui-sidebar text-ui-primary': focusIndex === index,
+                        }"
                     >
 
                         <span v-if="result.value === result.title">
@@ -175,5 +175,18 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
+    .search {
+        input {
+            @apply text-ui-typo;
+        }
+    }
+    .search__results {
+        a:not(.active):not(.text-ui-primary) {
+            @apply text-ui-typo;
+        }
+        a.active {
+            @apply text-ui-primary;
+        }
+    }
 </style>

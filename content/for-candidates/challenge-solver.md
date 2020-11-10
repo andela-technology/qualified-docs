@@ -24,7 +24,7 @@ Once you've read the instructions, use the solution editor to code your solution
 <div>
 <figure class="align-right">
 
-![Code Challenge Solver UI Layout](/images/content/images/assess/code-challenge-solver-layout.png)
+![Code Challenge Solver UI Layout](/images/assess/code-challenge-solver-layout.png)
 
 </figure>
 </div>
@@ -71,7 +71,7 @@ Some challenges are available in multiple languages. You may change the language
 <div>
 <figure class="align-right">
 
-![Submit Solution Button](/images/content/images/assess/submit-button.png)
+![Submit Solution Button](/images/assess/submit-button.png)
 
 </figure>
 </div>
@@ -117,7 +117,7 @@ You can expand either code editor to completely fill the browser window using th
 <div>
 <figure class="align-right">
 
-![Execution Results Pane](/images/content/images/assess/results.png)
+![Execution Results Pane](/images/assess/results.png)
 
 </figure>
 </div>

@@ -20,7 +20,7 @@ You will be notified once you have successfully passed the test cases for the ch
 <div>
 <figure class="align-right">
 
-![Code Challenge Solver UI Layout](/images/content/images/assess/advanced-code-solver-layout.png)
+![Code Challenge Solver UI Layout](/images/assess/advanced-code-solver-layout.png)
 
 </figure>
 </div>

@@ -1,7 +1,7 @@
 <template>
-    <button @click="handleClick" aria-label="Toggle Darkmode" title="Toggle Darkmode">
+    <a @click="handleClick" aria-label="Toggle Darkmode" title="Toggle Darkmode" class="toggle-dark-mode">
         <slot :dark="isDarkMode"/>
-    </button>
+    </a>
 </template>
 
 <script>
@@ -66,4 +66,8 @@ export default {
 </script>
 
 <style>
+    .toggle-dark-mode {
+        cursor: pointer;
+        &:focus { outline: none; }
+    }
 </style>

@@ -1,21 +1,16 @@
 <template>
-    <div class="font-sans antialiased text-ui-typo">
-        <div class="flex flex-col justify-start min-h-screen">
+    <div class="default-layout">
+        <div class="default-layout__content">
 
-            <header
-                ref="header"
-                class="sticky top-0 z-10 w-full border-b border-ui-border"
-                @resize="setHeaderHeight"
-            >
+            <header ref="header" @resize="setHeaderHeight">
                 <LayoutHeader/>
             </header>
 
-            <main class="container relative flex flex-wrap justify-start flex-1 w-full">
-
+            <main class="container">
                 <aside
                     v-if="hasSidebar"
-                    class="sidebar"
-                    :class="{ 'open': sidebarOpen }"
+                    class="sidebar-container"
+                    :class="{ 'sidebar-container--open': sidebarOpen }"
                     :style="sidebarStyle"
                 >
                     <div class="w-full pb-16">
@@ -125,7 +120,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
 :root {
     --color-ui-text-background: #FFF;
     --color-ui-background: theme('colors.brand.complementBg');
@@ -134,6 +129,10 @@ export default {
     --color-ui-sidebar: theme('colors.brand.complementBgDark');
     --color-ui-border: theme('colors.brand.complementBgDarker');
     --color-ui-primary: theme('colors.brand.primaryDark');
+    --color-ui-fade: #5e6d84;
+    --color-ui-fade-bg: theme('colors.gray.300');
+    --color-ui-fade-alt-bg: theme('colors.gray.200');
+    --color-ui-danger: theme('colors.red.600');
 }
 
 html[lights-out] {
@@ -142,17 +141,30 @@ html[lights-out] {
     --image-ui-background: url('/images/general-bg-dark.svg');
     --color-ui-typo: theme('colors.brand.darkText');
     --color-ui-sidebar: theme('colors.brand.darker');
-    --color-ui-border: #111;
+    --color-ui-border: #444;
     --color-ui-primary: theme('colors.brand.primary');
+    --color-ui-fade: theme('colors.gray.500');
+    --color-ui-fade-bg: theme('colors.gray.800');
+    --color-ui-fade-alt-bg: theme('colors.gray.900');
+    --color-ui-danger: theme('colors.red.500');
+
+    code {
+        @apply border-none shadow-none;
+        background-color: var(--color-ui-fade-alt-bg);
+    }
 
     pre[class*="language-"],
     code[class*="language-"] {
         @apply bg-ui-border;
+        background-color: var(--color-ui-fade-alt-bg);
+    }
+    .border-dashed, .border-solid, .border-ui-border, h2 {
+        border-color: var(--color-ui-border);
     }
 }
 
 * {
-    transition-property: color, background-color, border-color;
+    transition-property: background-color, border-color;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
 }
@@ -168,173 +180,241 @@ body {
     }
 }
 
-h1,
-h2,
-h3,
-h4 {
-    @apply leading-snug font-black mb-4 text-ui-typo;
+.default-layout {
+    @apply font-sans antialiased text-ui-typo;
 
-    &:hover {
-        a::before {
-            @apply opacity-100;
+    .text-fade {
+        color: var(--color-ui-fade);
+    }
+
+    .default-layout__content {
+        @apply flex flex-col justify-start min-h-screen;
+        > header {
+            @apply sticky top-0 z-10 w-full border-b border-ui-border;
+            background: theme('colors.brand.primaryDark') linear-gradient(to bottom right, theme('colors.brand.primary'), theme('colors.brand.complement'));
+            color: #FFF;
+        }
+
+        > main {
+            @apply relative flex flex-wrap justify-start flex-1 w-full;
         }
     }
 
-    a {
-        &::before {
-            content: "#";
-            margin-left: -1em;
-            padding-right: 1em;
-            @apply text-ui-primary absolute opacity-0 float-left;
+    > h1,
+    > h2,
+    > h3,
+    > h4 {
+        @apply leading-snug font-black mb-4 text-ui-typo;
+
+        &:hover {
+            a::before {
+                @apply opacity-100;
+            }
+        }
+
+        a {
+            &::before {
+                content: "#";
+                margin-left: -1em;
+                padding-right: 1em;
+                @apply text-ui-primary absolute opacity-0 float-left;
+            }
         }
     }
-}
 
-h1 {
-    @apply text-4xl;
-}
+    .content {
+        @apply pt-1;
 
-h2 {
-    @apply text-2xl;
-}
+        > {
+            h1 {
+                @apply text-4xl;
+            }
 
-h3 {
-    @apply text-xl;
-}
+            h2 {
+                @apply text-2xl;
+            }
 
-h4 {
-    @apply text-lg;
-}
+            h3 {
+                @apply text-xl;
+            }
 
-a:not(.active):not(.text-ui-primary):not(.text-white) {
-    @apply text-ui-typo;
-}
+            h4 {
+                @apply text-lg;
+            }
 
-p,
-ol,
-ul,
-pre,
-strong,
-blockquote {
-    @apply mb-4 text-base text-ui-typo;
-}
+            p,
+            ol,
+            ul,
+            pre,
+            strong,
+            blockquote {
+                @apply mb-4 text-base text-ui-typo;
+            }
+            
+            /* if a paragraph is the first child, then give some extra top page margin, since the page expects a header */
+            p:first-child {
+                @apply mt-8;
+            }
+        }
+        
+        a {
+            @apply text-ui-primary underline;
+        }
 
-.content {
-    a {
-        @apply text-ui-primary underline;
-    }
+        h1, h2, h3, h4, h5, h6 {
+            @apply -mt-12 pt-20;
+        }
 
-    h1, h2, h3, h4, h5, h6 {
-        @apply -mt-12 pt-20;
-    }
+        h2 + h3,
+        h2 + h2,
+        h3 + h3 {
+            @apply border-none -mt-20;
+        }
 
-    h2 + h3,
-    h2 + h2,
-    h3 + h3 {
-        @apply border-none -mt-20;
-    }
+        h2,
+        h3 {
+            @apply border-b border-ui-border pb-1 mb-3;
+        }
 
-    h2,
-    h3 {
-        @apply border-b border-ui-border pb-1 mb-3;
-    }
-
-    ul {
-        @apply list-disc;
+        h4 {
+            @apply font-bold;
+            color: var(--color-ui-fade);
+        }
 
         ul {
-            list-style: circle;
+            @apply list-disc;
+
+            ul {
+                list-style: circle;
+            }
+        }
+
+        ol {
+            @apply list-decimal;
+        }
+
+        ol + p {
+            @apply mt-4;
+        }
+
+        ol,
+        ul {
+            @apply pl-5 py-1;
+
+            li {
+                @apply mb-1;
+
+                p {
+                    @apply mb-0;
+                }
+
+                &:last-child {
+                    @apply mb-0;
+                }
+
+                p + figure {
+                    @apply mt-4;
+                }
+            }
         }
     }
 
-    ol {
-        @apply list-decimal;
+    hr {
+        @apply border-dashed;
     }
 
-    ol,
-    ul {
-        @apply pl-5 py-1;
-
-        li {
-            @apply mb-2;
-
-            p {
-                @apply mb-0;
-            }
-
-            &:last-child {
-                @apply mb-0;
-            }
-        }
-    }
-}
-
-blockquote {
-    @apply border-l-4 border-ui-border py-2 pl-4;
-
-    p:last-child {
-        @apply mb-0;
-    }
-}
-
-code {
-    @apply px-1 py-1 text-ui-typo bg-ui-sidebar font-mono border-b border-r border-ui-border text-sm rounded;
-}
-
-pre[class*="language-"] {
-    @apply max-w-full overflow-x-auto rounded;
-
-    & + p {
+    hr + p {
         @apply mt-4;
     }
 
-    & > code[class*="language-"] {
-        @apply border-none leading-relaxed;
-    }
-}
+    figure {
+        @apply mb-6;
 
-header {
-    background-color: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(4px);
-}
-
-table {
-    @apply text-left mb-6;
-
-    td, th {
-        @apply py-3 px-4;
-        &:first-child {
-            @apply pl-0;
-        }
-
-        &:last-child {
-            @apply pr-0;
+        figcaption {
+            @apply text-xs mt-4;
+            color: var(--color-ui-fade);
+            text-align: center;
         }
     }
 
-    tr {
-        @apply border-b border-ui-border;
-        &:last-child {
-            @apply border-b-0;
+    blockquote {
+        @apply border-l-4 border-ui-border py-2 pl-4;
+
+        p:last-child {
+            @apply mb-0;
+        }
+
+        h4:first-child {
+            @apply mt-0 pt-0;
         }
     }
-}
 
-.sidebar {
-    @apply fixed px-4 inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
-    transform: translateX(-100%);
-
-    &.open {
-        transform: translateX(0);
+    code {
+        @apply px-1 py-1 text-ui-typo bg-ui-sidebar font-mono border-b border-r border-ui-border rounded;
     }
 
-    @screen lg {
-        @apply w-1/4 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
-        transform: translateX(0);
+    p > code {
+        @apply text-sm;
+        color: var(--color-ui-fade);
     }
-}
 
-.article-content {
-    background: var(--color-ui-text-background);
+    pre[class*="language-"] {
+        @apply max-w-full overflow-x-auto rounded;
+
+        & + p {
+            @apply mt-4;
+        }
+
+        & > code[class*="language-"] {
+            @apply border-none leading-relaxed;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    code.language-bash {
+        white-space: pre-wrap;
+        word-break: break-all;
+    }
+
+    table {
+        @apply text-left mb-6;
+
+        td, th {
+            @apply py-3 px-4;
+            &:first-child {
+                @apply pl-0;
+            }
+
+            &:last-child {
+                @apply pr-0;
+            }
+        }
+
+        tr {
+            @apply border-b border-ui-border;
+            &:last-child {
+                @apply border-b-0;
+            }
+        }
+    }
+
+    .sidebar-container {
+        @apply fixed px-4 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
+        transform: translateX(-100%);
+
+        &.sidebar-container--open {
+            transform: translateX(0);
+        }
+
+        @screen lg {
+            @apply w-1/4 pt-12 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
+            transform: translateX(0);
+        }
+    }
+
+    .article-content {
+        background: var(--color-ui-text-background);
+    }
 }
 </style>

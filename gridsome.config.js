@@ -13,30 +13,19 @@ module.exports = {
     siteUrl: (process.env.SITE_URL ? process.env.SITE_URL : 'https://docs.qualified.io'),
     settings: {
         web: process.env.URL_WEB || 'https://www.qualified.io',
-        github: process.env.URL_GITHUB || 'https://github.com/qualified/qualified-docs',
-        sidebar: [
-            {
-                name: 'docs',
-                sections: [
-                    {
-                        title: 'Getting Started',
-                        items: [
-                            '/docs/',
-                            '/docs/installation/',
-                            '/docs/writing-content/',
-                            '/docs/deploying/',
-                        ],
-                    },
-                    {
-                        title: 'Configuration',
-                        items: [
-                            '/docs/settings/',
-                            '/docs/sidebar/',
-                        ],
-                    },
-                ],
-            },
-        ],
+        github: process.env.URL_GITHUB || 'https://github.com/qualified/qualified-docs'
+    },
+    css: {
+        loaderOptions: {
+            postcss: {
+                plugins: [
+                    require('postcss-import'),
+                    require('tailwindcss'),
+                    require('postcss-nested'), // or require('postcss-nesting')
+                    require('autoprefixer'),
+                ]
+            }
+        }
     },
     plugins: [
         {
@@ -45,16 +34,19 @@ module.exports = {
                 baseDir: './content',
                 path: '**/*.md',
                 typeName: 'MarkdownPage',
+                template: './src/templates/MarkdownPage.vue',
                 remark: {
-                    externalLinksTarget: '_blank',
-                    externalLinksRel: ['noopener', 'noreferrer'],
+                    externalLinksTarget: "_blank",
+                    externalLinksRel: ["nofollow", "noopener", "noreferrer"],
+                    anchorClassName: "icon icon-link",
                     plugins: [
-                        '@gridsome/remark-prismjs',
-                    ],
-                },
+                        "gridsome-plugin-remark-container",
+                        "@gridsome/remark-prismjs",
+                        "gridsome-remark-figure-caption"
+                    ]
+                }
             },
         },
-
         {
             use: 'gridsome-plugin-tailwindcss',
             options: {

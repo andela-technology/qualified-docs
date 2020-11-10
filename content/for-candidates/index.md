@@ -1,5 +1,6 @@
 ---
-order: 2
+order: 3
+title: Taking Assessments
 summary: "Learn more about taking code assessments on Qualified"
 ---
 
@@ -26,7 +27,7 @@ You can sign up using an email and password.
 <div>
 <figure class="align-right">
 
-[![Practice Assessment](/images/content/images/assess/practice-assessment.png)](https://www.qualified.io/assess/practice)
+[![Practice Assessment](/images/assess/practice-assessment.png)](https://www.qualified.io/assess/practice)
 
 <figcaption>Use the practice assessment to get a feel for the assessment solver interface.</figcaption>
 </figure>
@@ -45,7 +46,7 @@ There are two types of assessment timers that you may see while taking your asse
 <div>
 <figure class="half-scale">
 
-![Time Limit](/images/content/images/assess/estimated-time.png)
+![Time Limit](/images/assess/estimated-time.png)
 
 </figure>
 </div>
@@ -59,7 +60,7 @@ You can toggle the display of the timer at any point by clicking it to see how m
 <div>
 <figure class="align-right half-scale">
 
-![Time Limit](/images/content/images/assess/expiring-timer.png)
+![Time Limit](/images/assess/expiring-timer.png)
 
 <figcaption>Be mindful of the timer as your working through your assessment!</figcaption>
 </figure>
@@ -118,7 +119,7 @@ Submitting the solutions is a final step.  Once submitted, you cannot go back an
 
 <figure>
 
-![Per-challenge notes](/images/content/images/assess/review-notes.png)
+![Per-challenge notes](/images/assess/review-notes.png)
 
 </figure>
 
