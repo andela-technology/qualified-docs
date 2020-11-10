@@ -66,11 +66,11 @@ If you open up your assessment to be public, then anyone with the public URL wil
 :::
 
 ### Enabling
-To make an assessment public, simply click the link shown in the screenshot below. 
+To make an assessment public, simply click the "Make assessment public" link shown below the invite button. 
 
-![ ](/images/hire/assessment-public-link.png)
-
-Note that a candidate who reaches the assessment via a public link will only show up in your candidate list once they register for the assessment.
+:::note
+A candidate who reaches the assessment via a public link will only show up in your candidate list once they register for the assessment.
+:::
 
 ### Sharing
 Once this setting has been enabled, you will be provided a URL that you can use to share the assessment to anyone. 

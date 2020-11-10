@@ -1,8 +1,8 @@
 ---
 order: 3
-title: Blueprint Thinking
+title: Assessment Blueprints
 ---
-# Blueprint Thinking
+# Assessment Blueprints
 
 An assessment blueprint is a document useful for defining the plan for one or more assessments. The blueprint sets expectations and expected testing objectives. It defines the standards being measured, the relative importance of those standards, and can even go into th depth of knowledge expected for each item. Blueprints come in different shapes and sizes. They are useful tools for ensuring that assessments are aiming to meet an expected standard of quality.
 

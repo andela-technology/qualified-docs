@@ -8,7 +8,6 @@
 
             <main class="container">
                 <aside
-                    v-if="hasSidebar"
                     class="sidebar-container"
                     :class="{ 'sidebar-container--open': sidebarOpen }"
                     :style="sidebarStyle"
@@ -19,8 +18,7 @@
                 </aside>
 
                 <div
-                    class="w-full pb-24"
-                    :class="{'pl-0 lg:pl-12 lg:w-3/4 article-content': hasSidebar}"
+                    class="w-full pb-24 pl-0 lg:pl-12 lg:w-3/4 article-content"
                 >
                     <slot/>
                 </div>
@@ -29,7 +27,7 @@
 
         </div>
 
-        <div v-if="hasSidebar" class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
+        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
             <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
                     @click="sidebarOpen = ! sidebarOpen">
                 <XIcon v-if="sidebarOpen"/>
@@ -83,9 +81,6 @@ export default {
                 top: this.headerHeight + 'px',
                 height: `calc(100vh - ${this.headerHeight}px)`,
             };
-        },
-        hasSidebar() {
-            return this.$page && this.headerHeight > 0;
         },
     },
     mounted() {
