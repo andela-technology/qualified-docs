@@ -12,7 +12,7 @@
                     :class="{ 'sidebar-container--open': sidebarOpen }"
                     :style="sidebarStyle"
                 >
-                    <div class="w-full pb-16">
+                    <div class="w-full pb-16" v-if="$page">
                         <Sidebar @navigate="sidebarOpen = false"/>
                     </div>
                 </aside>
