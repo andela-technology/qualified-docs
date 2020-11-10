@@ -8,17 +8,20 @@
 
             <main class="container">
                 <aside
+                    v-if="$page"
                     class="sidebar-container"
                     :class="{ 'sidebar-container--open': sidebarOpen }"
                     :style="sidebarStyle"
                 >
-                    <div class="w-full pb-16" v-if="$page">
+                    <div class="w-full pb-16" >
                         <Sidebar @navigate="sidebarOpen = false"/>
                     </div>
                 </aside>
 
                 <div
-                    class="w-full pb-24 pl-0 lg:pl-12 lg:w-3/4 article-content"
+                    class="w-full pb-24"
+                    :class="{'pl-0 lg:pl-12 lg:w-3/4 article-content': !!$page}"
+
                 >
                     <slot/>
                 </div>
