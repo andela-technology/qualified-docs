@@ -108,4 +108,12 @@ export default {
         background-color: var(--color-ui-fade-alt-bg);
         overflow-y: auto;
     }
+
+    .markdown-page__content {
+        .api-ref-container__content {
+            pre > code {
+                @apply p-0;
+            }
+        }
+    }
 </style>
