@@ -40,5 +40,6 @@ export default {
 </script>
 <style>
     .sidebar {
+        
     }
 </style>

@@ -181,7 +181,7 @@ body {
     .text-fade {
         color: var(--color-ui-fade);
     }
-
+    
     .default-layout__content {
         @apply flex flex-col justify-start min-h-screen;
         > header {
@@ -192,6 +192,10 @@ body {
 
         > main {
             @apply relative flex flex-wrap justify-start flex-1 w-full;
+            background: var(--color-ui-text-background);
+            @media sm {
+                background: transparent;
+            }
         }
     }
 
@@ -218,7 +222,7 @@ body {
     }
     
     .sidebar-container {
-        @apply fixed px-4 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
+        @apply fixed px-4 pt-4 mt-3 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
         transform: translateX(-100%);
 
         &.sidebar-container--open {
@@ -226,7 +230,7 @@ body {
         }
 
         @screen lg {
-            @apply w-1/4 pt-12 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
+            @apply w-1/4 mt-0 pt-12 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
             transform: translateX(0);
         }
     }
