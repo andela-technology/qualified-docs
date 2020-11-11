@@ -12,7 +12,7 @@ When reviewing the results of an assessment, and especially when looking over co
 
 For example, if you expect candidates to write production quality code, then candidates should be clearly instructed to write production quality code. Otherwise they may simply focus on completing tasks within the expected time, instead of making sure to save some time to ensure the quality is what it should be. Furthermore, you should have a good understanding about what "production quality code" should mean both to candidates and the expected learning outcome of the challenge. Do you want to leave the definition of production quality code vague, so that you can see how the candidate interprets the meaning? - or do you want to clarify the description because it could otherwise be too open ended or unclear for the given task, leading to inconsistent or potentially unfair results?
 
-By thinking about how you expect solutions to be qualitatively assessed, and by making those expectations clear to your candidates, you will receive a more valid sample of their work. Even in cases of subjective judgement that does not involve an objectively defined rubric, this should help to improve consistency and validity in your overall assessment.      
+By thinking about how you expect solutions to be qualitatively assessed, and by making those expectations clear to your candidates, you will receive a more valid sample of their work. Even in cases of subjective judgement that does not involve an objectively defined rubric, this should help to improve consistency and validity in your overall assessment.        
 
 ## Objective Rubrics
 
@@ -25,6 +25,14 @@ For recruiters, this allows you to hone in on areas that you should follow-up on
 :::important Limited Beta
 The objective rubrics discussed in this article involves features that are part of the Signal Scoring System, which is a new set of features currently in private beta. If you are interested in learning more, please reach out to our sales team.  
 :::
+
+### Legacy Rubrics
+Legacy rubrics within Qualified are simple "good", "neutral", and "bad" options for predefined categories, such as "Code Readability". These rubrics are enabled for all subscription types. Legacy rubrics cannot be customized per challenge, and do not provide any objective descriptions to help reviewers give objective opinions. 
+
+:::warning Legacy rubrics are being deprecated
+Legacy rubrics are being replaced by Qualified's new Signals based Objective Rubrics, which are currently in private beta.
+:::
+
 
 :::info WIP Article
 This article is a work-in-progress. More information regarding objective rubrics, their utility, and capabilities - will be added later.

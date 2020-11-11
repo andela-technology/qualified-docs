@@ -29,9 +29,11 @@ So how are challenges scored for correctness?...
 Classic Code Challenges & Project Code Challenges are scored based off of the submission unit tests. Each unit test counts as an equal weight to the overall score. So if there are 10 unit tests, and 8 are passed by the candidate, the score will be 80%. In other words, by default the score for Code Challenges are a reflection of number of unit tests passed. The score is never more than 100%.  
 
 #### Q&A Challenges
-Quiz Challenges by default are also weighted equally, with every question counting as an equal weight towards the overall challenge score. Each question's weight can be customized. By default each question counts as 1 "point", however you can assign different point values to each question to allow for it to matter more or less to the overall score. For example if there are two questions, one with a weight of 2 and the other with a weight of 1 - then the questions will count for 66% and 33% respectively.
+Quiz Challenges contain individual questions, with every question by default counting as one point towards the challenge score. Total points are divided by earned points to calculate correctness score. For example if there are two questions, one worth 2 points and the other worth 1 - then the questions will count for 66% and 33% of the total score respectively.
 
-Each quiz question can also have a partial score, and there are a lot of options for how to determine those scores. For example multiple choice questions can be weighted, so that multiple options are correct, and certain ones count for more of the question score than others. You can review these options in more detail within our [Q&A question reference documentation](/reference/features/challenges/quiz/questions).
+Each quiz question can also allow partial scores, which means that only a portion of the total points are earned based off of the candidate's answers. For example, there could be a multiple choice question that asks for 4 choices to be selected out of 10. Each correct choice is assigned one point, and if the candidate only gets 2 of the choices correct then they will only earn 2 points instead of 4. You are also able to assign choices different weights, which are also a form of point but at the choice level. In this way, different choices can be worth more or less than others to the total score for the question.
+
+You can review these options in more detail within our [Q&A question reference documentation](/reference/features/challenges/quiz/questions).
 
 ## Guided Scoring
 
