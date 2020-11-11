@@ -146,18 +146,21 @@ html[lights-out] {
     --color-ui-fade-alt-bg: theme('colors.gray.900');
     --color-ui-danger: theme('colors.red.500');
 
-    code {
-        @apply border-none shadow-none;
-        background-color: var(--color-ui-fade-alt-bg);
-    }
+    .default-layout {
+        code {
+            @apply border-none shadow-none;
+            background-color: var(--color-ui-fade-alt-bg);
+        }
 
-    pre[class*="language-"],
-    code[class*="language-"] {
-        @apply bg-ui-border;
-        background-color: var(--color-ui-fade-alt-bg);
-    }
-    .border-dashed, .border-solid, .border-ui-border, h2 {
-        border-color: var(--color-ui-border);
+        pre[class*="language-"],
+        code[class*="language-"] {
+            @apply bg-ui-border;
+            background-color: var(--color-ui-fade-alt-bg);
+        }
+
+        .border-dashed, .border-solid, .border-ui-border, h2 {
+            border-color: var(--color-ui-border);
+        }
     }
 }
 

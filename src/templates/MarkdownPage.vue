@@ -239,10 +239,17 @@ export default {
     }
 
     code {
-        @apply px-1 py-1 text-ui-typo bg-ui-sidebar font-mono border-b border-r border-ui-border rounded;
+        @apply px-1 py-1 font-mono border-b border-r border-ui-border rounded;
+        background-color: var(--color-ui-fade-alt-bg);
     }
 
-    p > code {
+    pre[class*="language-"],
+    pre > code {
+        background-color: theme('colors.gray.800');
+        color: theme('colors.gray.200');
+    }
+
+    p > code, li > code, ol > code {
         @apply text-sm;
         color: var(--color-ui-fade);
     }
@@ -335,6 +342,25 @@ export default {
 
     p + .admonition {
         @apply mt-6;
+    }
+}
+
+html[lights-out] {
+    .markdown-page__content {
+        code {
+            @apply border-none shadow-none;
+            background-color: var(--color-ui-fade-alt-bg);
+        }
+
+        pre[class*="language-"],
+        code[class*="language-"] {
+            @apply bg-ui-border;
+            background-color: var(--color-ui-fade-alt-bg);
+        }
+
+        .border-dashed, .border-solid, .border-ui-border, h2 {
+            border-color: var(--color-ui-border);
+        }
     }
 }
 
