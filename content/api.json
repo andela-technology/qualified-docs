@@ -1360,59 +1360,6 @@
   "resource": "Assessment Results",
   "resource_explanation": "Each time a candidate takes an assessment, their work is stored within the assessment result.",
   "http_method": "PUT",
-  "route": "/v1/assessment_results/:id/terminate",
-  "description": "Terminate",
-  "explanation": "Closes without submitting the assessment result. This prevents the candidate from continuing, and also doesn't generate a score, call webhooks, or trigger automated workflows.",
-  "parameters": [
-    {
-      "type": "String",
-      "required": true,
-      "name": "id",
-      "description": "The ID of the assessment result to terminate"
-    },
-    {
-      "type": "String",
-      "enum": [
-        "candidate_submitted",
-        "timer_ran_out",
-        "team_forced",
-        "team_decided",
-        "invitation_canceled",
-        "assessment_archived"
-      ],
-      "name": "data.closed_reason",
-      "description": "One of candidate_submitted, timer_ran_out, team_forced, team_decided, invitation_canceled, assessment_archived"
-    }
-  ],
-  "response_fields": [],
-  "requests": [
-    {
-      "request_method": "PUT",
-      "request_path": "/v1/assessment_results/5faa2d2aa54d7541ba9e229e/terminate",
-      "request_body": "{}",
-      "request_headers": {
-        "Content-Type": "application/json",
-        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWEyZDI5YTU0ZDc1NDFiYTllMjI4NCIsImlkIjoiNWZhYTJkMjlhNTRkNzU0MWJhOWUyMjg1Iiwic2VjcmV0IjoiQVROU3dRPT0ifQ._ZTuHjArb-Wyq1Em7HDVRntrqmBaPsedBjZoXR_q6ls"
-      },
-      "request_query_parameters": {},
-      "request_content_type": "application/json",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5faa2d2aa54d7541ba9e229e\",\n  \"type\": \"AssessmentResult\",\n  \"data\": {\n    \"id\": \"5faa2d2aa54d7541ba9e229e\",\n    \"assessmentId\": \"5faa2d2aa54d7541ba9e2299\",\n    \"candidateId\": \"5faa2d29a54d7541ba9e227b\",\n    \"teamCandidateId\": \"5faa2d2aa54d7541ba9e229f\",\n    \"teamId\": \"5faa2d29a54d7541ba9e227e\",\n    \"state\": \"terminated\",\n    \"createdAt\": \"2020-11-10T06:03:22.148Z\",\n    \"updatedAt\": \"2020-11-10T06:03:22.242Z\",\n    \"startedAt\": \"2020-11-10T06:03:22.148Z\",\n    \"invitedAt\": null,\n    \"submittedAt\": null,\n    \"submittingAt\": null,\n    \"openedAt\": null,\n    \"originalOpenedAt\": null,\n    \"originalStartedAt\": null,\n    \"originalSubmittedAt\": null,\n    \"dryRun\": false,\n    \"candidateRemarks\": null,\n    \"score\": null,\n    \"closedReason\": \"team_forced\",\n    \"redirectUrl\": null,\n    \"submissionMessage\": null,\n    \"nextAssessmentId\": null,\n    \"stateUpdatedAt\": \"2020-11-10T06:03:22.241Z\",\n    \"totalSubmissionSeconds\": null,\n    \"totalOriginalSubmissionSeconds\": null,\n    \"accumulatedSeconds\": 0,\n    \"enforcedTimeLimit\": null,\n    \"timerExpiresIn\": null,\n    \"wallTimeSinceStart\": 0,\n    \"reopenedById\": null,\n    \"activeTimedSolutionId\": null,\n    \"accessLocked\": false,\n    \"accessUnlockedAt\": null,\n    \"accessUnlockedById\": null,\n    \"terminatedAt\": \"2020-11-10T06:03:22.241Z\",\n    \"isActiveInteractSession\": false,\n    \"candidateName\": \"Joe Smith223\",\n    \"candidateEmail\": \"loginidentity223@example.com\",\n    \"candidatePhone\": null,\n    \"interviewerIds\": [],\n    \"activeInterviewerIds\": [],\n    \"abandoned\": false,\n    \"workflowName\": null,\n    \"isInteractSession\": false,\n    \"passingScore\": false,\n    \"challengeItems\": []\n  },\n  \"meta\": {\n    \"enums\": {\n      \"closedReason\": [\n        {\n          \"value\": \"candidate_submitted\",\n          \"text\": \"Candidate submitted\"\n        },\n        {\n          \"value\": \"timer_ran_out\",\n          \"text\": \"Timer ran out\"\n        },\n        {\n          \"value\": \"team_forced\",\n          \"text\": \"Team forced\"\n        },\n        {\n          \"value\": \"team_decided\",\n          \"text\": \"Team decided\"\n        },\n        {\n          \"value\": \"invitation_canceled\",\n          \"text\": \"Invitation canceled\"\n        },\n        {\n          \"value\": \"assessment_archived\",\n          \"text\": \"Assessment archived\"\n        }\n      ],\n      \"state\": [\n        {\n          \"value\": \"invited\",\n          \"text\": \"Invited\"\n        },\n        {\n          \"value\": \"opened\",\n          \"text\": \"Opened\"\n        },\n        {\n          \"value\": \"started\",\n          \"text\": \"Started\"\n        },\n        {\n          \"value\": \"submitting\",\n          \"text\": \"Submitting\"\n        },\n        {\n          \"value\": \"submitted\",\n          \"text\": \"Submitted\"\n        },\n        {\n          \"value\": \"terminated\",\n          \"text\": \"Terminated\"\n        }\n      ]\n    },\n    \"timestamp\": \"2020-11-09T22:03:22.269-08:00\",\n    \"includes\": []\n  }\n}",
-      "response_headers": {
-        "Content-Type": "application/json; charset=utf-8"
-      },
-      "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://www.qualified.io/api/v1/assessment_results/5faa2d2aa54d7541ba9e229e/terminate\" -d '{}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWEyZDI5YTU0ZDc1NDFiYTllMjI4NCIsImlkIjoiNWZhYTJkMjlhNTRkNzU0MWJhOWUyMjg1Iiwic2VjcmV0IjoiQVROU3dRPT0ifQ._ZTuHjArb-Wyq1Em7HDVRntrqmBaPsedBjZoXR_q6ls\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \"",
-      "request_headers_text": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWEyZDI5YTU0ZDc1NDFiYTllMjI4NCIsImlkIjoiNWZhYTJkMjlhNTRkNzU0MWJhOWUyMjg1Iiwic2VjcmV0IjoiQVROU3dRPT0ifQ._ZTuHjArb-Wyq1Em7HDVRntrqmBaPsedBjZoXR_q6ls",
-      "request_query_parameters_text": null,
-      "response_headers_text": "Content-Type: application/json; charset=utf-8"
-    }
-  ]
-},{
-  "resource": "Assessment Results",
-  "resource_explanation": "Each time a candidate takes an assessment, their work is stored within the assessment result.",
-  "http_method": "PUT",
   "route": "/v1/assessment_results/:id/unsubmit",
   "description": "Unsubmit",
   "explanation": "Reopens the assessment result so that the candidate can make changes.",
