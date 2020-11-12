@@ -6,7 +6,7 @@ summary: "Learn more about taking code assessments on Qualified"
 
 # Taking Assessments
 
-Qualified provides an online application for taking automated technical assessments. Each assessment can contain one or more code challenges and Q&A challenges.
+Qualified is an online application for taking automated technical assessments. Each assessment can contain one or more code challenges and question-and-answer (Q&A) challenges.
 
 The code challenges use real-world coding problems to test developers' abilities, which are executed and run against a suite of test cases in a virtual machine.
 
@@ -62,15 +62,13 @@ You can toggle the display of the timer at any point by clicking it to see how m
 
 ![Time Limit](/images/assess/expiring-timer.png)
 
-<figcaption>Be mindful of the timer as your working through your assessment!</figcaption>
+<figcaption>Be mindful of the timer as you're working through your assessment!</figcaption>
 </figure>
 </div>
 
 The Time Limit is a specific amount of time designated by the team to take the assessment.
 
-The timer will begin after you have selected the language for the first challenge and click "start" and will not end until you have submitted your assessment or you have run out of time.
-
-Throughout the assessment the timer will continue to count down. You can choose to toggle it's display to see how much time you have left or not.
+The timer will begin after you have selected the language for the first challenge and clicked "start". The timer will not end until you have submitted your assessment or you have run out of time.
 
 If you run out of time, the assessment will be automatically submitted for you.
 
@@ -78,12 +76,12 @@ If you run out of time, the assessment will be automatically submitted for you.
 
 ### Code Challenges
 
-Challenges are designed to challenge you, while not making you spend a lot of time.  When you first start a challenge, you will be given the opportunity to look over the challenge's basic information before starting to solve it.
+Challenges are designed to assess your skills without requiring a large investment of your time.  When you first start a challenge, you will be given the opportunity to look over the challenge's basic information before you begin working on the solution.
 
 - Challenges will come with **Instructions** (in the upper-right section), which will explain the challenge's goals.
-- If you would like to explain your methods outside the code, you can use the **Your Notes** section next to the instructions to add detailed notes in full markdown.
+- If you would like to explain your thought process separate from the code, you can use the **Your Notes** section next to the instructions to add detailed notes in full markdown.
 
-How you solve a code challenge depends on if it is a classic code challenge, or a project code challenge. You can easily tell the difference because a project code challenge has a file tree along the left side, while a classic code challenge already has all the files open with no tree. 
+How you solve a code challenge depends on whether it is a classic code challenge or a project code challenge. You can easily tell the difference because a project code challenge has a file tree along the left side while a classic code challenge already has all the files open with no tree. 
 
 * [Learn more about the Classic Code Challenge Solver](/for-candidates/challenge-solver)
 * [Learn more about the Project Code Challenge Solver](/for-candidates/advanced-challenge-ide)
@@ -92,7 +90,7 @@ How you solve a code challenge depends on if it is a classic code challenge, or 
 
 Some assessments may include question-and-answer challenges. Q&A Challenges are simple tests, usually a mix of selectable answers and text inputs.
 
-Once you've answered all the questions, use the button at the bottom to move on to the next step in the assessment.
+Once you've answered all the questions use the button at the bottom to move on to the next step in the assessment.
 
 ### Next Challenge
 
@@ -111,7 +109,7 @@ Once you've completed the challenges, you can review your assessment solutions, 
 <div class="note-box note-box-warning">
 
 **IMPORTANT NOTE**  
-Submitting the solutions is a final step.  Once submitted, you cannot go back and make changes to your code or Q&A answers, unless the company providing the assessment resets your submission for you.
+Submitting the solutions is a final step. Once submitted, you cannot go back and make changes to your code or Q&A answers unless the company providing the assessment resets your submission for you.
 
 </div>
 
@@ -123,4 +121,4 @@ Submitting the solutions is a final step.  Once submitted, you cannot go back an
 
 </figure>
 
-On the review screen, click the expanding arrow to review your solution & test cases, and add or edit any additional notes about each solution.
+On the review screen, click the expanding arrow to review your solution and test cases, and add or edit any additional notes about each solution.
