@@ -69,4 +69,4 @@ Most languages support a custom Qualified testing framework that are simplified 
 
 ## Sample Tests Tab
 
-The test cases that you provide here will be available to candidates as their default set of test cases. Providing a basic starter set of tests can be helpful to candidates in many cases - such as when the requirements are complex and a set of tests helps illustrates what is expected.
+The test cases that you provide here will be available to candidates as their default set of test cases. Providing a basic starter set of tests can be helpful to candidates in many cases, such as when the requirements are complex and a set of tests helps illustrates what is expected.

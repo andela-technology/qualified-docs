@@ -31,12 +31,6 @@ Clicking the _Invite on or more candidates_ button to open the candidate invitat
 
 The developers will receive an email giving them a link to jump right into the assessment. As soon as they start, you'll be able to see their ongoing results from under the Candidates section of the app.
 
-<div class="note-box">
-
-**Note:** Only shown if you've selected _Qualified Assess_ during sign up)
-
-</div>
-
 ## Start an Interact Coding Session
 
 ![Interact Coding Sessions Dialog](/images/hire/interact-dialog.png)

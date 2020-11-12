@@ -9,9 +9,9 @@ tags:
 
 Qualified provides a lightweight, custom testing framework for Ruby that makes it easy to build and take a challenge.  When creating a challenge, you can choose to use [Rspec](/reference/languages/ruby/rspec) instead.
 
-<div class="note-box">
+:::tip
 When taking a challenge, the test framework is already selected for you.  You can determine which framework you are using by looking in the upper-right of the _Sample Tests_ code area.
-</div>
+:::
 
 ## `Test` Object
 

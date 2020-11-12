@@ -29,11 +29,9 @@ You can open the solver for project challenges either by previewing an entire as
 
 This solver gives you the ability to test writing solution code, add or modify test cases for validating the solution, and preview the output. As it's a preview, there is also a button to preview the submission test cases, but these will never be shown to the candidate.
 
-<div class="note-box">
-
+:::note
 Within the preview window, nothing is saved, this is purely a way to quickly view how a challenge works.
-
-</div>
+:::
 
 # Creating Project Code Challenges
 
@@ -74,11 +72,9 @@ Normally, you'll want to run the tests against the [_Reference_ fileset](#refere
 
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
-<div class="note-box">
-
+:::note
 If you've imported a library challenge, it will be [**linked to the library version**](/for-teams/challenges/library/versions), and other options won't be editable until you unlink it.
-
-</div>
+:::
 
 ### Instructions
 
@@ -126,11 +122,9 @@ Open to see the output from running your code. It will automatically be opened i
 
 For challenges that target front-end web development, we provide a real-time, in-IDE preview panel. You and the candidate can use this to see how a solution renders.
 
-<div class="note-box">
-
+:::note
 Please note that Web Previews require a somewhat specific project layout, so you may be restricted in how your challenge is designed. Using one of the Qualified templates is the best way to get started with your front-end challenge.
-
-</div>
+:::
 
 ### Files Sent to Runner
 

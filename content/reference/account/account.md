@@ -7,11 +7,9 @@ bodyClass: 'employer-focused'
 
 These pages enable you to update your login information and user profile and manage some application-wide settings.
 
-<div class="note-box">
-
+:::tip
 If you have owner or manager rights on the Team account, you can [manage the team settings](/for-teams/account-team).
-
-</div>
+:::
 
 # <span class="icon-user"/> Login Information
 

@@ -10,10 +10,9 @@ tags:
 
 Qualified supports the [`unittest`](https://docs.python.org/3/library/unittest.html) unit testing framework.
 
-<div class="note-box">
-From Python 3.7, the solution module is no longer imported implicitly to avoid confusing error messages.
-Tests must use `import solution` from the `solution` module and optional preloaded code can be accessed using `import preloaded`.
-</div>
+:::note
+From Python 3.7, the solution module is no longer imported implicitly to avoid confusing error messages. Tests must use `import solution` from the `solution` module and optional preloaded code can be accessed using `import preloaded`.
+:::
 
 
 ## Basic Example

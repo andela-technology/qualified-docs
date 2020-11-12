@@ -328,9 +328,9 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 Our JavaScript environment supports the following testing frameworks:
 
-- [javascript/mocha_bdd](/reference/languages/javascript/mocha_bdd)
-- [javascript/mocha_tdd](/reference/languages/javascript/mocha_tdd)
-- [javascript/karma_bdd](/reference/languages/javascript/karma_bdd)
-- [javascript/karma_tdd](/reference/languages/javascript/karma_tdd)
+- [javascript/mocha-bdd](/reference/languages/javascript/mocha-bdd)
+- [javascript/mocha-tdd](/reference/languages/javascript/mocha-tdd)
+- [javascript/karma-bdd](/reference/languages/javascript/karma-bdd)
+- [javascript/karma-tdd](/reference/languages/javascript/karma-tdd)
 - [javascript/cw-2](/reference/languages/javascript/cw-2)
 - [javascript/jest](/reference/languages/javascript/jest)

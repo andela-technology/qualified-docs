@@ -43,9 +43,9 @@ You can open the solver for Q&A challenges either by previewing an entire assess
 
 This solver gives you the ability to test answering questions and previewing autoscore results.
 
-<div class="note-box">
+:::note
 Within the preview window, nothing is saved, this is purely a way to quickly view how a challenge works.
-</div>
+:::
 
 # Creating Q&A Challenges
 
@@ -69,11 +69,9 @@ The following sections are available:
 
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
-<div class="note-box">
-
+:::note
 If you've imported a library challenge, it will be [**linked to the library version**](/for-teams/challenges/library/versions), and other options won't be editable until you unlink it.
-
-</div>
+:::
 
 ### Questions
 

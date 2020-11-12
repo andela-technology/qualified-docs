@@ -38,9 +38,9 @@ Mocha in Karma works the same as the normal [javascript/mocha_bdd](/reference/la
 
 There is a lightweight library inclusion feature, based on comments in the _Preloaded_ section. Including comments like the following enables automatic inclusion of well-known libraries.
 
-<div class="note-box note-box-warning">
-Please note this feature has been surpassed by [Project Challenges](/for-teams/challenges/multi-file-code), and will not likely be expanded.
-</div>
+:::note
+Please note this feature has been surpassed by Project Challenges, and will not likely be expanded.
+:::
 
 ```js
 // @include-external angular@1.5

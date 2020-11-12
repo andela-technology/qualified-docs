@@ -113,13 +113,9 @@ You can rearrange the order of the challenges by clicking and dragging on the do
 
 The final order is the order the candidate will be tested, so it makes sense to think about the overall progression of your assessment.
 
-<div class="note-box note-box-info">
-
-**Disabling Languages**
-
+:::tip Disabling Languages
 You can also disable specific programming languages on this screen, though at least one must remain selected.  To disable a language, click on the language icon for that challenge.  It will become deselected.  A deselected language will not be available for use during the assessment.
-
-</div>
+:::
 
 ### 3. Previewing Your New Challenge
 

@@ -59,11 +59,9 @@ You can reset either your solution, the sample tests, or both.
 
 Some challenges are available in multiple languages. You may change the language using the dropdown located within the top action bar.
 
-<div class="note-box">
-
+:::info More Information
 [Click here to learn more about the available languages and environments in Qualified.](/languages)
-
-</div>
+:::
 
 
 ### Submit Solution
@@ -124,11 +122,9 @@ You can expand either code editor to completely fill the browser window using th
 
 The results panel will give you details information about the tests that were run.  If you have any tests that fail, you'll see a red bar and one or more red exclamation marks next to the failed tests.
 
-<div class="note-box">
-
-**Note**: On smaller screens, the results will appear as a tab alongside these instructions, rather than below.
-
-</div>
+:::note
+On smaller screens, the results will appear as a tab alongside these instructions, rather than below.
+:::
 
 ### Debugging
 
@@ -138,11 +134,9 @@ For further debugging, you can write messages out to the console or system outpu
 
 * [More Debugging Tips](/for-candidates/challenge-solver/debugging-tips)
 
-<div class="note-box">
-
+:::tip
 Due to the solution code being executed in a short-lived container, Qualified does not currently support interactive debugging.
-
-</div>
+:::
 
 
 -----

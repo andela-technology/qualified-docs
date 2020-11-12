@@ -101,9 +101,9 @@ You can delete a file using the **Delete** (<span class="icon-trashcan"></span>)
 
 A deleted file is moved to _Deleted Files_. You can undelete the file from this location if it was a mistake.
 
-<div class="note-box note-box-warning">
+:::warning
 Files in this section are only saved until the page is reloaded.
-</div>
+:::
 
 ### Resetting Files or the entire solution
 
@@ -130,9 +130,9 @@ For further debugging, you can write messages out to the console or system outpu
 
 * [More Debugging Tips](/for-candidates/advanced-challenge-ide/debugging-tips)
 
-<div class="note-box">
+:::note
 Due to the solution code being executed in a short-lived container, Qualified does not currently support interactive debugging.
-</div>
+:::
 
 ## IDE Settings
 
