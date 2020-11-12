@@ -42,13 +42,13 @@ To initiate playback, click on the <kbd class="icon-transport-play"></kbd> butto
 - <kbd class="icon-transport-last"></kbd> : Jump to the end
 - <kbd>4x</kbd> : Control the playback speed
 
-At any time, you can also click on the playback bar to jump to a specific point in time. Hovering over the playback bar will give you information about the event recorded at that point, including the overall time since the challenge was started, if it was a key event, and noting any compressed playback frames.
+At any time, you can click on the playback bar to jump to a specific point in time. Hovering over the playback bar will give you information about the event recorded at that point, including the overall time since the challenge was started, if it was a key event, and noting any compressed playback frames.
 
 <div class="note-box">
 
 #### A Note about Compressed Playback
 
-In general, the playback will occur at the same pace it was recorded, though sped up 2x, 4x, or more.
+In general, the playback will occur at the same pace it was recorded but it can be sped up 2x, 4x or more.
  
 If a developer takes an extended pause (more than a few seconds), the playback is compressed at that point. This helps prevent long, empty stretches where nothing changes. When this happens, you may see the playback timer jump by minutes (or occasionally even hours).
 

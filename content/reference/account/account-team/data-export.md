@@ -13,18 +13,18 @@ We currently provide the following three types of data export:
 
 ## Candidates / Students
 
-A list of developers who have used Qualified with your team. Includes basic information about the developers such as their name, email, state, and various event time stamps.
+A list of developers who have used Qualified with your team. Includes basic information about the developers such as their name, email, state and various event timestamps.
 
 If you have a lot of candidates, you can filter the list to a specific Assessment.
 
 ## Assessment Results
 
-A list of all assessment results for your team. Includes some basic information about the developer, the assessment name, score, and current state, and more.
+A list of all assessment results for your team. Includes some basic information about the developer, the assessment name, score, current state and more.
 
 If you have a lot of candidates, you can filter the list to a specific Assessment. If you don't filter the export and you have candidates take multiple assessments, you will see them in the list more than once.
 
 ## Assessment Summaries
 
-A list of each of your assessments, with summarized result counts.
+A list of each of your assessments with summarized result counts.
 
 You can limit this list to assessments of a specific status if you would like.

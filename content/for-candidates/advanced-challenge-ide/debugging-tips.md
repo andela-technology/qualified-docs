@@ -1,7 +1,6 @@
 ---
 title: "Debugging Tips"
 summary: "Learn some tricks for debugging your code during an assessment"
-order: 3
 ---
 
 # Challenge Solver: Debugging Tips
@@ -20,7 +19,9 @@ You should modify the code in that view to adjust or add more test cases for deb
 
 ## STDOUT / Console Output
 
-While Qualified doesn't support interactive debugging, you can write to `stdout` (sometimes called "system out" or "console") in any language for outputting debugging information. When you run your code, this will show alongside the test output.
+While Qualified doesn't support interactive debugging, you can write to `stdout` (sometimes called "system out" or "console") in any language for outputting debugging information. When you run your code, this will show alongside the test output. 
+
+Note that output is collapsed by default for passing tests.
 
 ### Examples:
 
@@ -28,6 +29,10 @@ While Qualified doesn't support interactive debugging, you can write to `stdout`
     ```c
     #include <stdio.h>
     printf("debug message\n");
+    ```
+- Clojure
+    ```clojure
+    (print "debug message")
     ```
 - C++
     ```cpp
@@ -38,6 +43,27 @@ While Qualified doesn't support interactive debugging, you can write to `stdout`
     ```csharp
     System.Console.WriteLine("debug message");
     ```
+- Elixir
+    ```elixir
+    IO.puts("debug message")
+    ```
+- Erlang
+    ```erlang
+    io:fwrite("debug message\n"),
+    ```
+- F#
+    ```fsharp
+    printf("debug message")
+    ```
+- Go
+    ```go
+    import "fmt"
+    fmt.Println("debug message")
+    ```
+- Groovy
+    ```groovy
+    print("debug message")
+    ```
 - Java
     ```java
     System.out.println("debug message");
@@ -46,15 +72,56 @@ While Qualified doesn't support interactive debugging, you can write to `stdout`
     ```javascript
     console.log("debug message");
     ```
+- Kotlin
+    ```kotlin
+    println("debug message")
+    ```
+- Lua
+    ```lua
+    print("debug message")
+    ```
+- Objective C
+    ```objc
+    NSLog(@"debug message");
+    ```
+- OCaml
+    ```ocaml
+    print_endline "debug message";
+    ```
+- PHP
+    ```php
+    echo "debug message\n";
+    ```
 - Python
     ```python
-    print "debug message"
+    print("debug message")
+    ```
+- R
+    ```r
+    print("debug message")
     ```
 - Ruby
     ```ruby
     puts "debug message"
     ```
+- Rust
+    ```rust
+    println!("debug message");
+    ```
+- Scala
+    ```scala
+    print("debug message")
+    ```
+- Shell
+    ```shell
+    echo "debug message"
+    ```
+- SQL
+    ```sql
+    SELECT 'debug message'
+    ```
 - Swift
     ```swift
-    println("debug message")
+    print("debug message")
     ```
+
