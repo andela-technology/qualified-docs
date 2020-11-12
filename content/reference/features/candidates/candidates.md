@@ -73,11 +73,9 @@ If you have a lot of developers on screen, you will be able to flip between page
 
 Click on a developer's name to switch to the _Candidate/Student Details View_. This page allows you to see all the information that has been collected about a developer in one place.
 
-<div class="note-box note-box-info">
-**TIP**
-
+:::tip
 The left hand side of this screen allows you to quickly navigate between developers, and retains the filters you've applied from the previous page.
-</div>
+:::
 
 ## Status & Actions
 
@@ -92,13 +90,9 @@ The candidate's current status in the assessment process is **bolded**.
 <figcaption>Some of the actions available on a candidate</figcaption>
 </figure>
 
-<div class="note-box note-box-info">
-
-**TIP**
-
+:::tip
 You can use [bulk editing](/for-teams/candidates/bulk-editing) to manage multiple candidates at once.
-
-</div>
+:::
 
 ### Labels
 
@@ -120,8 +114,7 @@ Each assessment is in it's own tab, and you can switch between them by clicking 
 
 Each assessment includes a list of the solutions within that assessment.  You can quickly see how well the developer did on a particular challenge within that table, or click on the title of a challenge to jump down to learn more about their solution.
 
-<div class="note-box note-box-tall">
-<h3>Stats</h3>
+:::tip Stats
 <div>
 <figure class="align-right half-scale">
 
@@ -135,7 +128,7 @@ run through the system. If the challenge is from the Qualified, you'll often see
 
 The stats show up as a micro chart. To get more detailed information, click on the micro chart and you can see more details.
 
-</div>
+:::
 
 ### Reviews
 
@@ -149,11 +142,9 @@ The stats show up as a micro chart. To get more detailed information, click on t
 
 If your account supports it, you can create a complete review of the entire candidate's assessment. Clicking on **START A REVIEW** will walk you through the process of reviewing each solution as well as providing an overall score.
 
-<div class="note-box note-box-info">
-
-**Note:** reviews are for internal use only, and are never sent to the candidate.
-
-</div>
+:::note
+Reviews are for internal use only, and are never sent to the candidate.
+:::
 
 ### Abandoned Assessments
 

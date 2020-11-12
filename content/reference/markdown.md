@@ -94,9 +94,9 @@ You can make an ordered list by typing a number followed by a `.` then a space b
 3. Mix thoroughly
 ```
 
-<div class="note-box note-box-info">
-**Note:** The actual numbers are not critical, numbered lists will always start at `1` and count up sequentially from there.
-</div>
+:::tip
+The actual numbers are not critical, numbered lists will always start at `1` and count up sequentially from there.
+:::
 
 ### Nested lists
 
@@ -205,9 +205,9 @@ This text is only shown when java, javascript or C# is the active language
 ```
 ````
 
-<div class="note-box note-box-info">
-Tip: You can use either `~~~` or <code>\`\`\`</code> as your top level fence for defining a block. We recommend always using <code>\`\`\`</code> for your top level blocks, so that its easier to identify nested blocks.
-</div>
+:::tip
+You can use either `~~~` or <code>\`\`\`</code> as your top level fence for defining a block. We recommend always using <code>\`\`\`</code> for your top level blocks, so that its easier to identify nested blocks.
+:::
   
 ## Alert Boxes
   

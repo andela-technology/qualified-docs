@@ -16,9 +16,9 @@ Qualified supports using your own IDE (or any other file editor) for solving cer
 
 Using a [small node terminal app called Attach](https://www.npmjs.com/package/@qualified/attach), we synchronize files from your file system back to the web IDE. The syncing process happens over web sockets. Nothing is installed in your web browser or IDE, and our [open-source program](https://gitlab.com/qualified/attach) is designed to be very minimal and only watch files associated with the challenge.
 
-<div class="note-box note-box-info">
+:::tip
 Make sure you keep the web browser open, as the web browser still handles saving, running, and previewing your files!
-</div>
+:::
 
 ## Installing and running the Qualified Attach program
 

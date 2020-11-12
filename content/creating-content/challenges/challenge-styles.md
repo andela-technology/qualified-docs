@@ -5,7 +5,7 @@ order: 2
 
 Coding challenges are often thought to be a certain type of style: Algorithmic Problems. These styles tend to focus heavily on the implementation of a well defined computer science algorithm. 
 
-However Qualified was built to move away from these styles of challenges - which often don't match up well to type of work that will actually be done on the job. Regardless if you are using Qualified for education, certification or recruitment - the platform is always based on primarily assessing candidates through the use of work samples. Ultimately what aim's to learn is "can they do the work?". For this reason Qualified continues to explore more and more "styles" of challenges which can be used to target different aspects of a software engineer's job.
+However, Qualified was built to move away from these styles of challenges—which often don't match up well to type of work that will actually be done on the job. Regardless if you are using Qualified for education, certification or recruitment—the platform is always based on primarily assessing candidates through the use of work samples. Ultimately what aim's to learn is "can they do the work?". For this reason Qualified continues to explore more and more "styles" of challenges which can be used to target different aspects of a software engineer's job.
 
 
 ## Code Challenge Styles

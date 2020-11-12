@@ -32,11 +32,9 @@ Selecting **UPDATE** opens a dialog with a list of available actions. The list i
 
 If an action isn't valid for any selected candidate, that action is hidden. If only some of the selected candidates apply to a given action, it's noted in the help text below the action.
 
-<div class="note-box note-box-info">
-**TIP**
-
+:::tip
 You can review the selected or affected candidates at any time using the expandable section at the top of the dialog.
-</div>
+:::
 
 ### Making Updates
 

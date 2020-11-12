@@ -45,9 +45,9 @@ You can delete a file using the **Delete** (<span class="icon-trashcan"></span>)
 
 A deleted file is moved to _Deleted Files_. You can undelete the file from this location if it was a mistake.
 
-<div class="note-box not-box-warning">
+:::warning
 Files in this section are only saved until the page is reloaded.
-</div>
+:::
 
 # File Configuration
 
@@ -61,9 +61,9 @@ The access level affects the editability and visibility of a file for the candid
 
 This is the default, and highest level of access. A **Read/Write** file is fully editable by a candidate—including being able to delete or move the file. Unless explicitly excluded, these files will be included on both candidate and submission tests, and are the primary source for solving challenges.
 
-<div class="note-box">
+:::tip
 For directories, read/write is the only option that lets candidates add new files under it. It can be useful to disable read/write access on entire directories where you don't want the candidate to change files.
-</div>
+:::
 
 #### Deletable
 
@@ -79,9 +79,9 @@ A **Read-Only** file is fully visible to the candidate, but they cannot change i
 - Tests that you would like to show the candidate, but do not want them to be able to edit. These could be base tests that you want to make sure the candidate doesn't accidentally overwrite, or even tests that are part of the submission tests.
 - Library code you don't want the candidate to modify, which might represent 3rd party libraries or existing application code that shouldn't be modified.
 
-<div class="note-box">
+:::tip
 Note that directories can be marked as read-only, which prevents files from being added to them without preventing editing read/write files. This can be a useful technique for helping to define the application structure without being overly strict.
-</div>
+:::
 
 ### Restricted
 

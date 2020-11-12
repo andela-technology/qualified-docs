@@ -27,9 +27,9 @@ You can open the solver for classic code challenges either by previewing an enti
 
 This solver gives you the ability to test writing solution code, add or modify test cases for validating the solution, and preview the output.
 
-<div class="note-box">
+:::note
 Within the preview window, nothing is saved, this is purely a way to quickly view how a challenge works.
-</div>
+:::
 
 # Creating Classic Code Challenges
 
@@ -55,11 +55,9 @@ The following sections are available:
 
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
-<div class="note-box">
-
+:::note
 If you've imported a library challenge, it will be [**linked to the library version**](/for-teams/challenges/library/versions), and other options won't be editable until you unlink it.
-
-</div>
+:::
 
 ### Challenge Instructions
 
@@ -75,11 +73,9 @@ This page provides a side-by-side Markdown editor that allows you to provide det
 
 Each classic code challenge needs one or more language sections.  You can have as many as you like.
 
-<div class="note-box">
-
+:::tip
 [Click here to learn more about the available languages and environments in Qualified.](/languages)
-
-</div>
+:::
 
 If you are starting from a blank challenge, or want to add a new language, click **ADD LANGUAGE** to choose a language to add.
 

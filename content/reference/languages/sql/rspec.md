@@ -69,9 +69,9 @@ def expected
 end
 ```
 
-<div class="note-box note-box-warning">
-**Note:** Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
-</div>
+:::note
+Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
+:::
 
 Then within your Test cases section you can simply add this:
 

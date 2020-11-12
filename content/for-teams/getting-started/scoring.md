@@ -6,7 +6,7 @@ title: Scoring Fundamentals
 # Scoring Fundamentals
 
 
-Qualified is centered around the idea of assessing software developers using "work samples" - which is a style of test that focuses on specific tasks related to the role being assessed for. Coding challenges are the primary challenge type used for focusing on these work tasks. Q&A challenges are often used to expand on the work sample, or to supplement it by testing for specific knowledge. 
+Qualified is centered around the idea of assessing software developers using "work samples"—which is a style of test that focuses on specific tasks related to the role being assessed for. Coding challenges are the primary challenge type used for focusing on these work tasks. Q&A challenges are often used to expand on the work sample, or to supplement it by testing for specific knowledge. 
 
 Since developers are being tested on their ability to complete certain types of task, scoring in Qualified takes a criterion-referenced approach.
 
@@ -16,20 +16,20 @@ Criterion referenced means that the candidate is being assessed on their ability
 This is an important concept to remember, because Qualified is primarily concerned with assuring candidates meet a certain standard, not for comparing performance of candidates to one another (which would be a norm-referenced scoring approach). This is not to say that candidates can't prove themselves to be more capable than others. This is where quantitative vs qualitative scoring comes in, and that leads us to autonomous vs human based scoring.    
 
 ## Autonomous Scoring
-Each challenge type on Qualified platform has a method for being automatically scored. Scoring is calculated as the candidate progresses through the challenge, and also on final submission. A single percentage score is shown next to each assessment, this score represents the correctness score.  
+Each challenge type on Qualified platform has a method for being automatically scored. Scoring is calculated as the candidate progresses through the challenge and on final submission. A single percentage score is shown next to each assessment, this score represents the correctness score.  
 
 ### Correctness Score
-The score that you will see next to a candidate, and on each assessment result, is based off of the combined average correctness score of all challenges within the assessment. 
+The score you see next to a candidate, and on each assessment result, is based off of the combined average correctness score of all challenges within the assessment. 
 
 For example, if there are 3 challenges on an assessment, with scores of 100%, 50% and 100%, the assessment score will be (100 + 50 + 100) / 300 = 83%. Every challenge on the assessment is weighted the same when it comes to determining the assessment correctness score.  
 
-So how are challenges scored for correctness?...
+So how are challenges scored for correctness?
 
 #### Code Based Challenges
 Classic Code Challenges & Project Code Challenges are scored based off of the submission unit tests. Each unit test counts as an equal weight to the overall score. So if there are 10 unit tests, and 8 are passed by the candidate, the score will be 80%. In other words, by default the score for Code Challenges are a reflection of number of unit tests passed. The score is never more than 100%.  
 
 #### Q&A Challenges
-Quiz Challenges contain individual questions, with every question by default counting as one point towards the challenge score. Total points are divided by earned points to calculate correctness score. For example if there are two questions, one worth 2 points and the other worth 1 - then the questions will count for 66% and 33% of the total score respectively.
+Quiz Challenges contain individual questions, with every question by default counting as one point towards the challenge score. Total points are divided by earned points to calculate correctness score. For example if there are two questions—one worth 2 points and the other worth 1—then the questions will count for 66% and 33% of the total score respectively.
 
 Each quiz question can also allow partial scores, which means that only a portion of the total points are earned based off of the candidate's answers. For example, there could be a multiple choice question that asks for 4 choices to be selected out of 10. Each correct choice is assigned one point, and if the candidate only gets 2 of the choices correct then they will only earn 2 points instead of 4. You are also able to assign choices different weights, which are also a form of point but at the choice level. In this way, different choices can be worth more or less than others to the total score for the question.
 
@@ -42,7 +42,7 @@ Quantitative and some qualitative scoring can be handled autonomously. When you 
 ### Subjective Ratings
 Subjective ratings don't require a rubric, and are simply a team member's opinion on how well they think the candidate did. Typically you would use subjective ratings when you want to signal to someone (such as a hiring manager) if you think the candidate should move forward in the process or not.  
 
-Qualified provides an overall rating, and a set of individual qualities that can be rated, per each challenge - allowing each reviewer to provide their subjective and insightful feedback. An overall approve or reject rating can also be provided for the assessment itself. 
+Qualified provides an overall rating, and a set of individual qualities that can be rated, per each challenge—allowing each reviewer to provide their subjective and insightful feedback. An overall approve or reject rating can also be provided for the assessment itself. 
 
 Reviews do not count as part of the correctness score, instead you will see a green, yellow or red dot next to the score within the candidates list, used to represent each reviewer's overall rating.
 
@@ -55,18 +55,18 @@ While subjective ratings allow for free-form feedback and are great for communic
 When dealing with rubrics, we start to get into deeper aspects of qualitative assessment measurement, and this is where the signals scoring system comes in.    
 
 ## Signal Based Scoring
-So far we have discussed the two entry level scoring features of the platform, **correctness scores** and **subjective ratings**. For many customers, this is all that you will need - especially if you wish to keep your process simple. 
+So far we have discussed the two entry level scoring features of the platform, **correctness scores** and **subjective ratings**. For many customers, this is all that you will need—especially if you wish to keep your process simple. 
 
-For education and certification focused users, and for recruiting focused users looking to implement a thorough and consistent vetting process, there is a more advanced system that allows you to go much deeper into scoring candidates - this system is called **"signals"**.
+For education and certification focused users, and for recruiting focused users looking to implement a thorough and consistent vetting process, there is a more advanced system that allows you to go much deeper into scoring candidates. This system is called **"signals"**.
 
 :::important Limited Beta
 The Signals system is a new set of features currently in beta. If you are interested in learning more, please reach out to our sales team.  
 :::
 
 ### What are Signals?
-The Signals system is based on the idea that different aspects of an assessment can be used to signal different things about a candidate. The more signals that candidate meets expectations on, the more likely they are high performer. Signals are careful selected to relate to the job role being assessed for, and can be targeted.
+The Signals system is based on the idea that different aspects of an assessment can be used to signal different things about a candidate. The more signals that candidate meets expectations on, the more likely they are high performer. Signals are carefully selected to relate to the job role being assessed for, and can be targeted.
 
-A signal is a value ranging from 0 - 10, with 10 indicating that the candidate reached full expectations. There are currently two key types of signals, though more will be introduced later. They are:
+A signal is a value ranging from 0–10, with 10 indicating that the candidate reached full expectations. There are currently two key types of signals, though more will be introduced later. They are:
 
 - **Automated score**, such as "correctness score"
 - **Objective rating** via a human scored rubric 

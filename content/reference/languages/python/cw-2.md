@@ -9,9 +9,9 @@ tags:
 
 Qualified provides a lightweight, custom testing framework for Python.  However, we recommend using the standard [Python unittest](/reference/languages/python/unittest) instead.
 
-<div class="note-box">
+:::tip
 When taking a challenge, the test framework is already selected for you.  You can determine which framework you are using by looking in the upper-right of the _Sample Tests_ code area.
-</div>
+:::
 
 ## test module
 
