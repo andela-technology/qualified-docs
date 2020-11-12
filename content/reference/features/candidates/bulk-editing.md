@@ -9,17 +9,17 @@ Bulk editing lets you select multiple candidates and perform several actions on 
 
 ## Selecting
 
-Use the checkboxes to select/deselect individual candidates, or the whole current page via the top checkbox. If every candidate on the current page is selected, clicking the top checkbox again will deselect every candidate on the current page.
+Use the checkboxes to select/deselect individual candidates, or select the all entries on the current page via the top checkbox. If every candidate on the current page is selected, clicking the top checkbox again will deselect every candidate on the current page.
 
-You can add and remove selections across pages, or even searching/filtering the list. If you need to look at something else and return, or even reload the page, your selections will be retained as long as you are logged in.
+You can add and remove selections across pages or even search and filter the list. If you need to look at something else and return or reload the page, your selections will be retained as long as you are logged in.
 
 ## Actions
 
 Once selected, a couple new options appear on the sidebar:
 
-- **UPDATE** lets you modify various settings, or change the state of the candidates
+- **UPDATE** lets you modify various settings or change the state of the candidates
 - **INVITE** lets you invite the selected candidates to a new assessment
-- **Only Show Selections** adds a filter to the current view, so you can see only your selections
+- **Only Show Selections** adds a filter to the current view so you can see only your selections
 - **Clear** clears the current selection list across all pages
 
 ## Update Dialog
@@ -50,6 +50,6 @@ After you complete the update, you can choose to clear your selections.
 
 ## Inviting Candidates
 
-Using the **INVITE** button will open the normal [invite dialog](/for-teams/invite), with your selected candidates automatically filled in.
+Using the **INVITE** button will open the normal [invite dialog](/for-teams/invite) with your selected candidates automatically filled in.
 
 * [Invite Dialog](/for-teams/invite)

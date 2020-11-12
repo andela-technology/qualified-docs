@@ -19,21 +19,21 @@ These workflows can be used to automatically approve or reject a candidate, show
 
 </figure>
 
-From the assessment details page, click the **ADD A WORKFLOW** button. This will take you to the assessment editor, with the basic & default workflows ready to get started quickly.
+From the assessment details page, click the **ADD A WORKFLOW** button. This will take you to the assessment editor with the basic & default workflows ready to get started quickly.
 
 ## How Workflows Work
 
-Workflows work by matching the against the score and/or timing of the assessment. They are matched in a top-down order as you see them on the page, and only the first workflow to match is processed.
+Workflows work by matching the against the score and/or timing of the assessment. They are matched in a top-down order as you see them on the page and only the first workflow to match is processed.
 
 <div class="note-box note-box-info">
 
-For example, if the top workflow say _WHEN Score is at least 50%_, and the second says _WHEN Score is at least 25%_, the second workflow will **never** be processed.
+For example, if the top workflow is _WHEN Score is at least 50%_ and the second is _WHEN Score is at least 25%_, the second workflow will **never** be processed.
 
 </div>
 
 ### Default Workflow
 
-At the bottom of the list is the _Default Workflow_. This workflow is only processed if none of the other match. If you have no other workflows enabled, the _Default Workflow_ will always be used, and can be useful if the Qualified Assessment is part of a larger hiring or education process to show custom messages or redirect the candidate to a different website.
+At the bottom of the list is the _Default Workflow_. This workflow is only processed if none of the other match. If you have no other workflows enabled, the _Default Workflow_ will always be used. The default workflow can be useful if the Qualified Assessment is part of a larger hiring or education process to show custom messages or redirect the candidate to a different website.
 
 ### Basic Workflows
 
@@ -57,11 +57,11 @@ To enable, click the slider or title, and add in a minimum or maximum score to t
 
 **Note on _Send to Next Assessment_, _Mark candidate as…_, and _Send candidate to website_**
 
-These three options are interconnected. If you choose to send the candidate to a next assessment, you cannot set their status, because they will be reset to _Invited_ automatically. You also cannot send them to a website, since it would conflict with the next assessment.
+These three options are interconnected. If you choose to send the candidate to a next assessment, you cannot set their status because they will be reset to _Invited_ automatically. You also cannot send them to a website since it would conflict with the next assessment.
 
-Likewise, if you choose to set their status, or send them to a website, you cannot send them to a new assessment.
+Likewise, if you choose to set their status or send them to a website, you cannot send them to a new assessment.
 
-You can, however, both set their status **and** send them to a website.
+You can, however, set both their status **and** send them to a website.
 
 </div> 
 
@@ -77,13 +77,13 @@ You can, however, both set their status **and** send them to a website.
 
 </figure>
 
-Click on **ADD CUSTOM WORKFLOW** to insert a new, custom workflow. These are more advanced workflows, which can be triggered on high- or low-scores, and/or slow- or fast-timing.
+Click on **ADD CUSTOM WORKFLOW** to insert a new, custom workflow. These are more advanced workflows which can be triggered on high- or low-scores and/or slow- or fast-timing.
 
 You can give your custom workflow a name to help you keep track of the purpose of it. Custom workflows have the all of the same actions available to them as basic workflows, including all the advanced actions.
 
 <div class="note-box note-box-info">
 
-If you add a custom workflow, and do not use the basic workflows, they won't show up by default the next time you edit the assessment. You can add them back in at any time using the **RESTORE BASIC WORKFLOWS** button.
+If you add a custom workflow and do not use the basic workflows, they won't show up by default the next time you edit the assessment. You can add them back in at any time using the **RESTORE BASIC WORKFLOWS** button.
 
 </div>
 
@@ -97,7 +97,7 @@ If you add a custom workflow, and do not use the basic workflows, they won't sho
 </figure>
 </div>
 
-The order matters, since the first workflow to match is the one that is processed. Use the drag handle on the right side of the workflow to drag the workflow up or down to re-arrange them.
+The order matters since the first workflow to match is the one that is processed. Use the drag handle on the right side of the workflow to drag the workflow up or down to re-arrange them.
 
 
 # Automation Recipes

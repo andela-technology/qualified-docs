@@ -34,7 +34,7 @@ When inviting a candidate to an Interact Session, you can prevent them from star
 
 ![Interact Dialog - Unlock Assessment](/images/hire/unlock-assessment.png)
 
-This feature puts the candidate into a waiting mode until you manually unlock the assessment, either on the candidate's assessment result page, or from within the Interact dialog.
+This feature puts the candidate into a waiting mode until you manually unlock the assessment, either on the candidate's assessment result page or from within the Interact dialog.
 
 ## Running an Interact Coding Session
 
@@ -62,14 +62,14 @@ To learn more about reviewing candidates, see [Candidate Details View](/for-team
 ## Troubleshooting 
 If you are starting an interactive session with someone else, and you get the message _"Unable to start an interactive session"_, the following tips can help determine the root cause, and hopefully get your session going quickly.
 
-Qualified uses Firebase to create it's real-time interactive sessions. Without access to the Firebase service, your session will not work.
+Qualified uses Firebase to create its real-time interactive sessions. Without access to the Firebase service, your session will not work.
 
 ### "Unable to load Firebase"
 
 This occurs when the library for Firebase is unable to be loaded. This is almost always caused by something like an ad-blocker preventing the client-side JavaScript library from loading.
 
-* Ensure that you aren't using an adblocker on the Qualified domain, or at least whitelist the `firebase-*.js` library.
-* Ensure you don't have any network-level firewalls preventing access to the Firebase javascript library.
+* Ensure that you aren't using an ad blocker on the Qualified domain, or whitelist the `firebase-*.js` library.
+* Ensure you don't have any network-level firewalls preventing access to the Firebase JavaScript library.
 
 ### "Unable to connect to Firebase"
 
@@ -78,15 +78,15 @@ This occurs when the library has loaded, but the application is unable to connec
 * Ensure that you aren't blocking access to `*.firebaseio.com`.
 * Ensure that you don't have any network-level firewalls preventing access to `firebaseio.com`.
 * Ensure that you don't have anything preventing socket connections for real-time data.
-* Check to see if there are any [known issues with the Firebase service](https://status.firebase.google.com/), which usually come back up on their own.
+* Check to see if there are any [known issues with the Firebase service](https://status.firebase.google.com/), which usually resolve on their own.
 * If none of the above are true, try reloading the page anyway, and see if it's a temporary outage.
 
 ### "Unknown"
 
 If an unknown error occurs, you can try the above, but focus on:
 
-* Check to see if there are any [known issues with the Firebase service](https://status.firebase.google.com/), which usually come back up on their own.
-* If none of the above are true, try reloading the page anyway, and see if it's a temporary outage.
+* Check to see if there are any [known issues with the Firebase service](https://status.firebase.google.com/), which usually resolve on their own.
+* If none of the above are true, try reloading the page and see if it's a temporary outage.
 
 ## Contact Support
 

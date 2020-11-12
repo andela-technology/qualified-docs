@@ -5,7 +5,7 @@ bodyClass: 'employer-focused'
 
 # My Account
 
-These pages enable you to update your log in information and user profile, and manage some application-wide settings.
+These pages enable you to update your login information and user profile and manage some application-wide settings.
 
 <div class="note-box">
 
@@ -15,15 +15,15 @@ If you have owner or manager rights on the Team account, you can [manage the tea
 
 # <span class="icon-user"/> Login Information
 
-Clicking on your name in the upper right, and choosing _Account Settings_, allows you to manage your log in information.
+Clicking on your name in the upper right and choosing _Account Settings_ allows you to manage your login information.
 
 ## Basics
 
-Here you can set your name, email, phone, title, and profile image.
+Here you can set your name, email, phone, title and profile image.
 
 ### Profile Image
 
-Set your profile image to stand out on the service.  Simply drag any image file to the dotted rectangle, and your image will upload automatically.
+Set your profile image to stand out on the service. Simply drag any image file to the dotted rectangle and your image will upload automatically.
 
 ## Password Log In
 

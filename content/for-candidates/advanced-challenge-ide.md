@@ -11,7 +11,7 @@ The code challenge solver provides an in-browser IDE for editing and running ass
 
 When you start a project code challenge, you'll be provided some instructions and a starting point for your solution.
 
-Once you've read the instructions, use the IDE to code your solution, by editing existing files and/or adding new files. Use the **RUN TESTS** button to verify your code, unless this is a web-only challenge without tests. For web-only challenges, use the **WEB PREVIEW** button to review your work.
+Once you've read the instructions, use the IDE to code your solution by editing existing files and/or adding new files. Use the **RUN TESTS** button to verify your code, unless this is a web-only challenge without tests. For web-only challenges, use the **WEB PREVIEW** button to review your work.
 
 You will be notified once you have successfully passed the test cases for the challenge. Once you are comfortable with your solution, use the **SUBMIT** button to move on to the next challenge or to submit your assessment.
 
