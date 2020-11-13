@@ -13,7 +13,7 @@ Instructions are an often overlooked but critical component to the challenge des
 - Instructions should be complete without sacrificing clarity and concision. 
 - Avoid typos and grammatical errors.
 - Use plot sparingly—prefer to directly state the coding task. Superfluous plot makes the candidate experience frustrating by increasing indirection in the requirements, introduces cultural biases and generally makes challenges more contrived. 
-- When you do use plot, prefer realistic scenarios. Examples include handling a Jira ticket, receiving an email, etc. The realism of the context will aid candidates into treating the task more like you would expect them to on the job. 
+- When you do use plot, prefer realistic scenarios. Examples include handling a Jira ticket, receiving an email, etc. The realism of the context can help candidates treat the task as they would on the job.
 - Avoid cultural-specific terms and scenarios and keep non-native English speakers in mind.
 - Use graphics sparingly: text and simple markdown/ASCII is clearest. Never use images of code.
 - Keep in mind browser and screen sizes when using HTML, tables and images.
