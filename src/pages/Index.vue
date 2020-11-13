@@ -107,6 +107,12 @@ export default {
                     title: 'Language Reference',
                     description: 'Learn more about the supported languages and frameworks on Qualified',
                 },
+                {
+                    id: 'api',
+                    path: '/integrations/custom-integrations/api',
+                    title: 'API Reference',
+                    description: 'Learn more about the Qualified API.',
+                },
                 // {
                 //     id: 'changes',
                 //     path: '/changes',

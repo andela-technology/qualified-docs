@@ -136,7 +136,7 @@ export default {
             });
 
             const elements = document.querySelectorAll(
-                '.content h2, .content h3, .content h4, .content h5, .content h6',
+                '[on-this-page] h2, [on-this-page] h3, [on-this-page] h4, [on-this-page] h5, [on-this-page] h6',
             );
 
             for(let i = 0; i < elements.length; i++) {
