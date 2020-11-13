@@ -8,7 +8,7 @@ The following best practices are taken directly out of our own experience with b
 
 ## Challenge Components
 ### Instructions
-Instructions are an often overlooked but critical component to the challenge design. It is tempting to write sparse instructions which don't take a lot of effort to write - but these are often vague or misleading and can negatively impact the effectiveness of the assessment. Here are some key things to keep in mind: 
+Instructions are an often overlooked but critical component to the challenge design. It is tempting to write sparse instructions which don't take a lot of effort to write—but these are often vague or misleading and can negatively impact the effectiveness of the assessment. Here are some key things to keep in mind: 
 
 - Instructions should be complete without sacrificing clarity and concision. 
 - Avoid typos and grammatical errors.

@@ -20,4 +20,4 @@ In addition to GFM, which already provides support for [fenced code blocks](http
 # Tips
 
 - We highly recommend that you provide language examples within the description to help clarify how the expected code might be used.
-- Fun back stories to the challenge can make things interesting, but try not to lean in to the story so much that the requirements get lost. Remember that the candidate or student is taking a test - they are likely already stressed by the idea of being graded as it is, so try to make their task as transparent as possible.
+- Fun back stories to the challenge can make things interesting, but try not to lean in to the story so much that the requirements get lost. Remember that the candidate or student is taking a test; they are likely already stressed by the idea of being graded as it is, so try to make their task as transparent as possible.

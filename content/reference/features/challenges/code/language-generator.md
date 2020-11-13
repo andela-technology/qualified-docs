@@ -20,7 +20,7 @@ One potential downside to these custom environments is that it may sometimes be 
 
 ## What is the Language Generator?
 
-The Language Generator is a tool that allows teams to design challenges with entry points, return values, and inputs - all through one YAML configuration file. This configuration file is then used to generate the challenge in every language that the generator supports.
+The Language Generator is a tool that allows teams to design challenges with entry points, return values, and inputs—all through one YAML configuration file. This configuration file is then used to generate the challenge in every language that the generator supports.
 
 That might sound pretty complicated. Let's break it down to a simple example to see how to use the generator.
 

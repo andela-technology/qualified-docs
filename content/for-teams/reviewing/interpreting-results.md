@@ -106,9 +106,9 @@ Qualified provides example test cases on most of our challenges. These can be us
 
 Our advanced code playback makes it possible to look into the programming style and thought process of your candidate.
 
-<div class="note-box note-box-info">
-<b>Quick Usage Summary:</b> You can simply use the play button to run the code, or you can click the bar at any point to see the code at that point. You can also check Key Events Only to focus on major events (ignoring most keystrokes).
-</div>
+:::tip Quick Usage Summary
+You can simply use the play button to run the code, or you can click the bar at any point to see the code at that point. You can also check Key Events Only to focus on major events (ignoring most keystrokes).
+:::
 
 The code playback can give you further insight in the following ways:
 
@@ -122,7 +122,7 @@ The code playback can give you further insight in the following ways:
 - They will show up in the code playback bar as a small circle with a “play” triangle (:arrow_forward:) inside it.
 - Did they refactor, or **clean up the code** at the end? As they worked?
 
-## Solution Review Examples
+## Solution Review Examples
 
 These are contrived just to highlight some common issues.
 

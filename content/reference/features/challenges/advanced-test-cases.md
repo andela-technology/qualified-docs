@@ -34,7 +34,7 @@ When writing properties, the properties are attached to the most recent Test Cas
 
 ##### What is a Test Case?
 
-Test cases are a group of one or more test assertions. Within the Qualified UI each test case shows up on its own line and indicates if it passed or failed. Different testing frameworks supported by Qualified, across different languages, will function differently - but they all output some concept of a test case. For behaviour driven frameworks such as RSpec, a test case is declared using `it` method calls, where as in a non-behaviour driven framework such as JUnit, a test case is defined using a `@Test` method.
+Test cases are a group of one or more test assertions. Within the Qualified UI each test case shows up on its own line and indicates if it passed or failed. Different testing frameworks supported by Qualified—across different languages—will function differently, but they all output some concept of a test case. For behaviour driven frameworks such as RSpec, a test case is declared using `it` method calls, where as in a non-behaviour driven framework such as JUnit, a test case is defined using a `@Test` method.
 
 ##### How to properties get used?
 

@@ -24,11 +24,9 @@ From the assessment details page, click the **ADD A WORKFLOW** button. This will
 
 Workflows work by matching the against the score and/or timing of the assessment. They are matched in a top-down order as you see them on the page, and only the first workflow to match is processed.
 
-<div class="note-box note-box-info">
-
+:::tip Example
 For example, if the top workflow say _WHEN Score is at least 50%_, and the second says _WHEN Score is at least 25%_, the second workflow will **never** be processed.
-
-</div>
+:::
 
 ### Default Workflow
 
@@ -78,11 +76,9 @@ Click on **ADD CUSTOM WORKFLOW** to insert a new, custom workflow. These are mor
 
 You can give your custom workflow a name to help you keep track of the purpose of it. Custom workflows have the all of the same actions available to them as basic workflows, including all the advanced actions.
 
-<div class="note-box note-box-info">
-
+:::tip
 If you add a custom workflow, and do not use the basic workflows, they won't show up by default the next time you edit the assessment. You can add them back in at any time using the **RESTORE BASIC WORKFLOWS** button.
-
-</div>
+:::
 
 ### Rearranging Workflows
 
@@ -123,11 +119,9 @@ You can easily approve, reject, and add labels to candidates based on score.
     3. Click _Show Advanced Conditions & Actions_
     4. Enable _Add to labels_ and enter any labels you want to add
     
-<div class="note-box note-box-warning">
-
-**Note** Only the first matching workflow is processed. If you want to include the same label in the default workflow and in an approve or reject workflow, you'll need to copy it into each step.
-
-</div>
+:::note
+Only the first matching workflow is processed. If you want to include the same label in the default workflow and in an approve or reject workflow, you'll need to copy it into each step.
+:::
 
 ### Integrate Qualified into a Hiring Process
 

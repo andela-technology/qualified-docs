@@ -4,15 +4,13 @@ order: 2
 ---
 
 # Sending Assessments
-There are two ways in which candidates get introduced into the system. Typically, 
-candidates are invited to a specific assessment. The candidate will receive an email with a secure
-link they can use to start the assessment. A password is not required to start the assessment.
+There are two ways in which candidates get introduced into the system. Typically, candidates are invited to a specific assessment. The candidate will receive an email with a secure link they can use to start the assessment. A password is not required to start the assessment.
 
-The 2nd way is to setup an assessment to be public. Through the public link
-you can send the URL alone, and have candidates start an assessment without an invitation. This bypasses using invitations completely and allows candidates to register themselves. 
+The second way is to set an assessment to be public. Through the public link you can send the URL alone, and have candidates start an assessment without an invitation. This bypasses using invitations completely and allows candidates to register themselves. 
 
-It is highly recommended that you keep your assessment private, and invite each candidate you wish to give access to.
-This will protect your assessment, as well as allow you to track if the candidate opens the email and clicks the link. 
+:::tip
+It is highly recommended that you keep your assessment private, and invite each candidate you wish to give access to. This will protect your assessment, as well as allow you to track if the candidate opens the email and clicks the link.
+::: 
 
 ## Using Qualified's Invite System
 
@@ -43,11 +41,10 @@ This dialog contains several features, depending on your account configuration, 
 - The ability to assign candidates or students to a particular team member.
 - The ability to add a candidate to one or more labels.
 
-<div class="note-box not-box-info">
-**Invite Without Sending an Email**  
+:::info Invite Without Sending an Email  
 You can disable sending the email, by unselecting _Send invitation to candidate now_.
 This can be useful if you want to track invited participants, but don't want them to start yet. You can also use this if you'd rather send your own custom email. In this case, you can copy the Invite & Practice links from within the candidate's details.
-</div>
+:::
 
 
 ### From the Assessment Page

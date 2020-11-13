@@ -96,22 +96,17 @@ Once you've answered all the questions use the button at the bottom to move on t
 
 After you've successfully completed a code or Q&A challenge, you can quickly move on to the next challenge by clicking the **NEXT CHALLENGE** button. If this is the last challenge, the button will switch to **REVIEW ASSESSMENT**, taking you to the final step.
 
-<div class="note-box">
-
+:::tip
 For Project Code Challenges, the button to move on is always labeled **SUBMIT**
-
-</div>
+:::
 
 ## 3. Submitting Your Assessment Solutions
 
 Once you've completed the challenges, you can review your assessment solutions, and submit it.  You will also be given a chance to provide feedback on the assessment and assessment process.
 
-<div class="note-box note-box-warning">
-
-**IMPORTANT NOTE**  
+:::warning IMPORTANT NOTE  
 Submitting the solutions is a final step. Once submitted, you cannot go back and make changes to your code or Q&A answers unless the company providing the assessment resets your submission for you.
-
-</div>
+:::
 
 ### Per-Challenge Notes
 
