@@ -88,7 +88,7 @@ export default {
           return this.resource.parameters.filter(p => p.name.indexOf('data.') !== 0)
       },
       bodyParams () {
-          return this.resource.parameters.filter(p => p.name.indexOf('data.') === 0)
+          return sortBy(this.resource.parameters.filter(p => p.name.indexOf('data.') === 0), 'name')
       },
       responseFields () {
           return sortBy(this.resource['response_fields'], 'name')

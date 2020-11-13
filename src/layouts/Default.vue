@@ -21,7 +21,6 @@
                 <div
                     class="w-full pb-24"
                     :class="{'pl-0 lg:pl-12 lg:w-3/4 article-content': !!$page}"
-
                 >
                     <slot/>
                 </div>
@@ -30,7 +29,7 @@
 
         </div>
 
-        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden">
+        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden" v-if="$page">
             <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
                     @click="sidebarOpen = ! sidebarOpen">
                 <XIcon v-if="sidebarOpen"/>
@@ -228,8 +227,10 @@ body {
     }
     
     .sidebar-container {
-        @apply fixed px-4 pt-4 mt-3 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
+        @apply fixed px-4 pt-4 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
+        max-width: 320px;
         transform: translateX(-100%);
+        margin-top: 11px;
 
         &.sidebar-container--open {
             transform: translateX(0);
@@ -237,6 +238,7 @@ body {
 
         @screen lg {
             @apply w-1/4 mt-0 pt-12 px-0 bg-transparent top-0 bottom-auto inset-x-auto sticky z-0;
+            margin-top: 0;
             transform: translateX(0);
         }
     }
