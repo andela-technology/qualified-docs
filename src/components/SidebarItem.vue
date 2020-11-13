@@ -138,8 +138,13 @@ export default {
         }
     }
 
-    .sidebar-item--depth-3 {
-        
+    /* HACK: TODO, light theme shows dark links, need to fix underlying issue */
+    .sidebar-item--depth-1, .sidebar-item--depth-3 {
+        @media (max-width: 1023px) {
+            > a {
+                color: white;
+            }
+        }
     }
 
     .sidebar-item--depth-2:last-child {

@@ -7,9 +7,9 @@
             </div>
 
             <div class="order-1 w-full md:w-2/3">
-                <div class="markdown-page__content" v-html="$page.markdownPage.content"/>
+                <div class="markdown-page__content" v-html="$page.markdownPage.content" on-this-page/>
 
-                <api-ref v-if="$page.markdownPage.apiRef" class="markdown-page__content" />
+                <api-ref v-if="$page.markdownPage.apiRef" class="markdown-page__content" on-this-page />
 
                 <div class="markdown-page__end">
                     <NextPrevLinks/>

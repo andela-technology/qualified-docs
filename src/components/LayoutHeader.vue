@@ -20,8 +20,7 @@
                     </ClientOnly>
                 </div>
 
-                <div class="flex items-center justify-end px-2 sm:px-4">
-
+                <div class="layout-header__right-links">
                     <g-link
                         to="/"
                         class="hidden sm:flex items-center p-1 font-medium nav-link docs-home-link text-white hover:text-brand-primaryLighter whitespace-no-wrap"
@@ -102,15 +101,15 @@ export default {
     }
 
     .layout-header__left-links {
-        @apply flex flex-row px-2;
+        @apply flex flex-row mr-2 -ml-2;
 
-        a {
-            @apply mr-6;
+        @media sm {
+            @apply ml-0;
         }
+    }
 
-        a:last-child {
-            @apply mr-8;
-        }
+    .layout-header__right-links {
+        @apply flex items-center justify-end;
     }
 
     a,

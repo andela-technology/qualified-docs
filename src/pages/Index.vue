@@ -2,13 +2,13 @@
     <Layout>
         <div class="pt-8 md:pt-16">
             <div class="flex flex-col items-center">
-                <div class="flex flex-col items-center mb-2 text-ui-primary">
+                <div class="flex flex-col items-center text-ui-primary mb-4">
                     <FullLogo :height="40"/>
                 </div>
-                <h1 class="text-2xl text-center">
+                <h1 class="text-xl lg:text-xl2 text-center">
                     Documentation &amp; Developer Portal
                 </h1>
-                <p class="text-lg mt-2 font-medium text-center max-w-screen-lg text-fade">
+                <p class="text-lg mt-2 mb-10 lg:mb-4 font-medium text-center max-w-screen-lg text-fade">
                     How can we help you use Qualified?
                 </p>
             </div>
@@ -106,6 +106,12 @@ export default {
                     path: '/reference/languages',
                     title: 'Language Reference',
                     description: 'Learn more about the supported languages and frameworks on Qualified',
+                },
+                {
+                    id: 'api',
+                    path: '/integrations/custom-integrations/api',
+                    title: 'API Reference',
+                    description: 'Learn more about the Qualified API.',
                 },
                 // {
                 //     id: 'changes',
