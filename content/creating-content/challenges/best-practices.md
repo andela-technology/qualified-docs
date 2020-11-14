@@ -4,16 +4,16 @@ title: Best Practices
 ---
 # Challenge Development Best Practices
 
-The following best practices are taken directly out of our own experience with building challenges.
+The following best practices are taken from our experience building challenges.
 
 ## Challenge Components
 ### Instructions
-Instructions are an often overlooked but critical component to the challenge design. It is tempting to write sparse instructions which don't take a lot of effort to write—but these are often vague or misleading and can negatively impact the effectiveness of the assessment. Here are some key things to keep in mind: 
+Instructions are an often overlooked but critical component to the challenge design. It is tempting to write sparse instructions which don't take a lot of effort to write, but these are often vague or misleading and can negatively impact the effectiveness of the assessment. Here are some key things to keep in mind: 
 
 - Instructions should be complete without sacrificing clarity and concision. 
 - Avoid typos and grammatical errors.
-- Use plot sparingly—prefer directly stating the coding task. Superfluous plot makes the candidate experience frustrating by increasing indirection in the requirements, introduces cultural biases and generally makes challenges more contrived. 
-- When you do use plot, using **real-world scenarios** to setup the context is best. Handling a Jira ticket, receiving an email, etc. The realism of the context will aid candidates into treating the task more like you would expect them to on the job. 
+- Use plot sparingly—prefer to directly state the coding task. Superfluous plot makes the candidate experience frustrating by increasing indirection in the requirements, introduces cultural biases and generally makes challenges more contrived. 
+- When you do use plot, prefer realistic scenarios. Examples include handling a Jira ticket, receiving an email, etc. The realism of the context can help candidates treat the task as they would on the job.
 - Avoid cultural-specific terms and scenarios and keep non-native English speakers in mind.
 - Use graphics sparingly: text and simple markdown/ASCII is clearest. Never use images of code.
 - Keep in mind browser and screen sizes when using HTML, tables and images.
@@ -37,14 +37,14 @@ Instructions are an often overlooked but critical component to the challenge des
 - Make challenges fun to the extent possible and appropriate (or at least engaging).
 
 ### Establishing Process
-#### Identifying time limitations
+#### Identifying time limits
 - Time is one of the most critical factors in creating a challenge. Generally speaking, try to be as succinct as possible: the idea is to gain as much actionable information from the candidate in as short a time as possible.
 - Be aware that time limits are one of the most significant sources of stress for candidates. Most real-world work isn't speed-coding so time limits should only be present to keep the playing field fair among candidates and respect the time needs of all parties (candidate and reviewer).
-- Consider time-boxing candidates by task or providing explicit estimates and setting reasonable expectations. Providing a roadmap of tasks can ease. Try to be generous with respect to imposed time limits.
+- Consider time-boxing candidates by task or providing explicit estimates and setting reasonable expectations.
 #### What can realistically be tested?
 In addition to time limitations, it's not always possible or ideal to test everything in code. Quizzes and short answer or written responses are underrated and should be used in most assessments.
 #### What can be automatically tested?
-Make clear distinctions between what you expect to be manually versus automatically tested and build the challenge accordingly.
+Make clear distinctions between what you expect to be manually or automatically tested and build the challenge accordingly.
 #### Utilizing reviews and rubrics for what cannot be automatically tested
 Keep rubrics simple and clearly thought-out. Vetting is an important part of ensuring relevance for each rubric item.
 ### Identifying learning goals & priorities
