@@ -34,7 +34,7 @@
      <api-ref-container title="Example Request" default-closed>
         <prism language="bash" :code="curl"/>
      </api-ref-container>
-     <api-ref-container title="Example Response" default-closed v-if="request.response_body">
+     <api-ref-container title="Example Response JSON" default-closed v-if="request.response_body">
          <prism language="javascript" :code="(request.response_body || '').replace(/^ */, '')" />
      </api-ref-container>
      <api-ref-container title="Notable Response Fields" v-if="resource.response_fields.length" default-closed>
