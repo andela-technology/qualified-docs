@@ -39,6 +39,7 @@ These methods pertain specifically to a candidate's assessment outcome so they w
 
 - **Assessment Result Started** (assessment_result_started) - This event will fire when a candidate selects their language and begins their challenge on an assessment result.
 - **Assessment Result Submitted** (assessment_result_submitted) - This event will fire when a candidate has completed their assessment and clicks submit. Once this has occurred, the candidate can no longer update the assessment result.
+- **Assessment Result State Changed** (assessment_result_state_changed) - This event will fire when any of the following state changes occur on the assessment result: `invited`, `opened`, `started`, `submitting`, `submitted`, `terminated`. When using this event, you should not use `assessment_result_started` or `assessment_result_submitted` as it would be redundant.  
 
 :::important Deprecation Notice
 `team_candidate_started_assessment` and `team_candidate_submitted_assessment` events are deprecated. If you are currently using these events, please

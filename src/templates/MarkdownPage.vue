@@ -41,6 +41,7 @@ query ($id: ID!) {
         path
         title
         order
+        private
       }
     }
   }
@@ -161,7 +162,7 @@ export default {
     h3 + h3 {
         @apply border-none -mt-20;
     }
-    p + h5 {
+    p + h5, h3 + h4 {
         @apply -mt-16;
     }
 

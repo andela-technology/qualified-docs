@@ -18,11 +18,13 @@ export default {
     data() {
         return {
             expanded: [],
+            private: window.location.search.indexOf('private') > 0
         };
     },
     computed: {
         pages() {
-            return this.$page.allMarkdownPage.edges.map(edge => edge.node);
+            return this.$page.allMarkdownPage.edges.map(edge => edge.node)
+                .filter(page => !page.private || this.private);
         },
         currentPage() {
             return this.$page.markdownPage;

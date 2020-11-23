@@ -1,6 +1,7 @@
 ---
 order: 7
 title: For Certification
+private: true
 ---
 
 # Qualified + Certification
