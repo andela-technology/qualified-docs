@@ -165,7 +165,7 @@ html[lights-out] {
 
 * {
     transition-property: background-color, border-color;
-    transition-duration: 200ms;
+    transition-duration: 0ms;
     transition-timing-function: ease-in-out;
 }
 
