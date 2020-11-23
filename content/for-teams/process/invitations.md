@@ -26,6 +26,8 @@ There are several advantages to inviting the developer through the Qualified ema
 - **Easier Login For Developers:** The developer will be given a special link that makes it quicker for them to get started.
 - **Support Invite-Only Assessments:** Public-URL assessments can be shared between friends. If you use Qualified to invite your developer, you can configure an assessment to be invite-only.
 
+In addition, if you are an API user, the [invitation API](/integrations/custom-integrations/api/#assessment-invitations-invite-candidates) can be used even if you do not intend to send emails directly through Qualified. 
+
 ### From Anywhere
 
 ![Invite Candidates Dialog](/images/hire/invite-dialog.png)
