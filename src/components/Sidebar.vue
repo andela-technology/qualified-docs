@@ -18,7 +18,7 @@ export default {
     data() {
         return {
             expanded: [],
-            private: window.location.search.indexOf('private') > 0
+            private: process.isClient && window.location.search.indexOf('private') > 0
         };
     },
     computed: {
