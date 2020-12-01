@@ -1376,6 +1376,26 @@
       "required": true,
       "name": "id",
       "description": "The ID of the assessment result to reopen"
+    },
+    {
+      "type": "Boolean",
+      "name": "send_email",
+      "description": "True if an email should be sent to the candidate informing them that the assessment was reopened."
+    },
+    {
+      "type": "String",
+      "name": "email_message",
+      "description": "An optional custom email message to send to the candidate."
+    },
+    {
+      "type": "Integer",
+      "name": "enforced_time_limit",
+      "description": "A value indicating the number of minutes to allow the result to be worked on once it is restarted."
+    },
+    {
+      "type": "Boolean",
+      "name": "reset_challenge_timers",
+      "description": "True if any challenge specific timers on the assessment result should be reset."
     }
   ],
   "response_fields": [],
