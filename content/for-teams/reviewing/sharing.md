@@ -1,6 +1,7 @@
 ---
 title: Sharing & Exporting
 order: 3
+private: true
 ---
 # Sharing & Exporting
 
