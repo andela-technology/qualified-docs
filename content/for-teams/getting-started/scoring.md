@@ -46,8 +46,6 @@ Qualified provides an overall rating, and a set of individual qualities that can
 
 Reviews do not count as part of the correctness score, instead you will see a green, yellow or red dot next to the score within the candidates list, used to represent each reviewer's overall rating.
 
-You can read more about interpreting assessments results within our reference docs.
-
 ### Objective Ratings
 
 While subjective ratings allow for free-form feedback and are great for communicating overall opinions, they do not provide a consistent process for measuring qualitative aspects of a work sample. If you are looking to have your reviewers provide clear messaging on how well a candidate performed within specific areas, then you will want to define a rubric that guides different reviewers towards leaving consistent and objective feedback.
@@ -64,19 +62,21 @@ The Signals system is a new set of features currently in beta. If you are intere
 :::
 
 ### What are Signals?
-The Signals system is based on the idea that different aspects of an assessment can be used to signal different things about a candidate. The more signals that candidate meets expectations on, the more likely they are high performer. Signals are carefully selected to relate to the job role being assessed for, and can be targeted.
+The Signals system is based on the idea that different aspects of an assessment can be used to signal different things about a candidate. The more criterion-related signals that a candidate meets expectations on, the more likely they are high performer. Signals are carefully selected to relate to the job role being assessed for.
 
-A signal is a value ranging from 0–10, with 10 indicating that the candidate reached full expectations. There are currently two key types of signals, though more will be introduced later. They are:
+A signal is a value ranging from 0–10, with 10 indicating that the candidate reached full expectations. There are currently two key types of signal sources, though more will be introduced later. They are:
 
 - **Automated score**, such as "correctness score"
-- **Objective rating** via a human scored rubric 
+- **Objective rating** via a human scored rubric
 
-### Competencies
+These signal sources can be mapped towards different skills and objectives, which help to build a comprehensive profile about a candidate. 
+
+### Skills & Objectives
 Signals are fundamentally about establishing a candidate's competency in multiple areas. For example, you may utilize correctness scores of only a portion of unit tests to determine how well a candidate is able to complete the requirements of a task, while other unit tests may be related to determining how well a candidate thinks about potential edge cases that weren't called out in the requirements. You might supplement these edge case unit tests with some qualitative rubrics, to score the candidate on their ability to write quality code that is both readable and robust.
 
 ### Signal Mappings
 
-The Signals system is flexible in how competencies can be scored, through the use of mappings. While our Qualified Library challenges come pre-mapped to specific competencies, you may wish to customize this for your own specific competency models. Our team can work with you to support the models that make the most sense for your process.  
+The Signals system is flexible in how skills and objectives can be scored, through the use of mappings. While our Qualified Library challenges come pre-mapped to specific skills and objectives, you may wish to customize this based off of your own specific competency models. Our team can work with you to support the models that make the most sense for your process.  
 
 ------
 
