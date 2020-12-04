@@ -83,7 +83,7 @@ Challenges within our library sometimes get updates. If you import a challenge f
 Keep in mind that your subscription level may not have access to every challenge within the library. If you are on a trial, you will only have access to small subset of the complete library.  
 
 ## Team Library
-This is where you own challenges are kept. Any challenge you import from the Qualified library, or any challenge you create from scratch or from a template, will be kept here. All team members have access to this library, and to each challenge created within it.
+This is where your own challenges are kept. Any challenge you import from the Qualified library, or any challenge you create from scratch or from a template, will be kept here. All team members have access to this library, and to each challenge created within it.
 
 ## Challenge Templates
 When creating a new challenge, you will be given the option to create it from a template. Templates are starting points to help you get started with a specific language or technology. Classic Code Challenges and Q&A challenges also have bare templates, with nothing added to them—if you wish to completely start from scratch. 
