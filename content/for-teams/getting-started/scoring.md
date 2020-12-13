@@ -30,7 +30,7 @@ The two formats Qualified offers for delivering a coding challenge, Classic Code
 #### Q&A Challenges
 Quiz Challenges contain individual questions that each contribute one point by default to the challenge score. Total points are divided by earned points to calculate correctness score. For example, if there are two questions—one worth 2 points and the other worth 1—then the questions will count for 67% and 33% of the total score respectively.
 
-Each quiz question can also allow partial scores, which means that only a portion of the total points are earned based on the candidate's answers. For example, there could be a multiple choice question that asks for 4 choices to be selected out of 10. Each correct choice is assigned one point. If the candidate answers 2 of the choices correctly then they will only earn 2 points instead of 4.
+Each quiz question can also allow partial scores, which means that only a portion of the total points are earned based on the candidate's answers. For example, there could be a multiple choice question that asks for 4 choices to be selected out of 10. Each correct choice is assigned one point. If the candidate answers 2 of the choices correctly, then they will only earn 2 points instead of 4.
 
 You can assign choices different weights. In this way, particular responses to a question can be worth more or less than others in determining the total score for the question.
 
