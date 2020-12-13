@@ -44,7 +44,7 @@ Subjective ratings don't require a rubric and are simply a team member's opinion
 
 Qualified provides an overall rating and a set of individual qualities that can be rated per challenge. This allows each reviewer to provide subjective feedback and insights. Additionally, an overall approval or rejection can be applied to an assessment result.
 
-Reviews do not count as part of the correctness score. Instead you will see a green, yellow or red dot next to the score within the candidates list which represents each reviewer's overall rating.
+Reviews do not count as part of the correctness score. Instead, you will see a green, yellow or red dot next to the score within the candidates list which represents each reviewer's overall rating.
 
 ### Objective Ratings
 While subjective ratings allow for free-form feedback and are great for communicating overall opinions, they do not provide a consistent process for measuring qualitative aspects of a work sample. If you are looking to have your reviewers provide clear feedback on candidate performance within pre-established categories, you can define a rubric that guides reviewers to provide consistent and objective feedback.
