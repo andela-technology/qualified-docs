@@ -61,7 +61,7 @@ The Signals system is a new set of features currently in beta. If you are intere
 :::
 
 ### What are Signals?
-The Signals system is based on the idea that different aspects of an assessment can be used to identify specific qualities in a candidate. The more criterion-related signals that a candidate meets expectations on, the more likely they are high performer. Signals are carefully selected to relate to the job role being assessed for.
+The Signals system is based on the idea that different aspects of an assessment can be used to identify specific qualities in a candidate. The more criterion-related signals that a candidate meets expectations on, the more likely they are high performers. Signals are carefully selected to relate to the job role being assessed for.
 
 A signal is a value ranging from 0–10, with 10 indicating that the candidate reached full expectations. There are currently two key types of signal sources, though more will be introduced later. They are:
 
