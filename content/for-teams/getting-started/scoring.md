@@ -78,7 +78,7 @@ Mappings enable the Signals system to flexibly score skills and objectives. Whil
 
 ------
 
-We have only touched briefly on signals. Since this is an advanced topic, we will not get into too much depth on it now. If you do wish to dive in, you can [jump to our in-depth article on signals](../../../creating-content/scoring/signal-scoring). 
+We have only touched briefly on signals. Since this is an advanced topic, we will not get into too much depth on it now. If you do wish to dive in, you can [jump to our in-depth article on signals](/creating-content/scoring/signal-scoring).
 
 Otherwise, now that we have covered the conceptual basics of the system, let's work on getting your account fully set up.
        
