@@ -10,27 +10,28 @@ tags:
 
 Qualified supports the RSpec behavior-driven testing framework, which uses Ruby.
 
-These notes are adopted from [rspec-core.](http://rspec.info/documentation/3.3/rspec-core/)
+These notes are adapted from [rspec-core](http://rspec.info/documentation/3.3/rspec-core/).
 
 ## Why Ruby/RSpec?
 
-Since SQL is a query language it cannot be used to write unit tests. Ruby was chosen instead
-to execute the unit tests. Ruby and RSpec are both very easy to learn. Our usage of Ruby also allows you to setup
-any initial data within the database, support special visualizations and advanced output, etc.
-
+Most Qualified challenges are tested using the same language as the solution. However, SQL is a query language which is not a feasible option for writing unit tests with. With this in mind, Qualified offers Ruby and the RSpec testing framework to execute and test SQL. Ruby and RSpec are easy to use and allow you to set up database state programmatically, fetch and generate data, create test cases and render tables, visualizations and advanced output.
 
 ## RSpec SQL custom utilities
 
-A small set of utility methods and classes have been provided to make testing and displaying SQL queries easier within
-Ruby. These utility methods are available both within the Preloaded Code (data setup) and Test Cases.
+A small set of utility methods and classes have been provided to make testing and displaying SQL queries easy within
+Ruby. These utility methods are available from any file in the runner.
 
 - `$sql` is a global variable which contains the user's SQL solution
-- `run_sql` is a method that will run the user's query, execute any non-SELECT statements and print and return any result sets from SELECT statements.
-- `compare_to` is a method which can be used to compare the candidate's submitted query to your own, which will then auto generate a bunch of specs for you based off of the expected query results.
+- `run_sql` is a method that will run the user's query, execute any non-SELECT statements and print and return any result sets from SQL `SELECT` statements.
+- `compare_with` is a method which compares the candidate's submitted query to the reference query and auto-generates a test suite based on the expected query results.
 
 ### [Sequel](http://sequel.jeremyevans.net)
 
-We utilize the [Sequel](http://sequel.jeremyevans.net) gem to communicate with the database driver.
+We use the [Sequel](http://sequel.jeremyevans.net) gem to communicate with the database driver.
+
+### [Daff](https://github.com/paulfitz/daff)
+
+We use the [Daff](https://github.com/paulfitz/daff) gem to generate HTML tables for rendering on the code runner user interface. These tables provide feedback to the candidate and allow them to interact with the query results.
 
 ## Basic Example
 
@@ -42,7 +43,6 @@ RSpec uses the words "describe" and "it" so we can express concepts like a conve
 ```
 
 ```ruby
-
 # prints the user's query to the UI and returns the results as a Sequel dataset.
 results = run_sql
 
@@ -53,13 +53,13 @@ describe "Query" do
 end
 ```
 
-The describe method creates an `ExampleGroup`. Within the block passed to describe you can declare examples using the `it` method.
+The describe method creates an `ExampleGroup`. Within the block passed to `describe` you can declare examples using the `it` method.
 
-Under the hood, an example group is a class in which the block passed to describe is evaluated. The blocks passed to it are evaluated in the context of an instance of that class.
+Under the hood, an example group is a class in which the block passed to `describe` is evaluated. The blocks passed to `it` are evaluated in the context of an instance of that class.
 
-## compare_to(expected)
+## `compare_with(expected)`
 
-The compare_to method takes an `expected` param, which is your own query. You can embed your own query within the preloaded code like so:
+The `compare_with` method takes an `expected` parameter, the reference query. You can embed this reference query within the preloaded code like so:
 
 ```ruby
 def expected
@@ -69,27 +69,25 @@ def expected
 end
 ```
 
-:::note
-Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
-:::
+<div class="note-box note-box-warning">
+**Note:** Preloaded code is visible to candidates programmatically since it exists in the `setup.rb` file in the workspace. You can disable sample test cases or remove `setup.rb` when run to prevent the candidate from accessing its source.
+</div>
+<div class="note-box note-box-warning">
+**Note:** Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
+</div>
 
-Then within your Test cases section you can simply add this:
+Within your Test cases section, invoke `compare_with`, passing in your `expected` function's return value:
 
 ```ruby
-compare_to expected
+compare_with(expected())
 ```
 
-What this will do is compare the expected query results to the results of the candidate's query. It will also print out both
-the actual results as well as the expected, making it much easier for a candidate to see what is expected of them.
+When `compare_with` runs, `describe`/`it` RSpec blocks will automatically be generated for based on the expected data which provide feedback to the candidate. Assertions related to rows and columns (such as row count) are auto-generated by `compare_with`.
 
-When the results are compared, `describe/it` RSpec blocks will automatically be generated for you based off of the expected data,
-allowing you to provide meaningful feedback to the candidate telling them where their query went wrong. Specs will be auto-generated
-for each data column returned, as well as a set of specs related to rows (such as row count).
-
-You can also extend the generated specs. For example:
+You can also extend the generated specs by providing a block. For example:
 
 ```ruby
-compare_to expected do
+compare_with expected do
   rows do
     it "should have movie titles ordered alphabetically" do
       expect(actual.first[:title]).to be < actual.last[:title]
@@ -101,3 +99,4 @@ end
 # Learn More
 
 [You can learn how to use it on the RSpec Website](http://rspec.info/).
+
