@@ -532,7 +532,7 @@
     {
       "type": "Boolean",
       "markdown": "<p>Set to false if you do not wish to send an invitation email. This can be useful for when you simply want to use the invitation_url returned by this request, and send that URL on your own.</p>",
-      "name": "data.send_invite_to_candidate",
+      "name": "data.send_email_to_candidate",
       "description": "Set to false if you do not wish to send an invitation email. This can be useful for when you simply want to use the invitation_url returned by this request, and send that URL on your own."
     },
     {

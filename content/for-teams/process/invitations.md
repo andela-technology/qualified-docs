@@ -80,13 +80,17 @@ To do so, simply click "Invite Candidates" from the top right of the app, and co
 ### Reopening Assessment Results
 Sometimes a candidate may have submitted their assessment that you now wish to reopen. This allows the candidate to continue where they left off. You can either reopen the assessment from the candidate details page, or by simply re-inviting them to the assessment. The invitation dialog will always notify you if a candidate has already submitted the assessment and give you the option to cancel or continue.    
 
-## Public Assessments
-If you wish to allow any candidate to register themselves for an assessment, without first needing to be directly invited, then you can set an assessment to be public.  
+## Public Assessment Links
+If you wish to allow any candidate to register themselves for an assessment, without first needing to be directly invited, then you can set an assessment to be public. An assessment which is made public will have a link to it that you can freely share to candidates. No invitation will be required.   
 
 :::warning Billing Considerations
 If you open up your assessment to be public, then anyone with the public URL will be able to take your assessment. This could result in unexpected costs as you may end up being billed for more candidates than you initially expected. Please keep this in mind when using this method, and protect the URL if you can.
 
 As a reminder, assessments are only considered billable once a candidate has submitted at least one challenge on an assessment.  
+:::
+
+:::important Security Considerations
+Since a public link isn't specific to a candidate, you will have limited options in how you restrict access to the assessment from a time-based perspective. See below about controlling access to assessments.
 :::
 
 ### Enabling
@@ -117,7 +121,7 @@ Once you have completed the assessment we will be in touch.
 
 Best,
 [Your Company Name] 
-:::
+::: 
 
 ## Notifications
 
