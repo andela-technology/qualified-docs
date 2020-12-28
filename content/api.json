@@ -620,7 +620,7 @@
     {
       "request_method": "POST",
       "request_path": "/v1/assessment_invitations/invite_candidates",
-      "request_body": "{\"data\":{\"candidates\":[\"George@place.com\"],\"assessment_id\":\"5faf38d3a54d750f45ff3b0f\",\"first_name\":\"George\",\"last_name\":\"Smith\",\"send_invite_to_candidate\":true}}",
+      "request_body": "{\"data\":{\"candidates\":[\"George@place.com\"],\"assessment_id\":\"5faf38d3a54d750f45ff3b0f\",\"first_name\":\"George\",\"last_name\":\"Smith\",\"send_email_to_candidate\":true}}",
       "request_headers": {
         "Content-Type": "application/json",
         "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWYzOGQzYTU0ZDc1MGY0NWZmM2IwYyIsImlkIjoiNWZhZjM4ZDNhNTRkNzUwZjQ1ZmYzYjBkIiwic2VjcmV0IjoiT3ZRWld3PT0ifQ.v7XQ5xGSKCXbdn0xYoisRWHDnK9BlBVMYdPXLQbEb5c"
