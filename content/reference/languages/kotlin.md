@@ -16,7 +16,7 @@ Qualified supports Kotlin version 1.3.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Kotlin environment supports the following testing frameworks:
 

@@ -17,7 +17,7 @@ Qualified supports [Go 1.12](https://golang.org/doc/go1.12).
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Go environment supports the following testing frameworks:
 

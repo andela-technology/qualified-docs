@@ -16,7 +16,7 @@ Qualified supports PHP 7.0 and 7.4.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our PHP environment supports the following testing frameworks:
 

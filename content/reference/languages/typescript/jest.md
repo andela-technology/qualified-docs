@@ -32,13 +32,13 @@ describe('Example', () => {
 });
 ```
 
-## A note on Jest's exit code behavior in [Project Code Challenges](/for-teams/challenges/multi-file-code)
+## A note on Jest's exit code behavior in [Project Code Challenges](/reference/features/challenges/multi-file-code)
 
-When other test suites for TypeScript such as [Mocha](/reference/languages/typescript/mocha_tdd) encounter a file that fails to compile, the runner will fail the entire submission automatically. Jest's behavior is different: when a file fails to compile, the test cases inside that file are disregarded from a submission scoring standpoint, but other files in the submission may still be evaluated and produce successful assertions. This can lead to false positives for scoring candidates.
+When other test suites for TypeScript such as [Mocha](/reference/languages/typescript/mocha-tdd) encounter a file that fails to compile, the runner will fail the entire submission automatically. Jest's behavior is different: when a file fails to compile, the test cases inside that file are disregarded from a submission scoring standpoint, but other files in the submission may still be evaluated and produce successful assertions. This can lead to false positives for scoring candidates.
 
 The most direct way to resolve this is to consolidate all submission tests into one `.ts` file and disable candidate-visible test `.ts` files from being included with the submission. When the submission consists of the single file, its exit code status will replicate the all-or-nothing scoring other test suites offer upon compilation errors.
 
-Visit the [project code challenges page](/for-teams/challenges/multi-file-code) to learn more about selecting which files to send to the code runner on submission.
+Visit the [project code challenges page](/reference/features/challenges/multi-file-code) to learn more about selecting which files to send to the code runner on submission.
 
 # Learn More
 

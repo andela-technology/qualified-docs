@@ -67,7 +67,7 @@ The following Python packages are installed:
 
 ### Python 3.7
 
-Since Python 3.7, we have presets for different kinds of challenges. Use the Run Configuration menu in [project code challenge](/for-teams/challenges/multi-file-code) mode to select a preset.
+Since Python 3.7, we have presets for different kinds of challenges. Use the Run Configuration menu in [project code challenge](/reference/features/challenges/multi-file-code) mode to select a preset.
 
 #### Default (no preset)
 
@@ -108,7 +108,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 
 #### Django (`django` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `django`: `2.2.1`
 
@@ -160,11 +160,11 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 
 #### Django (`django` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `django`: `3.0.8`
 
-# Testing
+## Testing
 
 Our Python environment supports the following testing frameworks:
 

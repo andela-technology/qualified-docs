@@ -8,7 +8,7 @@ tags:
 
 # Qualified Testing Framework
 
-Qualified provides a lightweight, custom testing framework for JavaScript that makes it easy to build and take a challenge.  When creating a challenge, you can choose to use [Mocha BDD](/reference/languages/javascript/mocha_bdd) and [Mocha TDD](/reference/languages/javascript/mocha_tdd) instead.
+Qualified provides a lightweight, custom testing framework for JavaScript that makes it easy to build and take a challenge.  When creating a challenge, you can choose to use [Mocha BDD](/reference/languages/javascript/mocha-bdd) and [Mocha TDD](/reference/languages/javascript/mocha-tdd) instead.
 
 :::tip
 When taking a challenge, the test framework is already selected for you.  You can determine which framework you are using by looking in the upper-right of the _Sample Tests_ code area.

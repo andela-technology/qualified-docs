@@ -17,7 +17,7 @@ Qualified supports C++14 with Clang 3.8 and C++17 with Clang 8.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our C++ environment supports the following testing frameworks:
 

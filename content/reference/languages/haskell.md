@@ -16,6 +16,6 @@ Qualified supports GHC 7.10 and 8.2.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Haskell environment supports the [haskell/hspec](/reference/languages/haskell/hspec).

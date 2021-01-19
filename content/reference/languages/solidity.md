@@ -22,4 +22,4 @@ For more information on OpenZepplin see the [documentation on Github](https://gi
 
 ## Testing
 
-Our Solidity environment supports testing in JavaScript through the [Truffle Framework with Mocha](/reference/languages/solidity/truffle_with_mocha).
+Our Solidity environment supports testing in JavaScript through the [Truffle Framework with Mocha](/reference/languages/solidity/truffle-with-mocha).

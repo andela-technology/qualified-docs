@@ -7,10 +7,6 @@ bodyClass: 'employer-focused'
 
 These pages enable you to update your login information and user profile and manage some application-wide settings.
 
-:::tip
-If you have owner or manager rights on the Team account, you can [manage the team settings](/for-teams/account-team).
-:::
-
 # <span class="icon-user"/> Login Information
 
 Clicking on your name in the upper right and choosing _Account Settings_ allows you to manage your login information.

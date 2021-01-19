@@ -45,7 +45,7 @@ You can click on the assessment templates to see details about them, such as whi
 
 Once you've found a template you like, click on **NEXT** or **SELECT THIS TEMPLATE** to set the title and other options for your new assessment.
 
-Your new assessment is now immediately ready to [use to assess to developers](/for-teams/invite).
+Your new assessment is now immediately ready to use to assess to developers.
 
 
 ## Creating Your Own Assessment
@@ -86,7 +86,7 @@ Once you are finished, click **NEXT <span class="icon-chevron-right"/>**.
 
 ### 2. Adding Challenges
 
-Next, you'll add [Challenges](/for-teams/challenges) to the assessment.  These can be selected from existing Qualified challenges or from custom challenges you have created and published.
+Next, you'll add [Challenges](/creating-content/challenges/challenge-types) to the assessment.  These can be selected from existing Qualified challenges or from custom challenges you have created and published.
 
 Click **<span class="icon-plus"> ADD CHALLENGES</span>** to begin selecting challenges.  A dialog will open showing you the challenges you can choose from.
 
@@ -131,7 +131,7 @@ At this point you can preview your assessment and invite other team members to p
 
 If you need to make any changes you can use the **<span class="icon-chevron-left"/> BACK** button.
 
-If you are satisfied with your new assessment, click **FINISH <span class="icon-chevron-right"/>**. Your new assessment is now immediately ready to [use to assess to developers](/for-teams/invite).
+If you are satisfied with your new assessment, click **FINISH <span class="icon-chevron-right"/>**. Your new assessment is now immediately ready to [use to assess to developers](/for-teams/process/invitations).
 
 ## Duplicating an Assessment
 
@@ -176,7 +176,7 @@ Use simple-yet-powerful workflows to automate processing a candidate's assessmen
 
 These workflows can be used to automatically approve or reject a candidate, show a custom message, send them to a new assessment or external website, assign them to team members or labels, or even trigger custom webhooks.
 
-[Learn more about automated workflows here.](/for-teams/assessments/workflows)
+[Learn more about automated workflows here.](/reference/features/assessments/workflows)
 
 # Viewing Assessment Details
 
@@ -185,4 +185,4 @@ When you click on an assessment, you'll be provided with some extra commands for
 - **DELETE**: Permanently delete an assessment not in use
 - **ARCHIVE**: Archive an assessment to prevent further use
 - **DUPLICATE**: Create a copy of this assessment, which you can then edit
-- **COMPARE SOLUTIONS**: [Compare all solutions to challenges within this assessment](/for-teams/challenges/solutions)
+- **COMPARE SOLUTIONS**: [Compare all solutions to challenges within this assessment](/reference/features/challenges/library/solutions)

@@ -16,7 +16,7 @@ Qualified supports Objective-C with GNUstep runtime 1.8.1 compiled with Clang 3.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Objective-C environment supports the following testing frameworks:
 
