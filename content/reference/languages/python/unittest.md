@@ -17,7 +17,7 @@ From Python 3.7, the solution module is no longer imported implicitly to avoid c
 
 ## Basic Example
 
-Here is a minimal example of unit testing in Qualified's Python 3.7 environment by explicitly importing the `solution` and `preloaded` modules. For [Project Code Challenges](/for-teams/challenges/multi-file-code), these imports can be any module name in the workspace.
+Here is a minimal example of unit testing in Qualified's Python 3.7 environment by explicitly importing the `solution` and `preloaded` modules. For [Project Code Challenges](/reference/features/challenges/multi-file-code), these imports can be any module name in the workspace.
 
 ```python
 import unittest

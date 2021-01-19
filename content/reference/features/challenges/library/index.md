@@ -44,15 +44,15 @@ Team challenges have similar details available to them as Qualified challenges, 
 - **DELETE**: Let's you delete unused challenges
 - **PUBLISHED/DRAFT/ARCHIVED**: You can change the state of the challenge
 - **DUPLICATE** Clone the challenge into a new one
-- **FOLLOW UP CHALLENGE**: [Create a new challenge based off the solution to this one.](/for-teams/challenges/code/carry-forward-solutions) (Classic code challenges only).
-- **SOLUTIONS**: [Compare solutions for this challenge](/for-teams/challenges/library/solutions)
+- **FOLLOW UP CHALLENGE**: [Create a new challenge based off the solution to this one.](/reference/features/challenges/code/carry-forward-solutions) (Classic code challenges only).
+- **SOLUTIONS**: [Compare solutions for this challenge](/reference/features/challenges/library/solutions)
 
 ## Challenge Type Specifics
 
 <div class="see-also-links">
 
-* [Classic Code Challenges](/for-teams/challenges/code)
-* [Project Code Challenges](/for-teams/challenges/multi-file-code)
-* [Q&A Challenges](/for-teams/challenges/quiz)
+* [Classic Code Challenges](/reference/features/challenges/code)
+* [Project Code Challenges](/reference/features/challenges/multi-file-code)
+* [Q&A Challenges](/reference/features/challenges/quiz)
 
 </div>

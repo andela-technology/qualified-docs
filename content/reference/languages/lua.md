@@ -16,6 +16,6 @@ Qualified supports Lua 5.3.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Lua environment supports test framework [lua/busted](/reference/languages/lua/busted).

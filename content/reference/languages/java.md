@@ -71,7 +71,7 @@ The following packages are available:
 - `org.springframework.boot:spring-boot-starter-test`
 
 
-# Testing
+## Testing
 
 Our Java environment supports the following testing frameworks:
 

@@ -257,7 +257,7 @@ The keyword `value` can contain any of the supported types. A string can always 
 
 #### Advanced Test Cases
 
-`describe` and `it` blocks can define [Advanced Test Cases](/for-teams/challenges/advanced-test-cases). Use `hidden`, `weight` and `tag` to add advanced testing functionality to your it blocks, or optionally add them to an entire describe block.
+`describe` and `it` blocks can define [Advanced Test Cases](/reference/features/challenges/advanced-test-cases). Use `hidden`, `weight` and `tag` to add advanced testing functionality to your it blocks, or optionally add them to an entire describe block.
 
 ```
 test_cases:

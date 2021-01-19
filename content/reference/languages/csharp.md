@@ -41,7 +41,7 @@ The sandbox environment will timeout the code within 12 seconds.
 - `NewtonSoft.Json`: `12.0`
 - `NSubstitute`: `4.2`
 
-# Testing
+## Testing
 
 Our C# environment supports the following testing frameworks:
 
