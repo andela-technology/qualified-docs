@@ -23,7 +23,7 @@ All code run in the browser is transpiled via Babel, so you can safely use ES201
 
 ## Using Mocha
  
-Mocha in Karma works the same as the normal [javascript/mocha_bdd](/reference/languages/javascript/mocha_bdd), with one exception: _Chai_ will already be loaded for you, with `expect`, `should`, and `assert` all available, no `require()` necessary.
+Mocha in Karma works the same as the normal [javascript/mocha-bdd](/reference/languages/javascript/mocha-bdd), with one exception: _Chai_ will already be loaded for you, with `expect`, `should`, and `assert` all available, no `require()` necessary.
 
 > ### Note on Chai Failure Reporting
 > 

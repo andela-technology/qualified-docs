@@ -33,13 +33,13 @@ The classic code challenge editor provides an in-browser IDE for creating and va
 
 ## Detailed Usage
 
-- [Learn more about the challenge creator here.](/for-teams/challenges/code/lang)
+- [Learn more about the challenge creator here.](/reference/features/challenges/code/lang)
 
 ## Advanced Features
 
-- [Advanced Test Cases](/for-teams/challenges/advanced-test-cases)
+- [Advanced Test Cases](/reference/features/challenges/advanced-test-cases)
   Include extra features in your test cases, such as hidden tests and tagged tests.
-- [Carry Forward Solutions](/for-teams/challenges/code/carry-forward-solutions)
+- [Carry Forward Solutions](/reference/features/challenges/code/carry-forward-solutions)
   Write assessments that carry the solution forward from one challenge to the next.
 
 ## Environment & Testing Framework

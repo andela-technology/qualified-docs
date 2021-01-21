@@ -89,7 +89,7 @@ If a file is part of the test, but you don't want the candidate to view its cont
 
 Use cases here include:
 
-- Hidden tests that we want to identify as existing, but not let the candidate view. This would be similar to how [classic code challenges](/for-teams/challenges/code) handle submission tests.
+- Hidden tests that we want to identify as existing, but not let the candidate view. This would be similar to how [classic code challenges](/reference/features/challenges/code) handle submission tests.
 - Creating virtual 3rd-party services such as "remote" APIs where the inner workings are not visible to the candidate.
 - Hiding content that otherwise may give away the solution, but we want the candidate to be aware the file exists (so they don't try to overwrite it).
 

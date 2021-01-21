@@ -17,7 +17,7 @@ From Python 3.7, the solution module is no longer imported implicitly to avoid c
 
 ## Basic Example
 
-Here is a minimal example of unit testing in Qualified's Python 3.7 environment by explicitly importing the `solution` and `preloaded` modules. For [Project Code Challenges](/for-teams/challenges/multi-file-code), these imports can be any module name in the workspace.
+Here is a minimal example of unit testing in Qualified's Python 3.7 environment by explicitly importing the `solution` and `preloaded` modules. For [Project Code Challenges](/reference/features/challenges/multi-file-code), these imports can be any module name in the workspace.
 
 ```python
 import unittest
@@ -54,3 +54,19 @@ The crux of each test is a call to [`assertEqual()`](https://docs.python.org/3/l
 The [`setUp()`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) and [`tearDown()`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.tearDown) methods allow you to execute code before and after each test method.
 
 Similarly, you can use [`setUpClass()`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUpClass) and [`tearDownClass()`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.tearDownClass) to run code before all tests run and after all tests complete, respectively.
+
+## Test Ordering
+
+Unittest reorders test cases by default which can cause frustration for candidates and students when matching test case code with the output displayed on the runner. There are a variety of solutions to the problem which you can read about on [this Stack Overflow thread](https://stackoverflow.com/questions/5387299/python-unittest-testcase-execution-order), but the following approach should work for typical cases:
+
+```python
+import inspect
+
+class Test(unittest.TestCase):
+    # ... test cases ...
+
+test_src = inspect.getsource(Test)
+unittest.TestLoader.sortTestMethodsUsing = lambda _, x, y: (
+    test_src.index(f"def {x}") - test_src.index(f"def {y}")
+)
+```

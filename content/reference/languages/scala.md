@@ -16,7 +16,7 @@ Qualified supports Scala version 2.12 and 2.13.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Scala environment supports the following testing frameworks:
 

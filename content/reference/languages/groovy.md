@@ -16,7 +16,7 @@ Qualified supports Groovy version 2.5.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Groovy environment supports the following testing frameworks:
 

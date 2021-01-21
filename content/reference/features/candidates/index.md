@@ -53,7 +53,7 @@ You can click the headers above the columns to reorder the list of developers.  
 
 You can select multiple candidates using the checkboxes on the candidates list to quickly make changes.
 
-* [Bulk Editing](/for-teams/candidates/bulk-editing)
+* [Bulk Editing](/reference/features/candidates/bulk-editing)
 
 ## Default View
 
@@ -91,7 +91,7 @@ The candidate's current status in the assessment process is **bolded**.
 </figure>
 
 :::tip
-You can use [bulk editing](/for-teams/candidates/bulk-editing) to manage multiple candidates at once.
+You can use [bulk editing](/reference/features/candidates/bulk-editing) to manage multiple candidates at once.
 :::
 
 ### Labels
@@ -176,6 +176,6 @@ Each solution includes more detailed information stats, scoring, here, and enabl
 - To see their solution or answers, click on _Show Solution Code_ or _Show Solution Answers_.
 - If the candidate has left any notes about their solution, click _Show Candidate Notes_ to view them.
 
-For complete technical details on each solution, including code playback & test suite results, [click on **SOLUTION DETAILS** to open up the complete history for this solution.](/for-teams/candidates/solutions)
+For complete technical details on each solution, including code playback & test suite results, [click on **SOLUTION DETAILS** to open up the complete history for this solution.](/reference/features/candidates/solutions)
 
-* [Solutions](/for-teams/candidates/solutions)
+* [Solutions](/reference/features/candidates/solutions)

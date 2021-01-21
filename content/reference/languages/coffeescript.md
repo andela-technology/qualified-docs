@@ -28,7 +28,7 @@ The following packages have been installed:
 - `mocha` `3.5.3`
 - `chai` `3.5.0`
 
-# Testing
+## Testing
 
 Our CoffeeScript environment supports the following testing frameworks:
 

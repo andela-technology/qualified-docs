@@ -34,7 +34,7 @@ The following crates are available:
   - `serde_json`: `1.0.53`
 - `text_io`: `0.1.8`
 
-# Testing
+## Testing
 
 Our Rust environment supports writing unit tests using `tests` mod with
 `#[cfg(test)]` attribute. See [rust/rust](/reference/languages/rust/rust).
