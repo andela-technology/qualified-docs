@@ -1367,66 +1367,6 @@
   "resource": "Assessment Results",
   "resource_explanation": "Each time a candidate takes an assessment, their work is stored within the assessment result.",
   "http_method": "PUT",
-  "route": "/v1/assessment_results/:id/unsubmit",
-  "description": "Unsubmit",
-  "explanation": "Reopens the assessment result so that the candidate can make changes.",
-  "parameters": [
-    {
-      "type": "String",
-      "required": true,
-      "name": "id",
-      "description": "The ID of the assessment result to reopen"
-    },
-    {
-      "type": "Boolean",
-      "name": "send_email",
-      "description": "True if an email should be sent to the candidate informing them that the assessment was reopened."
-    },
-    {
-      "type": "String",
-      "name": "email_message",
-      "description": "An optional custom email message to send to the candidate."
-    },
-    {
-      "type": "Integer",
-      "name": "enforced_time_limit",
-      "description": "A value indicating the number of minutes to allow the result to be worked on once it is restarted."
-    },
-    {
-      "type": "Boolean",
-      "name": "reset_challenge_timers",
-      "description": "True if any challenge specific timers on the assessment result should be reset."
-    }
-  ],
-  "response_fields": [],
-  "requests": [
-    {
-      "request_method": "PUT",
-      "request_path": "/v1/assessment_results/5faf38e1a54d750f45ff3e6d/unsubmit",
-      "request_body": null,
-      "request_headers": {
-        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWYzOGUxYTU0ZDc1MGY0NWZmM2U1MyIsImlkIjoiNWZhZjM4ZTFhNTRkNzUwZjQ1ZmYzZTU0Iiwic2VjcmV0IjoiQkNZZlN3PT0ifQ.9HYSJ5e3Etl5wcf--oiOoY_5RJAnMPnQrZ27lG8Ak0g",
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      "request_query_parameters": {},
-      "request_content_type": "application/x-www-form-urlencoded",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"id\": \"5faf38e1a54d750f45ff3e6d\",\n  \"type\": \"AssessmentResult\",\n  \"data\": {\n    \"id\": \"5faf38e1a54d750f45ff3e6d\",\n    \"assessmentId\": \"5faf38e1a54d750f45ff3e68\",\n    \"candidateId\": \"5faf38e1a54d750f45ff3e4a\",\n    \"teamCandidateId\": \"5faf38e1a54d750f45ff3e6e\",\n    \"teamId\": \"5faf38e1a54d750f45ff3e4d\",\n    \"state\": \"opened\",\n    \"createdAt\": \"1970-01-01T03:38:00.412Z\",\n    \"updatedAt\": \"2020-11-14T01:54:41.504Z\",\n    \"startedAt\": null,\n    \"invitedAt\": null,\n    \"submittedAt\": null,\n    \"submittingAt\": \"1970-01-01T02:26:00.412Z\",\n    \"openedAt\": \"2020-11-14T01:54:41.503Z\",\n    \"originalOpenedAt\": null,\n    \"originalStartedAt\": null,\n    \"originalSubmittedAt\": \"2020-11-14T01:54:41.418Z\",\n    \"dryRun\": false,\n    \"candidateRemarks\": null,\n    \"score\": 0.0,\n    \"closedReason\": null,\n    \"redirectUrl\": null,\n    \"submissionMessage\": null,\n    \"nextAssessmentId\": null,\n    \"stateUpdatedAt\": \"2020-11-14T01:54:41.503Z\",\n    \"totalSubmissionSeconds\": null,\n    \"totalOriginalSubmissionSeconds\": null,\n    \"accumulatedSeconds\": 0,\n    \"enforcedTimeLimit\": null,\n    \"timerExpiresIn\": null,\n    \"wallTimeSinceStart\": 0,\n    \"reopenedById\": \"5faf38e1a54d750f45ff3e54\",\n    \"activeTimedSolutionId\": null,\n    \"accessLocked\": false,\n    \"accessUnlockedAt\": null,\n    \"accessUnlockedById\": null,\n    \"terminatedAt\": null,\n    \"isActiveInteractSession\": false,\n    \"candidateName\": \"Joe Smith247\",\n    \"candidateEmail\": \"loginidentity247@example.com\",\n    \"candidatePhone\": null,\n    \"interviewerIds\": [],\n    \"activeInterviewerIds\": [],\n    \"abandoned\": false,\n    \"workflowName\": null,\n    \"isInteractSession\": false,\n    \"passingScore\": false,\n    \"challengeItems\": []\n  },\n  \"meta\": {\n    \"enums\": {\n      \"closedReason\": [\n        {\n          \"value\": \"candidate_submitted\",\n          \"text\": \"Candidate submitted\"\n        },\n        {\n          \"value\": \"timer_ran_out\",\n          \"text\": \"Timer ran out\"\n        },\n        {\n          \"value\": \"team_forced\",\n          \"text\": \"Team forced\"\n        },\n        {\n          \"value\": \"team_decided\",\n          \"text\": \"Team decided\"\n        },\n        {\n          \"value\": \"invitation_canceled\",\n          \"text\": \"Invitation canceled\"\n        },\n        {\n          \"value\": \"assessment_archived\",\n          \"text\": \"Assessment archived\"\n        }\n      ],\n      \"state\": [\n        {\n          \"value\": \"invited\",\n          \"text\": \"Invited\"\n        },\n        {\n          \"value\": \"opened\",\n          \"text\": \"Opened\"\n        },\n        {\n          \"value\": \"started\",\n          \"text\": \"Started\"\n        },\n        {\n          \"value\": \"submitting\",\n          \"text\": \"Submitting\"\n        },\n        {\n          \"value\": \"submitted\",\n          \"text\": \"Submitted\"\n        },\n        {\n          \"value\": \"terminated\",\n          \"text\": \"Terminated\"\n        }\n      ]\n    },\n    \"timestamp\": \"2020-11-13T17:54:41.537-08:00\",\n    \"includes\": []\n  }\n}",
-      "response_headers": {
-        "Content-Type": "application/json; charset=utf-8"
-      },
-      "response_content_type": "application/json; charset=utf-8",
-      "curl": "curl \"https://www.qualified.io/api/v1/assessment_results/5faf38e1a54d750f45ff3e6d/unsubmit\" -d '' -X PUT \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWYzOGUxYTU0ZDc1MGY0NWZmM2U1MyIsImlkIjoiNWZhZjM4ZTFhNTRkNzUwZjQ1ZmYzZTU0Iiwic2VjcmV0IjoiQkNZZlN3PT0ifQ.9HYSJ5e3Etl5wcf--oiOoY_5RJAnMPnQrZ27lG8Ak0g\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \"",
-      "request_headers_text": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjVmYWYzOGUxYTU0ZDc1MGY0NWZmM2U1MyIsImlkIjoiNWZhZjM4ZTFhNTRkNzUwZjQ1ZmYzZTU0Iiwic2VjcmV0IjoiQkNZZlN3PT0ifQ.9HYSJ5e3Etl5wcf--oiOoY_5RJAnMPnQrZ27lG8Ak0g\nContent-Type: application/x-www-form-urlencoded",
-      "request_query_parameters_text": null,
-      "response_headers_text": "Content-Type: application/json; charset=utf-8"
-    }
-  ]
-},{
-  "resource": "Assessment Results",
-  "resource_explanation": "Each time a candidate takes an assessment, their work is stored within the assessment result.",
-  "http_method": "PUT",
   "route": "/v1/assessment_results/:id/reset",
   "description": "Reset",
   "explanation": "Reopens an assessment result, and updates the challenges to the latest published version of the assessment.",
