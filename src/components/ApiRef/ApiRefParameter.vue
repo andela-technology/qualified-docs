@@ -9,14 +9,14 @@
      <div class="api-ref-parameter__desc" v-if="description" v-html="description" />
      <div class="api-ref-parameter__enum" v-if="hasEnums">
         <div>{{ enumTitle }}:</div>
-        <span v-for="(desc, key) in enums" :key="key">
-            <template v-if="desc && key">
-                <strong class="mr-1">{{ key }}</strong>{{ desc }}
-            </template>
-            <template v-else>
+        <template v-for="(desc, key) in enums">
+            <div v-if="desc && key" :key="key" class="api-ref-parameter__enum-value">
+                <strong>"{{ key }}":</strong>{{ desc }}
+            </div>
+            <span v-else :key="key" class="api-ref-parameter__enum-value">
                 {{ key }}
-            </template>
-        </span>
+            </span>
+        </template>
      </div>
      <div class="api-ref-parameter__enum" v-if="parameter.models">
         <div>Only Relevant On $type:</div>
@@ -212,26 +212,29 @@ export default {
     }
 
     .api-ref-parameter__enum {
-
-        div {
+        div:not(.api-ref-parameter__enum-value) {
             @apply text-xs uppercase mb-1 tracking-wide rounded;
             opacity: 0.8;
-        }
-
-        > span {
-            @apply rounded mr-1 mt-1 inline-flex text-sm;
-            padding: 1px 4px;
-            background-color: var(--color-ui-fade-bg);
-
-            > strong {
-                min-width: 70px;
-                @apply mr-2;
-                border-right: 1px solid var(--color-ui-fade-alt-bg);
-            }
         }
     }
     .api-ref-parameter__enum + .api-ref-parameter__enum {
         @apply mt-4;
+    }
+
+    .api-ref-parameter__enum-value {
+        @apply rounded mr-1 mt-1 text-sm inline-flex;
+        padding: 1px 4px;
+        background-color: var(--color-ui-fade-bg);
+
+    }
+
+    div.api-ref-parameter__enum-value {
+        @apply p-2;
+        display: block;
+
+        > strong {
+            @apply mr-1;
+        }
     }
 
     .api-ref-parameter__schema {

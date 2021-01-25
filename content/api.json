@@ -1327,7 +1327,7 @@
       "enum": {
         "pageStyling": "Removes print-like page styling (ignored for PDF reports)",
         "candidateName": "Candidate's real name",
-        "candidateAnonymousName": "",
+        "candidateAnonymousName": "Candidate's Anonymous Name (when combined with candidateName)",
         "candidateEmail": "Candidate's email",
         "candidateRemarks": "Candidate's assessment feedback",
         "interact": "Interact session details",
