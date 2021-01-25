@@ -7,9 +7,16 @@
         <span class="api-ref-parameter__label" v-if="typeLabel">{{ typeLabel }}</span>
     </div>
      <div class="api-ref-parameter__desc" v-if="description" v-html="description" />
-     <div class="api-ref-parameter__enum" v-if="enums.length">
+     <div class="api-ref-parameter__enum" v-if="hasEnums">
         <div>{{ enumTitle }}:</div>
-        <span v-for="val in enums" :key="val">{{ val }}</span>
+        <span v-for="(desc, key) in enums" :key="key">
+            <template v-if="desc && key">
+                <strong class="mr-1">{{ key }}</strong>{{ desc }}
+            </template>
+            <template v-else>
+                {{ key }}
+            </template>
+        </span>
      </div>
      <div class="api-ref-parameter__enum" v-if="parameter.models">
         <div>Only Relevant On $type:</div>
@@ -87,8 +94,17 @@ export default {
 
           return parts.join(' ')
       },
+      hasEnums () {
+          return Object.keys(this.enums).length > 0
+      },
       enums () {
-          return (this.parameter.enum || []).sort().filter(v => !!v && v !== 'nil')
+          const enumParam = this.parameter.enum || []
+          if (Array.isArray(enumParam)) {
+              let enumObj = {}
+              enumParam.sort().filter(v => !!v && v !== 'nil').forEach(v => enumObj[v] = null)
+              return enumObj
+          }
+          return enumParam
       },
       enumTitle () {
           switch (this.parameter.name) {
@@ -202,10 +218,16 @@ export default {
             opacity: 0.8;
         }
 
-        span {
+        > span {
             @apply rounded mr-1 mt-1 inline-flex text-sm;
             padding: 1px 4px;
             background-color: var(--color-ui-fade-bg);
+
+            > strong {
+                min-width: 70px;
+                @apply mr-2;
+                border-right: 1px solid var(--color-ui-fade-alt-bg);
+            }
         }
     }
     .api-ref-parameter__enum + .api-ref-parameter__enum {
