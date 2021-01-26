@@ -85,7 +85,7 @@ For teams looking to manually proctor assessments, you can utilize the locking m
 There are times when after candidates has submitted their assessment, you would like them to continue with the assessment in some way. There are two options for retrying an assessment. 
 
 ### Reopening Assessments
-Once an assessment has been submitted, it can be reopened by a team member. Reopening an assessment will give you the opportunity to invite the candidate to return to their previous submission and pick up where they left off. To reopen an assessment that has been submitted, simply navigate to the candidate's assessment result and click the "Reopen or Retake" button.
+Once an assessment has been submitted, it can be reopened by a team member. Reopening an assessment will give you the opportunity to invite the candidate to return to their previous submission and pick up where they left off. To reopen an assessment that has been submitted, simply navigate to the candidate's assessment result and click the "Reopen" button (or "Reopen or Retake" button if you have retakes enabled).
 
 :::note Recent Change
 After the reopen invitation has been sent, the assessment will remain in the submitted state until the candidate lands on the page and clicks "continue". Only then will the assessment result state and candidate be set to "started". This has changed recently, as in the past Qualified would have set the candidate back into the "started" state as soon as the reopen invite was sent.
