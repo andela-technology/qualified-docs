@@ -16,6 +16,6 @@ Qualified supports Erlang 20.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Erlang environment supports the [erlang/eunit](/reference/languages/erlang/eunit).

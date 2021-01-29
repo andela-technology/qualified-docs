@@ -2,6 +2,7 @@
 title: Human Scoring & Feedback
 description: "How to review results with your candidates"
 order: 2
+private: true 
 ---
 
 # Human Scoring & Feedback

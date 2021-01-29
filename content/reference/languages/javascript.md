@@ -183,7 +183,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@babel/core`: `7.4.4`
 - `@babel/plugin-transform-runtime`: `7.4.4`
@@ -298,7 +298,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-transform-runtime`: `7.10.5`
@@ -324,7 +324,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `vuex`: `3.5.1`
 
 
-# Testing
+## Testing
 
 Our JavaScript environment supports the following testing frameworks:
 

@@ -41,6 +41,7 @@ query ($id: ID!) {
         path
         title
         order
+        private
       }
     }
   }
@@ -118,7 +119,7 @@ export default {
 
     > {
         h1 {
-            @apply text-4xl;
+            @apply text-3xl;
         }
 
         h2 {
@@ -161,6 +162,9 @@ export default {
     h3 + h3 {
         @apply border-none -mt-20;
     }
+    p + h5, h3 + h4 {
+        @apply -mt-16;
+    }
 
     h2,
     h3 {
@@ -168,8 +172,12 @@ export default {
     }
 
     h4 {
-        @apply font-bold;
+        @apply font-bold mb-2;
         color: var(--color-ui-fade);
+    }
+
+    h5 {
+        @apply font-bold mb-1;
     }
 
     ul {
@@ -223,6 +231,13 @@ export default {
             @apply text-xs mt-4;
             color: var(--color-ui-fade);
             text-align: center;
+        }
+
+        &.middle-align {
+            text-align: center;
+            svg, img {
+                margin: 0 auto;
+            }
         }
     }
 

@@ -26,7 +26,13 @@ There are several advantages to inviting the developer through the Qualified ema
 - **Easier Login For Developers:** The developer will be given a special link that makes it quicker for them to get started.
 - **Support Invite-Only Assessments:** Public-URL assessments can be shared between friends. If you use Qualified to invite your developer, you can configure an assessment to be invite-only.
 
-### From Anywhere
+
+### How To Send Invites?
+Regardless of what you decide about sending emails directly through Qualified, or through your own email or ATS system, you will want to actually create the invite so that the candidate can gain access to take the assessment. 
+
+Let's cover some of the ways you can do that within the application...
+
+#### From Anywhere In The App
 
 ![Invite Candidates Dialog](/images/hire/invite-dialog.png)
 
@@ -46,20 +52,45 @@ You can disable sending the email, by unselecting _Send invitation to candidate 
 This can be useful if you want to track invited participants, but don't want them to start yet. You can also use this if you'd rather send your own custom email. In this case, you can copy the Invite & Practice links from within the candidate's details.
 :::
 
-
-### From the Assessment Page
+#### From the Assessment Page
 
 ![ ](/images/hire/assessment-invite-candidate.png)
 
-### Invite via Qualified
-
 The details page for any assessment has a **INVITE CANDIDATE** button available for easily inviting a developer to a specific assessment.
 
-## Public Assessments
-If you wish to allow any candidate to register themselves for an assessment, without first needing to be directly invited, then you can set an assessment to be public.  
+#### From the Candidate Details Page
+You can invite any candidate to a new assessment directly from within their details page.
+
+#### Bulk Invite via the Candidates List
+You can bulk invite existing candidates to a new assessment, or even invite them to reopen or retake an existing assessment. To do so, click the checkboxes next to each candidate's name you wish to invite. A "Invite" option will appear underneath the candidates search box.
+
+#### From ATS System
+Qualified integrates with multiple ATS systems, including [Greenhouse](/integrations/ats-integrations/greenhouse), [Workable](/integrations/ats-integrations/workable), and [Bamboo HR](/integrations/ats-integrations/bamboo). Within these systems, it is possible to send invitations directly to candidates from within your ATS, without having to login to Qualified to send them.
+
+For other systems that are not yet integrated, we recommend you [share a public link within your email](#sharing). 
+
+#### From API
+If you are an API user, the [invitation API](/integrations/custom-integrations/api/#assessment-invitations-invite-candidates) can be used even if you do not intend to send emails directly through Qualified. This API provides extensive options for sending and managing access to invitations, in some cases going beyond the options that are available within the Qualified UI itself.
+
+### Bulk Invite New Candidates
+It is possible to bulk invite candidates who already exist within the system by using the [bulk invite via candidates list](#bulk-invite-via-the-candidates-list) feature mentioned above. However you can also send bulk invites to a large number of candidates who do not yet exist within the system. 
+
+To do so, simply click "Invite Candidates" from the top right of the app, and copy and paste a list of emails into the "Candidates to invite" text box. Qualified can handle large lists of candidates at once, so feel free to paste as many emails as you need into the invitation dialog. 
+
+### Reopening Assessment Results
+Sometimes a candidate may have submitted their assessment that you now wish to reopen. This allows the candidate to continue where they left off. You can either reopen the assessment from the candidate details page, or by simply re-inviting them to the assessment. The invitation dialog will always notify you if a candidate has already submitted the assessment and give you the option to cancel or continue.    
+
+## Public Assessment Links
+If you wish to allow any candidate to register themselves for an assessment, without first needing to be directly invited, then you can set an assessment to be public. An assessment which is made public will have a link to it that you can freely share to candidates. No invitation will be required.   
 
 :::warning Billing Considerations
-If you open up your assessment to be public, then anyone with the public URL will be able to take your assessment. This could result in unexpected costs as you may end up being billed for more candidates than you initially expected. Please keep this in mind when using this method, and protect the URL if you can. 
+If you open up your assessment to be public, then anyone with the public URL will be able to take your assessment. This could result in unexpected costs as you may end up being billed for more candidates than you initially expected. Please keep this in mind when using this method, and protect the URL if you can.
+
+As a reminder, assessments are only considered billable once a candidate has submitted at least one challenge on an assessment.  
+:::
+
+:::important Security Considerations
+Since a public link isn't specific to a candidate, you will have limited options in how you restrict access to the assessment from a time-based perspective. See [controlling access to assessments](../assessment-access) for more information about what options you might be missing out on.
 :::
 
 ### Enabling
@@ -75,6 +106,22 @@ Once this setting has been enabled, you will be provided a URL that you can use 
 ![ ](/images/hire/invite-actions.png)
 
 You will still be able to invite candidates privately, even if the assessment is public.
+
+#### Email Template
+If you wish to email candidates to take an assessment, and don't want to do so by inviting directly through Qualified, then public links will be the way to go for you. We recommend that you setup an email template that can be used to quickly send off invitations.  
+
+:::tip Email Template Example
+Hey [Candidate First Name],
+
+Thanks for reaching out about our [Position Title] position. The next step in our process is for you to take our coding assessment, which should take you no more than an hour. This will allow us to get a sense for your coding ability and will give us something to discuss further later on in the process.
+
+You can get started here: [Public Assessment Link]
+
+Once you have completed the assessment we will be in touch.
+
+Best,
+[Your Company Name] 
+::: 
 
 ## Notifications
 

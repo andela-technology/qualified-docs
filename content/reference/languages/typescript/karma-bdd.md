@@ -1,5 +1,5 @@
 ---
-title: Karma with Mocha Testing Framework (TDD)
+title: Karma with Mocha Testing Framework (BDD)
 summary: Information about the Karma with Mocha testing framework
 tags:
   - typescript
@@ -7,7 +7,7 @@ tags:
   - testing
   - karma
   - mocha
-  - test-driven development
+  - behavior-driven development
 ---
 
 # Karma with Mocha Testing Framework
@@ -23,7 +23,7 @@ All code run in the browser is compiled via tsc, so you can safely use ES2015 co
 
 ## Using Mocha
  
-Mocha in Karma works the same as the normal [javascript/mocha_tdd](/reference/languages/javascript/mocha_tdd), with one exception: _Chai_ will already be loaded for you, with `expect`, `should`, and `assert` all available, no `require()` necessary.
+Mocha in Karma works the same as the normal [javascript/mocha-bdd](/reference/languages/javascript/mocha-bdd), with one exception: _Chai_ will already be loaded for you, with `expect`, `should`, and `assert` all available, no `require()` necessary.
 
 > ### Note on Chai Failure Reporting
 > 

@@ -21,7 +21,7 @@ The sandbox environment will timeout the code within 12 seconds.
 - Jane Street Core
 - Batteries
 
-# Testing
+## Testing
 
 Our OCaml environment supports the following testing frameworks:
 

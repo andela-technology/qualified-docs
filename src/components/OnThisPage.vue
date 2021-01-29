@@ -18,8 +18,8 @@
                         :class="{
               'pl-2': heading.depth === 3,
               'pl-5': heading.depth === 4,
-              'pl-6': heading.depth === 5,
-              'pl-7': heading.depth === 6,
+              'pl-10': heading.depth === 5,
+              'pl-16': heading.depth === 6,
               'font-bold text-ui-primary': activeAnchor === heading.anchor
             }"
                     >

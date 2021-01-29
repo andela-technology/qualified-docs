@@ -5,7 +5,7 @@ title: Detecting Potentially Plagiarized Solutions
 
 # Detecting Potentially Plagiarized Solutions
 
-**Code Similarity** is a feature of the Qualified platform that will compare the structure of code content to other solutions in the system. With this feature, we are constantly comparing every solution in the system to determine the similarity between newly submitted solutions and older solution. This comparison reports back a similarity score, as well as a complexity score.
+**Code Similarity** is a feature of the Qualified platform that will compare the structure of code content to other solutions in the system. With this feature, newly submitted solutions are compared to existing solutions in the system to determine if any are similar. This comparison reports back a similarity score, as well as some other data that can be used to inform your process.
 
 Solutions which are considered by the platform to be too similar to others will be flagged as a plagiarism risk.
 

@@ -70,7 +70,7 @@ The following sections are available:
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
 :::note
-If you've imported a library challenge, it will be [**linked to the library version**](/for-teams/challenges/library/versions), and other options won't be editable until you unlink it.
+If you've imported a library challenge, it will be [**linked to the library version**](/reference/features/challenges/library/versions), and other options won't be editable until you unlink it.
 :::
 
 ### Questions
@@ -79,6 +79,6 @@ This page enables you to add instructions, configure the Q&A format, and manage 
 
 <div class="see-also-links">
 
-* [Learn more about creating, editing, and configuring questions](/for-teams/challenges/quiz/questions)
+* [Learn more about creating, editing, and configuring questions](/reference/features/challenges/quiz/questions)
 
 </div>

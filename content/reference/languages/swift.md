@@ -16,7 +16,7 @@ Qualified supports Swift 3.1, 4.0, and 5.0.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
 Our Swift environment supports the following testing frameworks:
 

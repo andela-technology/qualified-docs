@@ -12,15 +12,11 @@ These workflows can be used to automatically approve or reject a candidate, show
 
 ## Getting Started
 
-<figure>
-
-![](/images/hire/workflows-add-a-workflow.png)
-
-</figure>
 
 From the assessment details page, click the **ADD A WORKFLOW** button. This will take you to the assessment editor, with the basic & default workflows ready to get started quickly.
+![Add A Workflow Button](/images/hire/workflows-add-a-workflow.png)
 
-## How Workflows Work
+## How Automated Workflows Work
 
 Workflows work by matching the against the score and/or timing of the assessment. They are matched in a top-down order as you see them on the page, and only the first workflow to match is processed.
 

@@ -39,7 +39,7 @@ To add the stage to your Interview Plan:
 
 ## Configuring the Stage
 
-Once the stage has been added, click Edit Take Home Test. From there, you will see a drop-down menu that reflects the assessment that you’ve previously set up in Qualified. Be sure that the assessment you want to choose is Published or it will not appear in this list (for more information on editing Qualified assessments, [see this article](/for-teams/assessments)). Select the appropriate assessment, assign at least one Greenhouse user to grade/review submitted assessment, and then click Save.
+Once the stage has been added, click Edit Take Home Test. From there, you will see a drop-down menu that reflects the assessment that you’ve previously set up in Qualified. Be sure that the assessment you want to choose is Published or it will not appear in this list (for more information on editing Qualified assessments, [see this article](/reference/features/assessments)). Select the appropriate assessment, assign at least one Greenhouse user to grade/review submitted assessment, and then click Save.
 
 Keep in mind that all configuration of the assessment itself, as well as the email template, will need to be handled in Qualified.  While you will click "Send Test" from within Greenhouse, the assessment setup is configured within Qualified.
 

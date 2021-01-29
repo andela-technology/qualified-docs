@@ -60,7 +60,7 @@ You can reset either your solution, the sample tests, or both.
 Some challenges are available in multiple languages. You may change the language using the dropdown located within the top action bar.
 
 :::info More Information
-[Click here to learn more about the available languages and environments in Qualified.](/languages)
+[Click here to learn more about the available languages and environments in Qualified.](/reference/languages)
 :::
 
 

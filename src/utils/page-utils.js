@@ -57,6 +57,10 @@ export function getNextPrev(currentPage, pages) {
     let next = currentPage.next
     let prev = currentPage.prev
     let page
+    const availablePages = pages => {
+        if (currentPage.private) return pages
+        return pages.filter(p => !p.private)
+    }
 
     if (!next || !prev) {
         const pagesInfo = getNestedPages(currentPage, pages)
@@ -64,27 +68,37 @@ export function getNextPrev(currentPage, pages) {
         let parent = pagesInfo.find(p => p.path === page.directory)
 
         if (parent) {
-            const ndx = parent.pages.findIndex(p => p.current)
+            const parentPages = availablePages(parent.pages)
+            const ndx = parentPages.findIndex(p => p.current)
             const findSibling = offset => pagesInfo.find(
-                p => p.depth === parent.depth && p.order === (parent.order + offset) && parent.directory === p.directory
+                p => p.depth === parent.depth &&
+                     p.order === (parent.order + offset) &&
+                     parent.directory === p.directory
             )
+            
             if (ndx > 0) {
-                prev = parent.pages[ndx - 1]
+                prev = parentPages[ndx - 1]
             }
             else {
-                const prevParent = findSibling(-1)
+                let prevParent = findSibling(-1)
+                if (prevParent && prevParent.private) {
+                    prevParent = findSibling(-2)
+                }
                 if (prevParent) {
-                    prev = prevParent.pages.slice(-1)[0]
+                    prev = availablePages(prevParent.pages).slice(-1)[ 0 ]
                 }
             }
 
-            if (ndx < parent.pages.length - 1) {
-                next = parent.pages[ndx + 1]
+            if (ndx < parentPages.length - 1) {
+                next = parentPages[ndx + 1]
             }
             else {
-                const nextParent = findSibling(1)
+                let nextParent = findSibling(1)
+                if (nextParent && nextParent.private) {
+                    nextParent = findSibling(2)
+                }
                 if (nextParent) {
-                    next = nextParent.pages[0]
+                    next = availablePages(nextParent.pages)[0]
                 }
             }
         }

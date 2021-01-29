@@ -56,7 +56,7 @@ The following sections are available:
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
 :::note
-If you've imported a library challenge, it will be [**linked to the library version**](/for-teams/challenges/library/versions), and other options won't be editable until you unlink it.
+If you've imported a library challenge, it will be [**linked to the library version**](/reference/features/challenges/library/versions), and other options won't be editable until you unlink it.
 :::
 
 ### Challenge Instructions
@@ -65,7 +65,7 @@ This page provides a side-by-side Markdown editor that allows you to provide det
 
 <div class="see-also-links">
 
-[Learn more about editing instructions](/for-teams/challenges/instructions)
+[Learn more about editing instructions](/reference/features/challenges/instructions)
 
 </div>
 
@@ -74,14 +74,14 @@ This page provides a side-by-side Markdown editor that allows you to provide det
 Each classic code challenge needs one or more language sections.  You can have as many as you like.
 
 :::tip
-[Click here to learn more about the available languages and environments in Qualified.](/languages)
+[Click here to learn more about the available languages and environments in Qualified.](/reference/languages)
 :::
 
 If you are starting from a blank challenge, or want to add a new language, click **ADD LANGUAGE** to choose a language to add.
 
 <div class="see-also-links">
  
-[Using the challenge editor IDE](/for-teams/challenges/code/lang)
+[Using the challenge editor IDE](/reference/features/challenges/code/lang)
 
 </div>
 
@@ -91,6 +91,6 @@ Qualified offers the ability to generate classic code challenge languages from a
 
 <div class="see-also-links">
 
-[Learn more about language generation](/for-teams/challenges/code/language-generator)
+[Learn more about language generation](/reference/features/challenges/code/language-generator)
 
 </div>

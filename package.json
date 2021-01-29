@@ -9,6 +9,7 @@
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.5",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-gtag": "^0.1.10",
     "prismjs": "^1.22.0"
   },
   "devDependencies": {

@@ -25,7 +25,7 @@ The following additional libraries are currently loaded onto the C# runtime.
 
 - Fuchu
 
-# Testing
+## Testing
 
 Our F# environment supports the following testing frameworks:
 

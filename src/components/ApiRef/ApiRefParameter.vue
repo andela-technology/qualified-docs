@@ -7,9 +7,16 @@
         <span class="api-ref-parameter__label" v-if="typeLabel">{{ typeLabel }}</span>
     </div>
      <div class="api-ref-parameter__desc" v-if="description" v-html="description" />
-     <div class="api-ref-parameter__enum" v-if="enums.length">
+     <div class="api-ref-parameter__enum" v-if="hasEnums">
         <div>{{ enumTitle }}:</div>
-        <span v-for="val in enums" :key="val">{{ val }}</span>
+        <template v-for="(desc, key) in enums">
+            <div v-if="desc && key" :key="key" class="api-ref-parameter__enum-value">
+                <strong>"{{ key }}":</strong>{{ desc }}
+            </div>
+            <span v-else :key="key" class="api-ref-parameter__enum-value">
+                {{ key }}
+            </span>
+        </template>
      </div>
      <div class="api-ref-parameter__enum" v-if="parameter.models">
         <div>Only Relevant On $type:</div>
@@ -87,8 +94,17 @@ export default {
 
           return parts.join(' ')
       },
+      hasEnums () {
+          return Object.keys(this.enums).length > 0
+      },
       enums () {
-          return (this.parameter.enum || []).sort().filter(v => !!v && v !== 'nil')
+          const enumParam = this.parameter.enum || []
+          if (Array.isArray(enumParam)) {
+              let enumObj = {}
+              enumParam.sort().filter(v => !!v && v !== 'nil').forEach(v => enumObj[v] = null)
+              return enumObj
+          }
+          return enumParam
       },
       enumTitle () {
           switch (this.parameter.name) {
@@ -196,20 +212,29 @@ export default {
     }
 
     .api-ref-parameter__enum {
-
-        div {
+        div:not(.api-ref-parameter__enum-value) {
             @apply text-xs uppercase mb-1 tracking-wide rounded;
             opacity: 0.8;
-        }
-
-        span {
-            @apply rounded mr-1 mt-1 inline-flex text-sm;
-            padding: 1px 4px;
-            background-color: var(--color-ui-fade-bg);
         }
     }
     .api-ref-parameter__enum + .api-ref-parameter__enum {
         @apply mt-4;
+    }
+
+    .api-ref-parameter__enum-value {
+        @apply rounded mr-1 mt-1 text-sm inline-flex;
+        padding: 1px 4px;
+        background-color: var(--color-ui-fade-bg);
+
+    }
+
+    div.api-ref-parameter__enum-value {
+        @apply p-2;
+        display: block;
+
+        > strong {
+            @apply mr-1;
+        }
     }
 
     .api-ref-parameter__schema {

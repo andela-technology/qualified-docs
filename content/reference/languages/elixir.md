@@ -16,6 +16,6 @@ Qualified supports Elixir 1.6 and 1.9.
 
 The sandbox environment will timeout the code within 12 seconds.
 
-# Testing
+## Testing
 
-Our Elixir environment supports the [elixir/ex_unit](/reference/languages/elixir/ex_unit).
+Our Elixir environment supports the [elixir/ex-unit](/reference/languages/elixir/ex-unit).

@@ -20,6 +20,6 @@ The sandbox environment will timeout the code within 12 seconds.
 
 Packages in the [tidyverse](https://www.tidyverse.org/) are installed (v1.2.1).
 
-# Testing
+## Testing
 
 Our R environment supports the [r/testthat](/reference/languages/r/testthat).

@@ -48,6 +48,6 @@ After you complete the update, you can choose to clear your selections.
 
 ## Inviting Candidates
 
-Using the **INVITE** button will open the normal [invite dialog](/for-teams/invite) with your selected candidates automatically filled in.
+Using the **INVITE** button will open the normal [invite dialog](/for-teams/process/invitations) with your selected candidates automatically filled in.
 
-* [Invite Dialog](/for-teams/invite)
+* [Invite Dialog](/for-teams/process/invitations)

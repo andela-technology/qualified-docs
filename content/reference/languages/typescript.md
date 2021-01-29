@@ -120,7 +120,7 @@ TypeScript 3.3 (Node 10) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `8.0.4`
 - `@angular/animations`: `8.1.3`
@@ -197,7 +197,7 @@ TypeScript 3.8 (Node 12) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/for-teams/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `9.0.0`
 - `@angular/animations`: `8.1.3`
@@ -220,12 +220,12 @@ TypeScript 3.8 (Node 12) has multiple presets for different kinds of challenges.
 - `zone.js`: `0.9.1`
 
 
-# Testing
+## Testing
 
 Our TypeScript environment supports the following testing frameworks:
 
-- [typescript/mocha_bdd](/reference/languages/typescript/mocha_bdd)
-- [typescript/mocha_tdd](/reference/languages/typescript/mocha_tdd)
-- [typescript/karma_bdd](/reference/languages/typescript/karma_bdd)
-- [typescript/karma_tdd](/reference/languages/typescript/karma_tdd)
+- [typescript/mocha-bdd](/reference/languages/typescript/mocha-bdd)
+- [typescript/mocha-tdd](/reference/languages/typescript/mocha-tdd)
+- [typescript/karma-bdd](/reference/languages/typescript/karma-bdd)
+- [typescript/karma-tdd](/reference/languages/typescript/karma-tdd)
 - [typescript/jest](/reference/languages/typescript/jest)
