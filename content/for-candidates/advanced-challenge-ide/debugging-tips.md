@@ -43,6 +43,10 @@ Note that output is collapsed by default for passing tests.
     ```csharp
     System.Console.WriteLine("debug message");
     ```
+- Dart
+    ```dart
+    print("debug message");
+    ```
 - Elixir
     ```elixir
     IO.puts("debug message")
@@ -102,7 +106,7 @@ Note that output is collapsed by default for passing tests.
     ```
 - Ruby
     ```ruby
-    puts "debug message"
+    p "debug message"
     ```
 - Rust
     ```rust
