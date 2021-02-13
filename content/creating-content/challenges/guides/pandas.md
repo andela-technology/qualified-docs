@@ -139,7 +139,7 @@ Since Pandas is built on NumPy and complex solutions to Pandas challenges often 
 ### Using other libraries
 You can test many Pandas competencies quite comprehensively using the setup above. However, Qualified supports other libraries which can help expand on the possibilities offered by Pandas and NumPy alone.
 
-When using the project challenge mode, you may wish to choose the "datascience" preset, which enables some additional modules like ntlk, keras and spacy. Visit our [docs](https://docs.qualified.io) for an up-to-date listing of presets, modules and an in-depth guide to classic and project challenge modes.
+When using the project challenge mode, you may wish to choose the "datascience" preset, which enables some additional modules like ntlk, keras and spacy. Visit our [Python language page](/reference/languages/python/) for an up-to-date listing of presets, modules and view our [guide to classic and project challenge modes](/for-teams/getting-started/core-concepts/#different-types-of-challenges).
 
 ### Visualizing dataframes
 Adding visualization to your Pandas or other data science challenges can be done in a few ways. Most simply, the classic code runner supports HTML, so you can tabularize the dataframe and render it upon each run using [`pandas.DataFrame.to_html`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_html.html). Here's an example that formats the HTML block as the runner expects using the magic `<LOG:HTML:optional name>` tag and replacing newlines with the `<:LF:>` tag:
@@ -266,7 +266,7 @@ Under normal circumstances, programmers consult documentation on a constant basi
 Python's [type hinting](https://docs.python.org/3/library/typing.html) can help candidates quickly grasp the input and output types for the functions they're expected to complete. The examples on this page use this technique.
 
 #### Show test case results in source code order
-Unittest reorders test cases which can make it hard for candidates and students to solve cases top-to-bottom in increasing difficulty and quickly match a case's output with the code. See the Stack Overflow thread [Python `unittest.TestCase` execution order](https://stackoverflow.com/questions/5387299/python-unittest-testcase-execution-order/62454506#62454506) for a variety of solutions to the problem. One solution from [our Python docs](https://docs.qualified.io/reference/languages/python/unittest#setup-and-tear-down) which has been used on a few challenges is[`test.TestLoader.sortTestMethodsUsing`](https://docs.python.org/3/library/unittest.html#unittest.TestLoader.sortTestMethodsUsingunit):
+Unittest reorders test cases which can make it hard for candidates and students to solve cases top-to-bottom in increasing difficulty and quickly match a case's output with the code. See the Stack Overflow thread [Python `unittest.TestCase` execution order](https://stackoverflow.com/questions/5387299/python-unittest-testcase-execution-order/62454506#62454506) for a variety of solutions to the problem. One solution from [our Python docs](/reference/languages/python/unittest#setup-and-tear-down) which has been used on a few challenges is[`test.TestLoader.sortTestMethodsUsing`](https://docs.python.org/3/library/unittest.html#unittest.TestLoader.sortTestMethodsUsingunit):
 
 ```python
 import inspect
@@ -295,5 +295,5 @@ pd.set_option("display.max_rows", None)
 to the solution setup code to help provide the candidate or student with an easy way to adjust the maximum number of rows and columns printed.
 
 #### General challenge best practices
-Our general [challenge best practices](https://docs.qualified.io/creating-content/challenges/best-practices/) guide offers many more general tips for writing effective challenges.
+Our general [challenge best practices](/creating-content/challenges/best-practices/) guide offers many more general tips for writing effective challenges.
 
