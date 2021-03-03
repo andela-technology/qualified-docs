@@ -91,9 +91,9 @@ Here are just a few of the technologies which can be tested with the Qualified p
 - jQuery
 
 ### Data Science Frameworks & Libraries
-- Magplotlib
+- Matplotlib
 - Networkx
 - Koala
-- Pandas 
-- Tidyverse 
+- Pandas
+- Tidyverse
 
