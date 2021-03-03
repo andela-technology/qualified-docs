@@ -29,9 +29,8 @@ Here are some of the benefits of testing each part of the stack separately.
   - Narrowing the scope tends to increase completion rates and satisfaction with the assessment process. 
   - Candidates have more chances to take breaks during multi-part assessments and take-home projects.
   - Multiple small challenges offers the psychological boost of frequent achievements.
-  - Lightweight environments help candidates get results quickly and reliably. Per submission, Qualified spins up a Docker environment and runs the code with a roughly 12-second timeout. In framework-heavy apps, by the time code is compiled/transpiled/bundled and served, less time remains for tests than in classical challenges that involve running a single function without libraries.
-- Modularized challenges by technology stack and competency increase the power of our rubrics and reporting features, making it easier to see at a glance which parts of the stack (and skills within a part of the stack) candidates performed best in.
-- The capabilities of the in-browser IDE are most effective when used judiciously. For example, although dozens of project files are possible, there are diminishing returns in the number of files a candidate might be able to look at and reason about within a typical hour-long challenge. Most coding in a challenge is done within a file or two only and other files are mainly for support.
+  - Lighter-weight environments help candidates get results quickly and reliably. The time it takes to build and serve a full-stack app would likely exceed the 12-second submission timeout in our code runner.
+- Splitting the assessment by technology stack and competency increases the power of our rubrics and reporting features, making it easier to see at a glance which skills in which parts of the stack candidates performed best in.
 - Reuse of challenges is easier when content is modularized. Hiring for a front-end role becomes as simple as removing the back-end challenges from your full-stack assessment.
 - Development and maintenance for content developers becomes easier and streamlines collaboration in a multi-person content team.
 
@@ -40,7 +39,7 @@ We recommend starting by making a list of the competencies you wish to test in y
 
 Next, list the technologies in your stack you'd like to test and identify how each one helps meet a competency goal. 
 
-For example, the back-end might consist of a Node environment running Express and the Sequelize ORM on top of a SQLite database, which helps validate the candidate's database manipulation skills. The front-end might consist of a React application tested with Enzyme, which serves to test the candidate's ability to work with the UI.
+For example, the back-end might consist of a Node environment running Express and the [Sequelize](https://sequelize.org) ORM on top of a SQLite database, which helps validate the candidate's database manipulation skills. The front-end might consist of a React application, which serves to test the candidate's ability to work with the UI.
 
 Even after splitting your project into front-and back-end components, you may consider a finer granularity. For example, a React challenge that accesses an API to create, update, edit and delete records might be well-suited to multiple challenges per component, separating styling or UI from request logic or component design.
 
@@ -67,11 +66,14 @@ This technique of mixing quizzes alongside long and short challenge lengths give
 Drafting instructions early in the development process can provide insight into scoping your challenges. If instructions begin to feel heavy and complex, it may be time to narrow the scope or break the challenge into multiple parts.
 
 ### Mocking the back-end
-Since the back-end (database and server) will be completely inaccessible in Web Preview as well as in the Node testing environment we use to validate front-end code (whether it be React, Vue, Angular, AngularJS or vanilla JS/HTML5), mocking these services is a reliable and efficient (from an execution time perspective) solution.
+Since the back-end (database and server) will be completely inaccessible in Web Preview as well as in the Node testing environment used to validate front-end code (whether it be React, Vue, Angular, AngularJS or vanilla JS/HTML5), mocking these services is a reliable and efficient (from an execution time perspective) solution.
 
-In many cases, mocks can be shared between the Web Preview feature and the Node test suite, but keep in mind Web Preview and the Node tests are different environments that happen to use the same code.
+In many cases, mocks can be shared between the Web Preview feature and the Node test suite. For example, in a web application with mocked HTTP responses, the same mocks may work in a Jest test suite running on our server as well as in mocked `fetch` calls specific to the Web Preview running on the client.
 
-If the back-end is mocked in support of a front-end challenge, it's generally a good idea to mention this to the candidate explicitly in the instructions to promote transparency. Making mock files visible and read-only is a common strategy.
+If a back-end is mocked in support of a front-end challenge, it's generally a good idea to mention this to the candidate explicitly in the instructions to promote transparency. Making mock files visible and read-only is a common strategy.
+
+### Prefer APIs to server-side rendering
+APIs are a more natural fit for Qualified than server-rendered apps, although both are supported. The code runner offers HTML5 capabilities but Web Preview will be unavailable for server-side challenges. Making the front-end a single-page app and the back-end a JSON API makes it easy to maximize the advantages of each.
 
 ### Alternatives to mocking
 Writing mocks for large APIs can be time-consuming and may not be suitable for all use cases, particularly highly dynamic services.
