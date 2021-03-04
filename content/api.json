@@ -3594,7 +3594,7 @@
   "http_method": "PUT",
   "route": "/v1/challenges/:id/publish",
   "description": "Publish",
-  "explanation": "Publishes a challenge, making it available to be used within assessments. Code based challenges are by default configured to validate their test cases on publish. This happens in the background, and may result in your challenge be set to draft if those tests do not pass.",
+  "explanation": "Publishes a challenge, making it available to be used within assessments. NOTE: The Qualified UI typically validates code before publishing. This endpoint does not do any validation, so if you publish a challenge directly through the API, you may be publishing a challenge which is not passable by candidates.",
   "parameters": [
     {
       "required": true,
