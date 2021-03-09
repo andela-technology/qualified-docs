@@ -28,6 +28,7 @@
                 v-for="(value, key) in parameter.schema"
                 :key="key"
                 :parameter="schemaParam(key, value)"
+                :ignore-required="ignoreRequired"
             />
          </api-ref-container>
      </div>
@@ -35,6 +36,7 @@
 </template>
 
 <script>
+import { camelCase } from '../../utils/string-utils';
 import ApiRefContainer from './ApiRefContainer';
 export default {
   name: 'ApiRefParameter',
@@ -153,9 +155,15 @@ export default {
   },
   methods: {
       schemaParam (name, parameter) {
+          if (typeof parameter === 'string') {
+              parameter = {
+                  desc: parameter,
+                  type: 'String'
+              }
+          }
           return {
               ...parameter,
-              name
+              name: camelCase(name)
           }
       }
   },

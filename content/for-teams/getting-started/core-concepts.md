@@ -41,7 +41,12 @@ While the next type of coding challenge is now the recommended approach, there a
 #### Project Code Challenges
 A Project Code Challenge is our newest and now recommended approach to testing developers on their ability to code. It provides a format that that is more capable and flexible, allowing you to test for coding tasks that involve multiple files. Back-end and Front-end web development tasks, using frameworks such as React and Ruby on Rails, are good fits for project based challenge. This challenge format also offers a number of unique configuration options, such as hiding certain files from candidates, or allowing them to see the file but not edit it.  
 
-We won't dive too deep into those details just yet, but for now just remember that this format is best for larger coding tasks.  
+:::info Limitations
+We generally recommend using project code challenges over the classic format. There are however two reasons why you would not want to select this format:
+
+- You want to be able to code pair with candidates within an interactive coding session.
+- You want to give candidate's the ability to choose between different languages to take the challenge in.
+:::
 
 ### Q&A Code Challenges
 Question & Answer challenges allow you to configure one or more multiple choice and/or free-text questions. These challenges are similar to traditional tests—though within Qualified they are often used for a variety of reasons. Here are just a few ways that they can be utilized:
