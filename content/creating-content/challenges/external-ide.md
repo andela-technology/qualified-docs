@@ -10,8 +10,11 @@ from your file system back to Qualified’s web IDE. This allows developers to w
 set up or get an application running in their own system.
 
 :::warning Experimental Labs Feature
-External IDE is an experimental feature, and may be discontinued.  
+External IDE is an experimental feature, and may be discontinued.
+
 It is intended as additional functionality on top of the Web IDE, with the Web IDE being the primary, supported way of taking Qualified Assessments.
+
+[See other limitations at the bottom of the document.](#limitations)
 :::
 
 ## The External IDE Developer Experience
@@ -26,7 +29,15 @@ If they choose to complete the challenge using their IDE, they will then be aske
 
 Once these setup steps are completed, developers can work on Qualified challenges in the comfort of their own development environment.
 
+### The Qualified `attach` Application
+
+The desktop client is a command line application called `attach`. This is what is used to connect the filesystem to the Web IDE.
+
+It is installed as a global Node package, so your developers will need to have Node and NPM installed. They will need to be comfortable installing packages and running a command line application. For users who are not comfortable with these situations, we do not recommend using Attach unless you are also able to provide guidance and support.
+
 ## Enabling External IDE
+
+External IDE is premium feature not available to all teams. You may need to contact your sales representative to gain access. Once enabled, you'll need to turn the feature on in [the Qualified Labs section of your account](https://www.qualified.io/hire/account/labs).
 
 If you want to allow developers to use their External IDE, you can enable or disable the feature team-wide. The global setting can also be overridden for any given challenge, inside the Challenge Config dialog.
 
@@ -94,8 +105,14 @@ If the directories get out of date, the best course of action for the developer 
 
 ## Limitations
 
-* The External IDE is intended for technically proficient users. If your users are not used to working with the Node ecosystem, they may have difficulty installing and running the program.
+* Qualified is not currently able to provide direct support to users who are having problems installing the Attach application.
+* The External IDE is intended for technically proficient users. If your users are not used to working with the Node ecosystem, they may have difficulty installing and running the application.
 * External IDE only works with Project Code Challenges.
 * Code written in an External IDE will not be subject to detailed code playback. You can still use our code playback feature, but it will be limited to when the developer saves code.
 * External IDE is best suited to letting developers work independently. You can’t launch an interactive session with a candidate if they’re using their own IDE, but you can still review the code that they’ve written with them via a pair-programming session thereafter.
 * External IDE is an experimental feature, and may be discontinued. It is intended as additional functionality on top of the Web IDE, with the Web IDE being the primary, supported way of taking Qualified Assessments.
+* As an experimental feature, External IDE may not be able to support certain styles of challenges.
+* Working directories that utilize files outside of the scope of what is supported by the project code challenge are not supported. You will need to ensure that you ignore them using either `.gitignore` or `.attachignore`. This includes binary files, such as images.
+* The Attach application handles running user code on Qualified's servers. It does not handle installing required dependencies on the user's machine and as such, is not responsible for ensuring that auto complete works within external IDEs. End users are responsible for installing any dependencies on their own.
+
+
