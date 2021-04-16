@@ -69,12 +69,12 @@ def expected
 end
 ```
 
-<div class="note-box note-box-warning">
-**Note:** Preloaded code is visible to candidates programmatically since it exists in the `setup.rb` file in the workspace. You can disable sample test cases or remove `setup.rb` when run to prevent the candidate from accessing its source.
-</div>
-<div class="note-box note-box-warning">
-**Note:** Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
-</div>
+:::caution Caution
+Preloaded code is visible to candidates programmatically since it exists in the `setup.rb` file in the workspace. You can disable sample test cases or remove `setup.rb` when run to prevent the candidate from accessing its source.
+:::
+:::caution Caution
+Make sure to always return an array by having `to_a` at the end. Otherwise its possible to expose the query's SQL string.
+:::
 
 Within your Test cases section, invoke `compare_with`, passing in your `expected` function's return value:
 
