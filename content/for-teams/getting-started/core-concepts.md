@@ -63,7 +63,7 @@ While Q&A challenges only offer two questions types, these question types are mu
 #### Multiple Choice Questions
 Multiple choice questions can be configured with the following options:
 - Single choice
-- Mulitple choice with a fixed choice count
+- Multiple choice with a fixed choice count
 - Multiple choice with a non-fixed choice count
 - Weighted single choice, where some choices are more correct than others   
 - Weighted multiple choice, where some choices are more correct than others
