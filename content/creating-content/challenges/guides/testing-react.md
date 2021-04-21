@@ -76,7 +76,7 @@ It's tempting to require candidates to use a class or id on HTML elements for th
 For example, a naive test suite might prescribe the following element format:
 
 ```js
-<div class="foo">hello world</div>
+<div id="foo">hello world</div>
 ```
 
 The test suite expects to grab elements of this type with the id:
@@ -85,23 +85,23 @@ The test suite expects to grab elements of this type with the id:
 wrapper.find(".foo");
 ```
 
-Our suggestion is to use a `data-test` attribute instead:
+Our suggestion is to use a [`data-testid` attribute](https://kentcdodds.com/blog/making-your-ui-tests-resilient-to-change) instead:
 
 ```js
-<div data-test="bar" class="foo">hello world</div>
+<div data-testid="bar" id="foo">hello world</div>
 ```
 
 The test suite will now rely on 
 
 ```js
-wrapper.find('[data-test="bar"]');
+wrapper.find('[data-testid="bar"]');
 ```
 
 to locate the element(s).
 
-The `data-test` attribute approach separates tests from implementation, giving candidates the flexibility to choose their own ids and class names to fit their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally name their elements.
+The `data-testid` attribute approach separates tests from implementation, giving candidates the flexibility to choose their own ids and class names to fit their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally name their elements.
 
-Be sure to explicitly state the required `data-test` names in the instructions so candidates won't have to infer them from the test suite.
+Be sure to explicitly state the required `data-testid` names in the instructions so candidates won't have to infer them from the test suite.
 
 ### Assume candidates will use arbitrary React features
 
