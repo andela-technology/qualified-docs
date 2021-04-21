@@ -94,7 +94,8 @@ Our suggestion is to use a [`data-testid` attribute](https://kentcdodds.com/blog
 The test suite will now rely on 
 
 ```js
-wrapper.find('[data-testid="bar"]');
+wrapper.find('[data-testid="bar"]').hostNodes(); // Enzyme
+getByTestId("bar"); // or React Testing Library
 ```
 
 to locate the element(s).
