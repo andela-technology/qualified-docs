@@ -2,7 +2,7 @@
 title: Creating full-stack web challenges
 summary: "Creating full-stack web challenges"
 tags:
-  - full-stack web developement
+  - full-stack web development
   - javascript
   - html
   - backend
