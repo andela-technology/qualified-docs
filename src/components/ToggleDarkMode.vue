@@ -8,7 +8,7 @@
 export const LIGHTS_OUT = 'lights-out';
 
 export const getThemeFromURL = () => {
-    const match = (window.location.search || '').match(/\btheme=(light|dark)\b/);
+    const match = process.isClient && (window.location.search || '').match(/\btheme=(light|dark)\b/);
     return match && match[1];
 }
 

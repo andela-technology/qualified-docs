@@ -1,5 +1,5 @@
 export function isEmbedded() {
-    return (window.location.search || '').match(/\bembedded=true\b/);
+    return process.isClient && (window.location.search || '').match(/\bembedded=true\b/);
 }
 
 export function getRelatedPages(currentPage, pages) {
