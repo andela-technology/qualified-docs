@@ -2,17 +2,16 @@
     <Layout>
         <div class="flex flex-wrap items-start justify-start">
 
-            <div v-if="!embedded" class="markdown-page__side order-2 w-full md:w-1/3 sm:pl-4 md:pl-6 lg:pl-8 sticky">
+            <div class="markdown-page__side order-2 w-full md:w-1/3 sm:pl-4 md:pl-6 lg:pl-8 sticky">
                 <OnThisPage/>
             </div>
 
-            <div class="order-1 w-full"
-                 :class="{'md:w-2/3': !embedded, 'max-w-full mx-auto': embedded}">
+            <div class="order-1 w-full md:w-2/3 markdown-page__content-wrapper">
                 <div class="markdown-page__content" v-html="$page.markdownPage.content" on-this-page/>
 
                 <api-ref v-if="$page.markdownPage.apiRef" class="markdown-page__content" on-this-page />
 
-                <div v-if="!embedded" class="markdown-page__end">
+                <div class="markdown-page__end">
                     <NextPrevLinks/>
                 </div>
             </div>
@@ -53,7 +52,6 @@ query ($id: ID!) {
 import OnThisPage from '@/components/OnThisPage.vue';
 import NextPrevLinks from '@/components/NextPrevLinks.vue';
 import ApiRef from '../components/ApiRef';
-import {isEmbedded} from '../utils/page-utils';
 
 export default {
     components: {
@@ -95,11 +93,6 @@ export default {
             ],
         };
     },
-    computed: {
-        embedded() {
-            return isEmbedded();
-        },
-    }
 };
 </script>
 
@@ -364,6 +357,22 @@ export default {
 
     p + .admonition {
         @apply mt-6;
+    }
+}
+
+html[embedded-docs] {
+    .markdown-page__side,
+    .markdown-page__end {
+        display: none !important;
+    }
+    .markdown-page__content-wrapper {
+        @apply w-full max-w-full mx-auto;
+    }
+    .markdown-page__content {
+        @apply py-5;
+    }
+    .markdown-page__content > *:first-child {
+        @apply mt-0 pt-0;
     }
 }
 

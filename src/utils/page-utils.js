@@ -1,5 +1,25 @@
+let _embedded = null;
+
 export function isEmbedded() {
-    return process.isClient && (window.location.search || '').match(/\bembedded=true\b/);
+    if(_embedded === null) {
+        _embedded = false;
+        if(process.isClient) {
+            const windowMatch = /QUALIFIED-DOCS-EMBEDDED/.test(window.name);
+            const matcher = (window.location.search || '').match(/\bembedded=(true|false)\b/);
+            // the following lines preserve this setting across refreshes when navigating
+            if(matcher) {
+                _embedded = matcher[1] === 'true';
+                if(windowMatch && !_embedded) {
+                    window.name = window.name.replace(/\s*QUALIFIED-DOCS-EMBEDDED/g, '');
+                } else if(!windowMatch && _embedded) {
+                    window.name = window.name + ' QUALIFIED-DOCS-EMBEDDED';
+                }
+            } else {
+                _embedded = windowMatch;
+            }
+        }
+    }
+    return _embedded;
 }
 
 export function getRelatedPages(currentPage, pages) {
@@ -32,11 +52,11 @@ export function extendPageData(currentPage, pages) {
         return {
             directory,
             file,
-            depth: segments.length-2,
+            depth: segments.length - 2,
             current,
             active: current || currentPage.path.indexOf(directory.length > 1 ? directory : page.path) === 0,
             pages: [],
-            ...page
+            ...page,
         }
     }).reverse()
 }
@@ -46,9 +66,9 @@ export function getNestedPages(currentPage, pages) {
     // now that we have the pages mapped and extended with additional properties,
     // lets link them to their parents
     mapped.forEach(page => {
-        if (page.directory !== '/') {
+        if(page.directory !== '/') {
             const parent = mapped.find(p => p.path === page.directory)
-            if (parent) {
+            if(parent) {
                 parent.pages.push(page)
             }
         }
@@ -62,51 +82,49 @@ export function getNextPrev(currentPage, pages) {
     let prev = currentPage.prev
     let page
     const availablePages = pages => {
-        if (currentPage.private) return pages
+        if(currentPage.private) return pages
         return pages.filter(p => !p.private)
     }
 
-    if (!next || !prev) {
+    if(!next || !prev) {
         const pagesInfo = getNestedPages(currentPage, pages)
         page = pagesInfo.find(p => p.current)
         let parent = pagesInfo.find(p => p.path === page.directory)
 
-        if (parent) {
+        if(parent) {
             const parentPages = availablePages(parent.pages)
             const ndx = parentPages.findIndex(p => p.current)
             const findSibling = offset => pagesInfo.find(
                 p => p.depth === parent.depth &&
-                     p.order === (parent.order + offset) &&
-                     parent.directory === p.directory
+                    p.order === (parent.order + offset) &&
+                    parent.directory === p.directory,
             )
 
-            if (ndx > 0) {
+            if(ndx > 0) {
                 prev = parentPages[ndx - 1]
-            }
-            else {
+            } else {
                 let prevParent = findSibling(-1)
-                if (prevParent && prevParent.private) {
+                if(prevParent && prevParent.private) {
                     prevParent = findSibling(-2)
                 }
-                if (prevParent) {
-                    prev = availablePages(prevParent.pages).slice(-1)[ 0 ]
+                if(prevParent) {
+                    prev = availablePages(prevParent.pages).slice(-1)[0]
                 }
             }
 
-            if (ndx < parentPages.length - 1) {
+            if(ndx < parentPages.length - 1) {
                 next = parentPages[ndx + 1]
-            }
-            else {
+            } else {
                 let nextParent = findSibling(1)
-                if (nextParent && nextParent.private) {
+                if(nextParent && nextParent.private) {
                     nextParent = findSibling(2)
                 }
-                if (nextParent) {
+                if(nextParent) {
                     next = availablePages(nextParent.pages)[0]
                 }
             }
         }
     }
 
-    return { next, prev, current: page }
+    return {next, prev, current: page}
 }

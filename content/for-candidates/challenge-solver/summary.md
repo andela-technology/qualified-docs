@@ -1,5 +1,6 @@
 ---
 private: true
+summary: Challenge IDE Summary
 ---
 
 # Challenge IDE
@@ -24,4 +25,4 @@ The code challenge solver provides an in-browser IDE for editing, testing, and r
 ## More Help
 
 - [Debugging Tips](/for-candidates/challenge-solver/debugging-tips)
-- [Learn more about the challenge solver](/for-candidates/challenge-solver)
+- [Learn more about the challenge solver](/for-candidates/challenge-solver/challenge-ide)

@@ -12,12 +12,25 @@ export const getThemeFromURL = () => {
     return match && match[1];
 }
 
-export const setThemeFromURL = () => {
-    const theme = getThemeFromURL();
-    if(theme) {
-        document.documentElement.toggleAttribute(LIGHTS_OUT,  theme === 'dark');
+
+// try to set theme before loading to avoid content flash
+const _hasInStorage = () => localStorage.getItem(LIGHTS_OUT) !== null;
+const _getFromStorage = () => localStorage.getItem(LIGHTS_OUT) === 'true' ? true : false;
+const _detectPreferred = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+let darkMode = false;
+if(process.isClient) {
+    const urlTheme = getThemeFromURL();
+    if(urlTheme) {
+        darkMode = urlTheme === 'dark';
+    } else if(_hasInStorage()) {
+        darkMode = _getFromStorage();
+    } else if(process.isClient && window.matchMedia) {
+        darkMode = _detectPreferred();
     }
+    document.documentElement.toggleAttribute(LIGHTS_OUT, darkMode);
 }
+
 
 export default {
     data() {
@@ -44,35 +57,12 @@ export default {
             return shouldBeDark;
         },
 
-        detectPreferred() {
-            return window.matchMedia('(prefers-color-scheme: dark)').matches;
-        },
-
-        hasInStorage() {
-            const check = localStorage.getItem(LIGHTS_OUT);
-
-            return check !== null;
-        },
-
         writeToStorage(prefersDark) {
             localStorage.setItem(LIGHTS_OUT, prefersDark ? 'true' : 'false');
-        },
-
-        getFromStorage() {
-            return localStorage.getItem(LIGHTS_OUT) === 'true' ? true : false;
         },
     },
 
     mounted() {
-        let darkMode = false;
-        const urlTheme = getThemeFromURL();
-        if(urlTheme) {
-            darkMode = urlTheme === 'dark';
-        } else if(this.hasInStorage()) {
-            darkMode = this.getFromStorage();
-        } else if(process.isClient && window.matchMedia) {
-            darkMode = this.detectPreferred();
-        }
         this.toggleDarkMode(darkMode)
     },
 };
