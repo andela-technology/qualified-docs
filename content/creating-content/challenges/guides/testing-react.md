@@ -47,7 +47,7 @@ However, this places an unnecessarily large imposition on the candidate's code, 
 
 Instead, prefer a black-box testing approach that finds the button element and clicks it, then asserts on the DOM contents. This enables the candidate the freedom to implement the handler and state as they see fit.
 
-While the above example is quite basic and may seem obvious, we recommend staying on the lookout for more subtle implementation detail-driven tests which can creep into corners of your suite, causing unexpected false negatives and poor candidate experiences.
+While the above example is quite basic and may seem obvious, we recommend staying on the lookout for more subtle implementation detail-driven tests which can creep into corners of your suite, causing unexpected false negatives.
 
 ### Use mocks as appropriate
 
@@ -65,7 +65,7 @@ Furthermore, hardcoded results (i.e. table lookups for each test case's input ma
 
 Hidden test cases may be perceived as unrealistic and unfair to candidates, creating a perception of a "gotcha"-oriented challenge.
 
-We generally find that eliminating hidden tests entirely, or using 1-2 simple hidden tests to validate an edge case or hardcoding-prevention randomized input is sufficient.
+We generally find that eliminating hidden tests entirely, or using 1-2 simple hidden tests to validate an edge case or to prevent hardcoding by injecting randomized input is sufficient.
 
 You can use the "submission ignore paths" setting in the challenge's configuration menu to ignore changes the candidate has made to the suite if you plan to use one suite for submission and for the candidate's testing.
 
@@ -88,18 +88,18 @@ wrapper.find(".foo");
 Our suggestion is to use a `data-test` attribute instead:
 
 ```js
-<div data-test="foo" id="foo">hello world</div>
+<div data-test="bar" class="foo">hello world</div>
 ```
 
 The test suite will now rely on 
 
 ```js
-wrapper.find('[data-test="foo"]');
+wrapper.find('[data-test="bar"]');
 ```
 
 to locate the element(s).
 
-The `data-test` approach separates tests from implementation, giving candidates the flexibility to choose their own ids and class names for their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally use and name their elements.
+The `data-test` attribute approach separates tests from implementation, giving candidates the flexibility to choose their own ids and class names to fit their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally name their elements.
 
 Be sure to explicitly state the required `data-test` names in the instructions so candidates won't have to infer them from the test suite.
 
@@ -111,11 +111,13 @@ In general, we prefer to leave the implementation decisions to the candidate to 
 
 ### Remember that Web Preview is a different environment from the code runner
 
-The Code Runner that ultimately evaluates candidate submissions is not the same as the Web Preview feature you'll likely want to enable with all React challenges. The web preview makes it easy for the candidate to view, manipulate amd test their app in real time. However, web preview's different environment complete with its own `package.json` and native browser environment can create a "but it works on my machine!" scenario where the code appears functioning to spec in the web preview but fails in the submitted test cases, resulting in frustration.
+The Code Runner that ultimately evaluates candidate submissions is not the same as the Web Preview feature you'll likely want to enable with all React challenges. The web preview makes it easy for the candidate to view, manipulate amd test their app in real time in their browser. 
+
+However, web preview's different environment complete with its own `package.json` and native browser environment can create a "but it works on my machine!" scenario where the code appears functioning to spec in the web preview but fails in the submitted test cases executed on our server.
 
 Instruction clarity, mocking parts of both the web preview and test suite in tandem and providing well-written, transparent test cases are the best tools for navigating the differences between the two environmets.
 
-In some narrow cases, it may be appropriate to disable web preview and focus on server-side rendering using, for example, [`ReactDOMServer`](https://reactjs.org/docs/react-dom-server.html). Our Code Runner does support HTML output, but generally, the benefits of live interaction with Web Preview greatly outweigh the consistency that comes from avoiding it. Nonetheless, we mention server-side rendering for completeness.
+In some narrow cases, it may be appropriate to disable web preview and focus on server-side rendering using, for example, [`ReactDOMServer`](https://reactjs.org/docs/react-dom-server.html). Our Code Runner does support HTML output, but generally, the benefits of live interaction with web preview greatly outweigh the consistency that comes from avoiding it. Nonetheless, we mention server-side rendering for completeness.
 
 ### Communicate assumptions in the instructions
 
