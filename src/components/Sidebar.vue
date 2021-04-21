@@ -9,8 +9,7 @@
     </div>
 </template>
 <script>
-import { sortBy } from '../utils/array-utils';
-import { getRelatedPages, getNestedPages } from '../utils/page-utils';
+import {getNestedPages} from '../utils/page-utils';
 import SidebarItem from './SidebarItem';
 
 export default {
@@ -42,6 +41,6 @@ export default {
 </script>
 <style>
     .sidebar {
-        
+
     }
 </style>

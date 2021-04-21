@@ -7,6 +7,18 @@
 <script>
 export const LIGHTS_OUT = 'lights-out';
 
+export const getThemeFromURL = () => {
+    const match = (window.location.search || '').match(/\btheme=(light|dark)\b/);
+    return match && match[1];
+}
+
+export const setThemeFromURL = () => {
+    const theme = getThemeFromURL();
+    if(theme) {
+        document.documentElement.toggleAttribute(LIGHTS_OUT,  theme === 'dark');
+    }
+}
+
 export default {
     data() {
         return {
@@ -32,7 +44,7 @@ export default {
             return shouldBeDark;
         },
 
-        detectPrefered() {
+        detectPreferred() {
             return window.matchMedia('(prefers-color-scheme: dark)').matches;
         },
 
@@ -52,15 +64,16 @@ export default {
     },
 
     mounted() {
-        if(this.hasInStorage()) {
-            this.toggleDarkMode(
-                this.getFromStorage(),
-            );
+        let darkMode = false;
+        const urlTheme = getThemeFromURL();
+        if(urlTheme) {
+            darkMode = urlTheme === 'dark';
+        } else if(this.hasInStorage()) {
+            darkMode = this.getFromStorage();
         } else if(process.isClient && window.matchMedia) {
-            this.toggleDarkMode(
-                this.detectPrefered(),
-            );
+            darkMode = this.detectPreferred();
         }
+        this.toggleDarkMode(darkMode)
     },
 };
 </script>

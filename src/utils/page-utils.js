@@ -1,3 +1,7 @@
+export function isEmbedded() {
+    return (window.location.search || '').match(/\bembedded=true\b/);
+}
+
 export function getRelatedPages(currentPage, pages) {
     const children = [];
     const currentPath = currentPage.path;
@@ -75,7 +79,7 @@ export function getNextPrev(currentPage, pages) {
                      p.order === (parent.order + offset) &&
                      parent.directory === p.directory
             )
-            
+
             if (ndx > 0) {
                 prev = parentPages[ndx - 1]
             }

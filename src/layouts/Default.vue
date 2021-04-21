@@ -2,13 +2,14 @@
     <div class="default-layout">
         <div class="default-layout__content">
 
-            <header ref="header" @resize="setHeaderHeight">
+            <header ref="header" @resize="setHeaderHeight" v-if="!embedded">
                 <LayoutHeader/>
             </header>
 
-            <main class="container">
+            <main class="container"
+                  :class="{'container-embedded': embedded}">
                 <aside
-                    v-if="$page"
+                    v-if="$page && !embedded"
                     class="sidebar-container"
                     :class="{ 'sidebar-container--open': sidebarOpen }"
                     :style="sidebarStyle"
@@ -20,7 +21,7 @@
 
                 <div
                     class="w-full pb-24"
-                    :class="{'pl-0 lg:pl-12 lg:w-3/4 article-content': !!$page}"
+                    :class="{'pl-0 lg:pl-12 lg:w-3/4 article-content': !!$page && !embedded}"
                 >
                     <slot/>
                 </div>
@@ -29,7 +30,7 @@
 
         </div>
 
-        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden" v-if="$page">
+        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden" v-if="$page && !embedded">
             <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
                     @click="sidebarOpen = ! sidebarOpen">
                 <XIcon v-if="sidebarOpen"/>
@@ -51,6 +52,8 @@ query {
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import {MenuIcon, XIcon} from 'vue-feather-icons';
+import {setThemeFromURL} from '../components/ToggleDarkMode';
+import {isEmbedded} from '../utils/page-utils';
 
 export default {
     components: {
@@ -73,11 +76,16 @@ export default {
     methods: {
         setHeaderHeight() {
             this.$nextTick(() => {
-                this.headerHeight = this.$refs.header.offsetHeight;
+                if(this.$refs && this.$refs.header) {
+                    this.headerHeight = this.$refs.header.offsetHeight;
+                }
             });
         },
     },
     computed: {
+        embedded() {
+            return isEmbedded();
+        },
         sidebarStyle() {
             return {
                 top: this.headerHeight + 'px',
@@ -87,6 +95,8 @@ export default {
     },
     mounted() {
         this.setHeaderHeight();
+        // force dark mode if requested in URL
+        setThemeFromURL();
     },
     metaInfo() {
         return {
@@ -186,7 +196,7 @@ body {
     .text-fade {
         color: var(--color-ui-fade);
     }
-    
+
     .default-layout__content {
         @apply flex flex-col justify-start min-h-screen;
         > header {
@@ -225,7 +235,11 @@ body {
             }
         }
     }
-    
+
+    .container.container-embedded {
+        @apply max-w-3xl px-8;
+    }
+
     .sidebar-container {
         @apply fixed px-4 pt-4 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
         max-width: 320px;

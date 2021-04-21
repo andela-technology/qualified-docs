@@ -1,5 +1,5 @@
 ---
-order: 1
+private: true
 ---
 
 # Challenge IDE
@@ -30,5 +30,3 @@ You can drag files in from your file system to add them to your solution. The we
 
 - [Debugging Tips](/for-candidates/advanced-challenge-ide/debugging-tips)
 - [Learn more about the challenge solver](/for-candidates/advanced-challenge-ide)
-
-## Environment & Testing Framework
