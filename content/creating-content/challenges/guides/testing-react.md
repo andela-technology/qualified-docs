@@ -5,6 +5,8 @@ tags:
   - javascript
   - react
   - enzyme
+  - react-test-utils
+  - react-testing-library
 ---
 
 # Testing React
@@ -56,6 +58,9 @@ Mocks can be a useful tool for testing React code. Mocking dependencies, common 
 For example, mocking [`fetch`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) is a great way to avoid hitting a potentially unreliable API. This is particularly important in Qualified because an API that happens to be unreachable or slow in a candidate's submission can result in a false negative score. 
 
 When mocking responses, don't forget to include as many fields as the candidate might want to access. For example, `fetch` returns an object with `status` and `ok` properties -- assuming the candidate checks `response.status === 200` instead of `status.ok` might lead to a discrepancy that costs the candidate points unfairly.
+
+### Clearly state which event should be handled
+Be careful when prescribing `change`, `keydown`, `keypress` and other events in challenges. The instructions and test suite should clearly communicate which one is to be used to avoid a situation where a candidate has a solution that appears to work in web preview but fails in the submission tests because a different event than was expected is fired.
 
 ### Avoid hidden tests
 
