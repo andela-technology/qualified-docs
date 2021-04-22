@@ -83,8 +83,8 @@ Challenges are designed to assess your skills without requiring a large investme
 
 How you solve a code challenge depends on whether it is a classic code challenge or a project code challenge. You can easily tell the difference because a project code challenge has a file tree along the left side while a classic code challenge already has all the files open with no tree. 
 
-* [Learn more about the Classic Code Challenge Solver](/for-candidates/challenge-solver)
-* [Learn more about the Project Code Challenge Solver](/for-candidates/advanced-challenge-ide)
+* [Learn more about the Classic Code Challenge Solver](/for-candidates/challenge-solver/challenge-ide)
+* [Learn more about the Project Code Challenge Solver](/for-candidates/advanced-challenge-ide/challenge-ide)
 
 ### Q&A Challenges
 

@@ -1,6 +1,6 @@
 ---
-order: 3
 title: Best Practices
+order: 3
 ---
 # Challenge Development Best Practices
 

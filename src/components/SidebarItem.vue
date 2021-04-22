@@ -10,7 +10,7 @@
         }"
     >
         <g-link
-            :to="treatAsArticle ? page.path : page.pages[0].path"
+            :to="treatAsArticle ? page.path : sortedChildren[0].path"
             :class="{
                 'sidebar--item__link': true,
                 'sidebar--item__link--disabled': !treatAsArticle
@@ -36,7 +36,7 @@
 
 <script>
 import { ChevronRightIcon, ChevronDownIcon } from 'vue-feather-icons';
-import { sortBy } from '../utils/array-utils';
+import { sortBy, sortValue } from '../utils/array-utils';
 
 export default {
   name: 'SidebarItem',
@@ -60,8 +60,12 @@ export default {
           if (this.page.depth === 1) {
               return sortBy(this.page.pages, p => !!p.pages.length)
           }
-          if (this.page.depth === 3) {
-              return sortBy(this.page.pages, p => p.order + '' || p.path);
+          if (this.page.depth > 1) {
+              return [...this.page.pages].sort((a, b) => {
+                  const aNum = a.order || 0;
+                  const bNum = b.order || 0;
+                  return (aNum - bNum) || sortValue(a.path, b.path);
+              });
           }
           return this.page.pages
       },
@@ -148,7 +152,7 @@ export default {
     }
 
     .sidebar-item--depth-2:last-child {
-        
+
     }
 
     .sidebar-item--current {

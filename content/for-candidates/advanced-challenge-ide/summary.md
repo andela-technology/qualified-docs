@@ -1,5 +1,6 @@
 ---
-order: 1
+private: true
+summary: Challenge IDE Summary
 ---
 
 # Challenge IDE
@@ -29,6 +30,4 @@ You can drag files in from your file system to add them to your solution. The we
 ## More Help
 
 - [Debugging Tips](/for-candidates/advanced-challenge-ide/debugging-tips)
-- [Learn more about the challenge solver](/for-candidates/advanced-challenge-ide)
-
-## Environment & Testing Framework
+- [Learn more about the challenge solver](/for-candidates/advanced-challenge-ide/challenge-ide)
