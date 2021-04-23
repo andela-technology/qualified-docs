@@ -370,6 +370,12 @@ html[embedded-docs] {
     }
     .markdown-page__content {
         @apply py-5;
+        position: relative;
+
+        svg,
+        img {
+            max-width: 100% !important;
+        }
     }
     .markdown-page__content > *:first-child {
         @apply mt-0 pt-0;
