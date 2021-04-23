@@ -1,11 +1,6 @@
 ---
 title: "Classic Code Challenge: Language Generator"
-summary: "How to use the Language Generator"
-tags:
-  - languages
-  - generation
-  - classic
-bodyClass: 'employer-focused'
+private: true
 ---
 
 # Language Generator

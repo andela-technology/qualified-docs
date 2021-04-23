@@ -41,5 +41,3 @@ The classic code challenge editor provides an in-browser IDE for creating and va
   Include extra features in your test cases, such as hidden tests and tagged tests.
 - [Carry Forward Solutions](/reference/features/challenges/code/carry-forward-solutions)
   Write assessments that carry the solution forward from one challenge to the next.
-
-## Environment & Testing Framework
