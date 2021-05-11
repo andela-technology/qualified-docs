@@ -171,7 +171,7 @@ int foo = 1;
 
 ## Language Targeted Section Blocks
 
-Qualified has further extended the concept of Multi-language blocks to allow you to enclose entire sections of markdown within `if` and `if-not` statements, similar to how Multi-language blocks work. These statements can target multiple languages at a time if you wish. Using this feature, you can selectively hide or show content based off of the active language, allowing you to manage your instructions for all languages and still target them directly as needed. 
+Qualified has further extended the concept of Multi-language blocks to allow you to enclose entire sections of markdown within `if` and `if-not` statements, similar to how Multi-language blocks work. These statements can target multiple languages at a time if you wish. Using this feature, you can selectively hide or show content relative to the active language, allowing you to manage your instructions for all languages and still target them directly as needed. 
 
 The following example illustrates if the text inside each block would be shown or not:
 

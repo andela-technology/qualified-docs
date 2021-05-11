@@ -97,8 +97,8 @@ Qualified offers a number of features for setting up this type of process. Here 
 
 1. Create an assessment to be used as a questionnaire, which will be sent to the candidate first, before the skill assessment.
 1. Create one or more Q&A challenges to be added to this assessment, which will be used for asking the candidate questions about their skills, experience, location, and other factors that would help determine if they can be ruled out as a suitable fit for the role.
-1. Setup the scoring on the assessment so that each question that is a deal breaker takes up a large amount of the score, then add up all of your deal breaker questions and determine what your minimum score should be. 
-1. Setup an automated workflow based off of the score of the assessment. Anyone who scores below the minimum threshold will be given a message letting them know they don't meet the role's requirements. Anyone who scores above the threshold will be automatically invited to the actual coding assessment.
+1. Set up the scoring on the assessment so that each question that is a deal breaker takes up a large amount of the score, then add up all of your deal breaker questions and determine what your minimum score should be. 
+1. Set up an automated workflow based on the score of the assessment. Anyone who scores below the minimum threshold will be given a message letting them know they don't meet the role's requirements. Anyone who scores above the threshold will be automatically invited to the actual coding assessment.
 
 By using Qualified's powerful Q&A correctness scoring features, you will be able to score candidates in-depth, and by using automated workflows, you can prevent candidates from having to spend an hour or more taking an assessment for a job they were never going to get anyway. All the while, the whole process is automated and requires no manual work from you or your team to manually review candidates. You give candidates a way to prove their skills in a fair and unbiased format, and can give immediate feedback to candidates who are a poor fit for the role.
 
@@ -115,7 +115,7 @@ Being respectful to candidates and making your recruiting process far more effic
 
 If you are looking to track the performance of candidates across different recruiting sources, you can utilize Qualified's labels feature to help achieve this. 
 
-Labels allow you to tag candidates in any way you see fit. In this case, you could add candidates to labels based off of hiring source. To achieve this, you can set the label on the invitation screen when sending out one or more invitations. You can also manually update candidates via the candidate profile screen.
+Labels allow you to tag candidates in any way you see fit. In this case, you could add candidates to labels by hiring source. To achieve this, you can set the label on the invitation screen when sending out one or more invitations. You can also manually update candidates via the candidate profile screen.
 
 Once you have your candidates assigned to different labels, you can utilize the filters within the candidates sidebar to quickly switch between different label views. Combined with the ability to sort candidates by score, you can toggle between different sources and determine which sources are resulting in the highest scoring candidates.
 

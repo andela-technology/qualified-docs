@@ -25,7 +25,7 @@ A challenge is an assessment task which can be given to a candidate. A challenge
 
 ## Different Types of Challenges
 
-### Code Based Challenges
+### Code Challenges
 There are two types of coding challenges on the Qualified platform. They each offer advantages over each other. Before we jump into describing each, let's quickly touch on some popular aspects that all coding challenge types share. 
                    
 - **Code Playback**: When a candidate takes a coding challenge, everything they do is recorded so that it can be played back later. This allows your team to review the coding session later, providing you the opportunity to see their thought process as they solve a challenge. You can speed up the playback or pause it at any point and click around the code. 
@@ -39,7 +39,7 @@ While Project Code, discussed below, is the recommended type of coding challenge
 - They don't involve a file tree, and can be very effective if you only wish to test someone on a very simple/straight-forward single file task.  
 
 #### Project Code Challenges
-A Project Code Challenge is our newest and now recommended approach to testing developers on their ability to code. It provides a format that that is more capable and flexible, allowing you to test for coding tasks that involve multiple files. Back-end and Front-end web development tasks, using frameworks such as React and Ruby on Rails, are good fits for project based challenge. This challenge format also offers a number of unique configuration options, such as hiding certain files from candidates, or allowing them to see the file but not edit it.  
+A Project Code Challenge is our newest and now recommended approach to testing developers on their ability to code. It provides a format that that is more capable and flexible, allowing you to test for coding tasks that involve multiple files. Back-end and Front-end web development tasks, using frameworks such as React and Ruby on Rails, are good fits for project challenge. This challenge format also offers a number of unique configuration options, such as hiding certain files from candidates, or allowing them to see the file but not edit it.  
 
 We won't dive too deep into those details just yet, but for now just remember that this format is well-suited for larger coding tasks or challenges requiring datasets or other supporting files like contextual codebases or library-specific boilerplate.
 
@@ -51,7 +51,7 @@ Question & Answer challenges allow you to configure one or more multiple choice 
 - Follow-up questions to a coding challenge
 - Asking candidates to write a code review of multiple excerpts of code
 - Administering written interview questions
-- Non-coding based work samples, such as replying to an email, a research task, or an analysis task
+- Non-coding work samples, such as replying to an email, a research task, or an analysis task
 
 While Q&A challenges only offer two question types, these question types are much more powerful than they may initially seem. 
 

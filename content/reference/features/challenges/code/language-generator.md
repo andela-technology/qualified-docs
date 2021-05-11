@@ -131,7 +131,7 @@ test_cases:
           value: Hello there!
 ```
 
-The configuration allows the challenge designer to create multiple assertions inside of multiple it clauses inside of multiple describe clauses. Each assertion can have unlimited input arguments, each with their own particular type and value. Then we can specify, based on those inputs, what the expected output should be.
+The configuration allows the challenge designer to create multiple assertions inside of multiple it clauses inside of multiple describe clauses. Each assertion can have unlimited input arguments, each with their own particular type and value. Then we can specify, from those inputs, what the expected output should be.
 
 In JavaScript this configuration would translate out to:
 
