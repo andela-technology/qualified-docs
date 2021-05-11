@@ -78,10 +78,11 @@ Here are just a few of the technologies which can be tested with the Qualified p
 - Ruby on Rails
 - Spring Framework
 - Django
-- ASP.NET
-- Express JS
+- .NET
+- ExpressJS
 - Laravel Lumen
 - Flask
+- Sinatra
 
 ### Front-end Frameworks & Libraries
 - React
