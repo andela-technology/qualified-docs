@@ -6,7 +6,7 @@
                 <OnThisPage/>
             </div>
 
-            <div class="order-1 w-full md:w-2/3">
+            <div class="order-1 w-full md:w-2/3 markdown-page__content-wrapper">
                 <div class="markdown-page__content" v-html="$page.markdownPage.content" on-this-page/>
 
                 <api-ref v-if="$page.markdownPage.apiRef" class="markdown-page__content" on-this-page />
@@ -357,6 +357,28 @@ export default {
 
     p + .admonition {
         @apply mt-6;
+    }
+}
+
+html[embedded-docs] {
+    .markdown-page__side,
+    .markdown-page__end {
+        display: none !important;
+    }
+    .markdown-page__content-wrapper {
+        @apply w-full max-w-full mx-auto;
+    }
+    .markdown-page__content {
+        @apply py-5;
+        position: relative;
+
+        svg,
+        img {
+            max-width: 100% !important;
+        }
+    }
+    .markdown-page__content > *:first-child {
+        @apply mt-0 pt-0;
     }
 }
 

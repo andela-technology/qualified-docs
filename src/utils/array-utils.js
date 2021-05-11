@@ -5,7 +5,7 @@ export function sortBy (values, field, field2) {
     });
 }
 
-function sortValue (aObj, bObj, field) {
+export function sortValue (aObj, bObj, field) {
     let a = aObj && aObj[field]
     let b = bObj && bObj[field]
     if (typeof field === 'function') {

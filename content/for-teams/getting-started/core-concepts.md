@@ -37,11 +37,10 @@ A Classic Code Challenge is our simplest form of coding challenge. It focuses on
 While Project Code, discussed below, is the recommended type of coding challenge, there are still good reasons for utilizing Classic Coding Challenges:
 - They allow you to configure multiple languages for the task, so that the candidate can choose which language they wish to use to solve it.
 - They don't involve a file tree, and can be very effective if you only wish to test someone on a very simple/straight-forward single file task.  
+- CCC supports the ability to pair code with candidates within an interactive coding session.
 
 #### Project Code Challenges
 A Project Code Challenge is our newest and now recommended approach to testing developers on their ability to code. It provides a format that that is more capable and flexible, allowing you to test for coding tasks that involve multiple files. Back-end and Front-end web development tasks, using frameworks such as React and Ruby on Rails, are good fits for project challenge. This challenge format also offers a number of unique configuration options, such as hiding certain files from candidates, or allowing them to see the file but not edit it.  
-
-We won't dive too deep into those details just yet, but for now just remember that this format is well-suited for larger coding tasks or challenges requiring datasets or other supporting files like contextual codebases or library-specific boilerplate.
 
 ### Q&A Challenges
 Question & Answer challenges allow you to configure one or more multiple choice and/or free-text questions. These challenges are similar to traditional quizzes and tests. However, within Qualified, Q&A challenges are often used for a variety of purposes beyond a traditional quiz.
@@ -60,7 +59,7 @@ While Q&A challenges only offer two question types, these question types are muc
 #### Multiple Choice Questions
 Multiple choice questions can be configured with the following options:
 - Single choice
-- Mulitple choice with a fixed choice count
+- Multiple choice with a fixed choice count
 - Multiple choice with a non-fixed choice count
 - Weighted single choice, where some choices are more correct than others   
 - Weighted multiple choice, where some choices are more correct than others

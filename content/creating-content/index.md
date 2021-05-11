@@ -1,7 +1,7 @@
 ---
-order: 3
 description: Learn how to develop your own assessment content
 title: Creating Your Own Assessments
+order: 3
 ---
 
 # Creating Your Own Assessments

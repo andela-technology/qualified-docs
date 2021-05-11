@@ -1,17 +1,13 @@
 ---
+private: true
 title: "Creating Challenges: Instructions"
-summary: "Help for writing Challenge Instructions"
-tags:
-  - challenges
-  - markdown
-bodyClass: 'employer-focused'
 ---
 
 # Markdown
 
 Qualified uses a slightly customized form of Github-Flavored Markdown for editing challenge instructions.
 
-You can learn more about using [Markdown here](/general/markdown).
+You can learn more about using [Markdown here](/reference/markdown).
 
 ## Multi-Language Support
 

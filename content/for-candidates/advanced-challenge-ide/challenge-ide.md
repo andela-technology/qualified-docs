@@ -1,6 +1,7 @@
 ---
-title: "Project Code Challenge Solver"
-order: 2
+title: "Challenge IDE"
+summary: "The code challenge solver provides an in-browser mini-IDE for editing and running assessments"
+order: -1
 ---
 
 # Project Code Challenge Solver
@@ -77,7 +78,7 @@ Each file will have various commands associated with it, such as rename, delete,
 
 ### Opening Files
 
-Click on a file in the file tree to open its editor. Our code editor uses [CodeMirror](http://codemirror.net/). It provides many of the features you may expect from a normal IDE, though it is much simpler.
+Click on a file in the file tree to open its editor. Our code editor is based on [CodeMirror](http://codemirror.net/). It provides many of the features you may expect from a normal IDE, though it is much simpler.
 
 You can use many of the keyboard commands you may expect from a normal editor, including highlighting a block of code and using <span class="shortcut-hint">Tab</span> to indent and <span class="shortcut-hint">Shift + Tab</span> to unindent.
 
@@ -144,7 +145,7 @@ The IDE settings tab lets you customize how the editor looks and works.
 - _Line Wrapping_: You can disable soft wraps, if you like to scroll horizontally.
 - _Line Numbers_: You can guess this one.
 - _Auto Close Brackets_: Typing certain brackets will cause the matching bracket to be added automatically.
-- _Smart Indent_: Enables IDE-like automatic indenting in response to the characters you type.
+- _Smart Indent_: Enables IDE-like automatic indenting based on what characters you type.
     - _Re-Indent When Typing Special Characters_: Automatically adjusts indentation on certain characters.
 
 ## Help

@@ -62,7 +62,7 @@ Custom workflows provide maximum flexibility in configuring your process. A key 
 create as many workflow paths as you need.
 
 :::important Premium Subscription Feature
-Custom workflows are only avaiable if you have the <b>Advanced Assessment Workflows</b> feature enabled on your subscription.
+Custom workflows are only available if you have the <b>Advanced Assessment Workflows</b> feature enabled on your subscription.
 :::
 
 ![ ](/images/hire/workflows-custom.png)

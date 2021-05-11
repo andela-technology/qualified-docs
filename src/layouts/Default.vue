@@ -29,7 +29,7 @@
 
         </div>
 
-        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden" v-if="$page">
+        <div class="fixed bottom-0 right-0 z-50 p-8 lg:hidden mobile-menu-icon" v-if="$page">
             <button class="p-3 text-white rounded-full shadow-lg bg-ui-primary hover:text-white"
                     @click="sidebarOpen = ! sidebarOpen">
                 <XIcon v-if="sidebarOpen"/>
@@ -51,6 +51,11 @@ query {
 import Sidebar from '@/components/Sidebar';
 import LayoutHeader from '@/components/LayoutHeader';
 import {MenuIcon, XIcon} from 'vue-feather-icons';
+import {isEmbedded} from '../utils/page-utils';
+
+if(isEmbedded()) {
+    document.documentElement.toggleAttribute('embedded-docs', true);
+}
 
 export default {
     components: {
@@ -186,7 +191,7 @@ body {
     .text-fade {
         color: var(--color-ui-fade);
     }
-    
+
     .default-layout__content {
         @apply flex flex-col justify-start min-h-screen;
         > header {
@@ -225,7 +230,7 @@ body {
             }
         }
     }
-    
+
     .sidebar-container {
         @apply fixed px-4 pt-4 bg-black inset-x-0 bottom-0 w-full border-r border-ui-border overflow-y-auto transition-all z-40;
         max-width: 320px;
@@ -245,6 +250,21 @@ body {
 
     .article-content {
         background: var(--color-ui-text-background);
+    }
+}
+
+html[embedded-docs] .default-layout {
+    .default-layout__content > header,
+    aside.sidebar-container,
+    div.mobile-menu-icon {
+        display: none !important;
+    }
+
+    .container {
+        @apply max-w-3xl px-8;
+    }
+    .article-content {
+        @apply pl-0 w-full;
     }
 }
 </style>

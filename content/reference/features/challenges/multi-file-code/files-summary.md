@@ -39,5 +39,3 @@ The code challenge creator provides an in-browser IDE for creating and validatin
 
 - [Advanced Test Cases](/reference/features/challenges/advanced-test-cases)
   Include extra features in your test cases, such as tagged and weighted tests.
-
-## Environment & Testing Framework
