@@ -43,15 +43,17 @@ A Project Code Challenge is our newest and now recommended approach to testing d
 
 We won't dive too deep into those details just yet, but for now just remember that this format is well-suited for larger coding tasks or challenges requiring datasets or other supporting files like contextual codebases or library-specific boilerplate.
 
-### Q&A Code Challenges
-Question & Answer challenges allow you to configure one or more multiple choice and/or free-text questions. These challenges are similar to traditional tests—though within Qualified they are often used for a variety of reasons. Here are just a few ways that they can be utilized:
+### Q&A Challenges
+Question & Answer challenges allow you to configure one or more multiple choice and/or free-text questions. These challenges are similar to traditional quizzes and tests. However, within Qualified, Q&A challenges are often used for a variety of purposes beyond a traditional quiz.
+
+Here are a few utilization suggestions:
 
 - Testing technical knowledge  
 - Surveying and automatically scoring how well a candidate might fit within a given role (job fit)
 - Follow-up questions to a coding challenge
 - Asking candidates to write a code review of multiple excerpts of code
 - Administering written interview questions
-- Non-coding work samples, such as replying to an email, a research task, or an analysis task
+- Providing non-coding work samples, such as replying to an email, a research task, or an analysis task
 
 While Q&A challenges only offer two question types, these question types are much more powerful than they may initially seem. 
 
@@ -64,7 +66,7 @@ Multiple choice questions can be configured with the following options:
 - Weighted multiple choice, where some choices are more correct than others
 
 #### Free-Text Questions
-Free text questions can be configured to expect written text, or code. In code mode, code is not executed, but it is formatted for the candidate. Regular expressions or simple string matchers can be configured to test for keywords within the answer. You can configure multiple matchers, and give different weights to each.   
+Free text questions can be configured to expect written text, or code. In code mode, code is not executed, but it is formatted for the candidate. Regular expressions or simple string matchers can be configured to test for keywords within the answer. You can configure multiple matchers and give different weights to each.
 
 ## Assessment Results
 You will sometimes see references to something called an assessment result. This is simply the result of the candidate taking an assessment.
