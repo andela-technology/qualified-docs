@@ -33,7 +33,7 @@ Skills can help you identify the particular skills that a candidate might posses
 
 ## Skill Rigor
 
-This blueprint item offers the ability to compare candidates by skill.
+This blueprint item offers the ability to compare candidates by specifying the expected rigor in a particular skill. This can help in choosing the difficulty of challenges designed to test each skill.
 
 ## Challenge Style
 
