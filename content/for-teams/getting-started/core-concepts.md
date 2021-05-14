@@ -89,7 +89,7 @@ This is where your own challenges are kept. Any challenge you import from the Qu
 ## Challenge Templates
 When creating a new challenge, you will be given the option to create it from a template. Templates help you get started with a specific language or technology. If you wish to completely start from scratch, Classic Code Challenges and Q&A challenges also have bare templates with nothing added to them. 
 
-Additionally, you use any challenge from the Qualified library or a custom template from your team library as a starting point to creating content.
+Additionally, you can use any challenge from the Qualified library or a custom template from your team library as a starting point to creating content.
 
 ## Assessment Templates
 When creating a new assessment, you will have the option to choose a pre-existing template. These templates are some recommended assessments that can get you started quickly. You are free to customize the settings or challenges on any of your assessments, including those created from a template.
