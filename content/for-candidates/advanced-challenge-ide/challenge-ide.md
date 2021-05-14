@@ -108,7 +108,7 @@ Files in this section are only saved until the page is reloaded.
 
 ### Resetting Files or the entire solution
 
-You can use the **Reset** (<span class="icon-reset"></span>) to reset a given file to it's original form at the beginning of the challenge. This option is only available for files that were originally part of the solution, and have not been renamed.
+You can use the **Reset** (<span class="icon-reset"></span>) to reset a given file to its original form at the beginning of the challenge. This option is only available for files that were originally part of the solution, and have not been renamed.
 
 If you wish to start over completely, you can use the **RESET EVERYTHING…** command in the toolbar.
 

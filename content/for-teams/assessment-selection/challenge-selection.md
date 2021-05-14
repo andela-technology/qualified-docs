@@ -27,3 +27,7 @@ With this bucket list in mind, you can begin gathering candidates for each bucke
 
 Remember to preview your selected challenges often. Ask team members and reviewers to give challenges and draft assessments a dry run to ensure flow, appropriate difficulty, integrity and skill coverage. Through this process, many challenges that seem like promising candidates may turn out to be less desirable than initially anticipated, as the testing process will uncover incompatibilities and points where certain skills won't be necessary to test.
 
+:::tip
+Visit our [challenge search page](https://www.qualified.io/hire/challenges) to get started!
+:::
+

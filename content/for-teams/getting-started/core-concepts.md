@@ -23,6 +23,10 @@ An interact session is a collaborative assessment. For those looking to conduct 
 
 A challenge is an assessment task which can be given to a candidate. A challenge can either be a coding task or set of non-coding questions that a candidate must complete. There are many predefined challenges within the system that you can use to build your own assessments. You can also create your own challenges, either from scratch, using one of our starter templates, or by customizing one of the existing challenges within the Qualified challenge library.     
 
+:::tip
+If you're interested in creating your own assessments, see our [Creating Content](/creating-content) section.
+:::
+
 ## Different Types of Challenges
 
 ### Code Challenges
