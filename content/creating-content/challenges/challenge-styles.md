@@ -21,14 +21,11 @@ Not all styles listed below are represented within the Qualified library. Qualif
 This article is a work in progress. Many of the style descriptions listed will eventually be expanded to include more content, such as examples and recommended techniques.  
 :::
 
-### Foundational
-A generalized coding task, mainly focused on testing basic ability to problem solve and write code. This will often involve writing a single function from scratch which offers a utility or solves a simple problem that doesn't specifically involve a lot of computer science theory. 
+### Standard Coding Task
+A generalized coding task, mainly focused on testing basic ability to problem solve and write code. This will often involve writing a single function from scratch which solves an algorithmic problem or provides a utility-type function.
 
-### Computer Science
-Heavy focus on computer science and implementing algorithms and specific data structures.
-
-### New Functionality
-Real-world challenges that involve implementing new functionality within new or existing code.
+### Extend Codebase
+Real-world challenges that involve implementing new functionality within existing code.
 
 ### Refactoring
 Existing code base that needs to be simplified, updated to make room for new improvements or otherwise improved in some way. Unit tests can be used to ensure code still works as expected, with scoring being mostly done through objective rubrics.

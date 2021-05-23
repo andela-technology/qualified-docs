@@ -5,7 +5,7 @@ bodyClass: 'employer-focused'
 
 # Classic Code Challenges
 
-Classic code challenges are the core skill-testing component of a Qualified assessment. They are available to take in multiple languages, while still providing detailed, advanced testing based on a full unit testing suite.
+Classic code challenges are the core skill-testing component of a Qualified assessment. They are available to take in multiple languages, while still providing detailed, advanced testing using a full unit testing suite.
 
 ## Classic-Code-Challenge-Specific Details
 

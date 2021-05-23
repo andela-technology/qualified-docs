@@ -6,17 +6,24 @@ bodyClass: 'employer-focused'
 
 # Overview
 
-Carry Forward Solutions allow you to inject a candidate's previous solution into their next challenge so their initial code is what they ended the previous challenge with. These kinds of assessments are especially good at
+Carry-forward solutions allow you to inject a candidate's previous solution into the next challenge as part of an assessment. Challenges that use carried solutions are useful for testing more complex or evolving sets of requirements than would be in scope for a single challenge.
+
+:::note
+With the introduction of [Project Code Challenges](/reference/features/challenges/multi-file-code/#project-code-challenges) and [Embed](/integrations/custom-integrations/embed/#embedding-full-assessments), we no longer encourage using the carry-forward feature of classic code challenges in most cases.
+
+Information on this page exists for historical purposes and for very specific use-cases not covered by PCC and Embed.
+:::
+
 
 ## Good Use Cases for Carry Forward Solutions
 
 - Testing a candidates ability to write flexible code that can adhere to a changing specification.
 - Breaking up what would otherwise be one long challenge with in-depth specification. Allowing the candidate to focus on a couple tasks at a time make lengthy challenges more manageable.
-- Building an assessment of similar, carried forward challenges with Q&A questions in between. Perhaps asking them to explain how their code might evolve and then testing that out with new specifications.
+- Building an assessment of related challenges with Q&A questions in between. This might involve prompting candidates to explain how their code might evolve and then testing that out with new specifications.
 
 ## How to Use
 
-#### 1. Create the initial Challenge
+#### 1. Create the initial challenge
 
 First create or designate a challenge that you wish to pull the solution forward from. You'll want this challenge to make use of the code from the previous challenge, but to also expand on it in some way.
 
@@ -42,6 +49,6 @@ Once you choose a challenge to import the solution from it will be automatically
 
  ## What's next?
 
- That's up to you to decide! You can make several challenges that link together to make up an assessment. You can make one challenges that pull from two distinct different challenges. It's all up to your imagination!
+That's up to you to decide! You can make several challenges that link together to make up an assessment. You can make one challenges that pull from two distinct different challenges. It's all up to your imagination!
 
- We use this feature in several of our current framework-based assessment templates and we plan to continue to use it in more creative ways in the future. If you have further questions, feedback or great ideas feel free to reach out to us and discuss!
+If you have further questions, feedback or great ideas feel free to reach out to us and discuss!

@@ -24,7 +24,7 @@ Once selected, a couple new options appear on the sidebar:
 
 ## Update Dialog
 
-Selecting **UPDATE** opens a dialog with a list of available actions. The list is automatically filtered based on your selections. Actions include:
+Selecting **UPDATE** opens a dialog with a list of available actions. The list is automatically filtered in response to your selections. Actions include:
 
 - **Update** the candidates, which lets you modify labels, assignment, and add a note, without changing the candidates' status.
 - Change the candidates' status via **Approve**, **Reject**, **Archive** and **Restore**
