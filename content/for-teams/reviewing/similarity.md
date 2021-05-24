@@ -66,7 +66,7 @@ Be aware that cheaters might type in the plagiarized solution rather than using 
 ### Randomized Tests
 Randomized testing is a way to automatically design test cases to prevent a particular cheating strategy from achieving a passing score on a submission. Since the Qualified platform utilizes unit tests to test submitted solutions, you can write randomized tests or select pre-built challenges with randomized tests. These randomized tests make it virtually impossible for a candidate to hardcode a passing solution by using a table to look up answers to test inputs and thereby circumventing writing an algorithm as intended.
 
-Many of our challenges in our library already contain randomized tests. However, we should note that within high-stakes situations such as job selection, candidates very rarely (< 1%) cheat in a way that randomized testing is necessary. However, in cases of education with large classrooms or other situations where you anticipate cheating to be a significant issue, randomized testing may be something you want to consider.
+Many of our challenges in our library already contain randomized tests. Note that within high-stakes situations such as job selection, candidates very rarely (< 1%) cheat in a way that randomized testing is necessary. However, in cases of education with large classrooms or other situations where you anticipate cheating to be a significant issue, randomized testing may be something you want to consider.
 
 :::caution
 Random tests can be overused and become a crutch harmful to the challenge experience; we encourage using the most minimal random test(s) necessary to prevent table lookup solutions. Random tests are a poor substitute for well-labeled, deterministic unit tests to validate your specification.
@@ -116,7 +116,7 @@ Rotating various aspects of assessments frequently can help combat cheating. You
 
 Consider replacing challenges that have worn out their usefulness or that appear to correspond to high occurrences of cheating.
 
-You can apply the Pareto Principle to these rotations: most cheating can be prevented with a little bit of effort; there's diminishing returns to spending excessive time on rotation. Higher-stakes, difficult challenges might be deserving of more attention than easy pre-screen challenges.
+You can apply the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle) to these rotations: most cheating can be prevented with a little bit of effort; there's diminishing returns to spending excessive time on rotation. Higher-stakes, difficult challenges might be deserving of more attention than easy pre-screen challenges.
 
 ### Playtest Your Content
 Just like a regular application, manually testing your challenges on a regular basis (in other words, "eating your own dog food") and examining results critically will help you locate exploitable flaws in the challenge.
@@ -137,4 +137,4 @@ Types of cheating can include:
 - candidates using unauthorized help from a third party while taking a challenge
 - candidates "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
 
-Stay vigilant for these scenarios. The strategies described in this article have varying degrees of effectiveness for each breach.
+Using the the strategies described in this article together can help eliminate concerns around cheating and plagiarism.
