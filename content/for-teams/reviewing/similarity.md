@@ -27,7 +27,7 @@ The mass score is used to determine how much program work exists within a candid
 ### Risk Detection
 While there are other use cases for code similarity, such as surfacing similar but not exact solutions when comparing candidate's code to others, the main application of this feature is to detect possible plagiarized solutions. There is no way for Qualified to automatically say for sure that a solution is plagiarized. The system only determines that code is similar; it doesn't know why the code is similar.
 
-However, our system will take certain factors such as complexity into account to determine a range in which similar code starts to be considered a risk of being plagiarized. Our system will identity solutions as either "low", "medium" or "high" risk. From there your team can make a final determination of the presence or absence of plagiarism.
+However, our system will take certain factors such as complexity into account to determine a range in which similar code starts to be considered a risk of being plagiarized. Our system will identity solutions as either "low", "medium" or "high" risk. Using this information, your team can make a final determination of the presence or absence of plagiarism.
 
 If a candidate is identified as having any level of plagiarism risk, Qualified will set the candidate into the "Plagiarism Risk" state, which is easily viewable from the candidates sidebar. Once you review the candidate, they will be moved to the reviewed state. If you do not actively review candidate solutions as part of your workflow, you may still want to manually review any candidates who are in this state to ensure that their score should not be discarded.
 
@@ -40,7 +40,7 @@ When comparing a candidate's solution, Qualified uses a few solution pools as it
 Qualified does not source solutions from the web. The nature of our code similarity tool makes this unnecessary. Sourcing solutions from the web is prone to false positives and negatives due to the unstructured nature of online sources. Once a candidate submits a solution found online, our system will know about it and all other candidates for that challenge will be compared to it. If you are using one of Qualified's library challenges, odds are, any solution that may have been shared online is already available within our system to be compared to, and the system will flag that candidate.
 
 ## Comparing Similar Solutions
-Code Similarity combined with our Compare Solutions feature enables you to easily view similar code challenge solutions side-by-side within our solution details screen. This allows you to review similar solutions not just for the purposes of cheating detection, but also for gaining insight into the clusterings of approaches candidates typically take when solving a challenge.
+Code Similarity combined with our Compare Solutions feature enables you to easily view similar code challenge solutions side-by-side within our solution details screen. This allows you to review similar solutions for the purposes of cheating detection while simultaneously offering insight into the clusterings of approaches candidates typically take when solving a challenge.
 
 To compare solutions, open up your solution details screen and activate the "Compare" tab. If you have Code Similarity enabled on your subscription, "Similar" will be the default active set of solutions you are comparing against if there are similar solutions to be compared.
 
@@ -61,10 +61,10 @@ Qualified provides the ability to play back an entire coding session. You can se
 
 We recommend using this feature not only to get a view into how the developer thinks, but also to identify cheating. The playback timeline will indicate any major code paste events, making it easy to identify suspicious actions that might influence a plagiarism determination. Our system will only flag code pasted from a source external to our site, ignoring paste events that were caused by normal solution development.
 
-A clever approach cheaters can try is to type in the solution rather than the obvious paste. Frequent tab switches and a rigid and unnatural, top-to-bottom coding style may suggest this possibility.
+Be aware that cheaters might type in the plagiarized solution rather than using the clipboard. Frequent tab switches and a rigid and unnatural coding style may suggest this possibility.
 
 ### Randomized Tests
-Randomized testing is a way to automatically design test cases to prevent a particular cheating strategy from achieving a passing score on a submission. Since the Qualified platform utilizes unit tests to test code, you can write randomized tests or select pre-built challenges with randomized tests. These randomized tests make it virtually impossible for a candidate to hardcode a passing solution by using a table to look up answers for known test inputs and thereby circumventing writing an algorithm entirely.
+Randomized testing is a way to automatically design test cases to prevent a particular cheating strategy from achieving a passing score on a submission. Since the Qualified platform utilizes unit tests to test submitted solutions, you can write randomized tests or select pre-built challenges with randomized tests. These randomized tests make it virtually impossible for a candidate to hardcode a passing solution by using a table to look up answers for known test inputs and thereby circumventing writing an algorithm entirely.
 
 Many of our challenges in our library already contain randomized tests. However, we should note that within high-stakes situations such as job selection, candidates very rarely (< 1%) cheat in a way that randomized testing is necessary. However, in cases of education with large classrooms or other situations where you anticipate cheating to be a significant issue, randomized testing may be something you want to consider.
 
@@ -72,20 +72,26 @@ Many of our challenges in our library already contain randomized tests. However,
 In addition, you can select challenges with hidden test suites that push the code in deterministic but unexpected ways that are beyond the tests visible to the candidate. If the candidate has used a lookup table based on the visible tests, it's extremely difficult for the candidate to anticipate entries for unknown submission tests and their score will suffer.
 
 ### Select Creative Challenges
-Challenge selection can reduce cheating rates by design. Unusual, novel, open-ended challenges that require candidates to make design decisions tend to promote distinct, harder-to-copy solutions. Plagiarized solutions to such challenges are often obvious.
+Challenge selection can reduce cheating rates by design. Unusual, novel, open-ended challenges that require candidates to make design decisions tend to promote distinct, harder-to-copy solutions. Plagiarized solutions to such challenges are typically obvious.
 
-On the other hand, it tends to be easier (and therefore, more tempting) for candidates to look up solutions to well-known algorithm challenges. Submissions for such challenges often vary less between candidates. Novel approaches or designs tend to appear less frequently for these classical algorithm or well-known single-function utility-style challenges.
+On the other hand, it tends to be easier (and therefore more tempting) for candidates to look up solutions to well-known algorithm challenges. Submissions for such challenges often vary less between candidates. Novel approaches or designs tend to appear less frequently for these classical algorithm or well-known single-function utility-style challenges.
 
 #### Adding novelty to existing challenges
 If you wish to use a well-known challenge, try spicing it up with a novel twist or follow-up requirement that may thwart would-be cheaters. As a contrived example, adding a third string to a ["Fizz Buzz"](https://en.wikipedia.org/wiki/Fizz_buzz#Programming) problem and/or using different, less easily-searchable words than "Fizz Buzz" can reduce the likelihood of cheating while improving the challenge's effectiveness.
 
 ### Encourage External Resources
-If you're confident that your challenge is designed to be robust to cheating using the other suggestions in this guide, you can invite your candidates to consult documentation and perform web searches short of looking up answers. This increases candidate satisfaction, boosts the realism of challenges (coders always have access to docs in the real world), and can provide incentive for candidates to work with the challenge, not around it.
+If you're confident that your challenge is designed to be robust to cheating using the other suggestions in this guide, you can invite your candidates to consult documentation and perform web searches (with the caveat that you still prohibit fully plagiarized solutions).
 
-The more explicit you can be about what's allowed and what isn't will give candidates clear-cut boundaries. If you disallow some or all external resources, stating that up front is a great idea.
+Allowing access to resources increases candidate satisfaction, boosts the realism of challenges (coders always have access to docs and sites like Stack Overflow in the real world), and can provide incentive for candidates to work with the challenge, not around it.
+
+With the right assessment design that allows external resources, candidates who attempt to learn everything on the spot will inevitably score lower than those with prior knowledge. Relying on artificial and difficult-to-enforce prohibitions may have the opposite effect, making it harder to distinguish truly knowledgeable candidates who respected an external resource prohibition and cheaters who dishonorably accessed external resources. You can design question difficulty with searchability in mind.
+
+The more explicit you can be about what's allowed and what isn't will give candidates clear-cut boundaries, making honor infractions less likely to occur and easier to detect when they do occur. If you disallow some or all external resources, stating that up front is safer than assuming it to be understood by default.
 
 ### Use Time Limits
-Quiz questions can be designed in such a way that searching isn't prohibited (and can even be encouraged), yet not enough time is permitted for the candidate to type and run sample code snippets or do more than refresh their memory of a concept.
+Time constraints can be used to help prevent the candidate from typing and running code snippets they're expected to mentally evaluate or performing extensive research of a concept.
+
+Be wary of unnecessarily strict time limits, as this can have a detrimental effect on results and unfairly penalize slower readers and those with language barriers.
 
 ### Use Written or Verbal Reflections
 Many of Qualified's pre-built challenges request candidates to submit a brief written response to accompany a code solution. Written responses offer important insight into candidate communication skills while also acting as a deterrent to cheating. A candidate unable to explain their code probably didn't author it.
