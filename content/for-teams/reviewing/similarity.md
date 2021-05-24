@@ -1,9 +1,28 @@
 ---
 order: 1
-title: Detecting Potentially Plagiarized Solutions
+title: Preventing and Detecting Cheating
 ---
 
-# Detecting Potentially Plagiarized Solutions
+# Preventing and Detecting Cheating
+
+This article describes tools and strategies for preventing occurrences of possible cheating and plagiarism and detecting potential cases that may occur.
+
+:::important
+The tools and techniques described in this article aren't intended to prevent all cases of cheating or unambiguously identify the presence of cheating.
+:::
+
+## Types of Cheating
+Types of cheating can involve:
+
+- using hardcoded tables to look up solutions per test case instead of solving the problem as intended
+- copying solution code directly from the internet
+- accessing information prohibited by the instructions
+- using unauthorized help from a third party while taking a challenge
+- "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
+
+Using the the strategies described in this article together can help eliminate concerns around cheating and plagiarism.
+
+## Code Similarity
 
 **Code Similarity** is a feature of the Qualified platform that will compare the structure of code content to other solutions in the system. With this feature, newly submitted solutions are compared to existing solutions in the system to determine if any are similar. This comparison reports a similarity score, along with other data that can be used to inform your plagiarism detection process.
 
@@ -13,36 +32,25 @@ Solutions which are considered by the platform to be too similar to others will 
 **Code Similarity** is a premium feature. If it is not available on your subscription, please reach out to your customer success manager to discuss your options. 
 :::  
 
-## Types of Cheating
-Types of cheating can include:
-
-- candidates using hardcoded tables to look up solutions per test case instead of solving the assigned problem as intended
-- candidates copying solution code directly from the internet
-- candidates accessing information prohibited by the instructions
-- candidates using unauthorized help from a third party while taking a challenge
-- candidates "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
-
-Using the the strategies described in this article together can help eliminate concerns around cheating and plagiarism.
-
-## What data is tracked?
+### What data is tracked?
 Let's quickly go over the data that is made available by the **Code Similarity** feature. 
 
-### Similarity Score
+#### Similarity Score
 The similarity score is used to find solutions that are similar in approach, and also for identifying possibly plagiarized solutions. Our implementation is designed to scale to millions of compared solutions. It is not fooled by formatting, naming differences, or by order of operations.
 
 A score of 100 indicates that the code is exactly the same (even though the characters within the different sets of code may actually be different). We consider solutions to be similar to others with any score above 80%. Similarity scores below that value are not actively tracked.
 
-### Mass Score
+#### Mass Score
 The mass score is used to determine how much program work exists within a candidate's solution. This score takes into account things like operators, functions and regular expressions and calculates a form of complexity that we believe to be more useful than simply using lines of code (LoC). 
 
-### Risk Detection
+#### Risk Detection
 While there are other use cases for code similarity, such as surfacing similar but not exact solutions when comparing candidate's code to others, the main application of this feature is to detect possible plagiarized solutions. There is no way for Qualified to automatically say for sure that a solution is plagiarized. The system only determines that code is similar; it doesn't know why the code is similar.
 
 However, our system will take certain factors such as complexity into account to determine a range in which similar code starts to be considered a risk of being plagiarized. Our system will identity solutions as either "low", "medium" or "high" risk. Using this information, your team can make a final determination of the presence or absence of plagiarism.
 
 If a candidate is identified as having any level of plagiarism risk, Qualified will set the candidate into the "Plagiarism Risk" state, which is easily viewable from the candidates sidebar. Once you review the candidate, they will be moved to the reviewed state. If you do not actively review candidate solutions as part of your workflow, you may still want to manually review any candidates who are in this state to ensure that their score should not be discarded.
 
-## Where are similar solutions sourced from?
+### Where are similar solutions sourced from?
 When comparing a candidate's solution, Qualified uses a few solution pools as its source for finding possible matches. 
 
 - **Your own candidate solutions:** Any previous solutions submitted by other candidates on your team. 
@@ -50,7 +58,7 @@ When comparing a candidate's solution, Qualified uses a few solution pools as it
 
 Qualified does not source solutions from the web. The nature of our code similarity tool makes this unnecessary. Sourcing solutions from the web is prone to false positives and negatives due to the unstructured nature of online sources. Once a candidate submits a solution found online, our system will know about it and all other candidates for that challenge will be compared to it. If you are using one of Qualified's library challenges, odds are, any solution that may have been shared online is already available within our system to be compared to, and the system will flag that candidate.
 
-## Comparing Similar Solutions
+### Comparing Similar Solutions
 Code Similarity combined with our Compare Solutions feature enables you to easily view similar code challenge solutions side-by-side within our solution details screen. This allows you to review similar solutions for the purposes of cheating detection while simultaneously offering insight into the clusterings of approaches candidates typically take when solving a challenge.
 
 To compare solutions, open up your solution details screen and activate the "Compare" tab. If you have Code Similarity enabled on your subscription, "Similar" will be the default active set of solutions you are comparing against if there are similar solutions to be compared.
@@ -61,7 +69,7 @@ The current solution details interface does not support comparing similar projec
 We have built a streamlined solution review dialog that does support comparing project code solutions. This dialog is currently in beta. If reviewing these types of solutions is important to your process, please reach out to your customer success manager to discuss having this dialog activated on your account.   
 :::
 
-## Which solutions are compared?
+### Which solutions are compared?
 Only after an assessment result is submitted will the containing solutions be processed for similarity. Of these submitted solutions, only those which achieve at least a correctness score of 80% or more will be considered.
 
 ## Other Techniques 
