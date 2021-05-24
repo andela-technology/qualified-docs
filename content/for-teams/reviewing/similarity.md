@@ -160,5 +160,5 @@ Keep sensitive data like solutions and API authentication tokens out the "preloa
 ### Use Honor Agreement Quizzes
 [It's been shown](https://arxiv.org/pdf/1812.00276.pdf) that offering honor agreements before tests reduces cheating rates significantly. You can use our quiz feature to create your own honor agreement where candidates testify to abide by the rules you set forth. Offer this brief quiz at the start of your assessments.
 
-It's natural for candidates to share interview questions and solutions online asking for tips, postmortems, reivews and help. If your goal is to keep content secure, an agreement can prohibit sharing questions and solutions as well as accessing them.
+It's natural for candidates to share interview questions and solutions online asking for tips, postmortems, reviews and help. If your goal is to keep content secure, an agreement can prohibit sharing questions and solutions as well as accessing them.
 
