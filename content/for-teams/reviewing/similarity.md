@@ -13,6 +13,17 @@ Solutions which are considered by the platform to be too similar to others will 
 **Code Similarity** is a premium feature. If it is not available on your subscription, please reach out to your customer success manager to discuss your options. 
 :::  
 
+## Types of Cheating
+Types of cheating can include:
+
+- candidates using hardcoded tables to look up solutions per test case instead of solving the assigned problem as intended
+- candidates copying solution code directly from the internet
+- candidates accessing information prohibited by the instructions
+- candidates using unauthorized help from a third party while taking a challenge
+- candidates "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
+
+Using the the strategies described in this article together can help eliminate concerns around cheating and plagiarism.
+
 ## What data is tracked?
 Let's quickly go over the data that is made available by the **Code Similarity** feature. 
 
@@ -75,6 +86,10 @@ Random tests can be overused and become a crutch harmful to the challenge experi
 ### Hidden Tests
 In addition, you can select challenges with hidden test suites that push the code in deterministic but unexpected ways that are beyond the tests visible to the candidate. If the candidate has used a lookup table based on the visible tests, it's extremely difficult for the candidate to anticipate entries for unknown submission tests and their score will suffer.
 
+:::info
+We've deprecated hidden tests in the classic code challenge format. We recommend using random tests instead. Hidden tests are a useful tool in the project code challenge format because workspace files have robust permission settings.
+:::
+
 ### Select Creative Challenges
 Challenge selection can reduce cheating rates by design. Unusual, novel, open-ended challenges that require candidates to make design decisions tend to promote distinct, harder-to-copy solutions. Plagiarized solutions to such challenges are typically obvious.
 
@@ -128,13 +143,3 @@ Keep sensitive data like solutions and API authentication tokens out the "preloa
 ### Use Honor Agreement Quizzes
 [It's been shown](https://arxiv.org/pdf/1812.00276.pdf) that offering honor agreements before tests reduces cheating rates significantly. You can use our quiz feature to create your own honor agreement where candidates testify to abide by the rules you set forth. Offer this brief quiz at the start of your assessments.
 
-## Types of Cheating
-Types of cheating can include:
-
-- candidates using hardcoded tables to look up solutions per test case instead of solving the assigned problem as intended (use hidden and random tests)
-- candidates copying solution code directly from the internet (use code similarity )
-- candidates accessing information prohibited by the instructions
-- candidates using unauthorized help from a third party while taking a challenge
-- candidates "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
-
-Using the the strategies described in this article together can help eliminate concerns around cheating and plagiarism.
