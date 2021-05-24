@@ -64,9 +64,13 @@ We recommend using this feature not only to get a view into how the developer th
 Be aware that cheaters might type in the plagiarized solution rather than using the clipboard. Frequent tab switches and a rigid and unnatural coding style may suggest this possibility.
 
 ### Randomized Tests
-Randomized testing is a way to automatically design test cases to prevent a particular cheating strategy from achieving a passing score on a submission. Since the Qualified platform utilizes unit tests to test submitted solutions, you can write randomized tests or select pre-built challenges with randomized tests. These randomized tests make it virtually impossible for a candidate to hardcode a passing solution by using a table to look up answers for known test inputs and thereby circumventing writing an algorithm entirely.
+Randomized testing is a way to automatically design test cases to prevent a particular cheating strategy from achieving a passing score on a submission. Since the Qualified platform utilizes unit tests to test submitted solutions, you can write randomized tests or select pre-built challenges with randomized tests. These randomized tests make it virtually impossible for a candidate to hardcode a passing solution by using a table to look up answers to test inputs and thereby circumventing writing an algorithm as intended.
 
 Many of our challenges in our library already contain randomized tests. However, we should note that within high-stakes situations such as job selection, candidates very rarely (< 1%) cheat in a way that randomized testing is necessary. However, in cases of education with large classrooms or other situations where you anticipate cheating to be a significant issue, randomized testing may be something you want to consider.
+
+:::caution
+Random tests can be overused and become a crutch harmful to the challenge experience; we encourage using the most minimal random test(s) necessary to prevent table lookup solutions. Random tests are a poor substitute for well-labeled, deterministic unit tests to validate your specification.
+:::
 
 ### Hidden Tests
 In addition, you can select challenges with hidden test suites that push the code in deterministic but unexpected ways that are beyond the tests visible to the candidate. If the candidate has used a lookup table based on the visible tests, it's extremely difficult for the candidate to anticipate entries for unknown submission tests and their score will suffer.
@@ -74,10 +78,12 @@ In addition, you can select challenges with hidden test suites that push the cod
 ### Select Creative Challenges
 Challenge selection can reduce cheating rates by design. Unusual, novel, open-ended challenges that require candidates to make design decisions tend to promote distinct, harder-to-copy solutions. Plagiarized solutions to such challenges are typically obvious.
 
-On the other hand, it tends to be easier (and therefore more tempting) for candidates to look up solutions to well-known algorithm challenges. Submissions for such challenges often vary less between candidates. Novel approaches or designs tend to appear less frequently for these classical algorithm or well-known single-function utility-style challenges.
+In contrast, it tends to be easier (and therefore more tempting) for candidates to look up solutions to well-known algorithm challenges. Submissions for such challenges often vary less between candidates. Novel approaches or designs tend to appear less frequently for these classical algorithm or well-known single-function utility-style challenges. These factors can frustrate cheating prevention and detection efforts.
 
-#### Adding novelty to existing challenges
-If you wish to use a well-known challenge, try spicing it up with a novel twist or follow-up requirement that may thwart would-be cheaters. As a contrived example, adding a third string to a ["Fizz Buzz"](https://en.wikipedia.org/wiki/Fizz_buzz#Programming) problem and/or using different, less easily-searchable words than "Fizz Buzz" can reduce the likelihood of cheating while improving the challenge's effectiveness.
+### Add novelty to existing challenges
+If you wish to use a well-known challenge, try spicing it up with a novel twist or follow-up requirement that helps thwart would-be cheaters.
+
+As a simple example, adding a third string to a ["Fizz Buzz"](https://en.wikipedia.org/wiki/Fizz_buzz#Programming) problem and/or using different, less easily-searchable words than "Fizz Buzz" can reduce the likelihood of cheating while improving the challenge's effectiveness.
 
 ### Encourage External Resources
 If you're confident that your challenge is designed to be robust to cheating using the other suggestions in this guide, you can invite your candidates to consult documentation and perform web searches (with the caveat that you still prohibit fully plagiarized solutions).
@@ -119,14 +125,14 @@ Just like a regular application, manually testing your challenges on a regular b
 Keep sensitive data like solutions and API authentication tokens out the "preloaded" file in our classic code challenges. Candidates can run system code to see files in the workspace, including the contents of this file.
 :::  
 
-### Honor Agreements
-[It's been shown](https://arxiv.org/pdf/1812.00276.pdf) that offering brief "honor" quizzes or agreements before tests reduces cheating rates significantly. You can create your own honor agreement where candidates testify to abide by the rules you set forth using our quiz feature. Offer this brief quiz at the start of your assessments.
+### Use Honor Agreement Quizzes
+[It's been shown](https://arxiv.org/pdf/1812.00276.pdf) that offering honor agreements before tests reduces cheating rates significantly. You can use our quiz feature to create your own honor agreement where candidates testify to abide by the rules you set forth. Offer this brief quiz at the start of your assessments.
 
 ## Types of Cheating
 Types of cheating can include:
 
-- candidates using hardcoded tables to look up solutions per test case instead of solving the assigned problem
-- candidates copying solution code directly from the internet
+- candidates using hardcoded tables to look up solutions per test case instead of solving the assigned problem as intended (use hidden and random tests)
+- candidates copying solution code directly from the internet (use code similarity )
 - candidates accessing information prohibited by the instructions
 - candidates using unauthorized help from a third party while taking a challenge
 - candidates "outsourcing" the assessment completely to a third party who impersonates them for the technical interview
