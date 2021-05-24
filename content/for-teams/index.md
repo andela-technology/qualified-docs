@@ -92,9 +92,11 @@ Here are just a few of the technologies which can be tested with the Qualified p
 - jQuery
 
 ### Data Science Frameworks & Libraries
-- Matplotlib
-- Networkx
-- Koala
 - Pandas
+- Matplotlib
+- Scikit
+- Keras
+- Networkx
+- Nltk
 - Tidyverse
 
