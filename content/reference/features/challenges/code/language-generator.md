@@ -7,31 +7,47 @@ private: true
 
 ## Background
 
-Qualified gives developers the ability to run code in powerful testing environments that should make them feel comfortable and productive immediately. Every language that Qualified supports comes with a testing environment that includes a language-specific testing framework to run in-depth tests with.
+Qualified gives developers the ability to run code in powerful testing environments designed to make them feel comfortable and productive immediately. Every language that Qualified supports comes with an industry-standard language-specific testing framework to run in-depth tests with.
 
-The upside of using these powerful testing environments is that developers have more control and can debug the challenge much like they would in their own custom-tailored environment that they would in on the job.
+The advantage of using native testing environments is that developers are empowered to read the provided tests, write their own test cases and debug their solutions much like they do in an on-the-job development workflow.
 
-One potential downside to these custom environments is that it may sometimes be difficult or time consuming to translate challenges into other languages. This is why we built the Language Generator.
+The standard alternative to providing native, language-specific test suites is to validate candidate solutions by comparing standard output using a single language-agnostic validator script. This approach lends itself to speedy challenge development but removes the benefits of candidate interaction with tests.
+
+The drawback of using native language-specific testing environments is that a test suite must be translated into each language by hand. This can be a time-consuming task and motivates Qualified's Language Generator tool. By automating generation of challenge solution stubs and test suites, it's possible to rapidly develop challenges that use native testing suites.
 
 ## What is the Language Generator?
 
-The Language Generator is a tool that allows teams to design challenges with entry points, return values, and inputs—all through one YAML configuration file. This configuration file is then used to generate the challenge in every language that the generator supports.
+The Language Generator is a tool that allows teams to design challenges at a high-level by specifying a function header and a test suite in a language-agnostic YAML configuration file. This configuration file is then used to instantly generate language-specific boilerplate code and test suites in every language that the generator supports.
 
-That might sound pretty complicated. Let's break it down to a simple example to see how to use the generator.
+Let's walk through a simple example to see how to use the generator.
+
+## Limitations of the Language Generator
+
+The language generator is great for classic code challenges that rely on primitive data types such as strings, integers and booleans. The generator also supports 1d and 2d dynamic list array types. A full list of types is available in [supported types](#supported-types).
+
+Challenges that involve structs, classes, hashes, mixed type lists, variable arguments and other nested or complex data structures are not supported and must be created and translated by hand.
+
+The language generator tool does not support project challenges and cannot generate random test cases.
+
+Although the language generator supports over a dozen languages, not all languages supported by Qualified are supported by the generator. Try out the language generator in the app to see an up-to-date list of supported languages.
 
 ## Example
 
-We should start by designing a challenge. Without thinking about the configuration, we should try to think about what this challenge will become. Perhaps think about it in a language that we know well. If it were JavaScript we might want to have a function called `sayHello` which takes in a `name` and returns `"Hello [name]!"`.
+Let's design a toy challenge using JavaScript as a generic point of reference to help visualize how the generator works (you don't need to write JS to use the generator).
 
-So the setup code for the candidate might be:
+Our toy challenge might consist of a function called `sayHello` which takes in a `name` and returns `"Hello {name}!"`.
+
+The setup code for the candidate might be:
 
 ```javascript
-function sayHello() {
+function sayHello(name) {
+
+  // TODO write your solution here
 
 }
 ```
 
-The test cases might look something like this:
+The test suite might look something like this:
 
 ```javascript
 let assert = require("chai").assert;
@@ -42,7 +58,9 @@ describe('with a non empty string', function() {
 });
 ```
 
-Essentially we're just checking to see if our input of a particular string matches our expected output of another string. We've gotten pretty far into designing this challenge, so let's take a look at how the configuration would be built:
+In the suite above, we're checking to see if the candidate's function `sayHello` provides the greeting string we expect.
+
+Here's the YAML configuration for this example challenge:
 
 ```yaml
 entry_point: say_hello
@@ -76,23 +94,23 @@ example_test_cases:
           value: Hello, Qualified!
 ```
 
-Let's break it down quick. So we've got our `entry_point` as `say_hello`.
+Let's break it down. Our `entry_point` is `say_hello`.
 
 ```yaml
 entry_point: say_hello
 ```
 
-Since this is translated into multiple languages it's shown snake-cased here, but it will translate into the appropriate casing for each language. In JavaScript, it would become `sayHello` automatically.
+Since this is translated into multiple languages, it's shown snake-cased here, but it will translate into the appropriate casing for each language. In JavaScript, it would become `sayHello` automatically.
 
-You'll notice we designated a `return_type` of `String`
+You'll notice we designated a `return_type` of `String`:
 
 ```yaml
 return_type: String
 ```
 
-This must be specified especially when translating into strong-typed languages. Checkout Supported Types for all the available types `return_type` could be.
+This must be specified. Check out Supported Types for all the available types `return_type` could be.
 
-Next we have our `parameters`
+Next is a `parameters` entry:
 
 ```yaml
 parameters:
@@ -100,11 +118,11 @@ parameters:
     type: String
 ```
 
-This is our list of parameters that will be sent to the entry point. Automatically the entry point is setup for the candidate so they understand what kind of parameters to expect and where to expect we'll be sending them. In the example above we're sending `sayHello` our string `name`.
+This is a list of parameters that the entry point function will be called with. The entry point is set up automatically for the candidate so they understand what kind of parameters to expect and where to expect we'll be sending them. In the example above, we specify that `sayHello` has a single `name` parameter with type string.
 
-Finally we have our `test_cases` and `example_test_cases`. Example test cases are the tests available to the candidate immediately for testing. These are used to help the candidate get their feet wet and grow confident with the testing environment which may be new to them. The test cases are the ones they cannot see, but can be designed to send debugging information back to the candidate in order to lead them to the correct solution.
+Finally, we have `test_cases` and `example_test_cases`. `example_test_cases` are provided to the candidate to view, modify and run during the challenge. The `test_cases` suite is hidden from the candidate but can be designed to show debugging information to the candidate on submission in order to lead them to the correct solution.
 
-Let's take a look at the `test_cases`
+Let's take a look at the `test_cases`.
 
 ```yaml
 test_cases:
@@ -126,9 +144,9 @@ test_cases:
           value: Hello there!
 ```
 
-The configuration allows the challenge designer to create multiple assertions inside of multiple it clauses inside of multiple describe clauses. Each assertion can have unlimited input arguments, each with their own particular type and value. Then from those inputs, we can specify what the expected output should be.
+The configuration allows the challenge designer to create assertions inside of `it` blocks which are nested inside `describe` blocks. Each assertion can have unlimited input arguments, each with a particular type and value. Given these inputs, we can specify what the expected output of the candidate's solution (`entry_point`) should be.
 
-In JavaScript this configuration would translate out to:
+In JavaScript this configuration would translate to:
 
 ```javascript
 let assert = require("chai").assert;
@@ -144,11 +162,13 @@ describe('with an empty string', function() {
 });
 ```
 
-That'll about wrap it up for example. Hope it was insightful!
+This walkthrough example has shown the basic usage of the language generator.
+
+Sections below show how to work with different types and describe the YAML configuration in depth.
 
 ## Working with Types
 
-The Language Generator supported types are case-insensitive so you can enter them however you please. The currently supported types are `string`, `boolean`, `integer`, and `array`. The `array` type must also specify what the element's type is like so: `Array<Integer>` or `Array<Boolean>` for strongly-typed languages.
+Language Generator types are case-insensitive. The currently supported types are `string`, `boolean`, `integer` and `array`. The `array` type must also specify what the element's type is using diamond brackets: `Array<Integer>` or `Array<Boolean>` for statically-typed languages.
 
 An example of a configuration with arrays might look something like this:
 
@@ -167,36 +187,36 @@ test_cases:
            values: [p, i, z, z, a]
 ```
 
-In this case we're inputting a `String` "pizza" and expecting that the output will split the string into an array of five `String` values `['p','i','z','z','a']`.
+In this case we're inputting a `String` with the value "pizza" and expecting that the `splitter` function will split the string into an array of five `String` values `['p','i','z','z','a']`.
 
 ## Supported Types
 
-Here is a list of all supported types:
+Here is a list of types supported by the language generator:
 
-- String
-- Boolean
-- Integer
-- Array&lt;String>
-- Array&lt;Boolean>
-- Array&lt;Integer>
-- Array&lt;Array&lt;String>>
-- Array&lt;Array&lt;Boolean>>
-- Array&lt;Array&lt;Integer>>
+- `String`
+- `Boolean`
+- `Integer`
+- `Array<String>`
+- `Array<Boolean>`
+- `Array<Integer>`
+- `Array<Array<String>>`
+- `Array<Array<Boolean>>`
+- `Array<Array<Integer>>`
 
 
 ## Syntax Definition
 
-On the main level of the configuration four key mappings are required, one is optional.
+On the top level of the configuration there are four required key mappings and one optional key.
 
-- `entry_point` (required) - Lets the language generator know what to name the main function or method that will be tested.
-- `return_type` (required) - The type of object that will be returned from the main entry point method.
-- `parameters` (required) - A list of parameters that will passed into the main entry point method.
-- `test_cases` (required) - A set of test cases that will be used to test the main entry point method with inputs and expected outputs. These test cases are hidden from the candidate and will determine their final score.
-- `example_test_cases` (optional) - Similar to the `test_cases` except these will be viewable and modifiable by the candidate. They are not used in the calculation of their final score.
+- `entry_point` _(required)_ - The name of the function or method that will be tested. Your candidate will be coding this function.
+- `return_type` _(required)_ - The type of object that will be returned from the entry point method.
+- `parameters` _(required)_ - A list of parameters that will passed as arguments to the entry point method.
+- `test_cases` _(required)_ - A set of test cases that will be used to test the entry point method. Each case has inputs and expected outputs. These test cases are hidden from the candidate and will determine their final score. By default, the candidate can see the output from these test cases.
+- `example_test_cases` _(optional)_ - Similar to `test_cases` except that example tests are viewable and modifiable by the candidate. They are not used in the calculation of their final score.
 
 ### Parameters
 
-The `parameters` are a list specified in the YAML configuration of the parameters to be passed to the main method. A case where we have two parameters will look something like this:
+`parameters` is a list specified in the YAML configuration describing the parameters to be passed to the solution method under test. For example, a function that accepts two parameters might be represented by:
 
 ```
 parameters:
@@ -206,17 +226,21 @@ parameters:
     type: Integer
 ```
 
-Where `name` is the name of the parameter specified in the main entry point method for the candidate's setup code and the generated solution. The `type` can be any one of the supported types specified above.
+Where `name` is the name of the parameter specified in the entry point method for the candidate's setup code and the generated solution. The `type` can be any one of the supported types specified above.
+
+For example, the above configuration would generate a C# parameter list like `SomeFunc(List<List<int>> list, int x)`.
 
 ### Test Cases
 
-Test Cases contains a list of `describe` and `it` blocks that will be translated into test cases specific to the languages test framework.
+Test Cases contains a list of `describe` and `it` blocks that will be translated into test cases specific to each language's test framework.
 
 #### Describe Block
 
-The `describe` block is used to contain a series of similar `it` blocks, which will help organize the code and the eventual output. It will have one list `its` which will list of all of the `it` blocks.
+The `describe` block contains a grouping of related `it` blocks. `describe` blocks help organize the code and the eventual output shown to the candidate. `describe` will contain one list, `its`, which contains `it` blocks corresponding to the `describe`.
 
-A describe block in the YAML may look something like this:
+`describe` is a string label that describes the purpose of its constituent `it` blocks.
+
+A describe block in the YAML might look something like this:
 
 ```
 test_cases:
@@ -230,17 +254,15 @@ test_cases:
           value: Hello, Qualified!
 ```
 
-Where `describe` is a string helping to display the purpose of the following `it` blocks.
-
 #### It Block
 
-The `it` block contains a list of assertions. It is generally recommended to stick to one assertion per `it` block as it is good for organizational purposes and provides strong feedback to the candidate in the case they cannot pass the assertion.
+The `it` block contains a list of assertions. It is generally recommended to stick to one assertion per `it` block for organizational purposes. Keeping each `it` block simple provides clear feedback to the candidate should they fail an assertion.
 
 #### Assertions
 
 The `assertions` list contains a list of `input_arguments` and the `expected_output`.
 
-The `input_arguments` will map to the `parameters` specified at the main level of the configuration. So the order in which the input argument is specified will match up to the order in which the parameter is listed. A `type` can be specified, but it is not necessary because it must adhere to the `type` specified by the `parameters` list.
+The `input_arguments` will map to the `parameters` specified at the main level of the configuration. The order in which the input argument is specified will match up to the order in which the parameter is listed. A `type` can be specified, but is not necessary because it must adhere to the `type` specified by the `parameters` list.
 
 The `expected_output` will map to the `return_type` specified at the main level of the configuration. It can only return a single value.
 
@@ -248,7 +270,7 @@ The `expected_output` will map to the `return_type` specified at the main level 
 
 The `input_arguments` and `expected_output` will use the keyword `value` to specify inputs and outputs.
 
-The keyword `value` can contain any of the supported types. A string can always be specified by using apostrophes, so a number can be turned into a string ('52' as opposed to 52). Arrays can be listed out in the array syntax seen above or with `-` in the YAML list format.
+The keyword `value` can contain any of the supported types. A string can always be specified by using apostrophes, so a number can be turned into a string (`'52'` as opposed to `52`). Arrays can be listed out in the array syntax `[1,2,3]` or with `-` in the YAML list format.
 
 #### Advanced Test Cases
 
