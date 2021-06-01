@@ -212,7 +212,7 @@ On the top level of the configuration there are four required key mappings and o
 - `return_type` _(required)_ - The type of object that will be returned from the entry point method.
 - `parameters` _(required)_ - A list of parameters that will passed as arguments to the entry point method.
 - `test_cases` _(required)_ - A set of test cases that will be used to test the entry point method. Each case has inputs and expected outputs. These test cases are hidden from the candidate and will determine their final score. By default, the candidate can see the output from these test cases.
-- `example_test_cases` _(optional)_ - Similar to `test_cases` except that example tests are viewable and modifiable by the candidate. They are not used in the calculation of their final score.
+- `example_test_cases` _(recommended, but optional)_ - Similar to `test_cases` except that example tests are viewable and modifiable by the candidate. They are not used in the calculation of their final score.
 
 ### Parameters
 
