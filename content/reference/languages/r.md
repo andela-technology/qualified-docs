@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports R Version 3.4
+Qualified supports R version 3.4
 
 ## Timeout
 

@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Ruby MRI 2.3 and 2.5.
+Qualified supports Ruby MRI 2.3, 2.5 and 3.0.
 
 ## Timeout
 

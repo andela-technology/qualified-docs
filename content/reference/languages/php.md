@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports PHP 7.0 and 7.4.
+Qualified supports PHP 7.0, 7.4 and 8.0.
 
 ## Timeout
 
