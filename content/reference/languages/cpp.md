@@ -21,7 +21,7 @@ The sandbox environment will timeout the code within 12 seconds.
 
 Our C++ environment supports the following testing frameworks:
 
-- [cpp/igloo](/reference/languages/cpp/igloo).
 - [cpp/gtest](/reference/languages/cpp/gtest).
+- [cpp/igloo](/reference/languages/cpp/igloo).
 
 Google Test is only supported when C++17 with Clang 8 is used.
