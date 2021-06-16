@@ -14,4 +14,9 @@ This guide aims to help content creators get started and navigate common pitfall
 ### [Creating full-stack web challenges](/creating-content/challenges/guides/full-stack)
 Qualified's Code Runner environment can support full-stack applications, but requires modularization of the project to test client and server code in separate challenges. This guide helps content authors navigate the process.
 
+### [Random tests](/creating-content/challenges/guides/random-tests)
+This guide describes how to use random tests as a means of cheating prevention.
+
+### [Preconditions](/creating-content/challenges/guides/preconditions)
+Preconditions are often misused in challenges. This guide offers suggestions for when and how to use preconditions to ensure they align with the goals of your challenge.
 
