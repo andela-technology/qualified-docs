@@ -18,5 +18,4 @@ Qualified's Code Runner environment can support full-stack applications, but req
 This guide describes how to use random tests as a means of cheating prevention.
 
 ### [Preconditions](/creating-content/challenges/guides/preconditions)
-Preconditions are often misused in challenges. This guide offers suggestions for when and how to use preconditions to ensure they align with the goals of your challenge.
-
+Preconditions are easy to misuse in challenges. This guide offers suggestions for when and how to use preconditions to ensure they align with the goals of your challenge.
