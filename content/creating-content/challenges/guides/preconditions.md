@@ -76,5 +76,4 @@ If preconditions need to be added, the recommendation is:
 - Keep it realistic: don't make preconditions anything that wouldn't be normal in production code.
 - Keep it relevant: if the precondition actually makes sense in handling an edge case that candidates would need to handle naturally, the motivation for the requirement is clear.
 - Use best practices: instead of returning odd data types or raising strange exception types, stick to whatever the most idiomatic approach is for the language.
-- Write a realistic unit test for it that, for example, asserts on the precondition exception being raised using the test suite's builtin exception assertion.
-
+- Write realistic unit tests. For example, assert on the precondition exception being raised by using the test suite's builtin exception assertion.
