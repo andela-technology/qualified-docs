@@ -30,7 +30,7 @@ Qualified offers a feature called [Web Preview](/reference/features/challenges/m
 Qualified's code runner supports the browser automation library [Puppeteer](https://github.com/puppeteer/puppeteer/) through the [Jest-Puppeteer](https://github.com/smooth-code/jest-puppeteer) package. Our Puppeteer image tests HTML5 apps bundled with [Parcel](https://github.com/parcel-bundler/parcel) and offer web preview for visualization.
 
 
-:::note
+:::info
 [Selenium WebDriver](https://www.selenium.dev/) or browser automation tools outside of Puppeteer aren't supported at this time.
 :::
 
@@ -81,9 +81,11 @@ One drawback is that most diff tests won't have labeled test cases for each requ
 
 Requiring pixel-perfect results can unfairly penalize fundamentally correct solutions that are off by a pixel or two, leading to candidate frustration and false negatives. This makes the technique prohibitive to use in general.
 
-[Bug fix challenge styles](/creating-content/challenges/challenge-styles/#debugging) are a category that can work with pixel diffing. For example, consider a CSS challenge that requires fixing a mistake in a selector that isn't applying a predefined style to a particular element. Since the styles are already written, the pixel-perfection demanded by the tests shouldn't be a hindrance to the candidate passing the test.
+[Bug fix challenge styles](/creating-content/challenges/challenge-styles/#debugging) are a category that can work with pixel diffing. As a basic example, imagine a CSS challenge that requires fixing a mistake in a selector that isn't applying a predefined style to a particular element. Since the properties are already written, the pixel-perfection demanded by the tests shouldn't be a hindrance to the candidate passing the test.
 
+:::tip
 [pixelmatch](https://github.com/mapbox/pixelmatch) is a lightweight library that can perform pixel diffing for tests. See [this GitHub comment](https://github.com/codewars/runner/issues/21#issuecomment-692379797) for a minimal example.
+:::
 
 ### Smarter image diffing
 
@@ -133,7 +135,9 @@ describe("blue box", () => {
 });
 ```
 
+:::tip
 Using `data-testid` properties gives your candidate the freedom to pick their own CSS class and id names. This gives you insight into what naming conventions they may choose for CSS classes.
+:::
 
 ### Human evaluation
 
@@ -153,21 +157,23 @@ This section provides high-level guidance for developing CSS challenges and asse
 
 ### Prefer separate CSS and JS challenges
 
-As mentioned in the [goals](#goals) section, we recommend isolating CSS requirements in a distinct challenge, especially when using automated testing for the CSS. The main problem with integrated CSS and JS challenges is that the broader challenge scope tends to cause bloat in the test suite and instructions. JS and CSS are substantial enough each on their own to fit in the time and scope for a challenge.
+As mentioned in the [goals](#goals) section, we recommend isolating CSS requirements in a distinct challenge, especially when using automated testing for the CSS. The main problem with integrated CSS and JS challenges is that the broadened challenge scope tends to cause bloat in the test suite and instructions. JS and CSS are substantial enough each on their own to fit in the time and scope for a challenge.
 
 Modularity makes the challenges reusable for different roles and makes it easier for reviewers to evaluate candidate skills.
 
-That said, many JS-centric challenges benefit from permitting a small amount of (likely) untested CSS to allow for basic styling and realism.
+Many JS-centric challenges benefit from permitting a small amount of (likely) untested CSS to allow for basic styling and realism.
 
 ### Prefer separate CSS and JS framework challenges
 
 As an extension of the above point, we've found that testing CSS skills in isolation from front-end frameworks like React, Angular and Vue is a good rule of thumb.
 
-An exception might be testing a specific technology like React [styled-components](https://github.com/styled-components/styled-components). In cases like this, you could consider separating JS implementation and CSS requirements into distinct challenges.
+An exception might be testing a specific technology like React [styled-components](https://github.com/styled-components/styled-components). In cases like this, you could consider separating component logic and style into distinct challenges.
 
+:::note
 Keep in mind that our Puppeteer image only supports Parcel and doesn't include framework packages. It's still possible to use a framework such as React in the Puppeteer image, provided it's browser-transpiled and retrieves its source from a CDN. While browser-only development departs from modern workflows; it should be less of an issue if the focus is on non-preprocessed CSS.
 
 Alternately, if you use our code runner's standard React, Angular or Vue image, Puppeteer is unavailable and testing will occur (typically) in Jest using a framework-appropriate library such as React Testing Library.
+:::
 
 ### Instructions and rubrics
 
