@@ -10,8 +10,6 @@ Webhooks are only available on our custom plans.
 
 Webhooks make it easy to tie into events that occur in the Qualified system. You can configure them on the [integrations page](https://www.qualified.io/hire/account/integrations#webhooks).
 
-![Webhooks URL config found within integrations page](/images/hire/webhooks.png)
-
 
 ## Setup
 
@@ -19,9 +17,28 @@ Want to be notified when a candidate starts and finishes their assessment? Inter
 
 Simply provide a URL to your API and check the boxes for the events you want to be broadcasted to this URL. Then you can integrate into your own system actions to be taken upon completion of these events.
 
-## Events
+Multiple webhook subscriptions are supported, to allow for multiple systems to be notified.
 
-Either check the box to send all events, or choose from the list of webhook events to be notified of.
+## Retries
+
+There are certain conditions in which a failed webhook delivery attempt will be retried. Webhook events will only be retried once in these cases. 
+
+The following cases result in a single retry attempt being made:
+- Connection failure to the webhook URL
+- Connection timeout (after 5 seconds)
+- Server returns one of the following status codes: `502`, `503`, `504`, `520`, `521`, `523`, `525`, `526`, `527`, `530`
+
+The retry attempt will wait at least 60 seconds before retrying. 
+
+The reason why Qualified only retries once under certain conditions is to minimize the potential for duplicate data to be created within the receiving app. Sometimes failures happen after a certain amount of processing has already happened and can cause
+the receiving application to respond to retries as if it is a new event. 
+
+## Event Management
+For each configured webhook subscription, you can view the last 100 webhook events that were sent. From this interface you can manually trigger a retry for any of the failed events, as many times as you need to.
+
+## Trigger Events
+
+Each webhook subscription can be configured to trigger for specific events. We recommend only configuring the triggering events that you need, in order to minimize unnecessary server load.
 
 
 ### Assessment Events
