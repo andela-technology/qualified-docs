@@ -12,7 +12,7 @@ Truffle uses the [Mocha](https://mochajs.org/) testing framework and [Chai](http
 
 If you're unfamiliar with mocha testing whatsoever check out our [Mocha Testing Framework BDD Documentation](/reference/languages/javascript/mocha-bdd).
 
-The rest of these notes are adopted from [the truffle framework documentation](http://truffleframework.com/docs/getting_started/javascript-tests).
+The rest of these notes are adapted from [the truffle framework documentation](http://truffleframework.com/docs/getting_started/javascript-tests).
 
 ## USE CONTRACT() INSTEAD OF DESCRIBE()
 
