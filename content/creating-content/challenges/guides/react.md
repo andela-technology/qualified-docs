@@ -1,6 +1,6 @@
 ---
 title: Testing React
-summary: "Testing React"
+summary: "Testing React skills"
 tags:
   - javascript
   - react
@@ -9,11 +9,11 @@ tags:
   - react-testing-library
 ---
 
-# Testing React
+# Testing React skills
 
 ## Overview
 
-Testing React in Qualified requires more planning than a typical algorithmic, single-function task that involves few libraries outside of core collections. With any large library like React, there is greater potential for unexpected edge cases to arise. This guide will help content authors navigate testing React to help ensure a smooth candidate experience.
+Testing React skills in Qualified requires more planning than a typical algorithmic, single-function task that involves few libraries outside of core collections. With any large library like React, there is greater potential for unexpected edge cases to arise. This guide will help content authors navigate testing React to help ensure a smooth candidate experience.
 
 We encourage you to peruse our many React templates for a detailed view on how we typically set React challenges up.
 
