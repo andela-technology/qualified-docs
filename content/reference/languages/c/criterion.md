@@ -55,35 +55,39 @@ To illustrate the problem, consider that `cr_assert_arr_eq(actual, expected, siz
 ### Preloaded code
 
 ```c
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-char *arr_to_s(int len, int *arr) {
-    int result_capacity = 8;
-    int result_len = 0;
-    char *result = malloc(result_capacity);
-  
-    if (!result) {
-        fprintf(stderr, "%s:%d: malloc failed", __FILE__, __LINE__);
+void ensure(bool pred, char *msg, char *file, int line) {
+    if (!pred) {
+        fprintf(stderr, "%s:%d: %s", file, line, msg);
         exit(1);
     }
-  
+}
+
+char *arr_to_s(int len, int *arr) {
+    int result_capacity = 16;
+    int result_len = 0;
+    char *result = malloc(result_capacity);
+    ensure(result, "malloc", __FILE__, __LINE__);
     result[0] = '\0';
-  
+
     for (int i = 0; i < len; i++) {
         char num[16];
+        int previous_len = result_len;
         result_len += sprintf(num, i < len - 1 ? "%d," : "%d", arr[i]);
-      
-        if (result_len >= result_capacity &&
-            !(result = realloc(result, (result_capacity *= 2)))) {
-            fprintf(stderr, "%s:%d: realloc failed", __FILE__, __LINE__);
-            exit(1);
+
+        if (result_len >= result_capacity) {
+            result_capacity <<= 1;
+            result = realloc(result, result_capacity);
+            ensure(result, "realloc", __FILE__, __LINE__);
         }
-      
-        strcat(result, num);
+
+        strcat(result + previous_len, num);
     }
-  
+
     return result;
 }
 ```
