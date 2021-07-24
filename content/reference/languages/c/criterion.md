@@ -134,4 +134,6 @@ Test(split_integer, reverse_test) {
 };
 ```
 
-Now, when the candidate fails a test, the log shows the arrays in a more helpful format like `expected [3,2,1] but got [42,2,1]`.
+Now, when the candidate fails a test, the log shows the arrays in a more helpful format like `expected [3,2,1] but got [42,2,1]`
+
+This additional boilerplate does add noise to each test case, so creating a helper function to run an assertion might be a good idea.
