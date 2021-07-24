@@ -38,6 +38,8 @@ char *reverse(const char *s) {
 #include <criterion/criterion.h>
 #include <stdlib.h>
 
+extern char *reverse(const char *s);
+
 Test(reverse, example_test) {
     char *actual = reverse("hello world");
     const char *expected = "dlrow olleh";
@@ -114,8 +116,8 @@ int *reverse(const int len, const int *nums) {
 #include <criterion/criterion.h>
 #include <stdlib.h>
 
-char *arr_to_s(int len, int *arr);
-int *reverse(int len, int *nums);
+extern char *arr_to_s(int len, int *arr);
+extern int *reverse(int len, int *nums);
 
 Test(split_integer, reverse_test) {
     int nums[] = {1, 2, 3};
