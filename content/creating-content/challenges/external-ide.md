@@ -1,6 +1,7 @@
 ---
 title: "Labs: External IDE"
 order: 10
+private: true
 ---
 
 # External IDE
