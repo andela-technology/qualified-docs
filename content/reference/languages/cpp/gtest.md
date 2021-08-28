@@ -19,6 +19,7 @@ Google Test is only supported when C++17 with Clang 8 is used.
 
 ```cpp
 #include <gtest/gtest.h>
+#include "../src/solution.cpp" // include the candidate's solution file, if necessary
 #include "challenge.h" // include the 'preloaded' file, if necessary
 
 extern int add(int a, int b); // the candidate's solution
