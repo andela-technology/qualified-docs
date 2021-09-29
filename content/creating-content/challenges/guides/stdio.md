@@ -40,11 +40,11 @@ Other scenarios are possible as well, but these use cases provide some motivatio
 
 ## Qualified's Philosophy
 
-The Qualified approach to evaluating code is unique because it's based on [industry-standard, language-specific unit testing frameworks](http://localhost:8080/reference/languages) rather than standard input and output.
+The Qualified approach to evaluating code is unique because it's based on [industry-standard, language-specific unit testing frameworks](/reference/languages) rather than standard input and output.
 
 The workflow that Qualified's code runner prioritizes is making a direct call to a solution function, or instantiating a solution class and letting the testing framework handle the assertions. This occurs in a single process, or in subprocesses controlled purely by the testing library, in some cases. Results from assertions are custom-formatted for pretty printing on our code runner's HTML-based user interface.
 
-One consequence of Qualified's adoption of language-specific testing frameworks is that syntax highlighting and environment will be specific to a single language per solution. Scenario #2 presented above would be implemented by translating the language-agnostic solution harness into each language's test cases. Qualified offers a [generator](http://localhost:8080/reference/features/challenges/code/language-generator) to help ease the translation process.
+One consequence of Qualified's adoption of language-specific testing frameworks is that syntax highlighting and environment will be specific to a single language per solution. Scenario #2 presented above would be implemented by translating the language-agnostic solution harness into each language's test cases. Qualified offers a [generator](/reference/features/challenges/code/language-generator) to help ease the translation process.
 
 The primary merit to our library-based approach is that it better reflects a real development environment than standard I/O testing. It encourages candidates to write their own test cases in a popular testing framework using established paradigms such as [test-driven development](https://en.wikipedia.org/wiki/Test-driven_development).
 
@@ -78,7 +78,7 @@ public class IsEvenTest {
 }
 ```
 
-For clients looking for the realism a large project inspires, our [Project Code Challenge](http://localhost:8080/creating-content/challenges/challenge-types/#project-code-challenges) feature offers multiple files and best approximates a natural development workflow.
+For clients looking for the realism a large project inspires, our [Project Code Challenge](/creating-content/challenges/challenge-types/#project-code-challenges) feature offers multiple files and best approximates a natural development workflow.
 
 That said, for those who wish to proceed with standard I/O testing in spite of the orientation of the platform, the rest of this guide will share a few general strategies for doing so.
 
