@@ -22,3 +22,6 @@ This guide describes how to use random tests as a means of cheating prevention.
 
 ### [Preconditions](/creating-content/challenges/guides/preconditions)
 Preconditions are easy to misuse in challenges. This guide offers suggestions for when and how to use preconditions to ensure they align with the goals of your challenge.
+
+### [Testing Standard Input and Output](/creating-content/challenges/guides/stdio)
+This guide walks you through the ins and outs of testing code that uses standard input and output to receive and return data in Qualified.
