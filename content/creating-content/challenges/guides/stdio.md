@@ -157,3 +157,7 @@ public class IsEvenTest {
 }
 ```
 
+:::warning
+When working with the Code Runner, bear in mind that internal files and paths (such as jars) aren't guaranteed to remain stable.
+:::
+
