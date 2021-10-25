@@ -25,3 +25,6 @@ Preconditions are easy to misuse in challenges. This guide offers suggestions fo
 
 ### [Testing Standard Input and Output](/creating-content/challenges/guides/stdio)
 This guide walks you through the ins and outs of testing code that uses standard input and output to receive and return data in Qualified.
+
+### [Testing SQL Skills Without RSpec](/creating-content/challenges/guides/sql-without-rspec)
+Qualified uses Ruby and RSpec as the harness for running SQL solutions by default. This guide provides ideas for testing SQL skills with other languages and testing frameworks.
