@@ -34,4 +34,4 @@ TEST(Add, HandlesBasicAddition) {
 
 # Learn More
 
-See [Google Test documentation](https://github.com/google/googletest/blob/master/googletest/docs/primer.md).
+See [Google Test documentation](https://google.github.io/googletest/primer.html).
