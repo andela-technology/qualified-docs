@@ -27,8 +27,7 @@ Pass/Fail status will be written to the output stream.
 
 ## `Test.assert_equals(actual, expected, msg = nil)`
 
-Checks that the actual value equals the expected value. A useful message will be displayed
-for both pass and fail outcomes. The `msg` argument is optional. If given it will be displayed in addition to the typical message used.
+Checks that the actual value equals the expected value. A useful message will be displayed for both pass and fail outcomes. The `msg` argument is optional. If given it will be displayed in addition to the typical message used.
 
 ## `Test.assert_not_equals(actual, unexpected, msg = nil)`
 

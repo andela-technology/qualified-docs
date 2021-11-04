@@ -9,7 +9,7 @@ tags:
 
 ## Overview
 
-Qualified provides a lightweight, custom testing framework for Objective-C. However, we recommend using the standard [unitkit](/reference/languages/objc/unitkit) instead.
+Qualified provides a custom testing framework for Objective-C. However, we recommend using the standard [unitkit](/reference/languages/objc/unitkit) instead.
 
 # Pass/Fail methods
 

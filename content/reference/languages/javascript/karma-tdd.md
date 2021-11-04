@@ -18,7 +18,7 @@ There are few changes necessary from testing normal code, except your code will 
 
 ## Language Version
 
-All code run in the browser is compiled via `tsc`, so you can safely use ES2015 code.
+All code run in the browser is transpiled via Babel, so you can safely use ES2015 code.
 
 ## Using Mocha
 
