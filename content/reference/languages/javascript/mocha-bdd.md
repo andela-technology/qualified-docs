@@ -39,19 +39,8 @@ Mocha allows you to use any assertion library you want and so does not auto-requ
 
 ## Chai
 
-We recommend that you use the [Chai](http://chai.js.com) BDD/TDD assertion library. It supports the following
+We recommend that you use the [Chai](https://chai.js.com) BDD/TDD assertion library. It supports the following
 assertion styles:
-
-### Should
-
-```javascript
-require("chai").should();
-
-foo.should.be.a('string');
-foo.should.equal('bar');
-foo.should.have.length(3);
-tea.should.have.property('flavors').with.length(3);
-```
 
 ### Expect
 
@@ -78,4 +67,4 @@ assert.lengthOf(tea.flavors, 3);
 
 # Learn More
 
-[You can learn more on the Mocha website](http://mochajs.org/).
+[You can learn more on the Mocha website](https://mochajs.org/).
