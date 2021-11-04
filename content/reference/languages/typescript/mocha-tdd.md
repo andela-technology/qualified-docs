@@ -16,19 +16,17 @@ Qualified supports the Mocha testing framework, in a BDD or TDD setup.
 The following is a Mocha TDD example on how to use the framework using the built in Node.js assertion library:
 
 ```typescript
-/// <reference path="/runner/typings/node/index.d.ts" />
-/// <reference path="/runner/typings/mocha/index.d.ts" />
-/// <reference path="/runner/typings/chai/index.d.ts" />
-var assert = require("assert");
-suite('Array', function() {
-  setup(function() {
-    // ...
-  });
+import {add} from "./solution";
+import {assert} from "chai";
 
-  suite('#indexOf()', function() {
-    test('should return -1 when not present', function() {
-      assert.equal(-1, [1,2,3].indexOf(4));
-    });
+suite("add", () => {
+  suiteSetup(() => { /* optional code to run before the entire suite */ });
+  setup(() => { /* optional code to run before each test */ });
+  teardown(() => { /* optional code to run after each test */ });
+  suiteTeardown(() => { /* optional code to run after the entire suite */ });
+
+  test("should add two numbers", () => {
+    assert.equal(add(1, 2), 3);
   });
 });
 ```
@@ -39,20 +37,7 @@ Mocha allows you to use any assertion library you want and so does not auto-requ
 
 ## Chai
 
-We recommend that you use the [Chai](http://chai.js.com) BDD/TDD assertion library. It supports the following
-assertion styles:
-
-### Should
-
-```typescript
-require("chai").should();
-
-foo.should.be.a('string');
-foo.should.equal('bar');
-foo.should.have.length(3);
-tea.should.have.property('flavors')
-  .with.length(3);
-```
+We recommend that you use the [Chai](http://chai.js.com) BDD/TDD assertion library. It supports the following assertion styles:
 
 ### Expect
 
@@ -77,22 +62,6 @@ assert.lengthOf(foo, 3)
 assert.property(tea, 'flavors');
 assert.lengthOf(tea.flavors, 3);
 ```
-
-# Loaded NPM Packages
-
-The following test related packages are loaded into the VM and available for use:
-
-- should
-- expect
-- chai
-- chai-spies
-- chai-stats
-- chai-factories
-- chai-things
-- chai-fuzzy
-- chai-interface
-- chai-change
-- chai-subset
 
 # Learn More
 

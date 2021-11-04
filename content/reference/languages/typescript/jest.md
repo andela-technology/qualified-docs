@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Qualified supports writing tests for TypeScript (TypeScript 3 only) using [Jest][0].
+Qualified supports writing tests for TypeScript (TypeScript 3+ only) using [Jest][0].
 
 ## Quick Start
 
