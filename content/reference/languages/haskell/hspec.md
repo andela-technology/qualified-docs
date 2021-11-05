@@ -4,20 +4,18 @@ tags:
   - haskell
   - testing
   - hspec
-  - hspec-meta
 ---
 
 # hspec Testing Framework
 
 ## Overview
 
-Qualified supports [hspec][2], a *Behavior Driven Development* (BDD) test framework for Haskell modeled after Ruby's popular [Rspec][3] framework.
+Qualified supports [hspec][1], a *Behavior Driven Development* (BDD) test framework for Haskell modeled after Ruby's popular [Rspec][2] framework.
 
 For more information, see: [https://hspec.github.io/][1]
 
 [1]: https://hspec.github.io/
-[2]: https://hackage.haskell.org/package/hspec-meta-1.10.0
-[3]: https://rspec.info/
+[2]: https://rspec.info/
 
 ## Setup
 
