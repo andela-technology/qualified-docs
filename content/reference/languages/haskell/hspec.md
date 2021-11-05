@@ -45,7 +45,7 @@ spec = do
     it "add a b" $ do
       (add 1 1) `shouldBe` (2 :: Integer)
 
-main :: IO () --- `main` is optional
+main :: IO () -- `main` is optional
 main = hspec spec
 ```
 
@@ -219,6 +219,6 @@ spec = do
       it "is inverse to show" $ property $
         \x -> (read . show) x == (x :: Int)
 
-main :: IO () --- `main` is optional
+main :: IO () -- `main` is optional
 main = hspec spec
 ```
