@@ -21,45 +21,35 @@ For more information, see: [https://hspec.github.io/][1]
 
 ## Setup
 
-A minimal test fixture looks as follows:
+A minimal test fixture for GHC 8.2.2 looks as follows:
 
 #### Solution Code:
 
 ```haskell
-module Haskell.Qualified.Greeter where
-import Text.Printf (printf)
+module Example where
 
-data Greeter = Greeter String
-
-greet :: Greeter -> String -> String
-greet (Greeter name) otherName =
-  printf "Greetings!  I am %s.  Welcome, %s!" name otherName
+add :: Num a => a -> a -> a
+add = (+)
 ```
-
-***NOTE*** : It is always necessary to have a `module` declaration in your solution code, so it can be imported elsewhere.  *Try to have unique module names, to avoid name collisions.*
 
 #### Test Fixture:
 
 ```haskell
+module ExampleSpec where -- test module name MUST end with Spec
 import Test.Hspec
-import Haskell.Qualified.Greeter
+import Example
 
-main :: IO ()
-main = hspec $ do
-  describe "Testing Greeter" $
-    it "Shoki meets Su Kong Tai Djin" $ do
-      -- ...IO Monad Actions...
-      let shoki = Greeter "Shoki, the Demon Queller"
-      putStrLn "Greeting Tai Djin..."
-      let taiDjin = "Grandmaster Su Kong Tai Djin"
-      -- Final expression should have type signature `IO ()`
-      (shoki `greet` taiDjin) `shouldBe`
-        "Greetings!  I am Shoki, The Demon Queller.  Welcome, Grandmaster Su Kong Tai Djin!"
+spec :: Spec -- `spec` is required
+spec = do
+  describe "Example" $ do
+    it "add a b" $ do
+      (add 1 1) `shouldBe` (2 :: Integer)
+
+main :: IO () --- `main` is optional
+main = hspec spec
 ```
 
 In Hspec, `Expectation` is a type alias for `IO ()`
-
-***NOTE***: Unlike solution code, module declaration for the test fixture is optional.
 
 ## Pass/Fail methods
 
@@ -218,53 +208,17 @@ For more information, see the [QuickCheck Tutorial][QuickCheck]
 #### Example:
 
 ```haskell
+module ExampleSpec where -- test module name MUST end with Spec
 import Test.Hspec
 import Test.QuickCheck
 
-main :: IO ()
-main = hspec $ do
+spec :: Spec -- `spec` is required
+spec = do
   describe "read" $ do
     context "when used with ints" $ do
       it "is inverse to show" $ property $
         \x -> (read . show) x == (x :: Int)
-```
 
-## HUnit
-
-### Running a HUnit test suite with Hspec
-
-Hspec's `fromHUnitTest` can be used can be used to run HUnit tests with Hspec. Ordinary spec items and HUnit tests can be freely intermixed.
-
-#### Example:
-
-```haskell
-import Test.Hspec
-import Test.Hspec.HUnit (fromHUnitTest)
-import Test.HUnit
-
-main :: IO ()
-main = hspec $ do
-  describe "some ordinary spec items" $ do
-    it "returns the first element of a list" $ do
-      head [23 ..] `shouldBe` (23 :: Int)
-
-  describe "some legacy HUnit tests" $ do
-    fromHUnitTest testSuite
-
-
--- | A HUnit test suite
-testSuite :: Test
-testSuite = TestList [
-    TestLabel "test_read_is_inverse_to_show" test_read_is_inverse_to_show
-  , TestLabel "test_23_is_equal_to_42" test_23_is_equal_to_42
-  ]
-
-test_read_is_inverse_to_show :: Test
-test_read_is_inverse_to_show = TestCase $ do
-  (read . show) (23 :: Int) @?= (23 :: Int)
-
--- a failing test case
-test_23_is_equal_to_42 :: Test
-test_23_is_equal_to_42 = TestCase $ do
-  23 @?= (42 :: Int)
+main :: IO () --- `main` is optional
+main = hspec spec
 ```
