@@ -18,8 +18,7 @@ Most Qualified challenges are tested using the same language as the solution. Ho
 
 ## RSpec SQL custom utilities
 
-A small set of utility methods and classes have been provided to make testing and displaying SQL queries easy within
-Ruby. These utility methods are available from any file in the runner.
+A small set of utility methods and classes have been provided to make testing and displaying SQL queries easy within Ruby. These utility methods are available from any file in the runner.
 
 - `$sql` is a global variable which contains the user's SQL solution
 - `run_sql` is a method that will run the user's query, execute any non-SELECT statements and print and return any result sets from SQL `SELECT` statements.

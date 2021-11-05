@@ -14,13 +14,13 @@ Qualified supports writing test fixtures for Kotlin using [KotlinTest][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```kotlin
 fun add(a: Int, b: Int) = a + b
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```kotlin
 import io.kotlintest.matchers.shouldBe

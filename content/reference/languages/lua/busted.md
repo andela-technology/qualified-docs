@@ -14,7 +14,7 @@ Qualified supports writing tests for Lua using [Busted][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```lua
 local t = {}
@@ -24,7 +24,7 @@ end
 return t
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```lua
 local t = require 'solution'

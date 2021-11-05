@@ -14,20 +14,22 @@ Qualified supports writing test fixtures for Scala using [JUnit 4][1].
 
 ## Scala with JUnit Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```scala
 object Sample {
   def sayHello(name: String) = {
-    if(name.length() > 0)
+    if (name.length() > 0) {
       "Hello, " + name + "!"
-    else
+    }
+    else {
       "Hello there!"
+    }
   }
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```scala
 import org.junit.Test

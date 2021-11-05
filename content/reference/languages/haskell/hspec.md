@@ -23,7 +23,7 @@ For more information, see: [http://hspec.github.io/][1]
 
 A minimal test fixture looks as follows:
 
--  Solution Code:
+#### Solution Code:
 
 ```haskell
 module Haskell.Qualified.Greeter where
@@ -38,7 +38,7 @@ greet (Greeter name) otherName =
 
 ***NOTE*** : It is always necessary to have a `module` declaration in your solution code, so it can be imported elsewhere.  *Try to have unique module names, to avoid name collisions.*
 
-- Test Fixture
+#### Test Fixture:
 
 ```haskell
 import Test.Hspec

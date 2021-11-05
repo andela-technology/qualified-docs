@@ -14,15 +14,17 @@ Qualified supports writing test fixtures for Java using [JUnit 5][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```java
 public class Adder {
-  public static int add(int a, int b) { return a + b; }
+    public static int add(int a, int b) {
+        return a + b;
+    }
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```java
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -33,21 +35,21 @@ import org.junit.jupiter.api.Nested;
 
 @DisplayName("Testing Adder")
 class AdderTests {
-  @Test
-  @DisplayName("Adder.add(1, 1) returns 2")
-  void test1() {
-    assertEquals(2, Adder.add(1, 1), "1 + 1 should equal 2");
-  }
-
-  @Nested
-  @DisplayName("Negative Integers")
-  class Negatives {
     @Test
-    @DisplayName("Adder.add(-1, -1) returns -2")
+    @DisplayName("Adder.add(1, 1) returns 2")
     void test1() {
-      assertEquals(-2, Adder.add(-1, -1), "-1 + -1 should equal -2");
+        assertEquals(2, Adder.add(1, 1), "1 + 1 should equal 2");
     }
-  }
+    
+    @Nested
+    @DisplayName("Negative Integers")
+    class Negatives {
+        @Test
+        @DisplayName("Adder.add(-1, -1) returns -2")
+        void test1() {
+            assertEquals(-2, Adder.add(-1, -1), "-1 + -1 should equal -2");
+        }
+    }
 }
 ```
 

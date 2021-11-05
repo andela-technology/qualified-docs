@@ -14,13 +14,13 @@ Qualified supports writing tests for TypeScript (TypeScript 3+ only) using [Jest
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```typescript
 export const sum = (a: number, b: number) => a + b;
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```typescript
 import { sum } from './solution';

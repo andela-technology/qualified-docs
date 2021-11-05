@@ -19,7 +19,7 @@ The following notes are largely derived from: [clojure.test - Clojure API Docume
 
 A minimal test fixture looks as follows:
 
- - Solution Code:
+#### Solution Code:
 
 ```clojure
 (ns clojure.greeter)
@@ -31,7 +31,7 @@ A minimal test fixture looks as follows:
              your-name)))
 ```
 
- - Test Fixture
+#### Test Fixture
 
 ```clojure
 (ns clojure.greeter-test

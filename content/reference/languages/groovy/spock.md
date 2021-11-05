@@ -14,7 +14,7 @@ Qualified supports writing tests for Groovy using [Spock][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```groovy
 class Adder {
@@ -22,7 +22,7 @@ class Adder {
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```groovy
 import spock.lang.Specification

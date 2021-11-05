@@ -16,8 +16,9 @@ Qualified supports the Mocha testing framework, in a BDD or TDD setup.
 The following is a Mocha TDD example on how to use the framework using the built in Node.js assertion library:
 
 ```typescript
-import {add} from "./solution";
 import {assert} from "chai";
+import {add} from "./solution";
+// import preloaded from "./preloaded"; // optionally, import the preloaded file
 
 suite("add", () => {
   suiteSetup(() => { /* optional code to run before the entire suite */ });
@@ -42,19 +43,18 @@ We recommend that you use the [Chai](http://chai.js.com) BDD/TDD assertion libra
 ### Expect
 
 ```typescript
-var expect = require("chai").expect;
+const {expect} = require("chai");
 
 expect(foo).to.be.a('string');
 expect(foo).to.equal('bar');
 expect(foo).to.have.length(3);
-expect(tea).to.have.property('flavors')
-  .with.length(3);
+expect(tea).to.have.property('flavors').with.length(3);
 ```
 
 ### Assert
 
 ```typescript
-var assert = require("chai").assert;
+const {assert} = require("chai");
 
 assert.typeOf(foo, 'string');
 assert.equal(foo, 'bar');

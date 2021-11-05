@@ -14,7 +14,7 @@ Qualified supports the ExUnit testing framework.
 
 ## ExUnit Quick Start
 
-- Solution Code
+#### Solution Code:
 
 ```elixir
 defmodule Challenge do
@@ -29,7 +29,7 @@ defmodule Challenge do
 end
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```elixir
 defmodule TestSolution do

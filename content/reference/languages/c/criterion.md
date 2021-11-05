@@ -50,7 +50,7 @@ Test(reverse, example_test) {
 
 ## Verbose output for complex data
 
-A potential for confusion when using Criterion is lack of verbosity in output. When comparing data structures, consider writing a stringification helper and passing it into the optional format parameter to Criterion's assertion call.
+A potential for confusion when using Criterion is lack of verbosity in output. Data structures, numbers and booleans are susceptible. When comparing data structures, consider writing a stringification helper and passing it into the optional format parameter to Criterion's assertion call.
 
 To illustrate the problem, consider that `cr_assert_arr_eq(actual, expected, sizeof(expected));` by default produces an error `The expression (actual)[0..Size] == (expected)[0..Size] is false.` which doesn't show a diff of the two arrays. Adding an array stringification function allows for a much clearer error log. Here's a complete example:
 
