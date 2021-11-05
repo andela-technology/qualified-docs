@@ -14,20 +14,22 @@ Qualified supports writing test fixtures for Scala using [ScalaTest][1].
 
 ## Scala with ScalaTest Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```scala
 object Sample {
   def sayHello(name: String) = {
-    if (name.length() > 0)
+    if (name.length() > 0) {
       "Hello, " + name + "!"
-    else
+    }
+    else {
       "Hello there!"
+    }
   }
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```scala
 import org.scalatest._
@@ -43,10 +45,10 @@ class SampleSpec extends FlatSpec with Matchers {
 }
 ```
 
-ScalaTest supports many other [testing styles](http://www.scalatest.org/user_guide/selecting_a_style).
+ScalaTest supports many other [testing styles](https://www.scalatest.org/user_guide/selecting_a_style).
 
 # Learn More
 
 [You can learn more on the ScalaTest website][1].
 
-[1]: http://www.scalatest.org/
+[1]: https://www.scalatest.org/

@@ -14,18 +14,20 @@ Qualified supports the testthat testing framework.
 
 ## testthat Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```r
 say_hello <- function(name = NULL) {
-  if( !is.null(name) )
+  if (!is.null(name)) {
     paste("Hello, ", name, "!", sep="")
-  else
+  }
+  else {
     "Hello there!"
+  }
 }
 ```
 
-- Test Fixture:
+### Test Fixture:
 
 ```r
 context("Code Challenge Sample")
@@ -41,4 +43,4 @@ test_that("should handle blank input", {
 
 # Learn More
 
-[You can learn more on the testthat website](http://testthat.r-lib.org/).
+[You can learn more on the testthat website](https://testthat.r-lib.org/).

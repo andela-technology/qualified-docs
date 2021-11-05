@@ -14,7 +14,7 @@ Qualified supports writing tests for JavaScript (Node 10+ only) using [Jest][0].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```javascript
 const sum = (a, b) => a + b;
@@ -22,7 +22,7 @@ const sum = (a, b) => a + b;
 module.exports = sum;
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```javascript
 const sum = require('./solution');

@@ -13,7 +13,7 @@ Qualified supports writing tests for Rust using `tests` mod with `#[cfg(test)]` 
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {
@@ -21,7 +21,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```rust
 #[cfg(test)]

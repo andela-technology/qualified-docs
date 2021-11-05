@@ -8,11 +8,11 @@ tags:
 
 # Truffle Framework
 
-Truffle uses the [Mocha](https://mochajs.org/) testing framework and [Chai](http://chaijs.com/) for testing Solidity Smart Contracts with some additions.
+Truffle uses the [Mocha](https://mochajs.org/) testing framework and [Chai](https://chaijs.com/) for testing Solidity Smart Contracts with some additions.
 
 If you're unfamiliar with mocha testing whatsoever check out our [Mocha Testing Framework BDD Documentation](/reference/languages/javascript/mocha-bdd).
 
-The rest of these notes are adapted from [the truffle framework documentation](http://truffleframework.com/docs/getting_started/javascript-tests).
+The rest of these notes are adapted from [the truffle framework documentation](https://truffleframework.com/docs/getting_started/javascript-tests).
 
 ## USE CONTRACT() INSTEAD OF DESCRIBE()
 
@@ -27,11 +27,11 @@ Since Truffle uses Mocha under the hood, you can still use `describe()` to run n
 
 Contract abstractions are the basis for making contract interaction possible from Javascript (they're basically our flux capacitor). Because Truffle has no way of detecting which contracts you'll need to interact with within your tests, you'll need to ask for those contracts explicitly. You do this by using the `artifacts.require()` method, a method provided by Truffle that allows you to request a usable contract abstraction for a specific Solidity contract. As you'll see in the example below, you can then use this abstraction to make sure your contracts are working properly.
 
-For more information on using contract abstractions, see the [Interacting With Your Contracts](http://truffleframework.com/docs/getting_started/contracts) section of the truffle framework documentation.
+For more information on using contract abstractions, see the [Interacting With Your Contracts](https://truffleframework.com/docs/getting_started/contracts) section of the truffle framework documentation.
 
 ## USING ARTIFACTS.REQUIRE()
 
-Using `artifacts.require()` within your tests is the exact same as using it within your migrations. See the [`artifacts.require()` documentation](http://truffleframework.com/docs/getting_started/migrations#artifacts-require-) from the Truffle Documentation for detailed usage.
+Using `artifacts.require()` within your tests is the exact same as using it within your migrations. See the [`artifacts.require()` documentation](https://truffleframework.com/docs/getting_started/migrations#artifacts-require-) from the Truffle Documentation for detailed usage.
 
 ### EXAMPLE
 

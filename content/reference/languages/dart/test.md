@@ -14,7 +14,7 @@ Qualified supports writing tests for Dart using [`test`][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```dart
 String sayHello(String name) {
@@ -22,7 +22,7 @@ String sayHello(String name) {
 }
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```dart
 import "package:test/test.dart";

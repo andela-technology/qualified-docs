@@ -21,7 +21,7 @@ The `test` module provides the testing functionality needed to validate a challe
 
 A minimal test fixture looks as follows:
 
- *  Solution Code:
+#### Solution Code
 
 ```python
 def greet(greetor,greetee):
@@ -31,7 +31,7 @@ def greet(greetor,greetee):
     )
 ```
 
- *  Fixture Code:
+#### Fixture Code:
 
 ```python
 # For Python 3.7+, add `import codewars_test as test` and `from solution import greet`

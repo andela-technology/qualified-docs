@@ -36,4 +36,4 @@ end
 
 # Learn More
 
-[You can learn more on the OUnit website](http://ounit.forge.ocamlcore.org/api-ounit/index.html).
+[You can learn more on the OUnit website](https://ounit.forge.ocamlcore.org/api-ounit/index.html).
