@@ -41,7 +41,7 @@ Since most other languages call the solution directly, we recommend using `run_s
 
 ## Basic Example
 
-The notes below are adapted from [rspec-core.](https://rspec.info/documentation/3.3/rspec-core/)
+The notes below are adapted from [rspec-core](https://rspec.info/documentation/3.3/rspec-core/).
 
 RSpec uses the words "describe" and "it" so we can express concepts like a conversation:
 

@@ -14,7 +14,7 @@ Qualified supports writing test fixtures for Kotlin using [Spek][1].
 
 ## Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```kotlin
 fun add(a: Int, b: Int) = a + b

@@ -14,7 +14,7 @@ Qualified supports writing test fixtures for Scala using [JUnit 4][1].
 
 ## Scala with JUnit Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```scala
 object Sample {

@@ -14,7 +14,7 @@ Qualified supports writing tests for Dart using [`test`][1].
 
 ## Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```dart
 String sayHello(String name) {

@@ -14,7 +14,7 @@ Qualified supports writing test fixtures for Java using [JUnit 5][1].
 
 ## Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```java
 public class Adder {

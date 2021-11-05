@@ -15,7 +15,7 @@ Qualified supports writing test fixtures for Java using [JUnit 4](https://junit.
 
 ## Minimal Test Framework:
 
-#### Solution Code:
+#### Solution Code
 
 ```java
 public class Calculator {

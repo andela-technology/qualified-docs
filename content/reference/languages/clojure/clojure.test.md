@@ -19,7 +19,7 @@ The following notes are largely derived from: [clojure.test - Clojure API Docume
 
 A minimal test fixture looks as follows:
 
-#### Solution Code:
+#### Solution Code
 
 ```clojure
 (ns clojure.greeter)

@@ -10,7 +10,7 @@ tags:
 
 Qualified supports the RSpec behavior-driven testing framework.
 
-These notes are adapted from [rspec-core.](https://rspec.info/documentation/3.3/rspec-core/)
+These notes are adapted from [rspec-core](https://rspec.info/documentation/3.3/rspec-core/).
 
 ## Basic Example
 

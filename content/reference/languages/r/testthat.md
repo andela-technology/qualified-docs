@@ -14,7 +14,7 @@ Qualified supports the testthat testing framework.
 
 ## testthat Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```r
 say_hello <- function(name = NULL) {

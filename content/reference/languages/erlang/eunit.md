@@ -14,7 +14,7 @@ Qualified supports the EUnit testing framework.
 
 ## EUnit Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```erlang
 -module(hello).

@@ -23,7 +23,7 @@ For more information, see: [https://hspec.github.io/][1]
 
 A minimal test fixture for GHC 8.2.2 looks as follows:
 
-#### Solution Code:
+#### Solution Code
 
 ```haskell
 module Example where

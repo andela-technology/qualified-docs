@@ -14,7 +14,7 @@ Qualified supports writing tests for Groovy using [JUnit 5][1].
 
 ## Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```groovy
 class Adder {

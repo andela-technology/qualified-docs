@@ -14,7 +14,7 @@ Qualified supports writing test fixtures for Scala using [ScalaTest][1].
 
 ## Scala with ScalaTest Quick Start
 
-#### Solution Code:
+#### Solution Code
 
 ```scala
 object Sample {

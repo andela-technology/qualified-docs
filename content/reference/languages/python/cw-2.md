@@ -21,7 +21,7 @@ The `test` module provides the testing functionality needed to validate a challe
 
 A minimal test fixture looks as follows:
 
-#### Solution Code:
+#### Solution Code
 
 ```python
 def greet(greetor,greetee):
