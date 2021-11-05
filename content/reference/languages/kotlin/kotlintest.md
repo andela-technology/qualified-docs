@@ -39,7 +39,7 @@ class TestAdd : StringSpec() {
 
 Following assertion libraries can be used:
 
-- [Expekt](http://winterbe.github.io/expekt/)
+- [Expekt](https://winterbe.github.io/expekt/)
 - [Kluent](https://markusamshove.github.io/Kluent/)
 
 

@@ -10,7 +10,7 @@ tags:
 
 ## Overview
 
-Qualified supports the [Criterion testing framework](http://criterion.readthedocs.io/en/master/). 
+Qualified supports the [Criterion testing framework](https://criterion.readthedocs.io/en/master/). 
 
 ## Basic Example
 

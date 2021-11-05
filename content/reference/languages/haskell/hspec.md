@@ -13,11 +13,11 @@ tags:
 
 Qualified supports [hspec][2], a *Behavior Driven Development* (BDD) test framework for Haskell modeled after Ruby's popular [Rspec][3] framework.
 
-For more information, see: [http://hspec.github.io/][1]
+For more information, see: [https://hspec.github.io/][1]
 
-[1]: http://hspec.github.io/
+[1]: https://hspec.github.io/
 [2]: https://hackage.haskell.org/package/hspec-meta-1.10.0
-[3]: http://rspec.info/
+[3]: https://rspec.info/
 
 ## Setup
 
@@ -213,7 +213,7 @@ You can use arbitrary QuickCheck properties with Hspec, but they must be of type
 
 For more information, see the [QuickCheck Tutorial][QuickCheck]
 
-[QuickCheck]: http://www.haskell.org/haskellwiki/Introduction_to_QuickCheck2
+[QuickCheck]: https://www.haskell.org/haskellwiki/Introduction_to_QuickCheck2
 
 #### Example:
 

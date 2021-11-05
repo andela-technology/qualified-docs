@@ -45,10 +45,10 @@ class SampleSpec extends FlatSpec with Matchers {
 }
 ```
 
-ScalaTest supports many other [testing styles](http://www.scalatest.org/user_guide/selecting_a_style).
+ScalaTest supports many other [testing styles](https://www.scalatest.org/user_guide/selecting_a_style).
 
 # Learn More
 
 [You can learn more on the ScalaTest website][1].
 
-[1]: http://www.scalatest.org/
+[1]: https://www.scalatest.org/

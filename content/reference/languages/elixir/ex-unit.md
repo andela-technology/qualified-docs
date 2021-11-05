@@ -46,4 +46,4 @@ end
 
 # Learn More
 
-[You can learn more on the ExUnit website](http://elixir-lang.org/docs/stable/ex_unit/ExUnit.html).
+[You can learn more on the ExUnit website](https://elixir-lang.org/docs/stable/ex_unit/ExUnit.html).

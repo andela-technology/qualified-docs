@@ -43,4 +43,4 @@ test_that("should handle blank input", {
 
 # Learn More
 
-[You can learn more on the testthat website](http://testthat.r-lib.org/).
+[You can learn more on the testthat website](https://testthat.r-lib.org/).

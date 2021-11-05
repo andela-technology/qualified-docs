@@ -41,11 +41,11 @@ class ExampleSpec : Spek({
 
 Following assertion libraries can be used:
 
-- [Expekt](http://winterbe.github.io/expekt/)
+- [Expekt](https://winterbe.github.io/expekt/)
 - [Kluent](https://markusamshove.github.io/Kluent/)
 
 # Learn More
 
 You can learn more on the [Spek website][1].
 
-[1]: http://spekframework.org/
+[1]: https://spekframework.org/

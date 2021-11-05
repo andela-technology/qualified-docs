@@ -39,4 +39,4 @@ class AdderSpec extends Specification {
 
 You can learn more on the [Spock website][1].
 
-[1]: http://spockframework.org/
+[1]: https://spockframework.org/

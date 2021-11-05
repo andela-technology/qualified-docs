@@ -37,4 +37,4 @@ say_hello_test_() ->
 
 # Learn More
 
-[You can learn more on the EUnit website](http://erlang.org/doc/man/eunit.html).
+[You can learn more on the EUnit website](https://erlang.org/doc/man/eunit.html).

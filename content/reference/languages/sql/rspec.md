@@ -10,7 +10,7 @@ tags:
 
 Qualified supports the RSpec behavior-driven testing framework, which uses Ruby.
 
-These notes are adapted from [rspec-core](http://rspec.info/documentation/3.3/rspec-core/).
+These notes are adapted from [rspec-core](https://rspec.info/documentation/3.3/rspec-core/).
 
 ## Why Ruby/RSpec?
 
@@ -24,9 +24,9 @@ A small set of utility methods and classes have been provided to make testing an
 - `run_sql` is a method that will run the user's query, execute any non-SELECT statements and print and return any result sets from SQL `SELECT` statements.
 - `compare_with` is a method which compares the candidate's submitted query to the reference query and auto-generates a test suite based on the expected query results.
 
-### [Sequel](http://sequel.jeremyevans.net)
+### [Sequel](https://sequel.jeremyevans.net)
 
-We use the [Sequel](http://sequel.jeremyevans.net) gem to communicate with the database driver.
+We use the [Sequel](https://sequel.jeremyevans.net) gem to communicate with the database driver.
 
 ### [Daff](https://github.com/paulfitz/daff)
 
@@ -97,5 +97,5 @@ end
 
 # Learn More
 
-[You can learn how to use it on the RSpec Website](http://rspec.info/).
+[You can learn how to use it on the RSpec Website](https://rspec.info/).
 

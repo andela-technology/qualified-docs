@@ -13,7 +13,7 @@ Qualified supports [clojure.test][1], the built-in testing framework for Clojure
 
 The following notes are largely derived from: [clojure.test - Clojure API Documentation.][1]
 
-[1]: http://clojure.github.io/clojure/clojure.test-api.html "clojure.test"
+[1]: https://clojure.github.io/clojure/clojure.test-api.html "clojure.test"
 
 ## Setup
 
@@ -111,7 +111,7 @@ In addition, you can document groups of assertions with the
 assertions.  The string will be included in failure reports.
 Calls to "testing" may be nested, and all of the strings will be
 joined together with spaces in the final report, in a style
-similar to [RSpec](http://rspec.info/).
+similar to [RSpec](https://rspec.info/).
 
 ```clojure
 (testing "Arithmetic"

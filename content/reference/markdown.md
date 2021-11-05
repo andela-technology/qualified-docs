@@ -302,9 +302,9 @@ And the same markdown would render as follows when viewing a Ruby challenge:
 
 You can create an inline link by wrapping link text in brackets (`[ ]`), and then wrapping the link in parentheses (`( )`).
 
-For example, to create a hyperlink to *http://www.qualified.io*, with a link text that says, *Visit Qualified!*, you'd write this in Markdown: `[Visit Qualified!](http://www.qualified.io)`.
+For example, to create a hyperlink to *https://www.qualified.io*, with a link text that says, *Visit Qualified!*, you'd write this in Markdown: `[Visit Qualified!](https://www.qualified.io)`.
 
-If you want to expose a hyperlink directly, you can simply include it in the code, and it will be automatically linked: `Visit http://www.qualified.io`
+If you want to expose a hyperlink directly, you can simply include it in the code, and it will be automatically linked: `Visit https://www.qualified.io`
 
 ## Images
 
