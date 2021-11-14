@@ -28,11 +28,11 @@ Since our [React guide](https://docs.qualified.io/creating-content/challenges/gu
 
 ### Asserting text contents
 
-Asserting text contents can be tricky with React Native Testing Library, which isn't designed for our use case of validating candidate code that often uses unexpected approaches to reach a solution.
+When validating a candidate's code, you'll generally want to avoid prescribing a particular structure or set of implementation details to give candidates freedom to implement the code as they see fit. Testing the code as a black box gives you more insight into your candidate's natural coding style. To do this, you might specify a deliverable element with a `testID="foo"` attribute which the test can query, then assert on its contents.
 
-Generally, you'll want to avoid prescribing a particular structure or implementation details to give candidates freedom to implement the code as they see fit and test it as a black box, giving you more insight into their preferred coding style. To do this, you might specify a deliverable element with a `testID="foo"` attribute which the test can query, then assert on its contents.
+Qualified offers [jest-native](https://github.com/testing-library/jest-native) matchers, imported in the Jest configuration by default. You can use jest-native's [`toHaveTextContent`](https://github.com/testing-library/jest-native#tohavetextcontent) matcher to assert that text contents exist within an element.
 
-RNTL offers [`queryByText`](https://testing-library.com/docs/queries/bytext/) which can be used like `expect(queryByText("foo")).toBeTruthy();` to determine if `"foo"` is among the child text contents of a node.
+RNTL also offers [`queryByText`](https://testing-library.com/docs/queries/bytext/) which can be used like `expect(queryByText("foo")).toBeTruthy();` to determine if `"foo"` is among the child text contents of a node.
 
 :::warning
 Use caution with negative assertions; the diffs that RNTL emits can often slow or timeout the code runner if they print deeply nested complex component objects. A solution is to use the `!!` operator, as in `expect(!!queryByText("bar")).not.toBeTruthy();` to ensure the diff is small when the assertion fails.
@@ -57,7 +57,7 @@ const getDeepTextContents = el => {
 };
 ```
 
-This strategy may be appropriate in certain situations where candidates might nest components unexpectedly but still arrive at a valid solution, for example, when using `FlatList` or extra wrappers on list items. In contrast, the `ByText` queries aren't able to produce an array of ordered results and are therefore more permissive in regards to substrings and ordering.
+This strategy may be appropriate in certain situations where candidates might nest components unexpectedly but still arrive at a valid solution, for example, when using `FlatList` or extra wrappers on list items. In contrast, the `.toHaveTextContent` and `ByText` queries aren't able to produce an array of ordered results and are therefore more permissive in regards to substrings and ordering.
 
 ### Testing components with asynchronous lifecycles
 
@@ -90,12 +90,9 @@ We can validate this solution with the following testing suite, which mocks `fet
 
 ```javascript
 import {render} from "@testing-library/react-native";
+import Posts from "../src/components/Posts";
 
 describe("Posts", () => {
-  const getFirstChildText = el =>
-    typeof el === "string" ? el :
-      el?.children.find(getFirstChildText)
-  ;
   beforeEach(() => {
     global.fetch = jest.fn(url => Promise.resolve({
       ok: true,
@@ -111,8 +108,8 @@ describe("Posts", () => {
     const {findAllByTestId} = render(<Posts />);
     const posts = await findAllByTestId("post", {timeout: 500});
     expect(posts).toHaveLength(2);
-    expect(getFirstChildText(posts[0])).toEqual("foo title");
-    expect(getFirstChildText(posts[1])).toEqual("bar title");
+    expect(posts[0]).toHaveTextContent("foo title");
+    expect(posts[1]).toHaveTextContent("bar title");
     expect(fetch).toHaveBeenCalledTimes(1);
   });
 });
