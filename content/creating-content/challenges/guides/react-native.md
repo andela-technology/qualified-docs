@@ -35,7 +35,7 @@ Qualified offers [jest-native](https://github.com/testing-library/jest-native) m
 RNTL also offers [`queryByText`](https://testing-library.com/docs/queries/bytext/) which can be used like `expect(queryByText("foo")).toBeTruthy();` to determine if `"foo"` is among the child text contents of a node.
 
 :::warning
-Use caution with negative assertions; the diffs that RNTL emits can often slow or timeout the code runner if they print deeply nested complex component objects. A solution is to use the `!!` operator, as in `expect(!!queryByText("bar")).not.toBeTruthy();` to ensure the diff is small when the assertion fails.
+Use caution with negative assertions; the diffs that RNTL emits on failure can often slow or timeout the code runner if they print deeply nested complex component objects. To ensure small diffs, convert the returned value to a boolean. For example, by using double negation (`!!`), as in `expect(!!queryByText("bar")).not.toBeTruthy();`.
 :::
 
 #### Lists of nested text contents
