@@ -8,6 +8,9 @@ This page offers guides for developing challenges in specific frameworks and lan
 ### [Testing React skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 
+### [Testing React Native skills](/creating-content/challenges/guides/react-native)
+Although React Native bears plenty of similarities to React, we have additional notes for it as a supplement.
+
 ### [Writing Pandas challenges](/creating-content/challenges/guides/pandas)
 [Pandas](https://pandas.pydata.org/) is a popular Python library for working with tabular data and plays nicely with Qualified's code runner. This is an in-depth guide to creating Pandas challenges in Qualified.
 

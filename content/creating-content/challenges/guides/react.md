@@ -9,7 +9,7 @@ tags:
   - react-testing-library
 ---
 
-# Testing React skills
+# Testing React Skills
 
 ## Overview
 
