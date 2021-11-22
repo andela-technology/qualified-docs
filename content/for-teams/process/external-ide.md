@@ -1,6 +1,7 @@
 ---
 order: 5
 title: Allowing Candidates To Use Their IDE
+private: true
 ---
 
 # Allowing Candidates To Use Their Own IDE

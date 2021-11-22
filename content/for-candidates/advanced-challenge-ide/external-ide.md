@@ -6,6 +6,7 @@ tags:
   - ide
   - attach
 order: 2
+private: true
 ---
 
 # Code Challenge Solver: Use Your Own IDE
