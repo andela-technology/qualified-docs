@@ -22,7 +22,7 @@ The scoring summary helps you understand all of the key scoring information abou
 ![Example scoring summary section](/images/for-teams/report-card-evidence-dialog-top.png)
 
 #### Qualified Score
-The Qualified Score has been covered in the [scoring concepts](/for-teams/getting-started/scoring/#advanced-scoring) article. It is a score which is calculated by the sytem, based on the assessment result submitted and the evidence mappings configured for each challenge. Challenges factor into the score based on which signals are scored and how they are weighted. 
+The Qualified Score has been covered in the [scoring concepts](/for-teams/getting-started/scoring/#advanced-scoring) article. It is a score which is calculated by the system, based on the assessment result submitted and the evidence mappings configured for each challenge. Challenges factor into the score based on which signals are scored and how they are weighted. 
 
 :::important
 It is important to understand that this score only takes into account **known** data. For example, if an assessment has outstanding scorecards which have not yet been rated by your team, then this score will NOT factor those signals in. Only once the scorecards have been submitted will the score take those signals into account.
