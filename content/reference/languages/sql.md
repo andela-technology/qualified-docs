@@ -10,7 +10,7 @@ tags:
 
 ## Environments
 
-Qualified supports SQLite 3 and PostgreSQL 9.6. The database flavor is set per-challenge and cannot be adjusted by the candidate.
+Qualified supports SQLite 3 and PostgreSQL 9.6 and 13.0. The database flavor is set per-challenge and cannot be adjusted by the candidate.
 
 
 ## Timeout

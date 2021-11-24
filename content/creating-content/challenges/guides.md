@@ -8,6 +8,9 @@ This page offers guides for developing challenges in specific frameworks and lan
 ### [Testing React skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 
+### [Testing React Native skills](/creating-content/challenges/guides/react-native)
+Although React Native bears plenty of similarities to React, we have additional notes for it as a supplement.
+
 ### [Writing Pandas challenges](/creating-content/challenges/guides/pandas)
 [Pandas](https://pandas.pydata.org/) is a popular Python library for working with tabular data and plays nicely with Qualified's code runner. This is an in-depth guide to creating Pandas challenges in Qualified.
 
@@ -22,3 +25,9 @@ This guide describes how to use random tests as a means of cheating prevention.
 
 ### [Preconditions](/creating-content/challenges/guides/preconditions)
 Preconditions are easy to misuse in challenges. This guide offers suggestions for when and how to use preconditions to ensure they align with the goals of your challenge.
+
+### [Testing Standard Input and Output](/creating-content/challenges/guides/stdio)
+This guide walks you through the ins and outs of testing code that uses standard input and output to receive and return data in Qualified.
+
+### [Testing SQL Skills Without RSpec](/creating-content/challenges/guides/sql-without-rspec)
+Qualified uses Ruby and RSpec as the harness for running SQL solutions by default. This guide provides ideas for testing SQL skills with other languages and testing frameworks.

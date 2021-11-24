@@ -14,13 +14,13 @@ Qualified supports writing test fixtures for Kotlin using [JUnit 5][1].
 
 ## Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```kotlin
 fun add(a: Int, b: Int) = a + b
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```kotlin
 import org.junit.jupiter.api.*
@@ -38,7 +38,7 @@ class AddTest {
 
 Following assertion libraries can be used:
 
-- [Expekt](http://winterbe.github.io/expekt/)
+- [Expekt](https://winterbe.github.io/expekt/)
 - [Kluent](https://markusamshove.github.io/Kluent/)
 
 # Learn More

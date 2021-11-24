@@ -41,7 +41,7 @@ Since most other languages call the solution directly, we recommend using `run_s
 
 ## Basic Example
 
-The notes below are adapted from [rspec-core.](http://rspec.info/documentation/3.3/rspec-core/)
+The notes below are adapted from [rspec-core](https://rspec.info/documentation/3.3/rspec-core/).
 
 RSpec uses the words "describe" and "it" so we can express concepts like a conversation:
 
@@ -53,13 +53,12 @@ RSpec uses the words "describe" and "it" so we can express concepts like a conve
 ```ruby
 def add(a, b)
   run_shell(args: [a, b])
-    .to_i # convert the result to int specifically for this challenge
 end
 
 describe "adder script" do
   it "adds two numbers" do
     actual = add(2, 3)
-    expected = 5
+    expected = "5" # run_shell returns a string
     expect(actual).to eq(expected)
   end
 end
@@ -75,13 +74,13 @@ Start with a simple example of behavior you expect from your system:
 
 ```ruby
 def subtract(a, b)
-  run_shell(args: [a, b]).to_i
+  run_shell(args: [a, b])
 end
 
 describe "subtract" do
   it "subtracts two numbers" do
     actual = subtract(5, 2)
-    expected = 3
+    expected = "3"
     expect(actual).to eq(expected)
   end
 end
@@ -92,8 +91,8 @@ Run this by clicking the **VALIDATE TEST CASES** in the challenge creator, or **
 ```
   subtractor script
   subtracts two numbers
-✘ expected: 3
-     got: 0
+✘ expected: "3"
+     got: "0"
 
 (compared using ==)
 ```
@@ -116,4 +115,4 @@ adder script
 
 # Learn More
 
-[You can learn how to use it on the RSpec Website](http://rspec.info/).
+[You can learn how to use it on the RSpec Website](https://rspec.info/).
