@@ -6,7 +6,7 @@ order: 1
 
 A signal is data that can be used as a measurement to signal competency or job fitness for a candidate.
 
-Signals are measured and then mapped to various output scores. The two main types of output scores the Qualified Score, and Subscores. The Qualified Score gives you a way of assessing candidate's overall process, while subscores give you a way to understand specific competencies and job fit areas that a candidate might be weak in.
+Signals are measured and then mapped to various output scores. The two main types of output scores the Qualified Score, and Subscores. The [Qualified Score](/creating-content/evidence-engine/evidence-scoring/#qualified-score) gives you a way of assessing candidate's overall process, while subscores give you a way to understand specific competencies and job fit areas that a candidate might be weak in.
 
 ## Signal Types
 There are multiple types of signals that can be measured. The following signals can currently be measured:
@@ -35,9 +35,11 @@ Currently it is not possible to disable these signals from being scored. However
 System scored signals are scored once an assessment has been submitted. 
 
 ## Reviewer Scored Signals
-Once an assessment has been submitted, it can be reviewed by your team. This is where reviewer scored signals come in. They allow your team to objectively score certain aspects of a solution that require a human touch. We will refer to these types of signals are referred to as **scorecards**, since they way they are scored is by giving a scorecard (set of ratings) to reviewers to fill out.
+Once an assessment has been submitted, it can be reviewed by your team. This is where reviewer scored signals come in. They allow your team to objectively score certain aspects of a solution that require a human touch. We will refer to these types of signals as **scorecards**, since the way they are scored is by giving a scorecard (set of ratings) to reviewers to fill out and submit.
 
 One or more scorecard signals are assigned to each challenge. For example, "Code Readability" is typically assigned to coding challenges. These scorecards are rated by your team, and those ratings later get translated into various scores. Scorecard signals are always mapped to the Qualified Score, and also are usually mapped to at least one Subscore. For example, "Code Readability" by default is mapped to a "Code Maintainability" subscore.
+
+Once a scorecard is submitted by a reviewer, the [Qualified Score](/creating-content/evidence-engine/evidence-scoring/#qualified-score) will be updated to incorporate the new information.
 
 ### When to use Scorecards
 Scorecards are an important part of an evaluation process, because it allows your team to evaluate aspects that a machine can't quantify or qualify on its own. However rating solutions takes time and manpower. In order to save your team time, we recommend that you only do a deep dive review on candidates who have performed well.
