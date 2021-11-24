@@ -32,5 +32,5 @@ Notice how in the above example the scores are very similar, but one failed and 
 :::
 
 :::important Limited Beta
-Cut scores are part of the Evidence Engine, which is a beta feature that may not be enabled on your account.  
+Cut scores are part of the Evidence Engine, which is a beta feature that may not be enabled on your account. If you are interested in learning more, please reach out to our sales team.
 :::
