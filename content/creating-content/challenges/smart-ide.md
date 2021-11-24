@@ -1,7 +1,7 @@
 ---
 order: 5
 title: SmartIDE
-private: true
+featured: Beta
 ---
 
 # SmartIDE
