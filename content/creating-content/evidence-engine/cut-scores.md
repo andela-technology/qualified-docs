@@ -26,7 +26,7 @@ The scale used is always `0 - 100`, even though reviewer scorecards are often pr
 
 If a single cut score is not met for any challenge solution, both the solution and the assessment result will be considered failed. When an assessment result is failed, it will be noted within the candidate's report card. 
 
-The candidate's Qualified Score will also display in a red color, to indicate at least one failure.
+The candidate's [Qualified Score](/creating-content/evidence-engine/evidence-scoring#qualified-score) will also display in a red color, to indicate at least one failure.
 
 ![Pass/fail Qualified Score examples](/images/creating-content/qualified-score-pass-fail.png)
 

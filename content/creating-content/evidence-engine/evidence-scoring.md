@@ -6,7 +6,7 @@ order: 2
 
 ## Qualified Score
 
-The **Qualified Score** is a designed to be a single value which represents the overall evaluation score of a candidate. All signals within the Evidence Engine are associated with the Qualified score. This score always takes the Evidence Engine configuration into account, whereas the **% Solved** score is a simple calculation of how many unit tests or answers have been passed.
+The **Qualified Score** is designed to be a single value which represents the overall evaluation score of a candidate. All signals within the Evidence Engine are associated with the Qualified Score. This score always takes the Evidence Engine configuration into account, whereas the **% Solved** score is a simple calculation of how many unit tests or answers have been passed.
 
 ![Qualified Score and % Solved - as seen on candidates list](/images/for-teams/candidate-scores.png)
 
