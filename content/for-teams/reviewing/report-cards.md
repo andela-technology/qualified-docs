@@ -120,7 +120,7 @@ For Q&A challenges you may expect subscores to be more variable, as a more norma
 Subscores that are related to reviewer scorecards may often be variable, regardless of the type of challenge being used. This is due to the qualitative nature of what most scorecards try to score. You should expect candidates to be able to complete most or all of the coding challenges in an assessment. However, that doesn't mean they will all complete the assignment with good quality code.
 
 ### Assessments
-The assessments section gives you an overview of how well the candidate performed on each assessment. From this view you can see key information, such as the Qualified Score for the result, if the candidate failed, active time spent, and date submitted. You can also see the known evidence engine score for each solution and if that solution failed to meet minimum cut score thresholds.
+The assessments section gives you an overview of how well the candidate performed on each assessment. From this view you can see key information, such as the Qualified Score for the result, whether the candidate failed, active time spent, and date submitted. You can also see the known evidence engine score for each solution and if that solution failed to meet minimum cut score thresholds.
 
 If any reviewers on your team left an overall review, you will see their opinion and feedback here. Solution specific review feedback is saved for the [Solutions](#solutions) section.
 
