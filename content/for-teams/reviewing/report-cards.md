@@ -151,7 +151,7 @@ In addition to these default sections, the following sections can be enabled fro
 These sections are hidden by default on the Report Card tab, but are enabled on the [portfolio](#portfolio) tab. 
 
 #### Reviewer Score Cards
-This area displays the aggregate score of each score card configured for the challenge. All reviewers ratings are averaged without any weighting between reviewers.
+This area displays the aggregate score of each score card configured for the challenge. All reviewers' ratings are averaged without any weighting between reviewers.
 
 #### Opinions & Feedback
 This area displays each reviewer's opinion, and their specific score card ratings. If any feedback was provided, that will also be shown. 
