@@ -42,6 +42,7 @@ query ($id: ID!) {
         title
         order
         private
+        featured
       }
     }
   }
@@ -226,7 +227,9 @@ export default {
 
     figure {
         @apply mb-6;
-
+        img {
+            margin: 30px auto 0;
+        }
         figcaption {
             @apply text-xs mt-4;
             color: var(--color-ui-fade);
@@ -286,6 +289,10 @@ export default {
 
     p + pre > code {
         @apply mt-2;
+    }
+
+    p + ul {
+        margin-top: 15px;
     }
 
     code.language-bash {

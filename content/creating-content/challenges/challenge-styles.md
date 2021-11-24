@@ -17,10 +17,6 @@ The following styles are simply names we have given to different ways of utilizi
 Not all styles listed below are represented within the Qualified library. Qualified continues to experiment with and develop new styles of challenges to fit customer-specific needs. Please reach out to us if you are interested in learning more.    
 :::
 
-:::info WIP Article
-This article is a work in progress. Many of the style descriptions listed will eventually be expanded to include more content, such as examples and recommended techniques.  
-:::
-
 ### Standard Coding Task
 A generalized coding task, mainly focused on testing basic ability to problem solve and write code. This will often involve writing a single function from scratch which solves an algorithmic problem or provides a utility-type function.
 
@@ -64,6 +60,9 @@ A front-end challenge where no coding is required. Source code may be hidden and
 ### Supplemental Knowledge
 A set of questions designed to supplement a coding challenge. This strategy uses specific knowledge measurements to provide more depth to the profile. For example, after taking a React coding challenge, a quiz could be delivered which tests candidate knowledge of design decisions, common pitfalls, best practices or conceptual nuances of React. The goal is to fill in important gaps that may be difficult to test in a challenge.
 
+### Written Interview
+A set of free-text (essay) questions that would normally be asked within an interview. This format gives you the opportunity to see how well candidates communicate in a written format, which has become the primary form of communication as our working environments become more remote based. This format also can save your team time, as you don't need to spend as much time in an interview.
+
 ### Research Study
 A challenge that provides context for a problem with specific information that needs to be uncovered through research. Candidates will seek out and find specific knowledge on the internet and in documentation and complete written answers or multiple choice questions.
 
@@ -77,3 +76,7 @@ A series of deductive reasoning questions which are in the form of specifying st
 
 ### Self Report
 A set of questions asking candidates to report on aspects of themselves. This could be used for scoring job fit, culture fit, or asking candidates to rate their own skills. This can save time by letting candidates self-select out of skills or technologies that are essential for a position or can be a tool for identifying gaps that may be ideal for further evaluation.
+
+:::info WIP Article
+This article is a work in progress. Many of the style descriptions listed will eventually be expanded to include more content, such as examples and recommended techniques.  
+:::

@@ -6,6 +6,11 @@ private: true
 
 # Allowing Candidates To Use Their Own IDE
 
+:::important Experimental Labs Feature
+External IDE is an experimental feature, and may be discontinued.
+
+It is intended as additional functionality on top of the Web IDE, with the Web IDE being the primary, supported way of taking Qualified Assessments.
+:::
 :::warning Warning: Deprecated Feature
 This feature is now deprecated, and no longer supported. Instead, we recommend [looking into SmartIDE](/for-teams/process/smart-ide), which provides a lot of the same benefits without the complexities of dealing with an external IDE.
 
