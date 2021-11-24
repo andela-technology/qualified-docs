@@ -157,7 +157,7 @@ This area displays the aggregate score of each score card configured for the cha
 This area displays each reviewer's opinion, and their specific score card ratings. If any feedback was provided, that will also be shown. 
 
 :::tip
-If you plan on giving your candidate's feedback about their assessment performance, you can have your reviewers utilize the feedback section to provide details about why they rated the way they did. You can print the report card or save as a PDF (via print) so that it can be emailed. 
+If you plan on giving your candidates feedback on their assessment performance, you can have your reviewers utilize the feedback section to provide details and motivation for their ratings. You can print the report card or save as a PDF (via print) so that it can be emailed. 
 :::
 
 ## Portfolio
