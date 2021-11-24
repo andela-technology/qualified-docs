@@ -36,7 +36,7 @@ Typically when referring to the Qualified Score within these docs and within the
 The reason why the score exists at multiple levels is because the scoring mechanism is the same. All signals related to a specific level are considered. So when a solution level score is determined, all submitted signals are factored together. When an assessment result level score is determined, all submitted signals are factored together in the same manner, meaning that solution scores aren't first calculated and then treated as a group. When a candidate score is calculated, all submitted signals are factored together – which assessment a solution belongs to is irrelevant.
 
 :::info Review
-To calculate the candidate Qualified Score, all related signals are rolled up into a flat list and then calculated based of their individual weights, regardless of which assessment they belong to. It is the signal's weight compared to other signal weights. It is not possible to define weightings at an assessment level.  
+To calculate the candidate Qualified Score, all related signals are rolled up into a flat list and then calculated based of their individual weights, regardless of which assessment they belong to. Signals are always weighted relative to their sibling signals. It is not possible to define weightings at an assessment level.  
 :::
 
 ### Qualified Score Factors
