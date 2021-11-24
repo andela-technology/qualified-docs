@@ -187,7 +187,7 @@ Insights are refreshed as more data is collected. For example, a candidate might
 
 When viewing solutions for a code based challenge, you can view the final state of the candidate's submitted code. There is a "Code Diff" toggle within the action bar. If you select that, you can view the difference between the starting state of the code, and the final state.
 
-![Submission code section (code is normally not pixilated)](/images/for-teams/portfolio-submission-code.png)
+![Submission code section (code is normally not pixelated)](/images/for-teams/portfolio-submission-code.png)
 
 #### Performance
 
