@@ -1,14 +1,17 @@
 ---
 order: 5
 title: Allowing Candidates To Use Their IDE
+private: true
 ---
 
 # Allowing Candidates To Use Their Own IDE
 Typically candidates will take a coding assessment within Qualified's web based IDE. However it is also possible to allow them to take Project Code Challenges within their own IDE. Candidates who utilize this option will be delighted to take the challenge using their own familiar development environment.   
 
-:::important Labs Feature
-The functionality discussed is currently available as a [labs feature](https://www.qualified.io/hire/account/labs) for all customers. You must enable it before you can utilize it within your assessments.
-::: 
+:::warning Experimental Labs Feature
+External IDE is an experimental feature, and may be discontinued.
+
+It is intended as additional functionality on top of the Web IDE, with the Web IDE being the primary, supported way of taking Qualified Assessments.
+:::
 
 ## Requirements
 Qualified's External IDE feature uses a small node terminal app that synchronizes files from a candidate's file system back to Qualified’s web IDE. This allows developers to work in their own IDE without needing to worry about running the challenge's dependencies on their own system. 

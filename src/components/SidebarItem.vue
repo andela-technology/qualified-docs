@@ -22,6 +22,7 @@
                 <chevron-right-icon v-if="page.depth === 1 && (!page.active || !hasChildren)" />
                 {{ page.title }}
             </span>
+            <span class="sidebar-item__featured" v-if="page.featured">{{ page.featured }}</span>
         </g-link>
         <div class="sidebar-item__pages" v-if="hasChildren">
             <sidebar-item
@@ -165,6 +166,19 @@ export default {
         &.sidebar-item--depth-3:first-child {
             @apply mt-2;
         }
+    }
+
+    .sidebar-item__featured {
+        @apply rounded-lg subpixel-antialiased;
+        background-color: theme('colors.brand.info');
+        color: white;
+        padding: 2px 6px;
+        font-size: 10px;
+        letter-spacing: 0.25px;
+        position: relative;
+        text-transform: uppercase;
+        top: -1px;
+        left: 3px;
     }
 
 </style>

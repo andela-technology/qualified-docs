@@ -1,6 +1,7 @@
 ---
 title: Interpreting Assessment Results
 description: "How to Interpret Your Candidate's Completed Assessments"
+order: 1
 tags:
 - getting started
 - tips

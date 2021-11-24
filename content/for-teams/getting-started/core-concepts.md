@@ -68,6 +68,10 @@ Multiple choice questions can be configured with the following options:
 - Weighted single choice, where some choices are more correct than others   
 - Weighted multiple choice, where some choices are more correct than others
 
+:::tip
+Both the question text and each choice supports markdown formatting. This allows support for a variety of formatting options, such as image choices, code block choices, and more.  
+:::
+
 #### Free-Text Questions
 Free text questions can be configured to expect written text, or code. In code mode, code is not executed, but it is formatted for the candidate. Regular expressions or simple string matchers can be configured to test for keywords within the answer. You can configure multiple matchers and give different weights to each.
 

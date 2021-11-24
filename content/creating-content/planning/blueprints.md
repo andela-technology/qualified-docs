@@ -39,3 +39,5 @@ This blueprint item offers the ability to compare candidates by specifying the e
 
 Challenge styles are important to consider for assessment effectiveness. Variety and flow/sequence are likely to be important considerations. For example, an assessment with nothing but single-function, greenfield coding challenges may test redundant skills, tire the candidate unnecessarily and fail to generate signal on other facets of the candidate's skill repertoire such as debugging, writing and communication skills, test case development, refactoring, answering knowledge-based quiz questions and so forth. Planning for a healthy mixture of these challenge styles can increase the relevance of your results and increase candidate satisfaction and student engagement.
 
+[Check out our article](/creating-content/challenges/challenge-styles) on various challenge styles that can be utilized.
+

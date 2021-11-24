@@ -1,8 +1,8 @@
 ---
 order: 4
-title: Reporting
+title: Advanced Data Reporting
 ---
-# Reporting
+# Advanced Data Reporting
 
 Qualified provides a reporting suite that can be used to build custom reports. 
 
