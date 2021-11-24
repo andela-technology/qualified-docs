@@ -191,6 +191,6 @@ When viewing solutions for a code based challenge, you can view the final state 
 
 #### Performance
 
-The performance section provides the values of each performance metric. If there is enough data to show, an expandable chart can be shown by clicking on the metric. This chart will show you where the solution fits into of the cohort (your team's own candidates), and if available – also an expanded cohort (all candidates).
+The performance section provides the values of each performance metric. If there is enough data to show, an expandable chart can be shown by clicking on the metric. This chart will show you where the solution fits into the cohort of your team's own candidates, as well as an expanded cohort of all candidates, if available.
 
 ![Example performance stats](/images/for-teams/portfolio-performance.png)
