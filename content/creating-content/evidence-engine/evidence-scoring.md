@@ -53,7 +53,7 @@ The three current factor groupings are:
 **Passed Unit Tests** is currently the only signal that is included within this group. Your team likely has chosen Qualified due to its powerful code challenge functionality, so its likely that this signal will be the most utilized within your assessments. As additional signal types get added, this group may expand.
 
 #### System Scored: Questions
-**Answer Correctness** is currently the only signal that is included within this group. This score comes from how many answers were answered correctly on a Q&A challenge. As additional signal types get added, this group may expand.
+**Answer Correctness** is currently the only signal that is included within this group. This score is derived from the number of correct answers on a Q&A challenge. As additional signal types are added, this group may expand.
 
 
 :::note
