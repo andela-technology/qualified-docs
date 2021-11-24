@@ -71,7 +71,7 @@ Multiple signals can be enabled within this grouping. Each challenge type has it
 
 ![Example partial list of reviewer scored signals](/images/creating-content/scorecard-signals.png)
 
-Later we will discuss weighting, where you can define how each reviewer scored signal weights against others within this factor grouping, and you can then define how the factor grouping weights against the other groupings.
+Later we will discuss weighting, which lets you define how each reviewer scored signal weights against others within this factor grouping. You can then define how the factor grouping weights against the other groupings.
 
 ## Subscores
 
