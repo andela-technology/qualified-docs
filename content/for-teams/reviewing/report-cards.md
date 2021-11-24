@@ -127,7 +127,7 @@ If any reviewers on your team left an overall review, you will see their opinion
 ![Example assessments section complete with review & opinion](/images/for-teams/report-card-assessments.png)
   
 :::note
-All assessment result will show up in this section, but un-submitted results will not be calculated or considered for scoring.
+All assessment results will show up in this section, but unsubmitted results will not be calculated or considered for scoring.
 :::
 
 ### Solutions
