@@ -71,7 +71,7 @@ Work samples, through the form of coding challenges, are the featured method for
 - Role-fit surveys
 - Written interviews
 
-In addition to the above, the following forms of evidence collection are currently on our short-term roadmap.
+In addition to the above, the following forms of evidence collection are currently on our roadmap.
 
 - Structured verbal interviews
 - Additional question types, such as ability to upload files
