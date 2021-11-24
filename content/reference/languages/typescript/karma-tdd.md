@@ -14,16 +14,15 @@ tags:
 
 Qualified has support for testing in-browser code using Karma with Mocha.
 
-There is very little changes necessary from testing normal code, except your code will be run inside a PhantomJS
-headless browser, enabling you to test browser-specific events.
+There are few changes necessary from testing normal code, except your code will be run inside a PhantomJS headless browser, enabling you to test browser-specific events.
 
 ## Language Version
 
-All code run in the browser is compiled via tsc, so you can safely use ES2015 code.
+All code run in the browser is compiled via `tsc`, so you can safely use ES2015 code.
 
 ## Using Mocha
  
-Mocha in Karma works the same as the normal [javascript/mocha-tdd](/reference/languages/javascript/mocha-tdd), with one exception: _Chai_ will already be loaded for you, with `expect`, `should`, and `assert` all available, no `require()` necessary.
+Mocha in Karma works the same as the normal [javascript/mocha-tdd](/reference/languages/javascript/mocha-tdd), with one exception: _Chai_ will already be loaded for you, with `expect` and `assert` all available, no `require()` necessary.
 
 > ### Note on Chai Failure Reporting
 > 

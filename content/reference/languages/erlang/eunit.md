@@ -14,7 +14,7 @@ Qualified supports the EUnit testing framework.
 
 ## EUnit Quick Start
 
-- Solution Code
+#### Solution Code
 
 ```erlang
 -module(hello).
@@ -24,7 +24,7 @@ say_hello(Str) -> "Hello, " ++ Str ++ "!".
 say_hello() -> "Hello there!".
 ```
 
-- Test Fixture:
+#### Test Fixture:
 
 ```erlang
 -module(hello_tests).
@@ -37,4 +37,4 @@ say_hello_test_() ->
 
 # Learn More
 
-[You can learn more on the EUnit website](http://erlang.org/doc/man/eunit.html).
+[You can learn more on the EUnit website](https://erlang.org/doc/man/eunit.html).

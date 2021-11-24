@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Solidity version 0.4.19, using the [Truffle framework](http://truffleframework.com/) for compiling contracts.
+Qualified supports Solidity version 0.4.19, using the [Truffle framework](https://truffleframework.com/) for compiling contracts.
 
 From the solution, the setup can be imported using an import statement (`import "./setup.sol";`). Both will be compiled as separate contract files through Truffle.
 

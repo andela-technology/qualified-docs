@@ -16,10 +16,16 @@ Qualified supports the Mocha testing framework, in a BDD or TDD setup.
 The following is a Mocha BDD example on how to use the framework using the built in Node.js assertion library:
 
 ```javascript
-var assert = require("assert");
-describe('Array', function() {
-  describe('#indexOf()', function () {
-    it('should return -1 when the value is not present', function () {
+const assert = require("assert");
+
+describe('Array', () => {
+  before(() => { /* optional code to run before the entire suite */ });
+  beforeEach(() => { /* optional code to run before each test */ });
+  afterEach(() => { /* optional code to run after each test */ });
+  after(() => { /* optional code to run after the entire suite */ });
+
+  describe('#indexOf()', () => {
+    it('should return -1 when the value is not present', () => {
       assert.equal(-1, [1,2,3].indexOf(5));
       assert.equal(-1, [1,2,3].indexOf(0));
     });
@@ -33,37 +39,23 @@ Mocha allows you to use any assertion library you want and so does not auto-requ
 
 ## Chai
 
-We recommend that you use the [Chai](http://chai.js.com) BDD/TDD assertion library. It supports the following
-assertion styles:
-
-### Should
-
-```javascript
-require("chai").should();
-
-foo.should.be.a('string');
-foo.should.equal('bar');
-foo.should.have.length(3);
-tea.should.have.property('flavors')
-  .with.length(3);
-```
+We recommend that you use the [Chai](https://chai.js.com) BDD/TDD assertion library. It supports the following assertion styles:
 
 ### Expect
 
 ```javascript
-var expect = require("chai").expect;
+const {expect} = require("chai");
 
 expect(foo).to.be.a('string');
 expect(foo).to.equal('bar');
 expect(foo).to.have.length(3);
-expect(tea).to.have.property('flavors')
-  .with.length(3);
+expect(tea).to.have.property('flavors').with.length(3);
 ```
 
 ### Assert
 
 ```javascript
-var assert = require("chai").assert;
+const {assert} = require("chai");
 
 assert.typeOf(foo, 'string');
 assert.equal(foo, 'bar');
@@ -72,22 +64,6 @@ assert.property(tea, 'flavors');
 assert.lengthOf(tea.flavors, 3);
 ```
 
-# Loaded NPM Packages
-
-The following test related packages are loaded into the VM and available for use:
-
-- should
-- expect
-- chai
-- chai-spies
-- chai-stats
-- chai-factories
-- chai-things
-- chai-fuzzy
-- chai-interface
-- chai-change
-- chai-subset
-
 # Learn More
 
-[You can learn more on the Mocha website](http://mochajs.org/).
+[You can learn more on the Mocha website](https://mochajs.org/).

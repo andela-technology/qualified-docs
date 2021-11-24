@@ -7,21 +7,21 @@ tags:
 
 # Qualified Testing Framework
 
-Qualified provides a lightweight, custom testing framework for Python.  However, we recommend using the standard [Python unittest](/reference/languages/python/unittest) instead.
+Qualified provides a lightweight, custom testing framework for Python. However, we recommend using the standard [Python unittest](/reference/languages/python/unittest) instead.
 
 :::tip
 When taking a challenge, the test framework is already selected for you.  You can determine which framework you are using by looking in the upper-right of the _Sample Tests_ code area.
 :::
 
-## test module
+## `test` module
 
-The `test` module provides the testing functionality needed to validate a challenge's requirements or write your own tests if you are taking a challenge. When using Python versions before 3.7, it's implicitly imported. On Python 3.7, it needs to be imported with `import codewars_test as test`.
+The `test` module provides the testing functionality needed to validate a challenge's requirements, or to write your own tests if you are taking a challenge. When using Python versions before 3.7, this module is implicitly imported. On Python 3.7+, it needs to be imported with `import codewars_test as test`.
 
 # Minimal Test Framework
 
 A minimal test fixture looks as follows:
 
- *  Solution Code:
+#### Solution Code
 
 ```python
 def greet(greetor,greetee):
@@ -31,10 +31,10 @@ def greet(greetor,greetee):
     )
 ```
 
- *  Fixture Code:
+#### Fixture Code:
 
 ```python
-# For Python 3.7, add `import codewars_test as test` and `from solution import greet`
+# For Python 3.7+, add `import codewars_test as test` and `from solution import greet`
 test.describe("The monk Xuanzang encounters Zhu Bajie...")
 test.it("Zhu Bajie greets Xuanzang")
 test.assert_equals(greet("Zhu Bajie","Xuanzang"),
@@ -131,7 +131,7 @@ test.expect_error("Bad news bears: we expected stuff to blow up, but it was okay
 
 Checks to see if the value `passed` evaluates to some truthy value. Prints an optional message if provided when the test fails.
 
-***USE OF THIS TEST IS NOT CONSIDERED GOOD PRACTICE, SINCE IT IS NOT INFORMATIVE***
+Use of this test is not considered good practice, since it is not informative.
 
 #### Examples:
 
@@ -166,7 +166,7 @@ test.describe("Basic Tests")
 test.assert_equals(reversed([1,2]),[2,3])
 test.describe("Random Tests")
 from random import randint
-for _ in xrange(100):
+for _ in range(100):
     (x,y,z) = [randint(0,100) for _ in range(3)]
     test.assert_equals(x*(y+z),x*y+x*z, "Distributivity of multiplication over addition failed: x = {x}, y = {y}, z = {z}".format(x=x,y=y,z=z))
 ```
@@ -182,10 +182,10 @@ test.describe("Basic Tests")
 test.it("Can reverse the empty list")
 test.assert_equals(reversed([]),[])
 test.it("Can reverse a list with one element")
-for i in xrange(5):
+for i in range(5):
     test.assert_equals(reversed([i]),[i])
 test.describe("Randomized Tests")
 test.it("0 is the arithmetic identity")
-for i in xrange(5):
+for i in range(5):
     test.assert_equals(i + 0, i)
 ```

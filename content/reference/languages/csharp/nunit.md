@@ -46,4 +46,4 @@ public class AddTest
 
 # Learn More
 
-You can learn more on the [NUnit website](http://www.nunit.org/).
+You can learn more on the [NUnit website](https://www.nunit.org/).

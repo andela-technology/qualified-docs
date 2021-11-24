@@ -10,7 +10,7 @@ tags:
 
 # Ginkgo Testing Framework
 
-Qualified uses the [Ginkgo](http://onsi.github.io/ginkgo/) BDD testing framework with [Gomega](http://onsi.github.io/gomega/) matcher library.
+Qualified uses the [Ginkgo](https://onsi.github.io/ginkgo/) BDD testing framework with [Gomega](https://onsi.github.io/gomega/) matcher library.
 
 
 ### Test Structure
@@ -56,5 +56,5 @@ Expect(ACTUAL).ToNot(M)
 Expect(ACTUAL).NotTo(M)
 ```
 
-- [Provided Matchers](http://onsi.github.io/gomega/#provided-matchers)
+- [Provided Matchers](https://onsi.github.io/gomega/#provided-matchers)
 - [Custom Matchers](https://onsi.github.io/gomega/#adding-your-own-matchers)
