@@ -16,6 +16,27 @@ The Qualified Score is a value between `0 - 10` and incorporates **all submitted
 The Qualified Score only incorporates **known** information. Any un-submitted assessments or un-reviewed scorecards will not be included. 
 :::
 
+### Non-Standardized Scoring
+The Qualified Score is non-standardized. What that means is that there is not a predefined range that determines what a score means. This is done on purpose, as it is a good fit for an evidence-driven evaluation process centered on understanding a candidate's performance.
+
+A standardized score has a rigid structure, is very hard and expensive to develop, and because of this is often not relevant enough to any given organization. For example, let us assume that you want to know how good someone is at JavaScript, and you were to use a standardized test. You administer the standardized test to a candidate and what that will tell you is how well that candidate did compared to other candidates, based on a test that was developed with certain criteria in mind – criteria that was based on a general profile of a given role. 
+
+The issue here is that the criteria defined for the test may not be 100% relevant to the needs of a specific role within an organization. If so, then you would be comparing candidates to other candidates for things that may not matter to the role you wish to evaluate for. Instead, you want to compare candidates to other candidates based on the needs that are determined important to your organization. In order to do so, you need to customize assessments to fit the specific needs of the role being evaluated, and by doing so standardized scores will become very difficult and expensive to develop.
+
+Qualified's approach is to provide a score that indicates performance related to the specific challenges given. For example you might give one candidate an easy assessment only focusing on basic knowledge, and they could score high on the assessment. Let's say a Qualified Score of `9.5`. Another candidate who is applying for a more senior role is given a harder assessment on the same topics as the first candidate, and also scores a `9.5`. Both candidates scored the same but the scores are not comparable to each other. These scores indicate that the candidates both did very well but what "well" means is relative to the assessments they were given.
+
+An evidence-driven approach allows your team to understand how well a candidate has done within your evaluation process. Candidates who go through the same process can be compared to each other, and candidates who perform poorly can quickly be identified. Candidates who go through a different process cannot be compared to each other. The evidence-driven approach is not focused on trying to categorized candidates into different performance categories. It instead focuses on finding candidates who can do the work, and then of those candidates, determining which show the most promise.
+
+### Fluid Scoring & Confidence
+The Qualified Score is fluid, in that as more information is collected, the score can change. For this reason, in addition to the Qualified Score there is a **Qualified Score Confidence** value. You can see this value on the Report Card, and within the tooltip shown as you hover over the score within the UI.
+
+The confidence is a big factor within your evidence-driven process. Some signals can't be collected all at once (specifically reviewer scorecards). As more data is collected, the Qualified Score can possibly go down, and the Qualified Score Confidence will go up.
+
+### Setting Standards
+In addition to the Qualified Score itself, which is a means of ranking the highest performing candidates within an evaluation process, cut scores can also be applied. Cut scores focus on minimal performance standards. Anyone who fails to meet a minimal standard will fail their assessment, and that will be recognized within the Qualified Score UI via a red border. 
+
+Cut scores will be covered in [more detail later](/creating-content/evidence-engine/cut-scores). For now just know that cut scores provide the ability to call out candidates who fail to meet your standards. Those standards can be configured according to your team's needs. 
+
 ### Weighting
 
 We will cover weighting in [more detail later](/creating-content/evidence-engine/weighting), but let's quickly cover the fact that each signal on a challenge carries a weight, and that weight can be adjusted on a per signal basis. This results in signals having different levels of effect on the overall Qualified Score.
