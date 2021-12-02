@@ -25,7 +25,7 @@ The concern here is that the criteria defined for the test may not be 100% relev
 
 Qualified's approach is to provide a score that indicates performance related to the specific challenges given. For example you might give one candidate an easy assessment only focusing on basic knowledge, and they could score high on the assessment. Let's say a Qualified Score of `9.5`. Another candidate who is applying for a more senior role is given a harder assessment on the same topics as the first candidate, and also scores a `9.5`. Both candidates scored the same but the scores are not comparable to each other. These scores indicate that the candidates both did very well but what "well" means is relative to the assessments they were given. A good candidate for one role may not necessary be a good candidate for another. 
 
-An evidence-driven approach allows your team to understand how well a candidate has done within your evaluation process. Candidates who go through the same process can be compared to each other, and candidates who perform poorly can quickly be identified. Candidates who go through a different process cannot be compared to each other. The evidence-driven approach is not focused on trying to categorized candidates into different performance categories. It instead focuses on finding candidates who can do the work, and then of those candidates, determining which show the most promise.
+An evidence-driven approach allows your team to understand how well a candidate has done within your evaluation process. Candidates who go through the same process can be compared to each other, and candidates who perform poorly can quickly be identified. Candidates who go through a different process cannot be compared to each other. The evidence-driven approach is not focused on trying to categorized candidates into different performance categories. It instead focuses on finding candidates who can do the work for a given role, and then of those candidates, determining which show the most promise.
 
 ### Fluid Scoring & Confidence
 The Qualified Score is fluid, in that as more information is collected, the score can change. For this reason, in addition to the Qualified Score there is a **Qualified Score Confidence** value. You can see this value on the Report Card, and within the tooltip shown as you hover over the score within the UI.
@@ -37,12 +37,18 @@ In addition to the Qualified Score itself, which is a means of ranking the highe
 
 Cut scores will be covered in [more detail later](/creating-content/evidence-engine/cut-scores). For now just know that cut scores provide the ability to call out candidates who fail to meet your standards. Those standards can be configured according to your team's needs. 
 
-### Weighting
+### Adjustable Points
 
-We will cover weighting in [more detail later](/creating-content/evidence-engine/weighting), but let's quickly cover the fact that each signal on a challenge carries a weight, and that weight can be adjusted on a per signal basis. This results in signals having different levels of effect on the overall Qualified Score.
+We will cover points in [more detail later](/creating-content/evidence-engine/weighting), but let's quickly cover the fact that each signal on a challenge carries a max point value, and those points can be adjusted on a per signal basis. This results in signals having different levels of effect on the overall Qualified Score.
 
 :::important Challenge Difficulty
-It is also important to understand that challenge difficulty plays into weighting. The more difficult the challenge, the more the solution score will count towards the Qualified Score. This is because the difficulty acts as a weight modifier to each signal. 
+It is also important to understand that challenge difficulty plays into points. The more difficult the challenge, the more points that are allowed to be assigned to the signal. 
+:::
+
+The amount of points awarded for a signal is determined by the signal score percentage multiplied by the max allowed point value configured for the signal. 
+
+:::info Example
+The reviewer scored signal "Code Readability" is configured to count for a max of `150` points. It is rated "minor concern" which gives it a `50%` score. That signal will then have `75` out of 150 points. The same "Code Readability" signal is configured on another challenge, but is only assigned a max of `100` points. The candidate's solution is rated "Satisfactory", which gives it a `75%` score. That signal will have `75` out of 100 points. Combined, the candidate will have a score of `150` out of 250 points.   
 :::
 
 
@@ -57,7 +63,7 @@ Typically when referring to the Qualified Score within these docs and within the
 The reason why the score exists at multiple levels is because the scoring mechanism is the same. All signals related to a specific level are considered. So when a solution level score is determined, all submitted signals are factored together. When an assessment result level score is determined, all submitted signals are factored together in the same manner, meaning that solution scores aren't first calculated and then treated as a group. When a candidate score is calculated, all submitted signals are factored together – which assessment a solution belongs to is irrelevant.
 
 :::info Review
-To calculate the candidate Qualified Score, all related signals are rolled up into a flat list and then calculated based of their individual weights, regardless of which assessment they belong to. Signals are always weighted relative to their sibling signals. It is not possible to define weightings at an assessment level.  
+To calculate the candidate Qualified Score, all related signals are rolled up into a flat list and then calculated based of their individual points, regardless of which assessment they belong to. Signals are always weighted relative to their sibling signals. It is not possible to define weightings at an assessment level.  
 :::
 
 ### Qualified Score Factors
@@ -92,7 +98,7 @@ Multiple signals can be enabled within this grouping. Each challenge type has it
 
 ![Example partial list of reviewer scored signals](/images/creating-content/scorecard-signals.png)
 
-Later we will discuss weighting, which lets you define how each reviewer scored signal weights against others within this factor grouping. You can then define how the factor grouping weights against the other groupings.
+Later we will discuss points, which lets you define how each reviewer scored signal points weigh against others within this factor grouping. You can then define how the factor grouping weighs against the other groupings.
 
 ## Subscores
 
