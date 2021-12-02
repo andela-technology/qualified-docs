@@ -33,7 +33,7 @@ Let's cover the three sections and how they affect scoring.
 ### Qualified Score Factors
 This is the section most relevant to how points affects the Qualified Score. Regardless of any other value from the other sections, the values in this section affect how much of the score gets allocated to the various signal factor groupings. 
 
-By default, everything is assigned maximum points, so because they are the same point values, they are weighted equally. If you have both a `System Scored: Code` factor group, and also a `Reviewer Scored` factor group (that contains 2 different signals), by default each of these factor groups will count for 50% of the Qualified Score for the solution, since there are two groups.
+By default, everything is assigned maximum points. Because they are the same point value, they are weighted equally. If you have both a `System Scored: Code` factor group, and also a `Reviewer Scored` factor group (that contains 2 different signals), by default each of these factor groups will count for 50% of the Qualified Score for the solution, since there are two groups.
 
 Since challenge difficulty affects maximum point values, if you have two challenges that are configured exactly the same, but one is more difficult, then the more difficult one will count for at least twice as much as the other in terms of affecting the candidate's Qualified Score.
 
