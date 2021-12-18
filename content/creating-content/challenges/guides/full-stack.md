@@ -78,7 +78,7 @@ APIs are a more natural fit for Qualified than server-rendered apps, although bo
 ### Alternatives to mocking
 Writing mocks for large APIs can be time-consuming and may not be suitable for all use cases, particularly highly dynamic services.
 
-Other approaches to mocking can involve hosting the back-end on a [serverless host](https://en.wikipedia.org/wiki/Serverless_computing) or an external endpoint such as [Heroku](https://www.heroku.com/). In some cases, a [Google Sheet](https://www.freecodecamp.org/news/cjn-google-sheets-as-json-endpoint/) can be used as a data service.
+Other approaches to mocking can involve hosting the back-end on a [serverless host](https://en.wikipedia.org/wiki/Serverless_computing) or an external endpoint such as [Heroku](https://www.heroku.com/).
 
 For stateful services, issuing tokens and bookkeeping client state, navigating the possibility of interruptions to service in third-party providers and desire to avoid dependencies may be prohibitive.
 
