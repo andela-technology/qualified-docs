@@ -4,9 +4,9 @@ summary: "Testing React skills"
 tags:
   - javascript
   - react
-  - enzyme
-  - react-test-utils
   - react-testing-library
+  - react-test-utils
+  - enzyme
 ---
 
 # Testing React Skills
@@ -19,9 +19,9 @@ We encourage you to peruse our many React templates for a detailed view on how w
 
 ## Testing Libraries
 
-Testing React apps in Qualified can be done with one of a few libraries used alongside [Jest](https://facebook.github.io/jest/): [React Test Utils](https://reactjs.org/docs/test-utils.html), [Enzyme](https://enzymejs.github.io/enzyme/) and [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).
+Testing React apps in Qualified can be done with one of a few libraries used alongside [Jest](https://facebook.github.io/jest/): [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [Enzyme](https://enzymejs.github.io/enzyme/) and [React Test Utils](https://reactjs.org/docs/test-utils.html).
 
-We recommend React Test Utils or React Testing Library because these libraries promote testing interfaces rather than implementation. Enzyme is acceptable as well but is more likely to introduce subtle invariants in test suites. Overly-rigid test cases can inadvertently disqualify candidates due to otherwise valid implementation choices that weren't anticipated by the challenge author.
+We recommend React Testing Library which promotes testing interfaces rather than implementation, and is the tool of choice suggested by the [React documentation](https://reactjs.org/docs/test-utils.html#overview). Enzyme is acceptable for React versions 16 and under, but is more likely to introduce subtle invariants in test suites. Overly-rigid test cases can inadvertently disqualify candidates due to otherwise valid implementation choices that weren't anticipated by the challenge author.
 
 ### Enzyme
 When using Enzyme, care must be taken to avoid testing implementation details. Our typical setup uses `mount` rather than `shallow` to ensure nested components that the candidate might use are rendered.
