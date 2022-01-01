@@ -137,6 +137,20 @@ describe("blue box", () => {
 
 :::tip
 Using `data-testid` properties gives your candidate the freedom to pick their own CSS class and id names. This gives you insight into what naming conventions they may choose for CSS classes.
+
+Alternatively, you might wish to find elements by text or rely on other aspects of the HTML structure if `data-testid` is overly-rigid for your use case.
+:::
+
+:::tip
+When comparing positions and sizes that might be decimals, using Jest's `toBeCloseTo` and `toBeGreaterThan` (and family) matchers ensure your tests aren't overly-strict or prone to floating point precision errors.
+:::
+
+:::tip
+If you're not testing anything but CSS, consider using `page.setJavaScriptEnabled(false)` in Puppeteer to disable JS.
+:::
+
+:::tip
+Puppeteer's default timeout is 30 seconds for most operations, but our runner times out after 12 seconds. We recommend setting the default timeout lower to provide friendlier error messages when elements could not be found or navigation times out. But be sure not to set it too low or false negatives might occur. We've been using rough values around `page.setDefaultTimeout(2000)` and `jest.setTimeout(2000)` for most of our Puppeteer-driven challenges successfully. You might try tweaking these numbers to match your specific needs.
 :::
 
 ### Human evaluation
