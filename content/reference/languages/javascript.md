@@ -157,6 +157,8 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### React (`react` preset)
 
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
 - `@babel/core`: `7.4.3`
 - `@babel/plugin-proposal-class-properties`: `7.4.4`
 - `@babel/preset-env`: `7.4.3`
@@ -278,6 +280,8 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `supertest`: `^4.0.2`
 
 #### React (`react` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-proposal-class-properties`: `7.10.4`
@@ -404,6 +408,8 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `supertest`: `^6.1.6`
 
 #### React (`react` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
 - `@babel/core`: `7.16.5`
 - `@babel/plugin-proposal-class-properties`: `7.16.5`
