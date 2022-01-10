@@ -11,7 +11,7 @@ tags:
 
 ## Environment
 
-Qualified supports Node 6, 8, 10, and 12.
+Qualified supports Node 6, 8, 10, 12 and 14.
 
 ## Timeout
 
@@ -348,6 +348,128 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `vue-jest`: `^3.0.6`
 - `vue-template-compiler`: `2.6.11`
 - `vuex`: `3.5.1`
+
+### Node 14
+
+#### Default (no preset)
+
+- `@babel/core`: `7.16.5`
+- `@babel/preset-env`: `7.16.5`
+- `@babel/register`: `7.16.5`
+- `@babel/runtime`: `7.16.5`
+- `@codewars/jest-reporter`: `1.0.3`
+- `@codewars/mocha-reporter`: `1.0.0`
+- `@codewars/test-compat`: `1.1.0`
+- `axios`: `0.24.0`
+- `babel-jest`: `27.4.5`
+- `bcrypt`: `5.0.1`
+- `bignumber.js`: `9.0.2`
+- `body-parser`: `1.19.1`
+- `chai`: `4.3.4`
+- `chai-http`: `4.3.0`
+- `cheerio`: `1.0.0-rc.10`
+- `cookie-parser`: `1.4.6`
+- `cors`: `^2.8.5`
+- `dotenv`: `^10.0.0`
+- `escape-html`: `1.0.3`
+- `esm`: `3.2.25`
+- `espower-loader`: `1.2.2`
+- `express`: `4.17.2`
+- `faker`: `5.5.3`
+- `fast-check`: `2.20.0`
+- `jest`: `27.4.5`
+- `jsdom`: `19.0.0`
+- `knex`: `0.95.14`
+- `lodash`: `4.17.21`
+- `mocha`: `9.1.3`
+- `mongodb`: `4.2.2`
+- `mongoose`: `6.1.3`
+- `nanoid`: `^3.1.30`
+- `node-fetch`: `^3.1.0`
+- `objection`: `3.0.0`
+- `pg`: `8.7.1`
+- `pg-hstore`: `2.3.4`
+- `pino`: `^7.6.0`
+- `pino-http`: `^6.5.0`
+- `power-assert`: `1.6.1`
+- `query-string`: `7.0.1`
+- `ramda`: `0.27.1`
+- `redis`: `4.0.1`
+- `sequelize`: `6.12.1`
+- `sinon`: `12.0.1`
+- `sinon-chai`: `3.7.0`
+- `socket.io`: `4.4.0`
+- `socket.io-client`: `4.4.0`
+- `sqlite3`: `5.0.2`
+- `supertest`: `^6.1.6`
+
+#### React (`react` preset)
+
+- `@babel/core`: `7.16.5`
+- `@babel/plugin-proposal-class-properties`: `7.16.5`
+- `@babel/preset-env`: `7.16.5`
+- `@babel/preset-react`: `7.16.5`
+- `@babel/runtime`: `7.16.5`
+- `@codewars/jest-reporter`: `^1.0.3`
+- `@testing-library/dom`: `8.11.1`
+- `@testing-library/jest-dom`: `^5.16.1`
+- `@testing-library/react`: `12.1.2`
+- `@testing-library/react-hooks`: `7.0.2`
+- `@testing-library/user-event`: `13.5.0`
+- `axios`: `0.24.0`
+- `babel-jest`: `27.4.5`
+- `classnames`: `2.3.1`
+- `cross-fetch`: `3.1.4`
+- `escape-html`: `1.0.3`
+- `immer`: `9.0.7`
+- `jest`: `27.4.5`
+- `jest-environment-jsdom`: `27.4.4`
+- `jest-fetch-mock`: `3.0.3`
+- `jest-snapshot`: `27.4.5`
+- `marked`: `4.0.8`
+- `mobx`: `6.3.9`
+- `mobx-react`: `7.2.1`
+- `nanoid`: `^3.1.30`
+- `prop-types`: `15.7.2`
+- `react`: `17.0.2`
+- `react-cookie`: `4.1.1`
+- `react-dom`: `17.0.2`
+- `react-is`: `^17.0.2`
+- `react-redux`: `7.2.6`
+- `react-router-dom`: `6.2.1`
+- `react-test-renderer`: `17.0.2`
+- `redux`: `4.1.2`
+- `reselect`: `4.1.5`
+- `sinon`: `12.0.1`
+- `styled-components`: `5.3.3`
+- `use-immer`: `0.6.0`
+
+#### Vue (`vue` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@babel/core`: `7.16.5`
+- `@babel/plugin-transform-runtime`: `7.16.5`
+- `@babel/preset-env`: `7.16.5`
+- `@babel/runtime`: `7.16.5`
+- `@codewars/jest-reporter`: `^1.0.3`
+- `@testing-library/dom`: `8.11.1`
+- `@testing-library/jest-dom`: `^5.16.1`
+- `@testing-library/vue`: `6.4.2`
+- `@vue/compiler-sfc`: `^3.2.26`
+- `@vue/vue3-jest`: `^27.0.0-alpha.4`
+- `axios`: `0.24.0`
+- `babel-core`: `^7.0.0-bridge.0`
+- `babel-jest`: `27.4.5`
+- `babel-plugin-dynamic-import-node`: `2.3.3`
+- `cross-fetch`: `3.1.4`
+- `jest`: `27.4.5`
+- `jest-fetch-mock`: `3.0.3`
+- `jest-serializer-vue`: `2.0.2`
+- `jest-transform-stub`: `2.0.0`
+- `sinon`: `12.0.1`
+- `vue`: `3.2.26`
+- `vuex`: `4.0.2`
 
 ## Testing
 
