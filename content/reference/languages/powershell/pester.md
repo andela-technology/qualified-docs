@@ -84,7 +84,7 @@ Describe "Add-Numbers" {
 
 ## Project Code Examples
 
-### With separate `src` and `test` directories
+### With separate `src` and `tests` directories
 
 #### `src/Add-Numbers.ps1`
 
