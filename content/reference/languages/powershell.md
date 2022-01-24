@@ -20,4 +20,4 @@ The sandbox environment will timeout the code within 12 seconds.
 
 Our PowerShell environment supports the following testing frameworks:
 
-- [powershell/pester.md](/reference/languages/powershell/pester)
+- [powershell/pester](/reference/languages/powershell/pester)
