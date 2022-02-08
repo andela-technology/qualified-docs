@@ -63,7 +63,9 @@ Some powerful use cases for Q&A include:
 - Testing candidate code comprehension skills on small snippets of code
 - Prompting candidates to share information about their development and career experience in a format that can be used to mimic on-site interview questions
 
-Below, we'll discuss some of the specific advantages and disadvantages of our two quiz question formats.
+[Learn more about options for Q&A challenges.](/creating-content/challenges/challenge-types/q-and-a-options)
+
+Below, we'll discuss some specific advantages and disadvantages of our two quiz question formats.
 
 ### Multiple-Choice Questions
 
@@ -72,6 +74,8 @@ Multiple-choice questions are a classical assessment tool and offer the major ad
 Multiple-choice questions have well-known downsides to bear in mind. Care should be taken to construct the questions and answers as fairly and unambiguously as possible. Random guessing is a viable strategy for candidates and cheating is harder to detect. We recommend providing enough multiple-choice questions per topic to help combat some of these sources of noise that might drown scoring signal, as well as using a variety of methods in an assessment: true/false, multiple-choice, multi-select, free-text answers and coding challenges.
 
 Time limits are especially useful for multiple-choice questions to mitigate the usefulness of using web searches to find answers.
+
+[Learn more about options for multiple-choice questions.](/creating-content/challenges/challenge-types/q-and-a-options/#multiple-choice-question-options)
 
 ### Free-Text Questions
 
@@ -91,3 +95,4 @@ In general, we find that many quizzes are primarily driven by multiple-choice qu
 
 Easy as it is to overlook, even a brief well-placed Q&A can add an extra dimension to a coding assessment!
 
+[Learn more about options for free-text questions.](/creating-content/challenges/challenge-types/q-and-a-options/#free-text-question-options)
