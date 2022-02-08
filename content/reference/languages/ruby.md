@@ -80,6 +80,33 @@ The following gems are available for use:
 - [`sqlite3 ~> 1.3.13`](https://rubygems.org/gems/sqlite3/versions/1.3.13)
 - [`webmock ~> 3.4.2`](https://rubygems.org/gems/webmock/versions/3.4.2)
 
+### Ruby MRI 3.0
+
+#### Default (no preset)
+
+- [`faker`](https://rubygems.org/gems/faker/)
+- [`faraday`](https://rubygems.org/gems/faraday/)
+- [`mongo`](https://rubygems.org/gems/mongo/)
+- [`nokogiri`](https://rubygems.org/gems/nokogiri/)
+- [`pg`](https://rubygems.org/gems/pg/)
+- [`rack`](https://rubygems.org/gems/rack/)
+- [`rack-test`](https://rubygems.org/gems/rack-test/)
+- [`redis`](https://rubygems.org/gems/redis/)
+- [`rspec`](https://rubygems.org/gems/rspec/)
+- [`sequel`](https://rubygems.org/gems/sequel/)
+- [`sqlite3`](https://rubygems.org/gems/sqlite3/)
+- [`webmock`](https://rubygems.org/gems/webmock/)
+
+#### Ruby on Rails preset
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- [`bcrypt ~> 3.1.7`](https://rubygems.org/gems/bcrypt/versions/3.1.7)
+- [`puma ~> 5.0`](https://rubygems.org/gems/puma/versions/5.0.0)
+- [`rails ~> 6.1.3`](https://rubygems.org/gems/rails/versions/6.1.3)
+- [`sqlite3 ~> 1.4`](https://rubygems.org/gems/sqlite3/versions/1.4.0)
+- [`rspec-rails`](https://rubygems.org/gems/rspec-rails)
+
 ## Testing
 
 Our Ruby environment supports the following testing frameworks:
