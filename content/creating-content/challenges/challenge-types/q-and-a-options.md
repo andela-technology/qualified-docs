@@ -8,7 +8,7 @@ You can control the candidate experience in two key ways for Q&A Challenges:
 
 ### Time Limits
 
-By adding a time limit to your Q&A challenge, you can simultaneously guide the candidate so they don't spend too much time, while increasing the signal-to-noise ratio for the automated challenge scoring.
+By adding a time limit to your Q&A challenge, you can simultaneously guide the candidate to not spend too much time, while increasing the signal-to-noise ratio for the automated challenge scoring.
 
 #### No Time Limit
 
@@ -22,9 +22,9 @@ This type works well if you want to allow candidates time to answer each questio
  
 #### Per Question Time Limit
 
-Each question has its own time limit. Questions are shown one-at-a-time, and the participant has to choose to move forward. Once the time expires or they move forward, they cannot edit a question again.
+Each question has its own time limit. Questions are shown one-at-a-time, and the participant has to choose to move forward. Once the time expires—or they move forward—they cannot edit a question again.
 
-This type works particularly well for rapid-fire challenges where you are interested in testing a participants knowledge without giving them time to look up answers.
+This type works particularly well for rapid-fire challenges where you are interested in testing a participant's knowledge without giving them time to look up answers.
 
 #### Per Question Time Limit with Time Bonus
 
@@ -33,7 +33,7 @@ This format is very similar to the above one, except the final score is based on
 
 ### Randomize Question Order
 
-If you are concerned about candidates sharing question answers, randomzing the question order can make this more difficult. When enabled, each candidate will see the entire set of questions in a randomized order. That order will be consistent for the candidate (returning to the quiz later will show the same order).
+If you are concerned about candidates sharing question answers, randomizing the question order can make this more difficult. When enabled, each candidate will see the entire set of questions in a randomized order. That order will be consistent for the candidate (returning to the quiz later will show the same order).
 
 ## Question Basics
 
@@ -102,7 +102,7 @@ Some simple use cases:
 This format could be a single-choice question, where there's multiple correct answers, but the candidate can only choose one. Depending on which one they choose, they might not get 100%, but they could still get 50% of the points for that question.
 - **Skills Aptitude Question—Multiple Choice:** Similar to the above use case, but in case, the candidate could pick multiple answers. This might be a great place to use negative values, reducing their score even if they pick the "right" answer among several incorrect answers.
 - **Personality Question:** Here you can use a Q&A challenge like a questionnaire to learn more about your candidate. For example, asking them about hobbies. You can assign different weights to the different hobbies to highlight candidates with interests that may better align to the job position.
-And these are just some of the use cases you can use weighted multiple choice questions for. We'd love to hear from you about how you find ways to use this new Q&A feature to improve your hiring process.
+And these are just a few use cases you can use weighted multiple choice questions for. We'd love to hear from you about how you find ways to use this new Q&A feature to improve your hiring process.
 
 ### Maximum Number of Answer Selections
 
@@ -137,7 +137,7 @@ Changing the answer format affects how the input field and answer is rendered. A
 
 Free text questions can be automatically scored by adding one or more **optional** validation matchers. These can be used to validate in one of several ways:
 
-- **Includes Text**: The answer must include the provided text somewhere. The validation can be case sensitive (_a=A_), or can ignore case (_a≠A_).
+- **Includes Text**: The answer must include the provided text somewhere. The validation can be case-sensitive (_a=A_), or can ignore case (_a≠A_).
 - **Excludes Text**: The answer must **not** include the provided text. You can set the case sensitivity as well.
 - **Equals Exactly**: The answer must exactly equal the provided text. You can set the case sensitivity.
 - **Does Not Equal**: The answer must not be the provided text. You can set the case sensitivity. Note: this usually will work better as _Excludes Text_.
