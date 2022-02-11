@@ -95,7 +95,7 @@ You can also bring this menu up while editing using <span class="shortcut-hint">
 
 Multiple Choice Questions will have one or more answers, each of which can contain [Markdown formatting](/reference/markdown).
 
-At least one answer must beck checked as the correct answer (to the left of the answer text). You can have multiple "correct" answers, allowing for more interesting answers.
+At least one answer must be checked as the correct answer (to the left of the answer text). You can have multiple "correct" answers, allowing for more complex quiz questions.
 
 You can re-arrange the answers easily dragging them with the double arrow (<span class="icon-drag-sort"/>).
 
@@ -110,7 +110,7 @@ If you add several questions, but check only one, the default mode is to show th
 You can override this default by going into _Other Options_ and changing the **Maximum Number of Answer Selections**.
 
 ### Weighted Choices
-With weighted multiple choice questions, you can now use Qualified's Q&A challenges for more than ever before. They are now even better for automatically determining job fit via a questionnaire, improved aptitude quizzes, and even getting to know your candidate better.
+With weighted multiple choice questions, you can now use Qualified's Q&A challenges for more than ever before. Our Q&A challenges support automatically determining job fit via a questionnaire, improved aptitude quizzes, and even getting to know your candidate better.
 
 Weighted multiple choice questions work exactly as normal multiple choice questions from the candidate's point-of-view, but now you can assign different values to each question. The total score for the questions can then be assigned anything you want, such as the sum of all correct answers, the highest correct answer, or any value in-between.
 
