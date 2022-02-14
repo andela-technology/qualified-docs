@@ -93,9 +93,9 @@ You can also bring this menu up while editing using <span class="shortcut-hint">
 </figure>
 </div>
 
-Multiple Choice Questions will have one or more answers, each of which can contain [Markdown formatting](/general/markdown).
+Multiple Choice Questions will have one or more answers, each of which can contain [Markdown formatting](/reference/markdown).
 
-At least one answer must beck checked as the correct answer (to the left of the answer text). You can have multiple "correct" answers, allowing for more interesting answers.
+At least one answer must be checked as the correct answer (to the left of the answer text). You can have multiple "correct" answers, allowing for more complex quiz questions.
 
 You can re-arrange the answers easily dragging them with the double arrow (<span class="icon-drag-sort"/>).
 
@@ -110,7 +110,7 @@ If you add several questions, but check only one, the default mode is to show th
 You can override this default by going into _Other Options_ and changing the **Maximum Number of Answer Selections**.
 
 ### Weighted Choices
-With weighted multiple choice questions, you can now use Qualified's Q&A challenges for more more than ever before. They are now even better for automatically determining job fit via a questionnaire, improved aptitude quizzes, and even getting to know your candidate better.
+With weighted multiple choice questions, you can now use Qualified's Q&A challenges for more than ever before. Our Q&A challenges support automatically determining job fit via a questionnaire, improved aptitude quizzes, and even getting to know your candidate better.
 
 Weighted multiple choice questions work exactly as normal multiple choice questions from the candidate's point-of-view, but now you can assign different values to each question. The total score for the questions can then be assigned anything you want, such as the sum of all correct answers, the highest correct answer, or any value in-between.
 
@@ -137,10 +137,13 @@ And these are just some of the use cases you can use weighted multiple choice qu
 
 Each free text question can be one of the following formats:
 
-- **Short Answer**: A single line answer, expected to be no more than a couple words
-- **Long Answer**: A multi-line Markdown editor for entering long answers
-- **Code (Short)**: A single line of code or other preformatted text. You can specify the language from our supported language list.
-- **Code (Multiline)**: A full code editor for entering long-form code answers. You can specify the language from our supported language list.
+- **Short Answer**: This is intended for simple, one-line answers. The input is a single line, and the text is rendered without any formatting.
+- **Long Answer (Plain Text)**: This provides a multi-line input to candidates, to encourage them to expand on an answer.
+- **Long Answer (Markdown-Enabled)**: Similar to the above, except the editor uses our markdown-editor, and allows for basic formatting. The output is rendered to HTML.
+- **Essay (Plain Text)**: This is an extended long-answer format. It is rendered with a full-page editor, and intended for Q&A challenges where the essay is the only question, or at least the primary focus.
+- **Essay (Markdown-Enabled)**: Similar to the above, except the editor uses our markdown-editor, and allows for basic formatting. The output is rendered to HTML.
+- **Code (Short)**: Candidates enter their answer using a code editor with code-aware formatting. You can choose from any of our supported programming languages, or plain text. This version only allows for a single line to be entered. The answer is rendered using code-highlighting.
+- **Code (Multiline)**: Similar to the above, except the editor allows for multiple lines.
 
 <div class="no-clear-next"></div>
 
