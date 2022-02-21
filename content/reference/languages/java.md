@@ -69,6 +69,8 @@ The following packages are available:
 - `org.springframework.boot:spring-boot-starter-data-rest`
 - `org.springframework.boot:spring-boot-starter-validation`
 - `org.springframework.boot:spring-boot-starter-test`
+- `org.springframework.boot:spring-boot-starter-data-jpa`
+- `com.h2database:h2`
 
 
 ## Testing
