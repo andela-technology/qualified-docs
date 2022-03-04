@@ -162,7 +162,10 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 
 > Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
 
-- `django`: `3.0.8`
+- `django`: `3.2`
+- `djangorestframework`: `3.12.4`
+- `django-filter`: `21.1`
+- `django-guardian`: `2.4.0`
 
 ## Testing
 
