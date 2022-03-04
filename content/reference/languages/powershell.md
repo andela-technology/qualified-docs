@@ -6,7 +6,7 @@ tags:
   - language
 ---
 
-# Python
+# PowerShell
 
 ## Environment
 
