@@ -118,6 +118,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 #### Default (no preset)
 
 - `beautifulsoup4`: `4.9.1`
+- `flask`: `1.1.2`
 - `gmpy2`: `2.0.8`
 - `jinja2`: `2.11.2`
 - `matplotlib`: `3.3.0`
@@ -131,6 +132,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `scipy`: `1.5.2`
 - `seaborn`: `0.10.1`
 - `six`: `1.15.0`
+- `sqlalchemy`: `1.3.19`
 
 #### Data Science (`datascience` preset)
 
@@ -139,6 +141,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `graphviz`: `0.14.1`
 - `jinja2`: `2.11.2`
 - `keras`: `2.4.3`
+- `koala2`: `0.0.35`
 - `matplotlib`: `3.3.0`
 - `mpld3`: `0.3.1.dev1`
 - `networkx`: `2.4`
