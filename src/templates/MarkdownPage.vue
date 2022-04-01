@@ -11,7 +11,7 @@
 
                 <api-ref v-if="$page.markdownPage.apiRef" class="markdown-page__content" on-this-page />
 
-                <div class="markdown-page__end">
+                <div class="markdown-page__end" v-if="!private">
                     <NextPrevLinks/>
                 </div>
             </div>
@@ -60,6 +60,15 @@ export default {
         OnThisPage,
         NextPrevLinks,
     },
+
+    computed: {
+        private() {
+            const page = this.$page;
+            const edge = page.allMarkdownPage.edges.find(e => e.node.path === page.markdownPage.path);
+            return edge && edge.node && edge.node.private || false;
+        },
+    },
+
     metaInfo() {
         const title = this.$page.markdownPage.title;
         const description = this.$page.markdownPage.description || this.$page.markdownPage.excerpt;
