@@ -39,7 +39,7 @@ Once you have pre-screened out all of the poor candidates, and honed in on the h
 
 The process of interviewing can be incredibly time consuming, but it’s an important phase that you don’t want to shortcut on. Many companies hold technical phone screens before an on-site interview in a conversational format. These phone screens provide shallow skill insight, while a full on-site can often be very costly — costing your team precious time as well as possible travel expenses. Pair-programming during a phone screen is a great way to allow your interviewers full insight into a candidate’s coding skills without increased overhead. They are often so effective they can even replace an on-site interview when necessary.
 
-A pair-programming interview involves one or more of your engineers meeting with a candidate in a real-time collaborative coding environment. This is where our Interact feature comes in. It allows you to remotely collaborate with candidates in real time.
+A pair-programming interview involves one or more of your engineers meeting with a candidate in a real-time collaborative coding environment. This is where our [Interact](../interact) feature comes in. It allows you to remotely collaborate with candidates in real time.
 
 This real-time collaboration offers direct insight into a candidate’s thought-process and problem-solving approach. Qualified will even record the playback of the pair-programming session so the rest of your team can review the session later. This collaborative coding also helps to test for culture-fit and soft-skills like collaborative abilities, communication and conflict. Pair-programming will provide you with a great preview of how well the candidate will integrate into your team.
 
