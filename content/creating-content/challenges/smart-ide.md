@@ -54,12 +54,15 @@ As of publishing this article, these features are currently supported.
 
 ### What languages are supported?
 These languages are currently supported on Project Code Challenges.
-* C# - 7.3 & 8.0
+
+* C# 7.3 & 8.0
+* Java 17
 * JavaScript 10 & 12
 * Python 3.7 & 3.8
 * Ruby 2.5 & 3.0
 * TypeScript 4.2
-We're currently working to add SmartIDE to our Java challenges, and will be expanding support further as we continue to refine the feature. (Note that Classic Code Challenges do not support SmartIDE at this time.)
+
+We will be expanding support further as we continue to refine the feature, so please let us know what languages you'd like to see added. (Note that Classic Code Challenges do not support SmartIDE at this time.)
 
 ### Can I disable SmartIDE once it's enabled?
 Yes! SmartIDE can be [enabled or disabled across your team, inside the Qualified Labs page](https://www.qualified.io/hire/account/labs). But you can also opt into or out of SmartIDE on a per-challenge basis. 
