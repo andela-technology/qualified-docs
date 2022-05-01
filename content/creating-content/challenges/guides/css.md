@@ -73,7 +73,7 @@ While this guide mostly discusses coding challenges, it'd be remiss to not menti
 
 A direct approach is to ask candidates to fulfill a precise specification, then snapshot the rendered application to an image and compare it pixel-by-pixel against the expected result. Optionally, tests can interact with the page and perform multiple snapshot comparisons against expected results to handle interaction and animation.
 
-An advantage to this approach is that tests are easy to write once a snapshotting system is set up.
+An advantage to this strategy is that tests are easy to write once a snapshotting system is set up.
 
 Another advantage is that it scales to difficulty of the task; the testing procedure need not change even as the requirements become more complex.
 
@@ -91,7 +91,9 @@ Requiring pixel-perfect results can unfairly penalize fundamentally correct solu
 
 The pixel-perfect diffing approach's major drawback of being too precise can be loosened by using smarter utilities that enable an epsilon of tolerable differences between actual and expected snapshots of the site.
 
-The upside is reduction of false negatives, but this comes at the cost of increased false positives, a heavier testing suite (machine learning and computer vision could be used) and potentially more work and time required to write the tests or the basic diffing utility.
+The upside is reduction of false negatives, but this comes at the cost of increased false positives, a heavier testing suite and potentially more work and time required to write the tests or the basic diffing utility.
+
+Check out our article [Browser Diff Testing with Puppeteer](browser-diff-testing-with-puppeteer) for one strategy.
 
 ### Browser automation tools
 
