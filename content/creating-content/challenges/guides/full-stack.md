@@ -48,11 +48,11 @@ When in doubt, we recommend erring on the side of keeping challenge scope simple
 ### Validating Qualified's environments against the proposed technology stack
 The next step is to ensure your desired packages and tech stack for each environment you've identified will work with Qualified, and making adjustments as necessary before developing the challenge(s). You can do this by visiting the relevant pages per language and scanning the environment presets and templates we offer.
 
-In our example above, we might identify the [Node 12.x](/reference/languages/javascript/#node-12) environment as containing all of the relevant packages for the back-end component, and the [React](/reference/languages/javascript/#react-react-preset) preset for the front-end component.
+In our example above, we might identify the [Node 14.x](/reference/languages/javascript/#node-14) environment as containing all of the relevant packages for the back-end component, and the [React](/reference/languages/javascript/#react-react-preset) preset for the front-end component.
 
 When the environment isn't a perfect match for your desired stack, consider the skills you seek to test on a per-challenge basis and try tightening challenge scope to focus on one, two or three key skills.
 
-For example, if you wish to test React routing skills as well as the candidate's [Puppeteer](https://github.com/puppeteer/puppeteer/) skills, consider two separate challenges: one for React Router with [Jest](https://jestjs.io/) and [React Test Utilities](https://reactjs.org/docs/test-utils.html) and a separate challenge focused on scraping/testing a single-page app with Puppeteer.
+For example, if you wish to test React routing skills as well as the candidate's [Puppeteer](https://github.com/puppeteer/puppeteer/) skills for end-to-end testing, consider two separate challenges: one for React Router with [Jest](https://jestjs.io/) and [React Test Utilities](https://reactjs.org/docs/test-utils.html) and a separate challenge focused on scraping/testing a single-page app with Puppeteer.
 
 ## Creating the challenge 
 After planning iterations stabilize, the development process of the individual challenges can get underway.
@@ -73,7 +73,7 @@ In many cases, mocks can be shared between the Web Preview feature and the Node 
 If a back-end is mocked in support of a front-end challenge, it's generally a good idea to mention this to the candidate explicitly in the instructions to promote transparency. Making mock files visible and read-only is a common strategy.
 
 ### Prefer APIs to server-side rendering
-APIs are a more natural fit for Qualified than server-rendered apps, although both are supported. The code runner offers HTML5 capabilities but Web Preview will be unavailable for server-side challenges. Making the front-end a single-page app and the back-end a JSON API makes it easy to maximize the advantages of each.
+APIs are a more natural fit for Qualified than server-rendered apps, although both are supported. The code runner can render HTML returned to test cases, but without backend interactivity. Web Preview will be unavailable for server-side challenges. Making the front-end a single-page app and the back-end a JSON API makes it easy to maximize the advantages of each.
 
 ### Alternatives to mocking
 Writing mocks for large APIs can be time-consuming and may not be suitable for all use cases, particularly highly dynamic services.
