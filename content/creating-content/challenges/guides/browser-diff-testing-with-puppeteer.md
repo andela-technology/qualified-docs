@@ -54,7 +54,7 @@ With these conversions in mind, the first step is capturing the reference ("expe
 At this time, Qualified doesn't support image files, so base64 text is the default storage format for image data.
 :::
 
-In a test case, the expected base64 string will be passed to a Puppeteer [`page.evaluate()`](https://github.com/puppeteer/puppeteer/blob/main/docs/api.md#pageevaluatepagefunction-args) call. The evaluated console code will draw the string into a canvas by way of an `Image` as described in the conversion steps above.
+In a test case, the expected base64 string will be passed to a Puppeteer [`page.evaluate()`](https://github.com/puppeteer/puppeteer/blob/v2.1.1/docs/api.md#pageevaluatepagefunction-args) call. The evaluated console code will draw the string into a canvas by way of an `Image` as described in the conversion steps above.
 
 Alternately, the conversion can be performed in Node context using a package like [pngjs](https://www.npmjs.com/package/pngjs).
 
