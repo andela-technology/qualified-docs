@@ -11,7 +11,7 @@ tags:
 
 ## Environment
 
-Qualified supports Java 8 and Java 11.
+Qualified supports Java 8, 11 and 17.
 
 ## Timeout
 
@@ -71,6 +71,47 @@ The following packages are available:
 - `org.springframework.boot:spring-boot-starter-test`
 - `org.springframework.boot:spring-boot-starter-data-jpa`
 - `com.h2database:h2`
+
+
+### Java 17
+
+Java 17 has multiple presets for different kinds of challenges.
+
+#### Default (no preset)
+
+- `org.junit.jupiter:junit-jupiter:5.8.2`
+- `junit:junit:4.12`
+- `org.junit.vintage:junit-vintage-engine:5.8.2`
+- `net.jqwik:jqwik:1.6.5`
+- `org.mockito:mockito-core:4.4.0`
+- `org.assertj:assertj-core:3.22.0`
+- `org.assertj:assertj-guava:3.4.0`
+- `org.apache.commons:commons-lang3:3.12.0`
+- `org.apache.commons:commons-math3:3.6.1`
+- `com.google.guava:guava:31.1-jre`
+- `org.jsoup:jsoup:1.14.3`
+- `org.dom4j:dom4j:2.1.3`
+- `com.fasterxml.jackson.core:jackson-annotations:2.13.2`
+- `org.xerial:sqlite-jdbc:3.36.0.3`
+
+#### Spring (`spring` preset)
+
+- `org.junit.jupiter:junit-jupiter:5.8.2`
+- `org.mockito:mockito-core:4.4.0`
+- `org.assertj:assertj-core:3.22.0`
+- `org.assertj:assertj-guava:3.4.0`
+- `org.apache.commons:commons-lang3:3.12.0`
+- `org.apache.commons:commons-math3:3.6.1`
+- `com.google.guava:guava:31.1-jre`
+- `com.fasterxml.jackson.core:jackson-annotations:2.13.2`
+- `com.h2database:h2:2.1.210`
+- `org.springframework.boot:spring-boot-starter-data-jpa`
+- `org.springframework.boot:spring-boot-starter-data-rest`
+- `org.springframework.boot:spring-boot-starter-security`
+- `org.springframework.boot:spring-boot-starter-validation`
+- `org.springframework.boot:spring-boot-starter-web`
+- `org.springframework.boot:spring-boot-starter-test`
+- `org.springframework.security:spring-security-test`
 
 
 ## Testing
