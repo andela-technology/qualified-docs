@@ -265,6 +265,9 @@ For an explanation of the special elements such as `<LOG:HTML:-name>` in the abo
 A complete example of this code can be seen as a template within the Qualified platform, [Puppeteer: UI Diffing](https://www.qualified.io/hire/challenges/626dc3d97d22bb0012c9c571).
 :::
 
+:::caution
+Providing an expected/reference image in any format gives candidates a cheating potential for some challenges, so be careful when displaying this!
+:::
 
 ### Limitations of image diffing
 
