@@ -17,12 +17,13 @@ Qualified supports the following TypeScript environments:
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
 - TypeScript 3.3 with Node 10 (Mocha, Jest)
 - TypeScript 3.8 with Node 12 (Mocha, Jest)
+- TypeScript 4.2 with Node 12 (Mocha, Jest)
 
 ### How different TypeScript code sections are treated
 
 For TypeScript 2.4, the solution and optional setup/preloaded code are combined into one "solution" file. The test fixture is its own file.
 
-For TypeScript 3.3/3.8, the optional setup/preloaded code is written to a separate file that can be imported with path: "./preloaded".
+For TypeScript 3.3+, the optional setup/preloaded code is written to a separate file that can be imported with path: "./preloaded".
 
 ## Timeout
 
@@ -220,6 +221,101 @@ TypeScript 3.8 (Node 12) has multiple presets for different kinds of challenges.
 - `zone.js`: `0.9.1`
 
 
+### TypeScript 4.2
+
+TypeScript 4.2 (Node 12) has multiple presets for different kinds of challenges.
+
+#### Default (no preset)
+
+- `@types/chai`: `^4.2.15`
+- `@types/jest`: `^26.0.20`
+- `@types/lodash`: `^4.14.168`
+- `@types/mocha`: `^8.2.1`
+- `@types/node`: `^14.14.31`
+- `@types/supertest`: `^2.0.10`
+- `axios`: `^0.21.1`
+- `chai`: `^4.3.4`
+- `chai-http`: `^4.3.0`
+- `fast-check`: `^2.13.0`
+- `jest`: `^26.6.3`
+- `lodash`: `^4.17.21`
+- `mocha`: `^8.3.0`
+- `rxjs`: `^6.6.6`
+- `supertest`: `^6.1.3`
+- `ts-jest`: `^26.5.2`
+- `ts-node`: `^9.1.1`
+- `typescript`: `^4.2.2`
+
+#### React (`react` preset)
+
+- `@testing-library/dom`: `^7.29.6`
+- `@testing-library/jest-dom`: `^5.11.9`
+- `@testing-library/react`: `^11.2.5`
+- `@testing-library/react-hooks`: `^5.0.3`
+- `@testing-library/user-event`: `^12.7.3`
+- `@types/escape-html`: `^1.0.0`
+- `@types/jest`: `^26.0.20`
+- `@types/lodash`: `^4.14.168`
+- `@types/prop-types`: `^15.7.3`
+- `@types/ramda`: `^0.27.38`
+- `@types/react`: `^17.0.2`
+- `@types/react-dom`: `^17.0.1`
+- `@types/react-redux`: `^7.1.16`
+- `@types/react-test-renderer`: `^17.0.1`
+- `@types/sinon`: `^9.0.10`
+- `@types/styled-components`: `^5.1.7`
+- `@types/styled-system`: `^5.1.10`
+- `axios`: `^0.21.1`
+- `escape-html`: `^1.0.3`
+- `immer`: `^8.0.1`
+- `jest`: `^26.6.3`
+- `jest-environment-jsdom`: `^26.6.2`
+- `jest-snapshot`: `^26.6.2`
+- `lodash`: `^4.17.21`
+- `mobx`: `^6.1.7`
+- `mobx-react`: `^7.1.0`
+- `prop-types`: `^15.7.2`
+- `ramda`: `^0.27.1`
+- `react`: `^17.0.1`
+- `react-dom`: `^17.0.1`
+- `react-is`: `^17.0.1`
+- `react-redux`: `^7.2.2`
+- `react-test-renderer`: `^17.0.1`
+- `redux`: `^4.0.5`
+- `rxjs`: `^6.6.6`
+- `sinon`: `^9.2.4`
+- `styled-components`: `^5.2.1`
+- `styled-system`: `^5.1.5`
+- `ts-jest`: `^26.5.2`
+- `typescript`: `^4.2.2`
+- `use-immer`: `^0.4.2`
+
+#### Angular (`angular` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@angular/animations`: `^12.1.0`
+- `@angular/cli`: `^12.1.2`
+- `@angular/common`: `^12.1.0`
+- `@angular/compiler`: `^12.1.0`
+- `@angular/compiler-cli`: `^12.1.0`
+- `@angular/core`: `^12.1.0`
+- `@angular/forms`: `^12.1.0`
+- `@angular/platform-browser`: `^12.1.0`
+- `@angular/platform-browser-dynamic`: `^12.1.0`
+- `@angular/router`: `^12.1.0`
+- `@angular-builders/jest`: `^12.0.2`
+- `@angular-devkit/build-angular`: `^12.1.2`
+- `@types/jest`: `^27.0.3`
+- `@types/node`: `^12.11.1`
+- `jest`: `^27.4.5`
+- `jest-preset-angular`: `^11.0.1`
+- `rxjs`: `^6.5.4`
+- `tslib`: `^2.3.0`
+- `typescript`: `4.2.2`
+- `zone.js`: `^0.11.4`
+
+
 ## Testing
 
 Our TypeScript environment supports the following testing frameworks:
@@ -229,3 +325,4 @@ Our TypeScript environment supports the following testing frameworks:
 - [typescript/karma-bdd](/reference/languages/typescript/karma-bdd)
 - [typescript/karma-tdd](/reference/languages/typescript/karma-tdd)
 - [typescript/jest](/reference/languages/typescript/jest)
+
