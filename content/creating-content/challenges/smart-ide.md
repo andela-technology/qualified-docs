@@ -10,8 +10,12 @@ SmartIDE is our answer to bridge the gap between web editors and desktop editors
 
 ![SmartIDE Preview](/images/hire/smart-ide-preview.png)
 
-:::important Labs Feature
-The functionality discussed is currently available as a [labs feature](https://www.qualified.io/hire/account/labs) for select customers. Please contact your sales representative to learn more about this feature if it is not already available on your account.
+:::important Beta Labs Feature
+SmartIDE is a beta feature part of Qualified Labs. It's availability and functionality may change in the future. 
+
+To enable SmartIDE, log into your account, and enable it within the [Qualified Labs settings](https://www.qualified.io/hire/account/labs).
+
+You can choose to enable or disable it for all challenges by default, and override the default setting within each challenge when you do not want it enabled.
 ::: 
 
 ## Features
@@ -62,7 +66,7 @@ These languages are currently supported on Project Code Challenges.
 * Ruby 2.5 & 3.0
 * TypeScript 4.2
 
-We will be expanding support further as we continue to refine the feature, so please let us know what languages you'd like to see added. (Note that Classic Code Challenges do not support SmartIDE at this time.)
+We will be expanding support further as we continue to refine the feature, so please let us know what languages you'd like to see added. (Note that Classic Code Challenges do not support SmartIDE at this time. Please contact your sales representative if you'd like to see this enabled.)
 
 ### Can I disable SmartIDE once it's enabled?
 Yes! SmartIDE can be [enabled or disabled across your team, inside the Qualified Labs page](https://www.qualified.io/hire/account/labs). But you can also opt into or out of SmartIDE on a per-challenge basis. 
