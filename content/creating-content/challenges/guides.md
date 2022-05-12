@@ -5,22 +5,25 @@ order: 5
 
 This page offers guides for developing challenges in specific frameworks and languages to get you up and running in your preferred technology stack. The guidance on this page can help you get the most out of the platform and serve as a reference for the nuts and bolts of a particular technology in the context of Qualified.
 
-### [Testing React skills](/creating-content/challenges/guides/react)
+### [Testing React Skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 
-### [Testing React Native skills](/creating-content/challenges/guides/react-native)
+### [Testing React Native Skills](/creating-content/challenges/guides/react-native)
 Although React Native bears plenty of similarities to React, we have additional notes for it as a supplement.
 
-### [Writing Pandas challenges](/creating-content/challenges/guides/pandas)
+### [Writing Pandas Challenges](/creating-content/challenges/guides/pandas)
 [Pandas](https://pandas.pydata.org/) is a popular Python library for working with tabular data and plays nicely with Qualified's code runner. This is an in-depth guide to creating Pandas challenges in Qualified.
 
-### [Creating full-stack web challenges](/creating-content/challenges/guides/full-stack)
+### [Creating Full-Stack Web Challenges](/creating-content/challenges/guides/full-stack)
 Qualified's Code Runner environment can support full-stack applications, but requires modularization of the project to test client and server code in separate challenges. This guide helps content authors navigate the process.
 
-### [Testing CSS skills](/creating-content/challenges/guides/css)
+### [Testing CSS Skills](/creating-content/challenges/guides/css)
 You can test many aspects of your candidate's CSS skills on Qualified using tools such as Puppeteer.
 
-### [Random tests](/creating-content/challenges/guides/random-tests)
+### [Browser Diff Testing with Puppeteer](/creating-content/challenges/guides/browser-diff-testing-with-puppeteer)
+An overview of a technique for programmatically diffing images, canvases and DOMs on the front end, expanding the possibilities for validating user interfaces in Qualified.
+
+### [Random Tests](/creating-content/challenges/guides/random-tests)
 This guide describes how to use random tests as a means of cheating prevention.
 
 ### [Preconditions](/creating-content/challenges/guides/preconditions)
