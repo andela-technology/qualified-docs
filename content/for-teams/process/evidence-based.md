@@ -29,7 +29,7 @@ An evidence-based process shouldn't be thought of as just an assessment, with a 
 As more signals are collected, it becomes much easier to make a high-confidence decision. Qualified not only provides the ability for your team to collect those signals, but to organize them into a cohesive profile that allows your team to to see everything in one place.
 
 ### What sort of signals can be harvested from evidence-based activities?
-#### % Solved Signals
+#### Accuracy Signals
 The most common signal given by any form of assessment is the resulting solution solved score. This score is usually determined based on "correctness" of the task/answers. In Qualified, coding solutions produce a score based on how many unit tests are passed, and Q&A solutions produce a score based on how many questions were answered correctly.   
 
 There is a lot that can be collected from these signals alone, such as a candidate's ability to complete code that is 100% functional, how many about a topic a candidate "knows", and how strong of a cultural fit a candidate may be based on them answering a survey that has been designed to fit the role you are hiring for. However these scores are just the start to the signals you can capture. 
@@ -121,7 +121,7 @@ To access this data, you can click on the circular "Qualified Score". A dialog w
 Now that we have discussed what is meant by an evidence-based process, let's discuss how to incorporate more evidence within your own process. We will specifically cover how to ensure you get the most out of your assessments, and don't just rely on the initial score as your own data point.
 
 ### Incorporate your engineering team into the review process
-When a candidate submits their assessment, the system will automatically score the assessment. This "% solved" score is a starting point only. It will tell you if your candidate's were able to do the work, and how correct their work was. However there is a lot more that can be learned from the assessment. The next step is to get one or more of your engineers to review the submission. However you don't want to waste their time, so only have them review candidates which have performed well enough to warrant the additional effort.
+When a candidate submits their assessment, the system will automatically score the assessment. This "accuracy" score is a starting point only. It will tell you if your candidate's were able to do the work, and how correct their work was. However there is a lot more that can be learned from the assessment. The next step is to get one or more of your engineers to review the submission. However you don't want to waste their time, so only have them review candidates which have performed well enough to warrant the additional effort.
 
 Here is a quick overview of how Qualified recommends you incorporate a team review:
 

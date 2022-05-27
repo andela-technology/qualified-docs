@@ -49,16 +49,16 @@ The overall review opinion score is where the subjective opinions enter the pict
 Utilize overall opinion to determine if you should either move candidates forward in the process, or disqualify them. 
 :::
 
-#### % Solved
+#### Accuracy
 This is the overall averaged **% score** of all assessments submitted. This can be useful for getting a raw sense of how well a candidate performed on their assessments, without assessment weighting or reviewer scorecards being factored in.
 
 :::info Evidence Engine settings are not considered
-Nothing configured within the [Evidence Engine configuration](/creating-content/evidence-engine/overview) will have any impact on this score. **% Solved** only takes **passed unit tests** into account for coding challenges, and **correct answers** for Q&A challenges. 
+Nothing configured within the [Evidence Engine configuration](/creating-content/evidence-engine/overview) will have any impact on this score. **Accuracy** only takes **passed unit tests** into account for coding challenges, and **correct answers** for Q&A challenges. 
 
-The **% Solved** score is simply the average of all submitted assessment results, which are in turn an average of all solutions within the assessment. If one assessment has more solutions than another, then technically each solution will count less towards the score since that solution will make up less of the assessment result's % Solved score.
+The **Accuracy** score is simply the average of all submitted assessment results, which are in turn an average of all solutions within the assessment. If one assessment has more solutions than another, then technically each solution will count less towards the score since that solution will make up less of the assessment result's Accuracy score.
 
 **Example**:
-There are two submitted assessment results. One scored a `50%` and has 3 solutions, the other `100%` and has 2 solutions; The overall % solved score will be `(50 + 100)/200)` = `75%`). Solution count is not factored directly into the overall score, but solution count is factored into each assessment result score.
+There are two submitted assessment results. One scored a `50%` and has 3 solutions, the other `100%` and has 2 solutions; The overall accuracy score will be `(50 + 100)/200)` = `75%`). Solution count is not factored directly into the overall score, but solution count is factored into each assessment result score.
 :::
 
 #### Failed Assessments
@@ -98,7 +98,7 @@ A chart is shown which breaks down the composition. Missing reviewer scorecard s
 
 Subscores are a way for a challenge to showcase a candidate's potential within specific subject areas that each challenge is designed to target. Subscores are not factored directly into the Qualified score. Instead, subscores are ways to take signal data learned from a candidate's result and map one or more of the signals towards a subject. Each challenge within the Qualified library is already mapped to one or more subscores. Subscores are weighted and aggregated with all submitted solutions that target the same subscore subject.
 
-By default, taking a coding challenge in a specific language will result in aspects of that challenge (typically the % solved score) being scored towards that language's subscore. Other common subscores including those related to software quality, such as "Code Maintainability" and "Code Performance". 
+By default, taking a coding challenge in a specific language will result in aspects of that challenge (typically the accuracy score) being scored towards that language's subscore. Other common subscores including those related to software quality, such as "Code Maintainability" and "Code Performance". 
 
 The subscore analysis presents all subscores calculated for the given "report "card scope (either all submitted assessment results, or a specific one). This view is your gateway into understanding what areas a candidate may not have performed well.
 
@@ -167,7 +167,7 @@ We call this the portfolio because that's how Qualified views assessments. They 
 
 ### Solutions Summary
 
-The solutions summary gives you a quick overview of all solutions, their Qualified Score, and their % solved score. You can click on a solution to quickly navigate to that solution's details.
+The solutions summary gives you a quick overview of all solutions, their Qualified Score, and their accuracy score. You can click on a solution to quickly navigate to that solution's details.
 
 ![Example solutions summary](/images/for-teams/portfolio-solutions-summary.png)
 
