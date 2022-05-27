@@ -10,8 +10,8 @@ Signals are measured and then mapped to various output scores. The two main type
 
 ## Signal Types
 There are multiple types of signals that can be measured. The following signals can currently be measured:
-- Passed Unit Tests
-- Answer Correctness
+- Unit Test Accuracy
+- Answer Accuracy
 - Reviewer Ratings (Scorecards)
 
 The following signals are planned for future release:
@@ -26,7 +26,7 @@ The signals chosen for a given challenge depend on what the challenge is designe
 
 ## System Scored Signals
 
-The two system scored signals currently supported are **Passed Unit Tests** and **Answer Correctness**. Passed Unit Tests are relevant for coding challenges, Answer Correctness is relevant for Q&A challenges. These are also the data that is used to determine the **% Solved** score for a solution.
+The two system scored signals currently supported are **Unit Test Accuracy** and **Answer Accuracy**. Unit Test Accuracy are relevant for coding challenges, Answer Accuracy is relevant for Q&A challenges. These are also the data that is used to determine the **Accuracy** score for a solution.
 
 :::info Disabling System Scored Signals
 Currently it is not possible to disable these signals from being scored. However you can set their weight to `0` if you don't wish for them to be included within the Qualified Score.

@@ -6,11 +6,11 @@ order: 2
 
 ## Qualified Score
 
-The **Qualified Score** is designed to be a single value which represents the overall evaluation score of a candidate. All signals within the Evidence Engine are associated with the Qualified Score. This score always takes the Evidence Engine configuration into account, whereas the **% Solved** score is a simple calculation of how many unit tests or answers have been passed.
+The **Qualified Score** is designed to be a single value which represents the overall evaluation score of a candidate. All signals within the Evidence Engine are associated with the Qualified Score. This score always takes the Evidence Engine configuration into account, whereas the **Accuracy** score is a simple calculation of how many unit tests or answers have been passed.
 
-![Qualified Score and % Solved - as seen on candidates list](/images/for-teams/candidate-scores.png)
+![Qualified Score and Accuracy - as seen on candidates list](/images/for-teams/candidate-scores.png)
 
-The Qualified Score is a value between `0 - 10` and incorporates **all submitted evidence signals** collected by the system. Signals can include things such as the % solved score, as well as other signals, such as reviewer score card ratings provided by your team after conducting an assessment review.
+The Qualified Score is a value between `0 - 10` and incorporates **all submitted evidence signals** collected by the system. Signals can include things such as the accuracy score, as well as other signals, such as reviewer score card ratings provided by your team after conducting an assessment review.
 
 :::important Keep in mind
 The Qualified Score only incorporates **known** information. Any un-submitted assessments or un-reviewed scorecards will not be included. 
@@ -77,10 +77,10 @@ The three current factor groupings are:
 1. `Reviewer Scored`
 
 #### System Scored: Code
-**Passed Unit Tests** is currently the only signal that is included within this group. Your team likely has chosen Qualified due to its powerful code challenge functionality, so its likely that this signal will be the most utilized within your assessments. As additional signal types get added, this group may expand.
+**Unit Test Accuracy** is currently the only signal that is included within this group. Your team likely has chosen Qualified due to its powerful code challenge functionality, so its likely that this signal will be the most utilized within your assessments. As additional signal types get added, this group may expand.
 
 #### System Scored: Questions
-**Answer Correctness** is currently the only signal that is included within this group. This score is derived from the number of correct answers on a Q&A challenge. As additional signal types are added, this group may expand.
+**Answer Accuracy** is currently the only signal that is included within this group. This score is derived from the number of correct answers on a Q&A challenge. As additional signal types are added, this group may expand.
 
 
 :::note
@@ -102,7 +102,7 @@ Later we will discuss points, which lets you define how each reviewer scored sig
 
 ## Subscores
 
-Subscores are separate scores that exist apart from the Qualified Score. Their purpose is to allow you to map different signals to different subscores so that you can structure the learnings gained from each challenge assessed. For example, you may create a React based coding challenge and map the *Passed Unit Tests* (% solved) to the "React" subscore. Later on, you might issue a React based Q&A challenge and map the correct answers score to React.   
+Subscores are separate scores that exist apart from the Qualified Score. Their purpose is to allow you to map different signals to different subscores so that you can structure the learnings gained from each challenge assessed. For example, you may create a React based coding challenge and map the *Unit Test Accuracy* (accuracy) to the "React" subscore. Later on, you might issue a React based Q&A challenge and map the correct answers score to React.   
 
 :::info
 The value of a subscore has no affect on how the Qualified Score gets calculated. They are completely independent. 

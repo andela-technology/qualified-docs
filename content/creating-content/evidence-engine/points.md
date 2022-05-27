@@ -6,7 +6,7 @@ order: 5
 
 Points are one of the advanced configuration features offered that allows you to customize how much a given signal impacts the Qualified Score and related Subscores. This is done by assigning a max number of points that a signal, subscore or score factor can count as. 
 
-For example, you might assign "Passed Unit Tests" `100` max points but only assign "Review Scorecard" `50` max points. 
+For example, you might assign "Unit Test Accuracy" `100` max points but only assign "Review Scorecard" `50` max points. 
 
 ![Adjustable points configuration view](/images/creating-content/evidence-weighting.png)
 
@@ -57,7 +57,7 @@ This section deals with subscores. This section is a bit more advanced, in that 
 The root points are only relevant when aggregating solutions within an assessment result or candidate Qualified Score. It affects how much this challenge's subscore affects the aggregate subscore. Within the solution itself, these points will have no affect.
 
 #### Signal Sub-Weightings
-These points affect the root points. For example, in the figure at the top of this article we have a "React" subscore which has "Passed Unit Tests" and "Coding Best Practices" as signals. This is because both signals have been mapped to the subscore. In this case we may decide we want "Coding Best Practices" to only be worth 30% of the "React" subscore. 
+These points affect the root points. For example, in the figure at the top of this article we have a "React" subscore which has "Unit Test Accuracy" and "Coding Best Practices" as signals. This is because both signals have been mapped to the subscore. In this case we may decide we want "Coding Best Practices" to only be worth 30% of the "React" subscore. 
 
 The points defined here determine acts as weightings for the subscore value, and the root points determines how that subscore value gets weighted against the same subscore on other solutions.
 
