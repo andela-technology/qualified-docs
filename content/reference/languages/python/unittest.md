@@ -22,24 +22,26 @@ Here is a minimal example of unit testing in Qualified's Python 3.7 environment 
 ```python
 import unittest
 
-import preloaded # preloaded code you can provide the solution and/or test module (omit if preloaded is empty)
+import preloaded # preloaded code you can provide the solution 
+                 # and/or test module (omit if preloaded is empty)
+
 import solution  # the candidate's solution
 
 class Test(unittest.TestCase):
     def test_add(self):
-        ''' add two numbers '''
+        "add two numbers"
         self.assertEqual(solution.add(2, 1), 3)
         
     def test_subtract(self):
-        ''' subtract two numbers '''
+        "subtract two numbers"
         self.assertEqual(solution.subtract(2, 1), 1)
         
     def test_division_by_zero(self):
-        ''' divide by zero '''
+        "divide by zero"
         self.assertRaises(ZeroDivisionError, solution.divide, 42, 0)
 ```
 
-As demonstrated above, methods intended to be tested must begin with the prefix `test`. The `Test` class name is flexible. Verbose test descriptions can be provided with a simple [docstring](https://www.python.org/dev/peps/pep-0257/).
+As demonstrated above, methods intended to be tested must begin with the prefix `test`. The `Test` class name is flexible. You can add multiple classes. Verbose test descriptions can be provided with a simple [docstring](https://www.python.org/dev/peps/pep-0257/).
 
 If you're using Python versions older than 3.7 in our code runner, the solution and preloaded modules are implicitly imported into the testing module as `from solution import *`.
 
