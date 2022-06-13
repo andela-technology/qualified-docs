@@ -22,4 +22,4 @@ Packages in the [tidyverse](https://www.tidyverse.org/) are installed (v1.2.1).
 
 ## Testing
 
-Our R environment supports the [r/testthat](/reference/languages/r/testthat).
+Our R environment supports the [r/testthat](/reference/languages/r/testthat) testing framework.
