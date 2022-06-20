@@ -30,7 +30,7 @@ add :: Num a => a -> a -> a
 add = (+)
 ```
 
-#### Test Fixture:
+#### Test Fixture
 
 ```haskell
 module ExampleSpec where -- test module name MUST end with Spec
