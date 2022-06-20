@@ -27,7 +27,7 @@ say_hello <- function(name = NULL) {
 }
 ```
 
-### Test Fixture:
+#### Test Fixture
 
 ```r
 context("Code Challenge Sample")
