@@ -23,11 +23,11 @@ char *reverse(const char *s) {
     int len = strlen(s);
     char *result = malloc(len + 1);
     result[len] = '\0';
-    
+
     for (int i = 0; i < len; i++) {
         result[i] = s[len-1-i];
     }
-  
+
     return result;
 }
 ```
@@ -38,9 +38,9 @@ char *reverse(const char *s) {
 #include <criterion/criterion.h>
 #include <stdlib.h>
 
-extern char *reverse(const char *s);
+char *reverse(const char *s);
 
-Test(reverse, example_test) {
+Test(reverse, example_test, .description = "example test") {
     char *actual = reverse("hello world");
     const char *expected = "dlrow olleh";
     cr_assert_str_eq(actual, expected);
@@ -101,11 +101,11 @@ char *arr_to_s(int len, int *arr) {
 
 int *reverse(const int len, const int *nums) {
     int *result = malloc(sizeof(*result) * len);
-    
+
     for (int i = 0; i < len; i++) {
         result[i] = nums[len-1-i];
     }
-  
+
     return result;
 }
 ```
@@ -116,10 +116,10 @@ int *reverse(const int len, const int *nums) {
 #include <criterion/criterion.h>
 #include <stdlib.h>
 
-extern char *arr_to_s(int len, int *arr);
-extern int *reverse(int len, int *nums);
+char *arr_to_s(int len, int *arr);
+int *reverse(int len, int *nums);
 
-Test(split_integer, reverse_test) {
+Test(split_integer, reverse_test, .description = "reverse test") {
     int nums[] = {1, 2, 3};
     int expected[] = {3, 2, 1};
     int len = sizeof nums / sizeof nums[0];
