@@ -14,7 +14,7 @@ Qualified supports the [Criterion testing framework](https://criterion.readthedo
 
 ## Basic Example
 
-### Solution code
+### Solution
 
 ```c
 #include <stdlib.h>
@@ -32,7 +32,7 @@ char *reverse(const char *s) {
 }
 ```
 
-### Test suite code
+### Tests
 
 ```c
 #include <criterion/criterion.h>
@@ -54,7 +54,7 @@ A potential for confusion when using Criterion is lack of verbosity in output. D
 
 To illustrate the problem, consider that `cr_assert_arr_eq(actual, expected, sizeof(expected));` by default produces an error `The expression (actual)[0..Size] == (expected)[0..Size] is false.` which doesn't show a diff of the two arrays. Adding an array stringification function allows for a much clearer error log. Here's a complete example:
 
-### Preloaded code
+### Preloaded
 
 ```c
 #include <stdbool.h>
@@ -94,7 +94,7 @@ char *arr_to_s(int len, int *arr) {
 }
 ```
 
-### Solution code
+### Solution
 
 ```c
 #include <stdlib.h>
@@ -110,7 +110,7 @@ int *reverse(const int len, const int *nums) {
 }
 ```
 
-### Test suite code
+### Tests
 
 ```c
 #include <criterion/criterion.h>

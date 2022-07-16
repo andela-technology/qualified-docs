@@ -11,9 +11,9 @@ tags:
 
 Qualified supports writing tests for Rust using `tests` mod with `#[cfg(test)]` attibute.
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```rust
 pub fn add(a: i32, b: i32) -> i32 {
@@ -21,7 +21,7 @@ pub fn add(a: i32, b: i32) -> i32 {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```rust
 #[cfg(test)]

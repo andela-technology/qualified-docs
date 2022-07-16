@@ -12,9 +12,9 @@ tags:
 
 Qualified supports the ExUnit testing framework.
 
-## ExUnit Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```elixir
 defmodule Challenge do
@@ -29,7 +29,7 @@ defmodule Challenge do
 end
 ```
 
-#### Test Fixture:
+### Tests
 
 ```elixir
 defmodule TestSolution do

@@ -16,9 +16,9 @@ Qualified supports the Fuchu testing framework.
 
 These notes are adapted from: [the Fuchu repository](https://github.com/mausch/Fuchu)
 
-## Fuchu Quick Start
+## Basic Example
 
-Here's the simplest test possible:
+### Solution
 
 ```fsharp
 open Fuchu
@@ -27,6 +27,8 @@ let simpleTest =
     testCase "A simple test" <| 
         fun _ -> Assert.Equal("2+2", 4, 2+2)
 ```
+
+### Tests
 
 Tests can be grouped (with arbitrary nesting):
 

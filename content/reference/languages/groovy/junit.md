@@ -12,9 +12,9 @@ tags:
 
 Qualified supports writing tests for Groovy using [JUnit 4][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```groovy
 class Adder {
@@ -22,7 +22,7 @@ class Adder {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```groovy
 import org.junit.Test

@@ -10,11 +10,11 @@ tags:
 
 ## Overview
 
-Qualified supports writing test fixtures for Java using [JUnit 5][1].
+Qualified supports writing tests for Java using [JUnit 5][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```java
 public class Adder {
@@ -24,7 +24,7 @@ public class Adder {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```java
 import static org.junit.jupiter.api.Assertions.assertEquals;

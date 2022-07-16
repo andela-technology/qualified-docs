@@ -10,11 +10,11 @@ tags:
 
 ## Overview
 
-Qualified supports writing test fixtures for Scala using [JUnit 4][1].
+Qualified supports writing tests for Scala using [JUnit 4][1].
 
-## Scala with JUnit Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```scala
 object Sample {
@@ -29,7 +29,7 @@ object Sample {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```scala
 import org.junit.Test

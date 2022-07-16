@@ -12,9 +12,9 @@ tags:
 
 Qualified supports writing tests for JavaScript (Node 10+ only) using [Jest][0].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```javascript
 const sum = (a, b) => a + b;
@@ -22,7 +22,7 @@ const sum = (a, b) => a + b;
 module.exports = sum;
 ```
 
-#### Test Fixture:
+### Tests
 
 ```javascript
 const sum = require('./solution');

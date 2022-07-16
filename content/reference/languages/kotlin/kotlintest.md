@@ -10,17 +10,17 @@ tags:
 
 ## Overview
 
-Qualified supports writing test fixtures for Kotlin using [KotlinTest][1].
+Qualified supports writing tests for Kotlin using [KotlinTest][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```kotlin
 fun add(a: Int, b: Int) = a + b
 ```
 
-#### Test Fixture:
+### Tests
 
 ```kotlin
 import io.kotlintest.matchers.shouldBe

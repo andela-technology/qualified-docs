@@ -17,11 +17,9 @@ When taking a challenge, the test framework is already selected for you.  You ca
 
 The `test` module provides the testing functionality needed to validate a challenge's requirements, or to write your own tests if you are taking a challenge. When using Python versions before 3.7, this module is implicitly imported. On Python 3.7+, it needs to be imported with `import codewars_test as test`.
 
-# Minimal Test Framework
+## Basic Example
 
-A minimal test fixture looks as follows:
-
-#### Solution Code
+### Solution
 
 ```python
 def greet(greetor,greetee):
@@ -31,7 +29,7 @@ def greet(greetor,greetee):
     )
 ```
 
-#### Fixture Code:
+### Tests
 
 ```python
 # For Python 3.7+, add `import codewars_test as test` and `from solution import greet`

@@ -12,9 +12,9 @@ tags:
 
 Qualified supports writing tests for Dart using [`test`][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```dart
 String sayHello(String name) {
@@ -22,7 +22,7 @@ String sayHello(String name) {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```dart
 import "package:test/test.dart";

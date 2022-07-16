@@ -28,7 +28,7 @@ Use `$this->assert*` methods to create your assertions, such as `$this->assertSa
 [`assertEquals`](https://phpunit.readthedocs.io/en/9.5/assertions.html#assertequals) and similar `*Equals` methods have [surprising type coercion](https://stackoverflow.com/questions/10254180/difference-between-assertequals-and-assertsame-in-phpunit/), so `42` and `true` would be considered equal. Prefer [`assertSame`](https://phpunit.readthedocs.io/en/9.5/assertions.html#assertsame), [`assertObjectEquals`](https://phpunit.readthedocs.io/en/9.5/assertions.html#assertobjectequals), [`assertTrue`](https://phpunit.readthedocs.io/en/9.5/assertions.html#asserttrue) or type-check arguments before calling `assertEquals`.
 :::
 
-### Example
+### Basic Example
 
 ```php
 <?php

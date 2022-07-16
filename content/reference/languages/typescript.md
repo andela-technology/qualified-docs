@@ -21,7 +21,7 @@ Qualified supports the following TypeScript environments:
 
 ### How different TypeScript code sections are treated
 
-For TypeScript 2.4, the solution and optional setup/preloaded code are combined into one "solution" file. The test fixture is its own file.
+For TypeScript 2.4, the solution and optional setup/preloaded code are combined into one "solution" file. The test suite is its own file.
 
 For TypeScript 3.3+, the optional setup/preloaded code is written to a separate file that can be imported with path: "./preloaded".
 

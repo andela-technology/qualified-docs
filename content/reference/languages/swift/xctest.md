@@ -22,7 +22,7 @@ You must also include the main entry point method to start the tests.
 
 Use `XCTAssert*` functions to create your assertions, for example, `XCTAssertEqual(_ actual:_ expected:_ message)`. 
 
-### Example
+### Basic Example
 
 ```swift
 import XCTest
@@ -37,7 +37,7 @@ class PersonTest: XCTestCase {
     }
 } 
 XCTMain([
-  testCase(PersonTest.allTests)
+    testCase(PersonTest.allTests)
 ])
 ```
 

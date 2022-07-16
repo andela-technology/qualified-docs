@@ -12,15 +12,15 @@ tags:
 
 Qualified supports writing tests for TypeScript (TypeScript 3+ only) using [Jest][0].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```typescript
 export const sum = (a: number, b: number) => a + b;
 ```
 
-#### Test Fixture:
+### Tests
 
 ```typescript
 import { sum } from './solution';
