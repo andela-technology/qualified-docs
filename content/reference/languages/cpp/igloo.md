@@ -16,7 +16,7 @@ Qualified supports the Igloo testing framework. However, we recommend usng the [
 ## Basic Example
 
 ```cpp
-extern int add(int a, int b); // the candidate's solution
+int add(int a, int b); // the candidate's solution
 
 Describe(add_tests) {
     It(should_work_on_a_basic_example) {

@@ -10,17 +10,17 @@ tags:
 
 ## Overview
 
-Qualified supports writing test fixtures for Kotlin using [JUnit 5][1].
+Qualified supports writing tests for Kotlin using [JUnit 5][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```kotlin
 fun add(a: Int, b: Int) = a + b
 ```
 
-#### Test Fixture:
+### Tests
 
 ```kotlin
 import org.junit.jupiter.api.*

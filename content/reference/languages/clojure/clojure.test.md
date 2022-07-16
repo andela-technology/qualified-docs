@@ -15,34 +15,26 @@ The following notes are largely derived from: [clojure.test - Clojure API Docume
 
 [1]: https://clojure.github.io/clojure/clojure.test-api.html "clojure.test"
 
-## Setup
+## Basic Example
 
-A minimal test fixture looks as follows:
-
-#### Solution Code
+### Solution
 
 ```clojure
-(ns clojure.greeter)
+(ns challenge)
 
-(defn make-greeter [greeter-name]
-  (fn [your-name]
-    (format "My name is %s! Welcome, %s!"
-             greeter-name
-             your-name)))
+(defn add [a b]
+  (+ a b))
 ```
 
-#### Test Fixture
+### Tests
 
 ```clojure
-(ns clojure.greeter-test
+(ns challenge-test
   (:require [clojure.test :refer :all]
-            [clojure.greeter :refer :all]))
+            [challenge :refer [add]]))
 
-(deftest Greetings
-  (is
-   (= ((make-greeter "Shoki, the Demon Queller")
-       "Son Gokū, the Monkey King")
-      "My name is Shoki, the Demon Queller! Welcome, Son Gokū, the Monkey King!")))
+(deftest Add
+  (is (= (add 1 2) 3)))
 ```
 
 ## is

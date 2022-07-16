@@ -102,7 +102,7 @@ Tests that `[a isEqual: b]`.
  
 `a` is the non-expected value and `b` the tested value.
 
-# Basic Setup
+# Basic Example
 
 ```
 @implementation TestSuite

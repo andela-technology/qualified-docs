@@ -12,11 +12,11 @@ Qualified supports the [`Pester`](https://github.com/pester/Pester) unit testing
 
 ## Classic Code Examples
 
-### Quick Start
+### Basic Example
 
 Here is a minimal example of validating PowerShell code in Qualified's classic code challenge environment using Pester.
 
-#### Solution code
+#### Solution
 
 ```powershell
 function Add-Numbers($a, $b) {
@@ -24,7 +24,7 @@ function Add-Numbers($a, $b) {
 }
 ```
 
-#### Test cases
+#### Tests
 
 ```powershell
 BeforeAll {
@@ -65,7 +65,7 @@ function Add-Numbers($a, $b) {
 }
 ```
 
-#### Test cases
+#### Tests
 
 ```powershell
 BeforeAll {

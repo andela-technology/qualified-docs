@@ -11,11 +11,11 @@ tags:
 
 ## Overview
 
-Qualified supports writing test fixtures for Java using [JUnit 4](https://junit.org/junit4).
+Qualified supports writing tests for Java using [JUnit 4](https://junit.org/junit4).
 
-## Minimal Test Framework:
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```java
 public class Calculator {
@@ -25,7 +25,7 @@ public class Calculator {
 }
 ```
 
-#### Test Fixture:
+### Tests
 
 ```java
 import org.junit.Test;

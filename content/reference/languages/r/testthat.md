@@ -12,9 +12,9 @@ tags:
 
 Qualified supports the testthat testing framework.
 
-## testthat Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```r
 say_hello <- function(name = NULL) {
@@ -27,7 +27,7 @@ say_hello <- function(name = NULL) {
 }
 ```
 
-#### Test Fixture
+### Tests
 
 ```r
 context("Code Challenge Sample")

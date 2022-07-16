@@ -12,9 +12,9 @@ tags:
 
 Qualified supports writing tests for Lua using [Busted][1].
 
-## Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```lua
 local t = {}
@@ -24,7 +24,7 @@ end
 return t
 ```
 
-#### Test Fixture:
+### Tests
 
 ```lua
 local t = require 'solution'

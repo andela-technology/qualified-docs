@@ -12,11 +12,7 @@ tags:
 
 Qualified supports the OUnit testing framework.
 
-## OUnit Quick Start
-
-TODO.
-
-### Example
+### Basic Example
 
 ```ocaml
 module Tests = struct

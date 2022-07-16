@@ -12,9 +12,9 @@ tags:
 
 Qualified supports the EUnit testing framework.
 
-## EUnit Quick Start
+## Basic Example
 
-#### Solution Code
+### Solution
 
 ```erlang
 -module(hello).
@@ -24,7 +24,7 @@ say_hello(Str) -> "Hello, " ++ Str ++ "!".
 say_hello() -> "Hello there!".
 ```
 
-#### Test Fixture:
+### Tests
 
 ```erlang
 -module(hello_tests).

@@ -19,9 +19,9 @@ For more information, see: [https://hspec.github.io/][1]
 
 ## Setup
 
-A minimal test fixture for GHC 8.2.2 looks as follows:
+A minimal test setup for GHC 8.2.2 looks as follows:
 
-#### Solution Code
+### Solution
 
 ```haskell
 module Example where
@@ -30,7 +30,7 @@ add :: Num a => a -> a -> a
 add = (+)
 ```
 
-#### Test Fixture
+### Tests
 
 ```haskell
 module ExampleSpec where -- test module name MUST end with Spec
