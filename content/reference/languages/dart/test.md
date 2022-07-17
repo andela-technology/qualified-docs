@@ -30,7 +30,7 @@ import "package:solution/solution.dart";
 
 void main() {
   group("greeter tests", () {
-    test(" when name is provided", () {
+    test("when name is provided", () {
       expect(sayHello("Qualified"), equals("Hello, Qualified!"));
     });
   });
