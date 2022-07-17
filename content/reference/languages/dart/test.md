@@ -18,7 +18,7 @@ Qualified supports writing tests for Dart using [`test`][1].
 
 ```dart
 String sayHello(String name) {
-  return name?.isEmpty ? "Hello, there!" : "Hello, $name!";
+  return name.isEmpty ? "Hello, there!" : "Hello, $name!";
 }
 ```
 
