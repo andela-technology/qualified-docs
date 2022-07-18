@@ -14,7 +14,7 @@ If you're unfamiliar with mocha testing whatsoever check out our [Mocha Testing 
 
 The rest of these notes are adapted from [the truffle framework documentation](https://truffleframework.com/docs/getting_started/javascript-tests).
 
-## USE CONTRACT() INSTEAD OF DESCRIBE()
+## Use `contract()` instead of `describe()`
 
 What makes Truffle tests different from that of Mocha is the `contract()` function: This function works exactly like `describe()` except it enables Truffle's clean-room features. It works like this:
 
@@ -23,17 +23,17 @@ What makes Truffle tests different from that of Mocha is the `contract()` functi
 
 Since Truffle uses Mocha under the hood, you can still use `describe()` to run normal Mocha tests whenever Truffle clean-room features are unnecessary.
 
-## USE CONTRACT ABSTRACTIONS WITHIN YOUR TESTS
+## Use contract abstractions within your tests
 
 Contract abstractions are the basis for making contract interaction possible from Javascript (they're basically our flux capacitor). Because Truffle has no way of detecting which contracts you'll need to interact with within your tests, you'll need to ask for those contracts explicitly. You do this by using the `artifacts.require()` method, a method provided by Truffle that allows you to request a usable contract abstraction for a specific Solidity contract. As you'll see in the example below, you can then use this abstraction to make sure your contracts are working properly.
 
 For more information on using contract abstractions, see the [Interacting With Your Contracts](https://truffleframework.com/docs/getting_started/contracts) section of the truffle framework documentation.
 
-## USING ARTIFACTS.REQUIRE()
+## Using `artifacts.require()`
 
 Using `artifacts.require()` within your tests is the exact same as using it within your migrations. See the [`artifacts.require()` documentation](https://truffleframework.com/docs/getting_started/migrations#artifacts-require-) from the Truffle Documentation for detailed usage.
 
-### EXAMPLE
+### Example
 
 Here's an example test. Note the use of the `contract()` function, the accounts array for specifying available Ethereum accounts, and our use of `artifacts.require()` for interacting directly with our contracts.
 
