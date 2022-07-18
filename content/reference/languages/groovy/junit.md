@@ -26,11 +26,12 @@ class Adder {
 
 ```groovy
 import org.junit.Test
+import static org.junit.Assert.assertEquals
 
 class TestAdd {
   @Test
-  void addTest() {
-    assert Adder.add(1, 1) == 2
+  void "1 + 1 = 2"() {
+    assertEquals(2, Adder.add(1, 1))
   }
 }
 ```
