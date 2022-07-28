@@ -95,7 +95,7 @@ describe("index.html", () => {
   beforeEach(async () => {
     await page.goto(baseURL, {waitUntil: "networkidle0"});
     await Promise.all([
-      page.addScriptTag({url: "https://bundle.run/pixelmatch@5.2.1"});
+      page.addScriptTag({url: "https://bundle.run/pixelmatch@5.2.1"}),
       page.addScriptTag({url: "https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"})
     ]);
   });
