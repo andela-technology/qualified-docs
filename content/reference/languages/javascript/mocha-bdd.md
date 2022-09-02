@@ -58,7 +58,7 @@ expect(tea).to.have.property('flavors').with.length(3);
 const {assert} = require("chai");
 
 assert.typeOf(foo, 'string');
-assert.equal(foo, 'bar');
+assert.strictEqual(foo, 'bar');
 assert.lengthOf(foo, 3)
 assert.property(tea, 'flavors');
 assert.lengthOf(tea.flavors, 3);
