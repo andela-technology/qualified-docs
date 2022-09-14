@@ -75,7 +75,7 @@ The assessment can be unlocked directly from the interact session, or from the c
 ### Example Use Cases  
 
 #### Interact Sessions
-When using an interact session to collaborate with a candidate, such as for a technical interview, locking the assessment allows you to wait until everyone on your team has joined before unlocking access. This ensures the candidate cannot start the interview before you are ready.
+When using an [Interact Session](/for-teams/process/interact) to collaborate with a candidate, such as for a technical interview, locking the assessment allows you to wait until everyone on your team has joined before unlocking access. This ensures the candidate cannot start the interview before you are ready.
 
 #### Assessment Proctoring
 For teams looking to manually proctor assessments, you can utilize the locking mechanism to ensure that the candidate cannot start the assessment until you have verified their identity and setup any proctoring tools you wish to use (such as initiating a new Zoom meeting).   

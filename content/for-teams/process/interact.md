@@ -48,10 +48,10 @@ Once an Interact session has started, you can:
 * View the results of the most recent test or submission attempt
 * View details about the current challenge
 * Jump between upcoming or already finished challenges using the sidebar links.
-* Return to the challenge the candidate is working on by clicking *Back to Candidate's Challenge*
-    * The current challenge is also noted with the small person icon.
-* If enabled on your account, add a review to the developer's solution immediately.
-  * You will be invited to provide an overall review immediately upon the candidate submitting the assessment.
+* Return to the challenge the candidate is working on by clicking *Back to Candidate's Challenge*.  
+  The current challenge is also noted with the small person icon.
+* If enabled on your account, add a review to the developer's solution immediately.  
+  You will be invited to provide an overall review immediately upon the candidate submitting the assessment.
 
 :::tip
 The key to a great Interact session is **communication**.
@@ -59,13 +59,11 @@ The key to a great Interact session is **communication**.
 Even though this format allows anyone to make changes at any time, the experience works best when the candidate and interviewers are communicating ideas, rather than just editing code.
 :::
 
-Interact works with both types of code challenges. There are a few differences between classic code challenges and project code challenges worth noting.
+### Interact Session Features in-depth
 
-### Project Code Challenges
+Our Interact Sessions use a proprietary shared code editor that allows any single person in the session to be making edits at any one time. It's mostly automatic: when someone starts editing, other users are blocked out in real time while they make changes. As soon as they complete, the editor is opened up again, and anyone can take control. 
 
-Project Code Challenges use a proprietary shared code editor that allows any single person in the session to be making edits at any one time. It's mostly automatic: when someone starts editing, other users are blocked out in real time while they make changes. As soon as they complete, the editor is opened up again, and anyone can take control. 
-
-Every user in the session can also create, rename, and even delete files from the solution. These changes will be reflected immediately to everyone else in the session.
+For project challenges, every user in the session can also create, rename, and even delete files from the solution. These changes will be reflected immediately to everyone else in the session.
 
 #### Following Active Editor Focus
 
@@ -90,25 +88,16 @@ If you ever need to forcibly take over control, you can click the blue button in
 #### Running Code
 
 * If you want to run the candidate's code, click the **RUN TESTS** button. This will run the tests via the candidate's computer, and relay the results back to you. If the button is grayed out, the candidate is not connected. (If you don't see this button, you are likely working on a web challenge without candidate tests.)
-* If web preview is enabled on the challenge, everyone in the session will be able to see the results in real time on their own system.
-* You can also use the **SUBMIT SOLUTION** button to submit the candidate's solution. This will send the solution off to be tested on our system. For most challenges, this will then take you to the next challenge.
-  * If submission feedback is enabled on this challenge, and some tests fail, interviewers will be shown the detailed results of the submission. Candidates will be shown the normal list of failed test names.
-
-### Classic Code Challenges
-
-Classic Code Challenges use a simultaneous multi-user code editor. It allows everyone on the call to make changes at once.
-
-It has a few limitations, including requiring the candidate to be connected to make changes. You also will not be able to automatically follow along with the focus of other users as they make changes. This format also is unable to track who is making the edits for playback.
-
-When using the classic code challenge pair-programming editor, you simply make changes into either the code or tests editor. These changes will automatically appear for other users.
-
-:::note
-This older format will eventually be migrated to the new format for Project challenges. Keep an eye on our [product releases](https://www.qualified.io/kb/changes) to learn more.
-:::
+* For Project Code Challenges:
+  * If web preview is enabled on the challenge, everyone in the session will be able to see the results in real time on their own system.
+  * You can use the **SUBMIT SOLUTION** button to submit the candidate's solution. This will send the solution off to be tested on our system. For most challenges, this will then take you to the next challenge.
+    * If submission feedback is enabled on this challenge, and some tests fail, interviewers will be shown the detailed results of the submission. Candidates will be shown the normal list of failed test names.
+* For Classic Code Challenges:
+  * You can use the **SUBMIT SOLUTION** button to submit the candidate's solution against the submission tests. Everyone in the session will then be able to review the results of running their code.
 
 ## Afterwards
 
-Once a Interact Session is complete, you still have access to all the review tools you have for normal assessments. This includes code playback, allowing you to playback the interview as it unfolded.
+Once an Interact Session is complete, you still have access to all the review tools you have for normal assessments. This includes code playback, allowing you to play back the interview as it unfolded.
 
 To learn more about reviewing candidates, see [Candidate Details View](/reference/features/candidates#candidate-student-details-view).
 

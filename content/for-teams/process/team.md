@@ -57,7 +57,7 @@ If you want your reviewers to be able to read through other team members' review
 Blind Reviewers are a special role which anonymizes the name of candidates. 
 This makes it possible to implement blind reviews and creates a less biased evaluation process. 
 
-However, you may not want users assigned to this role to always be blind to the candidate's real name. It is a common case that once a candidate makes it to the approved stage, you wish to dig deeper into the candidate's ability with an interact session.
+However, you may not want users assigned to this role to always be blind to the candidate's real name. It is a common case that once a candidate makes it to the approved stage, you wish to dig deeper into the candidate's ability with [an Interact Session](/for-teams/process/interact).
 
 Enable the "Real names once decided" option if you wish to "unblind" reviewers from seeing the candidate's real name once they are approved.
 

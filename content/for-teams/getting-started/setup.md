@@ -35,7 +35,7 @@ The developers will receive an email giving them a link to jump right into the a
 
 ![Interact Coding Sessions Dialog](/images/hire/interact-dialog.png)
 
-If you want to interactively assess a developer, the Interact Coding Sessions are a real-time collaborative tool to make it easy to work with your candidate during an assessment.
+If you want to interactively assess a developer, the [Interact Sessions](/for-teams/process/interact) are a real-time collaborative tool to make it easy to work with your candidate during an assessment.
 
 Simply click the _Join in a coding session_ button to invite a developer or join in any on-going interactive sessions.
 
