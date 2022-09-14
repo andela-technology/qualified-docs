@@ -7,7 +7,7 @@ title: For Recruitment
 ## Determining Where Qualified Fits In Your Process
 Qualified's coding assessments are used by companies to test candidates in a variety of ways. They’re flexible enough to test skills across the development spectrum, including their real-world programming, computer science fundamentals, and even framework experience (with pre-made assessments available for Rails, AngularJS, React and Node.js). They can also be easily used at different stages the interview process including pre-screens and in-depth assessments. 
 
-While you can administer code assessments, you can also use [Interact Sessions](../interact) to hold pair-programming phone screens. On these phone screens interviewers code with the candidate and talk through the candidate’s thought process. These code paring sessions can be structured off an existing code assessment, or held in a flexible white-boarded format.
+While you can administer code assessments, you can also use [Interact Sessions](/for-teams/process/interact) to hold pair-programming phone screens. On these phone screens interviewers code with the candidate and talk through the candidate’s thought process. These code paring sessions can be structured off an existing code assessment, or held in a flexible white-boarded format.
 
 Each of these approaches can go a long way in making your hiring more efficient and effective. We know that when code assessments are done right, you can maximize the impact of your hiring process at identifying the best engineering talent.
 
@@ -15,7 +15,7 @@ Let’s dig deeper into the variety of ways Qualified can fit into a technical h
 
 - Optimize your hiring flow by using pre-screens to quickly filter out poor performers. 
 - Get real world examples from your candidates by using in-depth code assessments. 
-- Give your development team tools for a highly effective phone screen with our remote pair-programming tool, Interact.
+- Give your development team tools for a highly effective phone screen with our remote pair-programming tool, [Interact](/for-teams/process/interact).
 - Reviewing results with candidates and using them as talking points for further follow-up
 
 ### Pre-Screen Code Assessments
@@ -39,7 +39,7 @@ Once you have pre-screened out all of the poor candidates, and honed in on the h
 
 The process of interviewing can be incredibly time consuming, but it’s an important phase that you don’t want to shortcut on. Many companies hold technical phone screens before an on-site interview in a conversational format. These phone screens provide shallow skill insight, while a full on-site can often be very costly — costing your team precious time as well as possible travel expenses. Pair-programming during a phone screen is a great way to allow your interviewers full insight into a candidate’s coding skills without increased overhead. They are often so effective they can even replace an on-site interview when necessary.
 
-A pair-programming interview involves one or more of your engineers meeting with a candidate in a real-time collaborative coding environment. This is where our [Interact](../interact) feature comes in. It allows you to remotely collaborate with candidates in real time.
+A pair-programming interview involves one or more of your engineers meeting with a candidate in a real-time collaborative coding environment. This is where our [Interact](/for-teams/process/interact) feature comes in. It allows you to remotely collaborate with candidates in real time.
 
 This real-time collaboration offers direct insight into a candidate’s thought-process and problem-solving approach. Qualified will even record the playback of the pair-programming session so the rest of your team can review the session later. This collaborative coding also helps to test for culture-fit and soft-skills like collaborative abilities, communication and conflict. Pair-programming will provide you with a great preview of how well the candidate will integrate into your team.
 

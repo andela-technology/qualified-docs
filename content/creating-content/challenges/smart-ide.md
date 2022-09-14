@@ -37,11 +37,11 @@ Documentation for methods, including argument types, method docs, and more, is a
 ## Enabling SmartIDE
 
 The best thing about SmartIDE is you don't need to install or do anything special to use it as a developer. The feature needs to be enabled on your account, but once enabled, you can begin using it immediately.
-If you want to allow developers to use the SmartIDE, you can enable or disable the feature team-wide. The global setting can also be overridden for any given challenge. This feature only works with Project Code Challenges.
+If you want to allow developers to use the SmartIDE, you can enable or disable the feature team-wide. The global setting can also be overridden for any given challenge.
 
 ## Using SmartIDE
 
-Most of our project challenges will now show a SmartIDE badge, and you can use the Preview button to experience the new features immediately.
+Most of our project challenges, along with a selection of our classic code challenges, will now show a SmartIDE badge. You can use the Preview button to experience the new features immediately.
 
 ![ ](/images/hire/smart-ide-badge.png)
 
@@ -50,14 +50,12 @@ When you start a challenge with SmartIDE enabled, you'll see a new lightbulb ico
 ## FAQs
 
 ### What features are supported?
-As of publishing this article, these features are currently supported.
 
 * Code Autocompletion
 * Inline Documentation
 * Code Analysis & hinting
 
 ### What languages are supported?
-These languages are currently supported on Project Code Challenges.
 
 * C# 7.3 & 8.0
 * Java 17
@@ -66,18 +64,20 @@ These languages are currently supported on Project Code Challenges.
 * Ruby 2.5 & 3.0
 * TypeScript 4.2
 
-We will be expanding support further as we continue to refine the feature, so please let us know what languages you'd like to see added. (Note that Classic Code Challenges do not support SmartIDE at this time. Please contact your sales representative if you'd like to see this enabled.)
+We will be expanding support further as we continue to refine the feature, so please let us know what languages you'd like to see added. 
+
+For classic code challenges, SmartIDE will only be available on the languages we support. The other languages will continue to work, just without autocompletion and hinting.
 
 ### Can I disable SmartIDE once it's enabled?
 Yes! SmartIDE can be [enabled or disabled across your team, inside the Qualified Labs page](https://www.qualified.io/hire/account/labs). But you can also opt into or out of SmartIDE on a per-challenge basis. 
 
-Why would you want to disable the SmartIDE? You probably won’t want to, but Qualified wants you to be in full control anyway, just in case you come up with some challenge ideas that would be limited by this feature. For example, if you are developing a debugging challenge and you don’t want to give the compiler issues away.
+Why would you want to disable the SmartIDE? You probably won’t want to, but Qualified wants you to be in full control anyway, just in case you come up with some challenge ideas that would be limited by this feature. For example, if you are developing a debugging challenge where you don’t want to give the compiler issues away.
 
 #### Disabling SmartIDE on a per-challenge basis
 1. Edit the challenge you want to disable the feature on.
-2. Click on Challenge Config in the sidebar
-3. Scroll down to Options
-4. Change the value for Allow Solving with our SmartIDE to Never use SmartIDE
+2. For Project Challenges, click on _Challenge Config_ in the sidebar. For classic code, you should already be on the _Description & Settings_ page.
+3. Scroll down to _Options_
+4. Change the value for _Allow Solving with our SmartIDE_ to **Never use SmartIDE**
 
 ### What are the benefits of SmartIDE over using a desktop IDE?
 Using a desktop IDE is great for developing your own applications, and would certainly be a preferred choice in those situations.

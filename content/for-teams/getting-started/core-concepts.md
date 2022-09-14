@@ -34,14 +34,14 @@ There are two types of coding challenges on the Qualified platform. They each of
                    
 - **Code Playback**: When a candidate takes a coding challenge, everything they do is recorded so that it can be played back later. This allows your team to review the coding session later, providing you the opportunity to see their thought process as they solve a challenge. You can speed up the playback or pause it at any point and click around the code. 
 - **Unit Testing**: Coding challenges are tested and scored using industry-standard unit testing frameworks. This opens up a lot of opportunity for how you might want to verify that a solution is a good one or empower the candidate to manipulate the testing code as part of their solution process.
+- **Interact Sessions**: You can [pair program with candidates](/for-teams/process/interact) to collaborate on their solution.
 
 #### Classic Code Challenges
 A Classic Code Challenge is our simplest form of coding challenge. It focuses on giving the candidate a single file to solve a task in. This format works well for basic coding tasks, where there is typically a method/function stub which needs to be completed. For anyone familiar with [Codewars](https://www.codewars.com), or other coding platforms, this will be a familiar format. 
 
 While Project Code, discussed below, is the recommended type of coding challenge, there are still good reasons for utilizing Classic Coding Challenges:
 - They allow you to configure multiple languages for the task, so that the candidate can choose which language they wish to use to solve it.
-- They don't involve a file tree, and can be very effective if you only wish to test someone on a very simple/straight-forward single file task.  
-- CCC supports the ability to pair code with candidates within an interactive coding session.
+- They don't involve a file tree, and can be very effective if you only wish to test someone on a very simple/straight-forward single file task.
 
 #### Project Code Challenges
 A Project Code Challenge is our newest and now recommended approach to testing developers on their ability to code. It provides a format that that is more capable and flexible, allowing you to test for coding tasks that involve multiple files. Back-end and Front-end web development tasks, using frameworks such as React and Ruby on Rails, are good fits for project challenge. This challenge format also offers a number of unique configuration options, such as hiding certain files from candidates, or allowing them to see the file but not edit it.  
