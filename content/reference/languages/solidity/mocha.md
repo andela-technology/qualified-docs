@@ -16,7 +16,7 @@ Qualified uses the [Mocha](https://mochajs.org/) testing framework and [Chai](ht
 
 ### Solution
 
-```js
+```solidity
 // SPDX-License-Identifier: BSD-2-Clause
 pragma solidity ^0.8.0;
 
@@ -34,7 +34,7 @@ contract Greeter {
 
 ### Test
 
-```js
+```solidity
 // SPDX-License-Identifier: BSD-2-Clause
 pragma solidity ^0.8.0;
 
