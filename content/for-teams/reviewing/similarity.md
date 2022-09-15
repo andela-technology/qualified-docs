@@ -97,9 +97,9 @@ We encourage using the most minimal random test(s) necessary to prevent hardcode
 :::
 
 :::caution 
-Random tests require a reference solution in the submission tests. You can delete the submission test and preloaded files to prevent them from being read programmatically by submitted code.
+Random tests require a reference solution to be in the submission tests. You can delete the submission test and preloaded files to prevent them from being viewed programmatically by submitted code.
 
-Use caution with protected access tokens and other sensitive information in this files.
+Use caution with protected access tokens and other sensitive information in these files.
 :::
 
 ### Hidden Tests
