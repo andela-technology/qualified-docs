@@ -10,9 +10,11 @@ tags:
 
 ## Overview
 
-Qualified uses the [Mocha](https://mochajs.org/) testing framework in the [Hardhat](https://hardhat.org/) Ethereum development environment. [Chai](https://chaijs.com/) assertions are available for testing Solidity Smart Contracts.
+Qualified offers the [Mocha](https://mochajs.org/) testing framework in the [Hardhat](https://hardhat.org/) Ethereum development environment.
 
-The OpenZeppelin package `@openzeppelin/contracts` can be imported with `import "@openzeppelin/contracts/token/ERC20/ERC20.sol"`.
+[Chai](https://chaijs.com/) assertions are available for testing Solidity Smart Contracts. [Hardhat's Chai matchers](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-chai-matchers#hardhat-chai-matchers) are pre-configured on the runner.
+
+The environment includes [`@openzeppelin/contracts`](https://www.npmjs.com/package/@openzeppelin/contracts) which offers a collection of smart contracts. You can import one with `import "@openzeppelin/contracts/token/ERC20/ERC20.sol"`, for example.
 
 ## Basic Example
 
