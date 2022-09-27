@@ -10,16 +10,10 @@ tags:
 
 ## Environment
 
-Qualified supports Solidity version 0.4.19, using the [Truffle framework](https://truffleframework.com/) for compiling contracts.
+Qualified supports Solidity version 0.8.16.
 
-From the solution, the setup can be imported using an import statement (`import "./setup.sol";`). Both will be compiled as separate contract files through Truffle.
-
-### OpenZeppelin Library
-
-OpenZeppelin is provided as library for writing smart contracts. It can be imported using import statements (e.g. `import 'zeppelin-solidity/contracts/ownership/Ownable.sol';`)
-
-For more information on OpenZepplin see the [documentation on Github](https://github.com/OpenZeppelin/zeppelin-solidity)
+The environment includes [`@openzeppelin/contracts`](https://www.npmjs.com/package/@openzeppelin/contracts) which offers a collection of smart contracts. You can import a contract with `import "@openzeppelin/contracts/token/ERC20/ERC20.sol"`, for example.
 
 ## Testing
 
-Our Solidity environment supports testing in JavaScript through the [Truffle Framework with Mocha](/reference/languages/solidity/truffle-with-mocha).
+Our Solidity environment supports testing in JavaScript through the [Mocha](/reference/languages/solidity/mocha).
