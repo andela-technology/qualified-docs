@@ -16,4 +16,4 @@ The environment includes [`@openzeppelin/contracts`](https://www.npmjs.com/packa
 
 ## Testing
 
-Our Solidity environment supports testing in JavaScript through the [Mocha](/reference/languages/solidity/mocha).
+Our Solidity Hardhat environment supports testing through the [Mocha](/reference/languages/solidity/mocha) library.
