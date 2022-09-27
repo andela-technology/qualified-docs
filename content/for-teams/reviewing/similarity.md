@@ -96,6 +96,12 @@ Random tests can be misused and become harmful to the challenge. These tests are
 We encourage using the most minimal random test(s) necessary to prevent hardcoded solutions. 
 :::
 
+:::caution 
+Random tests require a reference solution to be in the submission tests. You can delete the submission test and preloaded files to prevent them from being viewed programmatically by submitted code.
+
+Use caution with protected access tokens and other sensitive information in these files.
+:::
+
 ### Hidden Tests
 In addition, you can select challenges with hidden test suites that push the code in deterministic but unexpected ways that are beyond the tests visible to the candidate. If the candidate has used a lookup table based on the visible tests, it's extremely difficult for the candidate to anticipate entries for unknown submission tests and their score will suffer.
 
@@ -152,10 +158,6 @@ You can apply the [Pareto principle](https://en.wikipedia.org/wiki/Pareto_princi
 
 ### Playtest Your Content
 Just like a regular application, manually testing your challenges on a regular basis (in other words, "eating your own dog food") and examining results critically will help you locate exploitable flaws in the challenge.
-
-:::caution 
-Keep sensitive data like solutions and API authentication tokens out the "preloaded" file in our classic code challenges. Candidates can run system code to see files in the workspace, including the contents of this file.
-:::  
 
 ### Use Honor Agreement Quizzes
 [It's been shown](https://arxiv.org/pdf/1812.00276.pdf) that offering honor agreements before tests reduces cheating rates significantly. You can use our quiz feature to create your own honor agreement where candidates testify to abide by the rules you set forth. Offer this brief quiz at the start of your assessments.
