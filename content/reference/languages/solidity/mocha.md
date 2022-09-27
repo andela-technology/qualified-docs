@@ -10,7 +10,9 @@ tags:
 
 ## Overview
 
-Qualified uses the [Mocha](https://mochajs.org/) testing framework and [Chai](https://chaijs.com/) assertions for testing Solidity Smart Contracts.
+Qualified uses the [Mocha](https://mochajs.org/) testing framework in the [Hardhat](https://hardhat.org/) Ethereum development environment. [Chai](https://chaijs.com/) assertions are available for testing Solidity Smart Contracts.
+
+The OpenZeppelin package `@openzeppelin/contracts` can be imported with `import "@openzeppelin/contracts/token/ERC20/ERC20.sol"`.
 
 ## Basic Example
 
