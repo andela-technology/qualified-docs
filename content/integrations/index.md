@@ -19,6 +19,7 @@ Qualified currently has integrations with the following HR systems:
 - Greenhouse
 - Workable
 - BambooHR
+- Lever
 
 :::tip Don't see your ATS listed?
 If your ATS system isn't supported by Qualified and you wish to send assessments through your ATS, we recommend that you set your assessment link to be public and then include it within an email template within your ATS system. We have provided an [example here](/for-teams/process/invitations/#email-template).
