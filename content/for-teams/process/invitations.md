@@ -75,7 +75,17 @@ If you are an API user, the [invitation API](/integrations/custom-integrations/a
 ### Bulk Invite New Candidates
 It is possible to bulk invite candidates who already exist within the system by using the [bulk invite via candidates list](#bulk-invite-via-the-candidates-list) feature mentioned above. However you can also send bulk invites to a large number of candidates who do not yet exist within the system. 
 
-To do so, simply click "Invite Candidates" from the top right of the app, and copy and paste a list of emails into the "Candidates to invite" text box. Qualified can handle large lists of candidates at once, so feel free to paste as many emails as you need into the invitation dialog. 
+To do so, simply click "Invite Candidates" from the top right of the app, and copy and paste a list of emails into the "Candidates to invite" text box. Qualified can handle large lists of candidates at once, so feel free to paste as many emails as you need into the invitation dialog. You can manage the list of emails using the small menu located in the top-right.
+
+![ ](/images/hire/invite-dialog-bulk-menu.png)
+
+#### Bulk Invitation Cohorts
+
+For larger groups of emails (5 or more), our system send the emails in the background using a cohort. You can wait for this cohort to complete in the dialog, or you can close the dialog and the invitations will continue in the background. If you close the dialog, you can monitor the invitation progress using the bulk invitation progress menu, which is next to the _Invite Candidates_ menu. You can also click on an individual cohort to see the candidates invited within that group, as well as get copyable lists of pending, successful, and unsuccessful invitations.
+
+This list will show any cohorts that have been active within the last 48 hours, so you can also check on the process any time over the next few days.
+
+![ ](/images/hire/bulk-invitation-progress-menu.png)
 
 ### Reopening Assessment Results
 Sometimes a candidate may have submitted their assessment that you now wish to reopen. This allows the candidate to continue where they left off. You can either reopen the assessment from the candidate details page, or by simply re-inviting them to the assessment. The invitation dialog will always notify you if a candidate has already submitted the assessment and give you the option to cancel or continue.    
