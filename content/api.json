@@ -145,6 +145,476 @@
     }
   ]
 },{
+  "resource": "Assessment Cohorts",
+  "resource_explanation": "Endpoints for managing and creating assessment cohorts. Assessment cohorts are groups of candidates who get invited in bulk to a same assessment at one time.",
+  "http_method": "GET",
+  "route": "/v1/assessment_cohorts",
+  "description": "List",
+  "explanation": "Returns a paged list of all assessment cohorts for the team.",
+  "parameters": [
+    {
+      "enum": [
+        "updated_at",
+        "created_at"
+      ],
+      "name": "where",
+      "description": ""
+    },
+    {
+      "name": "order_by",
+      "description": "ie: \"created_by DESC\"."
+    },
+    {
+      "name": "page",
+      "description": ""
+    },
+    {
+      "name": "limit",
+      "description": ""
+    }
+  ],
+  "response_fields": [
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have yet to be invited.</p>",
+      "name": "pendingEmails",
+      "description": "Contains emails which have yet to be invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have been successfully invited.</p>",
+      "name": "invitedEmails",
+      "description": "Contains emails which have been successfully invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which failed to be invited successfully.</p>",
+      "name": "rejectedEmails",
+      "description": "Contains emails which failed to be invited successfully."
+    },
+    {
+      "enum": [
+        "pending",
+        "started",
+        "completed"
+      ],
+      "markdown": "<p>The state of the assessment cohort.</p>",
+      "type": "Symbol",
+      "name": "state",
+      "description": "The state of the assessment cohort."
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/assessment_cohorts",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n    \"type\": \"AssessmentCohort\",\n    \"data\": [\n        {\n            \"id\": \"639b7ef1a01605001512a008\",\n            \"teamId\": \"5a38532840e08a0011e41df8\",\n            \"assessmentId\": \"5e21f252a2cd0b0013d40df3\",\n            \"teamCandidateIds\": [\n                \"639b7ef28ef39c000a5b78cd\",\n                \"639b7ef28ef39c000a5b78d8\",\n                \"639b7ef38ef39c000a5b78e3\",\n                \"639b7ef38ef39c000a5b78ee\",\n                \"639b7ef48ef39c000a5b78f9\",\n                \"639b7ef58ef39c000a5b7904\",\n                \"639b7ef58ef39c000a5b790f\",\n                \"639b7ef68ef39c000a5b791a\",\n                \"639b7ef78ef39c000a5b7925\",\n                \"639b7ef88ef39c000a5b7935\"\n            ],\n            \"title\": \"AngularJS: Services, Components, and API Access (2022-12-15 20:09:21 UTC)\",\n            \"pendingEmails\": [],\n            \"invitedEmails\": [\n                \"loginidentity01@example.com\",\n                \"loginidentity02@example.com\",\n                \"loginidentity03@example.com\",\n                \"loginidentity04@example.com\",\n                \"loginidentity05@example.com\",\n                \"loginidentity06@example.com\",\n                \"loginidentity07@example.com\",\n                \"loginidentity08@example.com\",\n                \"loginidentity09@example.com\",\n                \"loginidentity10@example.com\"\n            ],\n            \"rejectedEmails\": [],\n            \"options\": {\n                \"expires_at\": null,\n                \"reminder_at\": null,\n                \"access_starts_at\": null,\n                \"access_ends_at\": null,\n                \"assigned_team_member_ids\": [\n                    \"60d643511d41c835e6001425\"\n                ],\n                \"apply_default_assignments\": false,\n                \"access_locked\": false,\n                \"custom_message\": \"\",\n                \"apply_default_labels\": false,\n                \"labels\": [],\n                \"skip_registration\": null,\n                \"skip_email_resend\": null,\n                \"send_email_to_candidate\": true,\n                \"send_email_to_inviter\": false,\n                \"retry_action\": \"reopen\",\n                \"edit_mode\": null,\n                \"reset_challenge_timers\": false,\n                \"apply_day_defaults\": null,\n                \"first_name\": null,\n                \"last_name\": null,\n                \"enforced_time_limit\": null,\n                \"track_active_time\": null,\n                \"open_enrollment\": null,\n                \"skip_if_already_accepted\": null,\n                \"assessment_workflow_path\": null,\n                \"reset_email_health\": null,\n                \"inviting_team_member\": null\n            },\n            \"state\": \"completed\"\n        }\n    ],\n    \"currentPage\": 1,\n    \"totalPages\": 1,\n    \"totalCount\": 1,\n    \"meta\": {\n        \"timestamp\": \"2022-12-15T20:09:36.842+00:00\",\n        \"includes\": []\n    }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"https://www.qualified.io/api/v1/assessment_cohorts\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \"",
+      "request_headers_text": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs",
+      "request_query_parameters_text": "{}: ",
+      "response_headers_text": "Content-Type: application/json; charset=utf-8"
+    }
+  ]
+},{
+  "resource": "Assessment Cohorts",
+  "resource_explanation": "Endpoints for managing and creating assessment cohorts. Assessment cohorts are groups of candidates who get invited in bulk to a same assessment at one time.",
+  "http_method": "GET",
+  "route": "/v1/assessment_cohorts/:id",
+  "description": "Retrieve",
+  "explanation": "Retrieves a single assessment cohort by ID.",
+  "parameters": [
+    {
+      "type": "String",
+      "required": true,
+      "name": "id",
+      "description": "The ID of the cohort you wish to retrieve."
+    }
+  ],
+  "response_fields": [
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have yet to be invited.</p>",
+      "name": "pendingEmails",
+      "description": "Contains emails which have yet to be invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have been successfully invited.</p>",
+      "name": "invitedEmails",
+      "description": "Contains emails which have been successfully invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which failed to be invited successfully.</p>",
+      "name": "rejectedEmails",
+      "description": "Contains emails which failed to be invited successfully."
+    },
+    {
+      "enum": [
+        "pending",
+        "started",
+        "completed"
+      ],
+      "markdown": "<p>The state of the assessment cohort.</p>",
+      "type": "Symbol",
+      "name": "state",
+      "description": "The state of the assessment cohort."
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/v1/assessment_cohorts/639b82f2a01605001512a01e",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n    \"id\": \"639b82f2a01605001512a01e\",\n    \"type\": \"AssessmentCohort\",\n    \"data\": {\n        \"id\": \"639b82f2a01605001512a01e\",\n        \"teamId\": \"5a38532840e08a0011e41df8\",\n        \"assessmentId\": \"5e21f252a2cd0b0013d40df3\",\n        \"teamCandidateIds\": [\n            \"639b82f28ef39c000a5b79b4\",\n            \"639b82f38ef39c000a5b79bc\",\n            \"639b82f48ef39c000a5b79c5\",\n            \"639b82f58ef39c000a5b79cd\",\n            \"639b82f68ef39c000a5b79d5\",\n            \"639b82f68ef39c000a5b79dd\",\n            \"639b82f78ef39c000a5b79e5\",\n            \"639b82f88ef39c000a5b79f0\",\n            \"639b82f98ef39c000a5b79f9\",\n            \"639b82fb8ef39c000a5b7a04\"\n        ],\n        \"title\": \"AngularJS: Services, Components, and API Access (2022-12-15 20:26:26 UTC)\",\n        \"pendingEmails\": [],\n        \"invitedEmails\": [\n            \"loginidentity01@example.com\",\n            \"loginidentity02@example.com\",\n            \"loginidentity03@example.com\",\n            \"loginidentity04@example.com\",\n            \"loginidentity05@example.com\",\n            \"loginidentity06@example.com\",\n            \"loginidentity07@example.com\",\n            \"loginidentity08@example.com\",\n            \"loginidentity09@example.com\",\n            \"loginidentity10@example.com\"\n        ],\n        \"rejectedEmails\": [],\n        \"options\": {\n            \"expires_at\": null,\n            \"reminder_at\": null,\n            \"access_starts_at\": null,\n            \"access_ends_at\": null,\n            \"assigned_team_member_ids\": null,\n            \"apply_default_assignments\": true,\n            \"access_locked\": null,\n            \"custom_message\": null,\n            \"apply_default_labels\": true,\n            \"labels\": null,\n            \"skip_registration\": null,\n            \"skip_email_resend\": null,\n            \"send_email_to_candidate\": true,\n            \"send_email_to_inviter\": false,\n            \"retry_action\": null,\n            \"edit_mode\": null,\n            \"reset_challenge_timers\": null,\n            \"apply_day_defaults\": null,\n            \"first_name\": null,\n            \"last_name\": null,\n            \"enforced_time_limit\": null,\n            \"track_active_time\": null,\n            \"open_enrollment\": null,\n            \"skip_if_already_accepted\": null,\n            \"assessment_workflow_path\": null,\n            \"reset_email_health\": null,\n            \"inviting_team_member\": null\n        },\n        \"state\": \"completed\"\n    },\n    \"meta\": {\n        \"enums\": {\n            \"state\": [\n                {\n                    \"value\": \"pending\",\n                    \"text\": \"Pending\"\n                },\n                {\n                    \"value\": \"started\",\n                    \"text\": \"Started\"\n                },\n                {\n                    \"value\": \"completed\",\n                    \"text\": \"Completed\"\n                }\n            ]\n        },\n        \"timestamp\": \"2022-12-15T20:35:29.435+00:00\",\n        \"includes\": []\n    }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"https://www.qualified.io/api/v1/assessment_cohorts/639b82f2a01605001512a01e\" -X GET \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \"",
+      "request_headers_text": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs",
+      "request_query_parameters_text": "{}: ",
+      "response_headers_text": "Content-Type: application/json; charset=utf-8"
+    }
+  ]
+},{
+  "resource": "Assessment Cohorts",
+  "resource_explanation": "Endpoints for managing and creating assessment cohorts. Assessment cohorts are groups of candidates who get invited in bulk to a same assessment at one time.",
+  "http_method": "POST",
+  "route": "/v1/assessment_cohorts/",
+  "description": "Invite Candidates",
+  "explanation": "Create an assessment cohort and invite all candidates included.",
+  "parameters": [
+    {
+      "required": true,
+      "type": "Array",
+      "markdown": "<p>An array of candidate emails to send invitations to.</p>",
+      "name": "data.candidates",
+      "description": "An array of candidate emails to send invitations to."
+    },
+    {
+      "required": true,
+      "type": "String",
+      "markdown": "<p>The ID of the assessment you wish to send the invitation for.</p>",
+      "name": "data.assessment_id",
+      "description": "The ID of the assessment you wish to send the invitation for."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>An array of team members ID strings that should be assigned to the candidate.</p>",
+      "name": "data.assigned_team_member_ids",
+      "description": "An array of team members ID strings that should be assigned to the candidate."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>An array of strings indicating which labels should be applied to the invited candidates.</p>",
+      "name": "data.labels",
+      "description": "An array of strings indicating which labels should be applied to the invited candidates."
+    },
+    {
+      "markdown": "<p>The date in which the invitation can no longer be accepted. Once the candidate starts the assessment, this value is no longer relevant.</p>",
+      "type": "Time",
+      "name": "data.expires_at",
+      "description": "The date in which the invitation can no longer be accepted. Once the candidate starts the assessment, this value is no longer relevant."
+    },
+    {
+      "markdown": "<p>The date in which a reminder email should be sent to the candidate. Only sent if the candidate has not started the assessment by the date.</p>",
+      "type": "Time",
+      "name": "data.reminder_at",
+      "description": "The date in which a reminder email should be sent to the candidate. Only sent if the candidate has not started the assessment by the date."
+    },
+    {
+      "markdown": "<p>Customizes the message that is emailed to the candidate. Only relevant if send_email_to_candidate is true.</p>",
+      "type": "String",
+      "name": "data.custom_message",
+      "description": "Customizes the message that is emailed to the candidate. Only relevant if send_email_to_candidate is true."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>Set to false if you do not wish to send an invitation email. This can be useful for when you simply want to use the invitation_url returned by this request, and send that URL on your own.</p>",
+      "name": "data.send_email_to_candidate",
+      "description": "Set to false if you do not wish to send an invitation email. This can be useful for when you simply want to use the invitation_url returned by this request, and send that URL on your own."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>True if the first and last name should not be collected from new candidates. Otherwise new candidates will be asked to enter these details before starting the assessment.</p>",
+      "name": "data.skip_registration",
+      "description": "True if the first and last name should not be collected from new candidates. Otherwise new candidates will be asked to enter these details before starting the assessment."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>DEPRECATED: True if <code>retry_action</code> should be set to &quot;reopen&quot;. Use <code>retry_action</code> property instead.</p>",
+      "name": "data.reopen_submitted",
+      "description": "DEPRECATED: True if `retry_action` should be set to \"reopen\". Use `retry_action` property instead."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>False if you wish to prevent active time from being tracked. This is only relevant if <code>retry_action</code> is &quot;reopen&quot;. You can use this value when you want to allow a candidate to reopen their assessment result for the purpose of review.</p>",
+      "name": "data.track_active_time",
+      "description": "False if you wish to prevent active time from being tracked. This is only relevant if `retry_action` is \"reopen\". You can use this value when you want to allow a candidate to reopen their assessment result for the purpose of review."
+    },
+    {
+      "type": "String",
+      "enum": {
+        "reopen": "Reopens the assessment result when the candidate visits the assessment. The candidate will be able to resume where they left off.",
+        "retake": "The candidate will be asked to start a new assessment, without carrying any previous work over. The original assessment result data will be kept as a separate record, and the new retake will be the featured result within the Qualified team UI."
+      },
+      "markdown": "<p>The type of action that should be performed if the candidate has already submitted and you would like them to take further action. A null or omitted value indicates no retry action will be performed.</p>",
+      "name": "data.retry_action",
+      "description": "The type of action that should be performed if the candidate has already submitted and you would like them to take further action. A null or omitted value indicates no retry action will be performed."
+    },
+    {
+      "type": "Date",
+      "markdown": "<p>The date and time that the candidate can start the assessment. Useful if you want to invite one or more candidates and ensure that they all have a the same start time. When using with expires_at, this value should be sooner than <code>expires_at</code>. When using with retakes, this value can be used to set the retake start window.</p>",
+      "name": "data.access_starts_at",
+      "description": "The date and time that the candidate can start the assessment. Useful if you want to invite one or more candidates and ensure that they all have a the same start time. When using with expires_at, this value should be sooner than `expires_at`. When using with retakes, this value can be used to set the retake start window."
+    },
+    {
+      "type": "Date",
+      "markdown": "<p>The date and time in which the candidate will no longer have access to the assessment. Useful if you want to set a hard stop date in which no more candidate activity is allowed. When using with retakes, this value can be used to set the retake stop window. The value must be at least one hour into the future.</p>",
+      "name": "data.access_ends_at",
+      "description": "The date and time in which the candidate will no longer have access to the assessment. Useful if you want to set a hard stop date in which no more candidate activity is allowed. When using with retakes, this value can be used to set the retake stop window. The value must be at least one hour into the future."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>Set to true if you wish to prevent the candidate from starting the assessment until it is manually unlocked. This allows you to give access but still retain control of exactly when the candidate can start. If true, access will be locked even if within the access window defined by <code>access_starts_at</code> and <code>access_ends_at</code>.</p>",
+      "name": "data.access_locked",
+      "description": "Set to true if you wish to prevent the candidate from starting the assessment until it is manually unlocked. This allows you to give access but still retain control of exactly when the candidate can start. If true, access will be locked even if within the access window defined by `access_starts_at` and `access_ends_at`."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>True if any challenge based timers should be reset. Timers will start over again from 0 when the candidate revisits each solution.</p>",
+      "name": "data.reset_challenge_timers",
+      "description": "True if any challenge based timers should be reset. Timers will start over again from 0 when the candidate revisits each solution."
+    },
+    {
+      "type": "Integer",
+      "markdown": "<p>Set to number of minutes you wish to enforce as a time limit. If not set, will use the time limit set on the assessment. This value is only relevant if the candidate has not yet been invited, or if <code>retry_action</code> is set.</p>",
+      "name": "data.enforced_time_limit",
+      "description": "Set to number of minutes you wish to enforce as a time limit. If not set, will use the time limit set on the assessment. This value is only relevant if the candidate has not yet been invited, or if `retry_action` is set."
+    },
+    {
+      "type": "Boolean",
+      "markdown": "<p>Assessments can be configured with default expiration and reminder values. If this is true, then default will be applied if not specifically set.</p>",
+      "name": "data.apply_day_defaults",
+      "description": "Assessments can be configured with default expiration and reminder values. If this is true, then default will be applied if not specifically set."
+    },
+    {
+      "type": "String",
+      "markdown": "<p>First name of candidate, can only be used when single email is passed to candidates array</p>",
+      "name": "data.first_name",
+      "description": "First name of candidate, can only be used when single email is passed to candidates array"
+    },
+    {
+      "type": "String",
+      "markdown": "<p>Last name of candidate, can only be used when single email is passed to candidates array</p>",
+      "name": "data.last_name",
+      "description": "Last name of candidate, can only be used when single email is passed to candidates array"
+    }
+  ],
+  "response_fields": [
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have yet to be invited.</p>",
+      "name": "pendingEmails",
+      "description": "Contains emails which have yet to be invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have been successfully invited.</p>",
+      "name": "invitedEmails",
+      "description": "Contains emails which have been successfully invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which failed to be invited successfully.</p>",
+      "name": "rejectedEmails",
+      "description": "Contains emails which failed to be invited successfully."
+    },
+    {
+      "enum": [
+        "pending",
+        "started",
+        "completed"
+      ],
+      "markdown": "<p>The state of the assessment cohort.</p>",
+      "type": "Symbol",
+      "name": "state",
+      "description": "The state of the assessment cohort."
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/v1/assessment_cohorts/",
+      "request_body": "{\"data\":{\"candidates\": [\"loginidentity01@example.com\", \"loginidentity02@example.com\", \"loginidentity03@example.com\", \"loginidentity04@example.com\", \"loginidentity05@example.com\", \"loginidentity06@example.com\", \"loginidentity07@example.com\", \"loginidentity08@example.com\", \"loginidentity09@example.com\", \"loginidentity10@example.com\"], \"assessment_id\": \"5e21f252a2cd0b0013d40df3\"}}",
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkwOWQxZmEyZjQ4NzNmYzJmYiIsImlkIjoiNjA0NmI0OTA5ZDFmYTJmNDg3M2ZjMmZjIiwic2VjcmV0IjoiWXdPYkZ3PT0ifQ.iWex3zjIfTP1-npwPZ2C1P7_WwFLhgKGdut6xeUaPYU"
+      },
+      "request_query_parameters": {},
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n    \"id\": \"639b82f2a01605001512a01e\",\n    \"type\": \"AssessmentCohort\",\n    \"data\": {\n        \"id\": \"639b82f2a01605001512a01e\",\n        \"teamId\": \"5a38532840e08a0011e41df8\",\n        \"assessmentId\": \"5e21f252a2cd0b0013d40df3\",\n        \"teamCandidateIds\": [],\n        \"title\": \"AngularJS: Services, Components, and API Access (2022-12-15 20:26:26 UTC)\",\n        \"pendingEmails\": [\n            \"loginidentity01@example.com\",\n            \"loginidentity02@example.com\",\n            \"loginidentity03@example.com\",\n            \"loginidentity04@example.com\",\n            \"loginidentity05@example.com\",\n            \"loginidentity06@example.com\",\n            \"loginidentity07@example.com\",\n            \"loginidentity08@example.com\",\n            \"loginidentity09@example.com\",\n            \"loginidentity10@example.com\"\n        ],\n        \"invitedEmails\": [],\n        \"rejectedEmails\": [],\n        \"options\": {\n            \"expires_at\": null,\n            \"reminder_at\": null,\n            \"access_starts_at\": null,\n            \"access_ends_at\": null,\n            \"assigned_team_member_ids\": null,\n            \"apply_default_assignments\": true,\n            \"access_locked\": null,\n            \"custom_message\": null,\n            \"apply_default_labels\": true,\n            \"labels\": null,\n            \"skip_registration\": null,\n            \"skip_email_resend\": null,\n            \"send_email_to_candidate\": null,\n            \"send_email_to_inviter\": null,\n            \"retry_action\": null,\n            \"edit_mode\": null,\n            \"reset_challenge_timers\": null,\n            \"apply_day_defaults\": null,\n            \"first_name\": null,\n            \"last_name\": null,\n            \"enforced_time_limit\": null,\n            \"track_active_time\": null\n        },\n        \"state\": \"pending\"\n    },\n    \"meta\": {\n        \"enums\": {\n            \"state\": [\n                {\n                    \"value\": \"pending\",\n                    \"text\": \"Pending\"\n                },\n                {\n                    \"value\": \"started\",\n                    \"text\": \"Started\"\n                },\n                {\n                    \"value\": \"completed\",\n                    \"text\": \"Completed\"\n                }\n            ]\n        },\n        \"timestamp\": \"2022-12-15T20:26:26.767+00:00\",\n        \"includes\": []\n    }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl \"https://www.qualified.io/api/v1/assessment_cohorts/\" -d '{\"data\":{\"candidates\": [\"loginidentity01@example.com\", \"loginidentity02@example.com\", \"loginidentity03@example.com\", \"loginidentity04@example.com\", \"loginidentity05@example.com\", \"loginidentity06@example.com\", \"loginidentity07@example.com\", \"loginidentity08@example.com\", \"loginidentity09@example.com\", \"loginidentity10@example.com\"], \"assessment_id\": \"5e21f252a2cd0b0013d40df3\"}}' -X POST \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkwOWQxZmEyZjQ4NzNmYzJmYiIsImlkIjoiNjA0NmI0OTA5ZDFmYTJmNDg3M2ZjMmZjIiwic2VjcmV0IjoiWXdPYkZ3PT0ifQ.iWex3zjIfTP1-npwPZ2C1P7_WwFLhgKGdut6xeUaPYU\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \"",
+      "request_headers_text": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkwOWQxZmEyZjQ4NzNmYzJmYiIsImlkIjoiNjA0NmI0OTA5ZDFmYTJmNDg3M2ZjMmZjIiwic2VjcmV0IjoiWXdPYkZ3PT0ifQ.iWex3zjIfTP1-npwPZ2C1P7_WwFLhgKGdut6xeUaPYU",
+      "request_query_parameters_text": null,
+      "response_headers_text": "Content-Type: application/json; charset=utf-8"
+    }
+  ]
+},{
+  "resource": "Assessment Cohorts",
+  "resource_explanation": "Endpoints for managing and creating assessment cohorts. Assessment cohorts are groups of candidates who get invited in bulk to a same assessment at one time.",
+  "http_method": "PUT",
+  "route": "/v1/assessment_cohorts/:id",
+  "description": "Update",
+  "explanation": "Updates a single assessment cohort by ID.",
+  "parameters": [
+    {
+      "type": "String",
+      "required": true,
+      "name": "id",
+      "description": "The ID of the cohort you wish to update"
+    },
+    {
+      "markdown": "<p>Title you wish to change the cohort title to.</p>",
+      "type": "String",
+      "name": "data.title",
+      "description": "Title you wish to change the cohort title to."
+    },
+    {
+      "markdown": "<p>Additional candidates you wish to invite.</p>",
+      "type": "Array",
+      "name": "data.candidates",
+      "description": "Additional candidates you wish to invite."
+    }
+  ],
+  "response_fields": [
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have yet to be invited.</p>",
+      "name": "pendingEmails",
+      "description": "Contains emails which have yet to be invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which have been successfully invited.</p>",
+      "name": "invitedEmails",
+      "description": "Contains emails which have been successfully invited."
+    },
+    {
+      "type": "Array",
+      "markdown": "<p>Contains emails which failed to be invited successfully.</p>",
+      "name": "rejectedEmails",
+      "description": "Contains emails which failed to be invited successfully."
+    },
+    {
+      "enum": [
+        "pending",
+        "started",
+        "completed"
+      ],
+      "markdown": "<p>The state of the assessment cohort.</p>",
+      "type": "Symbol",
+      "name": "state",
+      "description": "The state of the assessment cohort."
+    }
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/v1/assessment_cohorts/639b82f2a01605001512a01e",
+      "request_body": null,
+      "request_headers": {
+        "Content-Type": "application/json",
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs"
+      },
+      "request_query_parameters": {
+        "{}": null
+      },
+      "request_content_type": "application/json",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n    \"id\": \"639b82f2a01605001512a01e\",\n    \"type\": \"AssessmentCohort\",\n    \"data\": {\n        \"id\": \"639b82f2a01605001512a01e\",\n        \"teamId\": \"5a38532840e08a0011e41df8\",\n        \"assessmentId\": \"5e21f252a2cd0b0013d40df3\",\n        \"teamCandidateIds\": [\n            \"639b82f28ef39c000a5b79b4\",\n            \"639b82f38ef39c000a5b79bc\",\n            \"639b82f48ef39c000a5b79c5\",\n            \"639b82f58ef39c000a5b79cd\",\n            \"639b82f68ef39c000a5b79d5\",\n            \"639b82f68ef39c000a5b79dd\",\n            \"639b82f78ef39c000a5b79e5\",\n            \"639b82f88ef39c000a5b79f0\",\n            \"639b82f98ef39c000a5b79f9\",\n            \"639b82fb8ef39c000a5b7a04\"\n        ],\n        \"title\": \"Changed Cohort\",\n        \"pendingEmails\": [\n            \"loginidentity20@example.com\",\n            \"loginidentity21@example.com\",\n            \"loginidentity22@example.com\",\n            \"loginidentity23@example.com\",\n            \"loginidentity24@example.com\"\n        ],\n        \"invitedEmails\": [\n            \"loginidentity01@example.com\",\n            \"loginidentity02@example.com\",\n            \"loginidentity03@example.com\",\n            \"loginidentity04@example.com\",\n            \"loginidentity05@example.com\",\n            \"loginidentity06@example.com\",\n            \"loginidentity07@example.com\",\n            \"loginidentity08@example.com\",\n            \"loginidentity09@example.com\",\n            \"loginidentity10@example.com\"\n        ],\n        \"rejectedEmails\": [],\n        \"options\": {\n            \"expires_at\": null,\n            \"reminder_at\": null,\n            \"access_starts_at\": null,\n            \"access_ends_at\": null,\n            \"assigned_team_member_ids\": null,\n            \"apply_default_assignments\": true,\n            \"access_locked\": null,\n            \"custom_message\": null,\n            \"apply_default_labels\": true,\n            \"labels\": null,\n            \"skip_registration\": null,\n            \"skip_email_resend\": null,\n            \"send_email_to_candidate\": true,\n            \"send_email_to_inviter\": false,\n            \"retry_action\": null,\n            \"edit_mode\": null,\n            \"reset_challenge_timers\": null,\n            \"apply_day_defaults\": null,\n            \"first_name\": null,\n            \"last_name\": null,\n            \"enforced_time_limit\": null,\n            \"track_active_time\": null,\n            \"open_enrollment\": null,\n            \"skip_if_already_accepted\": null,\n            \"assessment_workflow_path\": null,\n            \"reset_email_health\": null,\n            \"inviting_team_member\": null\n        },\n        \"state\": \"pending\"\n    },\n    \"meta\": {\n        \"enums\": {\n            \"state\": [\n                {\n                    \"value\": \"pending\",\n                    \"text\": \"Pending\"\n                },\n                {\n                    \"value\": \"started\",\n                    \"text\": \"Started\"\n                },\n                {\n                    \"value\": \"completed\",\n                    \"text\": \"Completed\"\n                }\n            ]\n        },\n        \"timestamp\": \"2022-12-15T20:55:14.928+00:00\",\n        \"includes\": []\n    }\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": "curl -g \"https://www.qualified.io/api/v1/assessment_cohorts/639b82f2a01605001512a01e\" -d '{\"data\":{\"candidates\": [\"loginidentity20@example.com\", \"loginidentity21@example.com\", \"loginidentity22@example.com\", \"loginidentity23@example.com\", \"loginidentity24@example.com\"], \"title\": \"Changed Cohort\"}}' -X PUT \\\n\t-H \"Content-Type: application/json\" \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Cookie: \"",
+      "request_headers_text": "Content-Type: application/json\nAuthorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDhmOWQxZmEyZjQ4NzNmYzJhZSIsImlkIjoiNjA0NmI0OGY5ZDFmYTJmNDg3M2ZjMmFmIiwic2VjcmV0IjoiZGxibUJnPT0ifQ.nUvXHdBId0Mefbgmi4VB5FqwmMd2mWIerhId4I3EZfs",
+      "request_query_parameters_text": "{}: ",
+      "response_headers_text": "Content-Type: application/json; charset=utf-8"
+    }
+  ]
+},{
+  "resource": "Assessment Cohorts",
+  "resource_explanation": "Endpoints for managing and creating assessment cohorts. Assessment cohorts are groups of candidates who get invited in bulk to a same assessment at one time.",
+  "http_method": "DELETE",
+  "route": "/v1/assessment_cohorts/:id",
+  "description": "Delete",
+  "explanation": "Deletes the assessment cohort retrieved by id.",
+  "parameters": [
+    {
+      "type": "String",
+      "required": true,
+      "name": "id",
+      "description": "The ID of the invitation you wish to cancel"
+    }
+  ],
+  "response_fields": [],
+  "requests": [
+    {
+      "request_method": "DELETE",
+      "request_path": "/v1/assessment_cohorts/639b82f2a01605001512a01e",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkzOWQxZmEyZjQ4NzNmYzM4ZiIsImlkIjoiNjA0NmI0OTM5ZDFmYTJmNDg3M2ZjMzkwIiwic2VjcmV0IjoiWWxQT2JnPT0ifQ.YonqxOxMRoov9voQmLpA1ajxSM-QSquFfZIQoDufn-w",
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      "request_query_parameters": {},
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 204,
+      "response_status_text": "No Content",
+      "response_body": null,
+      "response_headers": {},
+      "response_content_type": null,
+      "curl": "curl \"https://www.qualified.io/api/v1/assessment_invitations/639b82f2a01605001512a01e\" -d '' -X DELETE \\\n\t-H \"Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkzOWQxZmEyZjQ4NzNmYzM4ZiIsImlkIjoiNjA0NmI0OTM5ZDFmYTJmNDg3M2ZjMzkwIiwic2VjcmV0IjoiWWxQT2JnPT0ifQ.YonqxOxMRoov9voQmLpA1ajxSM-QSquFfZIQoDufn-w\" \\\n\t-H \"Host: example.org\" \\\n\t-H \"Content-Type: application/x-www-form-urlencoded\" \\\n\t-H \"Cookie: \"",
+      "request_headers_text": "Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZGVudGl0eV9pZCI6IjYwNDZiNDkzOWQxZmEyZjQ4NzNmYzM4ZiIsImlkIjoiNjA0NmI0OTM5ZDFmYTJmNDg3M2ZjMzkwIiwic2VjcmV0IjoiWWxQT2JnPT0ifQ.YonqxOxMRoov9voQmLpA1ajxSM-QSquFfZIQoDufn-w\nContent-Type: application/x-www-form-urlencoded",
+      "request_query_parameters_text": null,
+      "response_headers_text": null
+    }
+  ]
+},{
   "resource": "Assessment Invitations",
   "resource_explanation": "Endpoints for managing and creating invitations. Invitations are how candidates get explicitly introduced into the system. For private assessments, this is the only way to gain access to take the assessment.",
   "http_method": "GET",
