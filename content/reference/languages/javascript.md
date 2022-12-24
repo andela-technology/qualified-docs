@@ -11,7 +11,7 @@ tags:
 
 ## Environment
 
-Qualified supports Node 6, 8, 10, 12 and 14.
+Qualified supports Node 6, 8, 10, 12, 14 and 18.
 
 ## Timeout
 
@@ -476,6 +476,105 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `sinon`: `12.0.1`
 - `vue`: `3.2.26`
 - `vuex`: `4.0.2`
+
+### Node 18
+
+#### Default (no preset)
+
+- `@babel/core`: `7.20.5`
+- `@babel/preset-env`: `7.20.2`
+- `@babel/register`: `7.18.9`
+- `@babel/runtime`: `7.20.6`
+- `@codewars/jest-reporter`: `1.0.3`
+- `@codewars/mocha-reporter`: `1.0.0`
+- `@codewars/test-compat`: `1.1.0`
+- `@faker-js/faker`: `7.6.0`
+- `axios`: `1.2.1`
+- `babel-jest`: `29.3.1`
+- `bcrypt`: `5.1.0`
+- `bignumber.js`: `9.1.1`
+- `body-parser`: `1.20.1`
+- `canvas`: `2.10.2`
+- `chai`: `4.3.7`
+- `chai-http`: `4.3.0`
+- `cheerio`: `1.0.0-rc.12`
+- `cookie-parser`: `1.4.6`
+- `cors`: `2.8.5`
+- `dotenv`: `16.0.3`
+- `escape-html`: `1.0.3`
+- `esm`: `3.2.25`
+- `espower-loader`: `1.2.2`
+- `express`: `4.18.2`
+- `fast-check`: `3.4.0`
+- `jest`: `29.3.1`
+- `jsdom`: `20.0.3`
+- `knex`: `2.3.0`
+- `lodash`: `4.17.21`
+- `mocha`: `10.2.0`
+- `mongodb`: `4.12.1`
+- `mongoose`: `6.8.0`
+- `nanoid`: `4.0.0`
+- `node-fetch`: `3.3.0`
+- `objection`: `3.0.1`
+- `pg`: `8.8.0`
+- `pg-hstore`: `2.3.4`
+- `pino`: `8.8.0`
+- `pino-http`: `8.3.0`
+- `power-assert`: `1.6.1`
+- `query-string`: `8.0.3`
+- `ramda`: `0.28.0`
+- `redis`: `4.5.1`
+- `sequelize`: `6.27.0`
+- `sinon`: `15.0.1`
+- `sinon-chai`: `3.7.0`
+- `socket.io`: `4.5.4`
+- `socket.io-client`: `4.5.4`
+- `sqlite3`: `5.1.4`
+- `supertest`: `6.3.3`
+
+
+#### React (`react` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@babel/core`: `7.20.5`
+- `@babel/plugin-proposal-class-properties`: `7.18.6`
+- `@babel/preset-env`: `7.20.2`
+- `@babel/preset-react`: `7.18.6`
+- `@babel/runtime`: `7.20.6`
+- `@codewars/jest-reporter`: `1.0.3`
+- `@testing-library/dom`: `8.19.0`
+- `@testing-library/jest-dom`: `5.16.5`
+- `@testing-library/react`: `13.4.0`
+- `@testing-library/user-event`: `14.4.3`
+- `axios`: `1.2.1`
+- `babel-jest`: `29.3.1`
+- `classnames`: `2.3.2`
+- `cross-fetch`: `3.1.5`
+- `escape-html`: `1.0.3`
+- `immer`: `9.0.16`
+- `jest`: `29.3.1`
+- `jest-environment-jsdom`: `29.3.1`
+- `jest-fetch-mock`: `3.0.3`
+- `jest-snapshot`: `29.3.1`
+- `marked`: `4.2.4`
+- `mobx`: `6.7.0`
+- `mobx-react`: `7.6.0`
+- `nanoid`: `4.0.0`
+- `prop-types`: `15.8.1`
+- `react`: `18.2.0`
+- `react-cookie`: `4.1.1`
+- `react-dom`: `18.2.0`
+- `react-is`: `18.2.0`
+- `react-redux`: `8.0.5`
+- `react-router-dom`: `6.4.5`
+- `react-test-renderer`: `18.2.0`
+- `redux`: `4.2.0`
+- `reselect`: `4.1.7`
+- `sinon`: `15.0.1`
+- `styled-components`: `5.3.6`
+- `use-immer`: `0.8.1`
+
 
 ## Testing
 
