@@ -37,6 +37,8 @@ Enter the API key from the previous step and click on Integrate.
 
 </figure>
 
+Note: There's one API Key issued per Qualified team. As such, there's a one-to-one relationship between Qualified teams and Recruitee companies.
+
 
 ### Invite candidates to take Qualified assessments
 
