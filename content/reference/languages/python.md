@@ -117,6 +117,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 
 #### Default (no preset)
 
+- `aiohttp`: `3.8.1`
 - `beautifulsoup4`: `4.9.1`
 - `flask`: `1.1.2`
 - `gmpy2`: `2.0.8`
@@ -169,6 +170,28 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `djangorestframework`: `3.12.4`
 - `django-filter`: `21.1`
 - `django-guardian`: `2.4.0`
+
+### Python 3.11
+
+#### Default (no preset)
+
+- `beautifulsoup4`: `4.11.2`
+- `cryptography`: `39.0.1`
+- `Flask`: `2.2.2`
+- `gmpy2`: `2.1.5`
+- `Jinja2`: `3.1.2`
+- `matplotlib`: `3.6.3`
+- `mpld3`: `0.5.9`
+- `numpy`: `1.24.2`
+- `pandas`: `1.5.3`
+- `regex`: `2022.10.31`
+- `requests`: `2.28.2`
+- `scikit-learn`: `1.2.1`
+- `scipy`: `1.10.0`
+- `seaborn`: `0.12.2`
+- `six`: `1.15.0`
+- `sqlalchemy`: `2.0.2`
+- `aiohttp`: `3.8.3`
 
 ## Testing
 
