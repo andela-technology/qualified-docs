@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Python 2.7, 3.4, 3.6, 3.7 and 3.8.
+Qualified supports Python 2.7, 3.4, 3.6, 3.7, 3.8 and 3.11.
 
 ## Timeout
 
@@ -175,6 +175,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 
 #### Default (no preset)
 
+- `aiohttp`: `3.8.3`
 - `beautifulsoup4`: `4.11.2`
 - `cryptography`: `39.0.1`
 - `Flask`: `2.2.2`
@@ -191,7 +192,6 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `seaborn`: `0.12.2`
 - `six`: `1.15.0`
 - `sqlalchemy`: `2.0.2`
-- `aiohttp`: `3.8.3`
 
 ## Testing
 
