@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Python 2.7, 3.4, 3.6, 3.7 and 3.8.
+Qualified supports Python 2.7, 3.4, 3.6, 3.7, 3.8 and 3.11.
 
 ## Timeout
 
