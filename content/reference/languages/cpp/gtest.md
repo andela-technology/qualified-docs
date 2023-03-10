@@ -32,6 +32,13 @@ TEST(Add, HandlesBasicAddition) {
 }
 ```
 
+
+:::note
+If you use the preloaded file (`challenge.h`):
+- There must be code in the preloaded file for the include to succeed
+- Any functions that are included in the solution and tests should be declared `inline` to avoid multiple definitions.
+:::
+
 # Learn More
 
 See [Google Test documentation](https://google.github.io/googletest/primer.html).
