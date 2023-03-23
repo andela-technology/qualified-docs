@@ -4,13 +4,13 @@
 
 This is Qualified's public documentation site, hosted at [docs.qualified.io](https://docs.qualified.io).
 
-It's based on the (now deprecated) [docc theme](https://docc-theme.netlify.com/) for [gridsome](https://gridsome.org/), a Vue framework.
+It's based on the [docc theme](https://docc-theme.netlify.com/) for [gridsome](https://gridsome.org/), a Vue framework.
 
 ## Development
 
 ### Installation
 
-Since [docc appears to be unmaintained](https://github.com/mrcrmn/docc), the build doesn't work well with Node 15+. Until we migrate to a newer framework, the best way to run the project locally is to downgrade to Node 14 using [nvm](https://github.com/nvm-sh/nvm) or another Node version manager. Once Node 14 is active, run `yarn install` followed by `yarn run develop` or `gridsome develop`.
+Since [docc is unmaintained](https://github.com/mrcrmn/docc), the build doesn't work well with Node 15+. Until we migrate to a newer framework, the best way to run the project locally is to downgrade to Node 14 using [nvm](https://github.com/nvm-sh/nvm) or another Node version manager. Once Node 14 is active, run `yarn install` followed by `yarn run develop` or `gridsome develop`.
 
 ### Content Structure
 
