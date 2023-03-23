@@ -14,7 +14,7 @@ tags:
 [Pandas](https://pandas.pydata.org) is a popular Python library for working with tabular data and plays nicely with Qualified's code runner. This is an in-depth guide to creating Pandas challenges in Qualified.
 
 ## Basic example
-Here is a minimal "hello world" challenge example using Python 3.8. The approach is agnostic of classic or project challenge mode. 
+Here is a minimal "hello world" challenge example. The approach is agnostic of classic or project challenge mode. 
 
 If you're in a hurry, you can grab this code and come back to read the rest as needed.
 
@@ -80,7 +80,7 @@ Additionally, we recommend providing a link to the dataset in the description. B
 
 Keep in mind that externally-hosted datasets are a dependency. Should the link rot over time or its contents be unexpectedly modified, your challenge may become impossible to complete.
 
-In classic mode, you can use the preloaded file to make a request for an external dataset or host the source dataframe. Either way, it's important that your test suite uses a fresh dataframe per test to avoid unexpected state. Making a request per test case is inefficient, so the preferred strategy is to make a single request but copy the resulting dataframe on a per-test basis, either inside preloaded or in the test suite itself (unittest's [`setUp`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) and [`setUpClass`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUpClass) methods can come in handy here).
+In classic mode, you can use the preloaded file to make a request for an external dataset or host the source dataframe. Either way, it's important that your test suite uses a fresh dataframe per test to avoid state from one test causing bugs in another. Making a request per test case is inefficient, so the preferred strategy is to make a single request but copy the resulting dataframe on a per-test basis, either inside preloaded or in the test suite itself (unittest's [`setUp`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp) and [`setUpClass`](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUpClass) methods can come in handy here).
 
 Here's an example of loading a dataset from an external source using the same solution and preloaded code as shown above in the basic example:
 
@@ -88,13 +88,9 @@ Here's an example of loading a dataset from an external source using the same so
 
 ```python
 import pandas as pd
-import requests
-from io import StringIO
 
 csv_url = "https://raw.githubusercontent.com/mwaskom/seaborn-data/master/car_crashes.csv"
-response = requests.get(csv_url)
-response.raise_for_status()
-_original_df = pd.read_csv(StringIO(response.text))
+_original_df = pd.read_csv(csv_url)
 
 def get_clean_df():
     return _original_df.copy()
@@ -141,7 +137,7 @@ Since Pandas is built on NumPy and complex solutions to Pandas challenges often 
 ### Using other libraries
 You can test many Pandas competencies quite comprehensively using the setup above. However, Qualified supports other libraries which can help expand on the possibilities offered by Pandas and NumPy alone.
 
-When using the project challenge mode, you may wish to choose the "datascience" preset, which enables some additional modules like ntlk, keras and spacy. Visit our [Python language page](/reference/languages/python/) for an up-to-date listing of presets, modules and view our [guide to classic and project challenge modes](/for-teams/getting-started/core-concepts/#different-types-of-challenges).
+Visit our [Python language page](/reference/languages/python/) for an up-to-date listing of presets and modules, and view our [guide to classic and project challenge modes](/for-teams/getting-started/core-concepts/#different-types-of-challenges).
 
 ### Visualizing dataframes
 Adding visualization to your Pandas or other data science challenges can be done in a few ways. Most simply, the classic code runner supports HTML, so you can tabularize the dataframe and render it upon each run using [`pandas.DataFrame.to_html`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_html.html). Here's an example that formats the HTML block as the runner expects using the magic `<LOG:HTML:optional name>` tag and replacing newlines with the `<:LF:>` tag:
@@ -217,7 +213,7 @@ Output is collapsed by default when HTML is printed as part of a passing test ca
 Pandas offers useful testing assertions that work well with unittest such as [`pandas.testing.assert_frame_equal`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.testing.assert_frame_equal.html) and [`pandas.testing.assert_index_equal`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.testing.assert_index_equal.html).
 
 #### Prefer small tasks
-If you'd like to test a series of distinct Pandas tasks on a single dataset, you can isolate the tasks as small, testable functions, each with a simple specification, rather than a single monolithic function as in most of our traditional challenges. Most of our Pandas project code content uses this approach and we find that itemizing and isolating the goals makes complex challenges more completable and approachable for candidates and students. In many cases, we start out with simple tasks and build to harder ones.
+If you'd like to test a series of distinct Pandas tasks on a single dataset, you can isolate the tasks as small, testable functions, each with a simple specification, rather than a single monolithic function as in most of our traditional challenges. Most of our Pandas project code content uses this approach. We find that itemizing and isolating the goals makes complex challenges more completable and approachable for candidates and students. In many cases, we start out with simple tasks and build to harder ones.
 
 #### Keep test case results small
 In keeping with small dataset mindset, expected results should be as small as possible to establish correctness. In many cases, adding a "first 5 rows" step is enough to validate the solution while keeping output and test code simple.
@@ -226,7 +222,7 @@ In keeping with small dataset mindset, expected results should be as small as po
 Well-written, thorough and non-redundant sample test cases improve user experience--hiding them in the submission tests makes it more difficult for candidates to understand requirements and complete the challenge.
 
 #### Add simple, hidden random tests
-In keeping with moving test coverage to rest primarily on sample tests, adding a hidden test using your dataset with slight value changes can help catch hardcoded solutions that return the expected dataframe literally. For project challenges, submissions can be hidden completely, so randomization is not necessary as long as the dataset is modified by, for example, adding a value of 1 to all numbers. For classic challenges, submission input and results are visible, so randomization is necessary to prevent a hardcoded solution. 
+In keeping with moving test coverage to rest primarily on sample tests, adding a hidden test using your dataset with slight value changes can help catch false solutions that return hardcoded dataframe(s) per case. For project challenges, submissions can be hidden completely, so randomization is not necessary as long as the dataset is modified by, for example, adding a value of 1 to all numbers. For classic challenges, submission input and results are visible, so randomization is necessary to prevent a hardcoded solution.
 
 NumPy has a robust [random library](https://numpy.org/doc/stable/reference/random/index.html) you can use. Seeding the random number generator can also help you make deterministic tests and generate input dataframes dynamically.
 
@@ -252,7 +248,7 @@ def get_first_row(df: pd.DataFrame) -> pd.DataFrame:
     """
     return df.head(1)
 
-# Use for testing offline
+# Use for testing outside our platform, if necessary
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
@@ -268,7 +264,7 @@ Under normal circumstances, programmers consult documentation on a constant basi
 Python's [type hinting](https://docs.python.org/3/library/typing.html) can help candidates quickly grasp the input and output types for the functions they're expected to complete. The examples on this page use this technique.
 
 #### Show test case results in source code order
-Unittest reorders test cases which can make it hard for candidates and students to solve cases top-to-bottom in increasing difficulty and quickly match a case's output with the code. See the Stack Overflow thread [Python `unittest.TestCase` execution order](https://stackoverflow.com/questions/5387299/python-unittest-testcase-execution-order/62454506#62454506) for a variety of solutions to the problem. One solution from [our Python docs](/reference/languages/python/unittest#setup-and-tear-down) which has been used on a few challenges is[`test.TestLoader.sortTestMethodsUsing`](https://docs.python.org/3/library/unittest.html#unittest.TestLoader.sortTestMethodsUsingunit):
+Unittest reorders test cases which can make it hard for candidates and students to solve cases top-to-bottom in increasing difficulty and quickly match a case's output with the code. See the Stack Overflow thread [Python `unittest.TestCase` execution order](https://stackoverflow.com/questions/5387299/python-unittest-testcase-execution-order/62454506#62454506) for a variety of solutions to the problem. One solution from [our Python docs](/reference/languages/python/unittest#setup-and-tear-down) which has been used on a few challenges is [`test.TestLoader.sortTestMethodsUsing`](https://docs.python.org/3/library/unittest.html#unittest.TestLoader.sortTestMethodsUsingunit):
 
 ```python
 import inspect
