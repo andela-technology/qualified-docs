@@ -2,7 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/27a6c94b-2bc0-4376-9a39-48ad05b5085f/deploy-status)](https://app.netlify.com/sites/fervent-mayer-2fb2ca/deploys)
 
-This is Qualified's public documentation site, hosted at [docs.qualified.io](https://docs.qualified.io).
+This is Qualified's public documentation and developer portal, hosted at [docs.qualified.io](https://docs.qualified.io).
 
 It's based on the [docc theme](https://docc-theme.netlify.com/) for [gridsome](https://gridsome.org/), a Vue framework.
 
