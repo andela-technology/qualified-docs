@@ -28,7 +28,7 @@ from solution import get_first_row
 
 class Test(unittest.TestCase):
     def test_returns_first_row(self):
-        """ returns the first row in the df """
+        "returns the first row in the df"
         df = pd.DataFrame({
             "a": ["hello", "foo"], 
             "b": ["world", "bar"]
@@ -47,7 +47,7 @@ class Test(unittest.TestCase):
 import pandas as pd
 
 def get_first_row(df: pd.DataFrame) -> pd.DataFrame:
-    """ return the first row in the df """
+    "return the first row in the df"
     pass
 ```
 
@@ -57,13 +57,13 @@ def get_first_row(df: pd.DataFrame) -> pd.DataFrame:
 import pandas as pd
 
 def get_first_row(df: pd.DataFrame) -> pd.DataFrame:
-    """ return the first row in the df """
+    "return the first row in the df"
     return df.head(1)
 ```
 
 ## Loading external datasets
 
-Given this basic approach, a common next step is to load a dataset. You can include the data within the challenge code as a data structure, dataframe or string or load it from an externally-hosted resource. 
+Given this basic approach, a common next step is to load a dataset. You can include the data within the challenge code as a data structure, dataframe or string or load it from an externally-hosted resource.
 
 When choosing your dataset and planning on where to host it, keep in mind:
 
@@ -107,7 +107,7 @@ from solution import get_first_row
 
 class Test(unittest.TestCase):
     def test_returns_first_row(self):
-        """ returns the first row in the df """
+        "returns the first row in the df"
         df = get_clean_df()
         expected = pd.DataFrame({
             "total": [18.8],
@@ -125,14 +125,14 @@ class Test(unittest.TestCase):
 
 Here, we've requested a reasonably-sized CSV with 51 rows and 7 columns in the preloaded module and exposed it to the test suite using the `get_clean_df()` function which returns a fresh copy of the data. We should call this function per test case to ensure no state or mutations on the dataframe are carried from case to case.
 
-In this example, the data is quite small, so we could just as easily put the data into the preloaded section as a string and substitute it in place of `response.text` in the above code. Even here, the candidate or student would benefit from a link to the data externally, for example to [a CSV on GitHub](https://github.com/mwaskom/seaborn-data/blob/master/car_crashes.csv), which provides a searchable and readable interface for navigating the data.
+In this example, the data is quite small, so we could just as easily put the data into the preloaded section as a string and use [`StringIO`](https://stackoverflow.com/a/22605281/6243352) to load it into the dataframe. Even here, the candidate or student would benefit from a link to the data externally, for example to [a CSV on GitHub](https://github.com/mwaskom/seaborn-data/blob/master/car_crashes.csv), which provides a searchable and readable interface for navigating the data.
 
-Lastly, note that no sensitive information (reference solutions, API keys, etc) should be included in the preloaded module. It's possible for the candidate or student to access this file programmatically. Although the file can unlink its own source code with `os.system("rm preloaded.py")`, it should not be considered secure.
+Lastly, note that no sensitive information (reference solutions, API keys, etc) should be included in the preloaded module. It's possible for the candidate or student to access this file programmatically. Although the file can unlink its own source code with `os.remove("preloaded.py")`, it should not be considered secure.
 
 ## Next steps
 
 ### NumPy
-Since Pandas is built on NumPy and complex solutions to Pandas challenges often involve NumPy functions, it's recommended to `import numpy as np` in solution setup files. As with Pandas, NumPy offers a variety of fantastic testing assertions you can read about in the docs for [`numpy.testing`](https://numpy.org/doc/stable/reference/routines.testing.html). The guidelines in this document apply as well to NumPy challenges without Pandas.
+Since Pandas is built on NumPy and complex solutions to Pandas challenges often involve NumPy functions, we recommend adding `import numpy as np` in solution setup files. As with Pandas, NumPy offers a variety of fantastic testing assertions you can read about in the docs for [`numpy.testing`](https://numpy.org/doc/stable/reference/routines.testing.html). The guidelines in this document apply as well to NumPy challenges without Pandas.
 
 ### Using other libraries
 You can test many Pandas competencies quite comprehensively using the setup above. However, Qualified supports other libraries which can help expand on the possibilities offered by Pandas and NumPy alone.
@@ -237,7 +237,7 @@ Here's an example:
 import pandas as pd
 
 def get_first_row(df: pd.DataFrame) -> pd.DataFrame:
-    """ return the first row in the df
+    """return the first row in the df
 
     >>> get_first_row(pd.DataFrame({"a": [1, 2]}))
        a
