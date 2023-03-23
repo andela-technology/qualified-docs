@@ -175,17 +175,17 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style>
     .search {
-        input {
+        & input {
             @apply text-ui-typo;
         }
     }
     .search__results {
-        a:not(.active):not(.text-ui-primary) {
+        & a:not(.active):not(.text-ui-primary) {
             @apply text-ui-typo;
         }
-        a.active {
+        & a.active {
             @apply text-ui-primary;
         }
     }
