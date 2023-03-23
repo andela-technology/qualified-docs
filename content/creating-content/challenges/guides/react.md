@@ -21,19 +21,7 @@ We encourage you to peruse our many React templates for a detailed view on how w
 
 Testing React apps in Qualified can be done with one of a few libraries used alongside [Jest](https://facebook.github.io/jest/): [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), [Enzyme](https://enzymejs.github.io/enzyme/) and [React Test Utils](https://reactjs.org/docs/test-utils.html).
 
-We recommend React Testing Library which promotes testing interfaces rather than implementation, and is the tool of choice suggested by the [React documentation](https://reactjs.org/docs/test-utils.html#overview). Enzyme is acceptable for React versions 16 and under, but is more likely to introduce subtle invariants in test suites. Overly-rigid test cases can inadvertently disqualify candidates due to otherwise valid implementation choices that weren't anticipated by the challenge author.
-
-### Enzyme
-When using Enzyme, care must be taken to avoid testing implementation details. Our typical setup uses `mount` rather than `shallow` to ensure nested components that the candidate might use are rendered.
-
-Additionally, [`.hostNodes()`](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/hostNodes.html) should be appended to all [`.find()`](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/find.html) calls to ensure that component nodes are ignored. See [Enzyme issue #1253](https://github.com/enzymejs/enzyme/issues/1253) for details on how this might cause problems.
-
-Here's an example of the correct approach:
-
-```js
-const wrapper = mount(<Foo />);
-wrapper.find("input").hostNodes();
-```
+We recommend React Testing Library which promotes testing interfaces rather than implementation, and is the tool of choice suggested by the [React documentation](https://reactjs.org/docs/test-utils.html#overview).
 
 ## General suggestions
 
@@ -50,6 +38,8 @@ However, this places an unnecessarily large imposition on the candidate's code, 
 Instead, prefer a black-box testing approach that finds the button element and clicks it, then asserts on the DOM contents. This enables the candidate the freedom to implement the handler and state as they see fit.
 
 While the above example is quite basic and may seem obvious, we recommend staying on the lookout for more subtle implementation detail-driven tests which can creep into corners of your suite, causing unexpected false negatives.
+
+Overly-rigid test cases can inadvertently disqualify candidates due to otherwise valid implementation choices that weren't anticipated by the challenge author.
 
 ### Use mocks as appropriate
 
@@ -74,40 +64,47 @@ We generally find that eliminating hidden tests entirely, or using 1-2 simple hi
 
 You can use the "submission ignore paths" setting in the challenge's configuration menu to ignore changes the candidate has made to the suite if you plan to use one suite for submission and for the candidate's testing.
 
-### Use a custom attribute to identify DOM nodes
+### Avoid CSS selectors for testing
 
 It's tempting to require candidates to use a class or id on HTML elements for the purposes of writing assertions and manipulating the app in the test suite.
 
 For example, a naive test suite might prescribe the following element format:
 
 ```js
-<div id="foo">hello world</div>
+<div class="foo">hello world</div>
 ```
 
-The test suite expects to grab elements of this type with the id:
+The test suite expects to grab elements of this type with the class name:
 
 ```js
 wrapper.find(".foo");
 ```
 
-Our suggestion is to use a [`data-testid` attribute](https://kentcdodds.com/blog/making-your-ui-tests-resilient-to-change) instead:
+A more robust approach is to use an [aria role](https://testing-library.com/docs/queries/byrole/), [label](https://testing-library.com/docs/queries/bylabeltext/), [text](https://testing-library.com/docs/queries/bytext/) or [`data-testid`](https://testing-library.com/docs/queries/bytestid/) attribute instead.
+
+For example, after adding a test id attribute:
 
 ```js
-<div data-testid="bar" id="foo">hello world</div>
+<div data-testid="bar" class="foo">hello world</div>
 ```
 
-The test suite will now rely on 
+The test suite could now rely on 
 
 ```js
-wrapper.find('[data-testid="bar"]').hostNodes(); // Enzyme
-getByTestId("bar"); // or React Testing Library
+getByTestId("bar"); // React Testing Library
 ```
 
 to locate the element(s).
 
-The `data-testid` attribute approach separates tests from implementation, giving candidates the flexibility to choose their own ids and class names to fit their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally name their elements.
+Simply asserting on text could be another option:
 
-Be sure to explicitly state the required `data-testid` names in the instructions so candidates won't have to infer them from the test suite.
+```js
+getByText("hello world"); // React Testing Library
+```
+
+These approaches [help decouple tests from implementation](https://kentcdodds.com/blog/making-your-ui-tests-resilient-to-change), giving candidates the flexibility to choose their own ids and class names to fit their CSS and implementation needs. Not only is this a candidate-friendly design, it reveals more signal as to how candidates would naturally name their elements.
+
+Be sure to explicitly state the required roles, text, labels or `data-testid` names in the instructions so candidates won't have to infer them from the test suite.
 
 ### Assume candidates will use arbitrary React features
 
@@ -123,11 +120,32 @@ However, web preview's different environment complete with its own `package.json
 
 Instruction clarity, mocking parts of both the web preview and test suite in tandem and providing well-written, transparent test cases are the best tools for navigating the differences between the two environmets.
 
+:::note
 In some narrow cases, it may be appropriate to disable web preview and focus on server-side rendering using, for example, [`ReactDOMServer`](https://reactjs.org/docs/react-dom-server.html). Our Code Runner does support HTML output, but generally, the benefits of live interaction with web preview greatly outweigh the consistency that comes from avoiding it. Nonetheless, we mention server-side rendering for completeness.
+:::
 
 ### Communicate assumptions in the instructions
 
 Even when care is taken to permit freedom for candidates, it's inevitable that some structural restrictions will apply. It's a good idea to forewarn assumptions made by the test suite in the challenge instructions.
 
 You can also use the instructions to inform the candidate of the rubric and provide links to documentation the candidate may wish to consult.
+
+## Enzyme-specific suggestions
+
+:::caution
+Unless you have good reason to use Enzyme, we recommend using React Testing Library.
+
+This section is for legacy use cases that need to test React 16 and Enzyme skills specifically.
+:::
+
+When using Enzyme, care must be taken to avoid testing implementation details. Our typical setup uses `mount` rather than `shallow` to ensure nested components that the candidate might use are rendered.
+
+Additionally, [`.hostNodes()`](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/hostNodes.html) should be appended to all [`.find()`](https://enzymejs.github.io/enzyme/docs/api/ReactWrapper/find.html) calls to ensure that component nodes are ignored. See [Enzyme issue #1253](https://github.com/enzymejs/enzyme/issues/1253) for details on how this might cause problems.
+
+Here's an example of the correct approach:
+
+```js
+const wrapper = mount(<Foo />);
+wrapper.find('[data-testid="bar"]').hostNodes();
+```
 
