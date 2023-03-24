@@ -183,6 +183,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `Jinja2`: `3.1.2`
 - `matplotlib`: `3.6.3`
 - `mpld3`: `0.5.9`
+- `networkx`: `3.0`
 - `numpy`: `1.24.2`
 - `pandas`: `1.5.3`
 - `regex`: `2022.10.31`
