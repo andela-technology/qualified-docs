@@ -182,6 +182,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `gmpy2`: `2.1.5`
 - `Jinja2`: `3.1.2`
 - `matplotlib`: `3.6.3`
+- `moto`: `4.1.5`
 - `mpld3`: `0.5.9`
 - `networkx`: `3.0`
 - `numpy`: `1.24.2`
