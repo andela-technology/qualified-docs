@@ -18,4 +18,4 @@ The sandbox environment will timeout the code within 12 seconds.
 
 ## Testing
 
-Our Haskell environment supports the [haskell/hspec](/reference/languages/haskell/hspec).
+Our Haskell environment supports the [haskell/hspec](/reference/languages/haskell/hspec) testing framework.
