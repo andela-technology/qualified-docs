@@ -94,5 +94,6 @@ Here are just a few of the technologies which can be tested with the Qualified p
 - Matplotlib
 - Scikit
 - Networkx
+- Pysparkling
 - Tidyverse
 
