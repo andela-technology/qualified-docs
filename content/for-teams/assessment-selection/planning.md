@@ -42,7 +42,7 @@ Providing a simple challenge up-front can get candidate confidence flowing and p
 
 ## Consider Cheating
 
-Addressing cheating is a nuanced topic. We cover it in detail in our [Cheating Mitigation](/creating-content/challenges/guides/cheating-mitigation) guide, which is intended for both content creators as well as those using or modifying pre-built content.
+Addressing cheating is a nuanced topic. We cover it in detail in our [Cheating Mitigation](/creating-content/challenges/cheating-mitigation) guide, which is intended for both content creators as well as those using or modifying pre-built content.
 
 ## Diversify
 
