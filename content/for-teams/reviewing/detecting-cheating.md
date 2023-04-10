@@ -64,9 +64,13 @@ We have built a streamlined solution review dialog that does support comparing p
 Only after an assessment result is submitted will the containing solutions be processed for similarity. Of these submitted solutions, only those which achieve at least a correctness score of 80% or more will be considered.
 
 ## Code Playback
+
 Qualified provides the ability to play back an entire coding session. You can see the developer's key strokes and actions in real-time, or speed it up to get a quick glance of how the solution came to be.
 
 This feature can be used not only to get a view into how the developer thinks, but also to identify cheating. The playback timeline will indicate any major code paste events, making it easy to identify suspicious actions that might influence a cheating determination. Our system will only flag code pasted from a source external to our site, ignoring paste events that were caused by normal solution development.
 
-Be aware that cheaters might type in the plagiarized solution rather than pasting from the clipboard. Frequent tab switches and a rigid and unnatural coding style may suggest a potential hand-keyed plagiarism case. We recommend [written or verbal follow-up questions](#use-written-or-verbal-reflections) if you suspect this to be the case after viewing playback.
+Be aware that cheaters might type in the plagiarized solution rather than pasting from the clipboard. Frequent tab switches and a rigid and unnatural coding style may suggest a potential hand-keyed plagiarism case. We recommend [written or verbal follow-up questions](/creating-content/challenges/cheating-mitigation/#use-written-or-verbal-reflections) if you suspect this to be the case after viewing playback.
 
+## Applying Your Findings
+
+After you've identified cheating patterns in an assessment, you'll likely want to apply your findings to your assessment for its next iteration. [This article](/creating-content/challenges/cheating-mitigation/) provides suggestions for hardening your challenges against cheating during the development phase.
