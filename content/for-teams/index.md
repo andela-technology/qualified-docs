@@ -75,28 +75,25 @@ A wide variety of technologies are supported, ranging from back-end and front-en
 Here are just a few of the technologies which can be tested with the Qualified platform. We are constantly adding new technologies, so if you don't see what you are looking for you can reach out to us to find out if we do, or can add it. 
 
 ### Back-end Web Frameworks
-- Ruby on Rails
-- Spring Framework
-- Django
 - .NET
+- Django
 - ExpressJS
-- Laravel Lumen
 - Flask
+- Lumen
+- Ruby on Rails
 - Sinatra
+- Spring Boot
 
 ### Front-end Frameworks & Libraries
 - React
 - Angular
-- AngularJS
 - Vue
-- jQuery
 
 ### Data Science Frameworks & Libraries
 - Pandas
 - Matplotlib
 - Scikit
-- Keras
 - Networkx
-- Nltk
+- Pysparkling
 - Tidyverse
 
