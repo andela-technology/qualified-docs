@@ -118,9 +118,9 @@ The code playback can give you further insight in the following ways:
 - Did they have to start over?
 - Was there a general plan to coming to the solution?
 - Were there **any questionable copy-and-pastes**? (use Key events to find them)
-- These can highlight solutions that were found online, or possibly they edited in a different editor and pasted the solution in.
+  - These can highlight solutions that were created with AI assistance, found online, or legitimate but written with an external editor.
 - Did they **run the example tests**?
-- They will show up in the code playback bar as a small circle with a “play” triangle (:arrow_forward:) inside it.
+  - They will show up in the code playback bar as a small circle with a “play” triangle inside it.
 - Did they refactor, or **clean up the code** at the end? As they worked?
 
 ## Solution Review Examples
@@ -222,4 +222,4 @@ var solution = {
 ```
 
 - Passes tests, but only by detecting the input and returning the expected output
-- Most built-in Qualified challenges won’t allow this, because we include randomized tests
+- Many built-in Qualified challenges won’t allow this, because we include randomized tests
