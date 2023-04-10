@@ -16,7 +16,7 @@ Another example might be directing an asssesment towards an audience of current 
 
 In other educational settings, a bootcamp may provide an assessment to an audience of students completing a module with the goal of verifying their acquisition of skill in a particular technology stack.
 
-## Consider time
+## Consider Time
 
 Time is a key factor when building an assessment. Time imposes limits on both breadth and depth of what you can expect to test and what might be in scope for a candidate to realistically complete.
 
@@ -32,13 +32,17 @@ For a typical pre-screen challenge, we recommend keeping the length to no more t
 
 For a typical full-hire challenge, a 180-minute assessment is generally a reasonable baseline target to aim for. Assessments longer than this would likely be considered a take-home.
 
-## Consider flow
+## Consider Flow
 
 When building an assessment, a typical approach involves increasing difficulty incrementally throughout the assessment from one challenge to the next.
 
 In most assessments, it's a reasonable idea to begin with a brief warmup challenge to familiarize candidates with the workflow and platform and give them a chance to ease into the environment.
 
 Providing a simple challenge up-front can get candidate confidence flowing and provide an easy victory, giving a psychological boost that can carry through to improve completion rates for more demanding challenges later in the assessment. This can be particularly useful in tense hiring scenarios when candidates will be under abnormal pressure.
+
+## Consider Cheating
+
+Addressing cheating is a nuanced topic. We cover it in detail in our [Cheating Mitigation](/creating-content/challenges/guides/cheating-mitigation) guide, which is intended for both content creators as well as those using or modifying pre-built content.
 
 ## Diversify
 
@@ -47,4 +51,3 @@ A typical goal when creating an assessment is to avoid redundant challenges that
 Using diverse challenges that examine unique facets of a candidate's skillset in a technology go a long way to increasing your confidence in the validity of an assessment. Diverse challenge selection can also alleviate feelings of monotony and help boost candidate satisfaction and improve completion rates.
 
 Building the assessment using a mixture of [challenge styles](/creating-content/challenges/challenge-styles) is an easy way to increase topical coverage and avoid redundancy. Try mixing classic code challenges, project code challenges and Q&A challenges in the same assessment. Mixing a debugging-oriented challenge with an existing code base alongside a greenfield coding challenge can provide greater signal than two greenfield coding challenges, as another example.
-
