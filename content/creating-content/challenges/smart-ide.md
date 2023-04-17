@@ -1,7 +1,6 @@
 ---
 order: 5
 title: SmartIDE
-featured: Beta
 ---
 
 # SmartIDE
@@ -9,14 +8,6 @@ featured: Beta
 SmartIDE is our answer to bridge the gap between web editors and desktop editors, while maintaining the zero-effort startup experience our web IDE has always provided. We've taken our existing easy-to-use, web-based IDE, and added in intelligent, useful development tools to improve you and your candidate's code editing experience in a massive way.
 
 ![SmartIDE Preview](/images/hire/smart-ide-preview.png)
-
-:::important Beta Labs Feature
-SmartIDE is a beta feature part of Qualified Labs. It's availability and functionality may change in the future. 
-
-To enable SmartIDE, log into your account, and enable it within the [Qualified Labs settings](https://www.qualified.io/hire/account/labs).
-
-You can choose to enable or disable it for all challenges by default, and override the default setting within each challenge when you do not want it enabled.
-::: 
 
 ## Features
 
@@ -34,12 +25,9 @@ Your code can now be checked for not only typographical errors, but logical erro
 
 Documentation for methods, including argument types, method docs, and more, is available simply by mousing over a method—or even as you use autocomplete.
 
-## Enabling SmartIDE
-
-The best thing about SmartIDE is you don't need to install or do anything special to use it as a developer. The feature needs to be enabled on your account, but once enabled, you can begin using it immediately.
-If you want to allow developers to use the SmartIDE, you can enable or disable the feature team-wide. The global setting can also be overridden for any given challenge.
-
 ## Using SmartIDE
+
+The best thing about SmartIDE is you don't need to install or do anything special to use it as a developer. As long as it's available on the challenge it starts automatically, and you can begin using it immediately.
 
 Most of our project challenges, along with a selection of our classic code challenges, will now show a SmartIDE badge. You can use the Preview button to experience the new features immediately.
 
@@ -68,16 +56,16 @@ We will be expanding support further as we continue to refine the feature, so pl
 
 For classic code challenges, SmartIDE will only be available on the languages we support. The other languages will continue to work, just without autocompletion and hinting.
 
-### Can I disable SmartIDE once it's enabled?
-Yes! SmartIDE can be [enabled or disabled across your team, inside the Qualified Labs page](https://www.qualified.io/hire/account/labs). But you can also opt into or out of SmartIDE on a per-challenge basis. 
+### Can I disable SmartIDE?
+Yes! SmartIDE can be [enabled or disabled by default across your team, inside the Qualified team settings page](https://www.qualified.io/hire/account/team). But you can also opt into or out of SmartIDE on a per-challenge basis. 
 
 Why would you want to disable the SmartIDE? You probably won’t want to, but Qualified wants you to be in full control anyway, just in case you come up with some challenge ideas that would be limited by this feature. For example, if you are developing a debugging challenge where you don’t want to give the compiler issues away.
 
-#### Disabling SmartIDE on a per-challenge basis
+#### Enabling or Disabling SmartIDE on a per-challenge basis
 1. Edit the challenge you want to disable the feature on.
 2. For Project Challenges, click on _Challenge Config_ in the sidebar. For classic code, you should already be on the _Description & Settings_ page.
 3. Scroll down to _Options_
-4. Change the value for _Allow Solving with our SmartIDE_ to **Never use SmartIDE**
+4. Change the value for _Allow Solving with our SmartIDE_ to **Always use SmartIDE** or **Never use SmartIDE**
 
 ### What are the benefits of SmartIDE over using a desktop IDE?
 Using a desktop IDE is great for developing your own applications, and would certainly be a preferred choice in those situations.
