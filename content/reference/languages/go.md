@@ -11,7 +11,7 @@ tags:
 
 ## Environment
 
-Qualified supports [Go 1.12](https://golang.org/doc/go1.12).
+Qualified supports [Go 1.20](https://golang.org/doc/go1.20) and [Go 1.12](https://golang.org/doc/go1.12).
 
 ## Timeout
 
