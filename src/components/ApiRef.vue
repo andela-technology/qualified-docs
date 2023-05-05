@@ -9,7 +9,7 @@
          </p>
          <api-ref-resource
              v-for="resource in api[title]"
-             :key="resource.route"
+             :key="resource._key"
              :title="title"
              :resource="resource"
          />
@@ -18,10 +18,9 @@
 </template>
 
 <script>
-import apiData from '../../content/api.json';
-import { groupBy } from '../utils/array-utils';
 import { kabobCase } from '../utils/string-utils';
 import ApiRefResource from './ApiRef/ApiRefResource';
+import {groupedApiForPage} from '../utils/api-utils';
 
 export default {
   name: 'ApiDoc',
@@ -31,7 +30,7 @@ export default {
   },
   computed: {
       api () {
-        return groupBy(apiData, 'resource')
+          return groupedApiForPage(this.$page)
       },
       resources () {
           return Object.keys(this.api)

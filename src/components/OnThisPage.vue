@@ -38,9 +38,8 @@
 </template>
 
 <script>
-import apiData from '../../content/api.json';
-import { groupBy } from '../utils/array-utils';
 import { kabobCase } from '../utils/string-utils';
+import { groupedApiForPage } from '../utils/api-utils';
 export default {
     data() {
         return {
@@ -63,7 +62,7 @@ export default {
                     value: 'RESOURCES',
                     anchor: '#resources'
                 })
-                
+
                 Object.keys(this.api).forEach(resource => {
                     const anchor = `#${kabobCase(resource)}`;
                     headings.push({
@@ -78,7 +77,7 @@ export default {
                             headings.push({
                                 depth: 4,
                                 value: endpoint.description,
-                                anchor: `${ anchor }-${ kabobCase(endpoint.description) }`
+                                anchor: `${ anchor }-${ endpoint._key }`
                             })
                         })
                     }
@@ -88,7 +87,7 @@ export default {
             return headings;
         },
         api () {
-            return groupBy(apiData, 'resource')
+            return groupedApiForPage(this.$page)
         },
     },
 

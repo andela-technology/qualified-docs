@@ -1,40 +1,21 @@
 ---
 title: REST API
 description: "Help for accessing the Qualified API programmatically"
-order: 2
-apiRef: 'public'
+order: 100
+apiRef: 'private'
+private: true
 ---
 
-# REST API
+# Internal REST API
 
 If your subscription includes it, you can enable API-level control over your candidates, assessments, and more through the Qualified API. Once it's enabled, your account will have a unique access key associated with it.
 
-:::important Premium Feature
-API Access is only available on our custom plans.
+:::important Internal API
+The API on this page includes private endpoints not found in our public API.  
+These endpoints are generally not useful or usable for normal clients or customers, and are not guaranteed to be consistent.
+
+Please [see the main API docs](/integrations/custom-integrations/api/) for more complete details on access and authorization.
 :::
-
-
-## Authorization
-
-Authorization is done by passing in an API key to the `Authorization` header. If your account is on a plan that allows API access then you
-will be able to find your key by going to [Team Settings > Integrations](https://www.qualified.io/hire/account/integrations) within the Qualified app.
-
-### Generating an API Key
-
-On the API Access page you'll be able to generate a new API key if you don't have one
-already or in case you believe your current API key could have been compromised. Once you
-generate a new key, the old key is no longer valid. Keep it a secret!
-
-![API key shown within team integrations settings page](/images/hire/api-key.png)
-:::tip API Key Safety
-Make sure to keep your API key safe. Do not expose it through client-side applications.
-:::
-
-### Authorization Header
-
-All resource endpoints should be requested using the `authorization` header. In the example
-requests shown below for each resource, you can see where this value would be set. You should replace
-`:api_key` with your actual API key.
 
 
 ## Parameter Casing

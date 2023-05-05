@@ -77,6 +77,7 @@ query Search {
         id
         path
         title
+        private
         headings {
         	depth
           value
@@ -120,6 +121,7 @@ export default {
 
             // Create the array of all headings of all pages.
             allPages.forEach(page => {
+                if(page.private) return;
                 page.headings.forEach(heading => {
                     result.push({
                         ...heading,

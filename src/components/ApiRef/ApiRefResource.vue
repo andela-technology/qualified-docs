@@ -1,6 +1,6 @@
 <template>
  <div class="api-ref-resource">
-     <h4 :id="`${kabobCase(title)}-${kabobCase(resource.description)}`">
+     <h4 :id="`${kabobCase(title)}-${resource._key}`">
          {{ resource.description }}
      </h4>
      <p v-if="resource.explanation">
