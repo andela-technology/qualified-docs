@@ -147,6 +147,28 @@ If you have an existing hiring process, and would like to integrate Qualified in
     
   In all cases above, you can also add a custom message to be shown alongside the redirect explaining what's happening. Otherwise, the redirect will automatically trigger after a few seconds.
 
+#### Overriding the Redirect URL
+You can provide the redirect URL dynamically by adding it as a parameter to an invitation or assessment link. This can be useful if you need to use the same assessment, but send the candidate back to different pages based on where they came from for a more seamless experience.
+
+To override or configure a redirect URL, simply add the parameter `redirectUrl` to the end of the invitation or assessment link. For example, if you want to redirect the candidate to `https://example.com`, it might look like the following:
+
+```javascript
+// Using a URL library is generally best, but in a pinch, simply
+// appending the correctly encoded URL will work.
+
+// invitation link, which has existing parameters
+url = invitationLink + "&redirectUrl=" + encodeURIComponent("https://example.com");
+
+// direct link, which has no parameters
+url = assessmentLink + "?redirectUrl=" + encodeURIComponent("https://example.com");
+```
+
+Note that there is only one option for the URL, so the same URL will be used whether the candidate succeeds or fails.
+
+:::tip Go protocol-less for cleaner URLs
+Qualified will also automatically detect URLs without a protocol, and prepend `https://`, so in most cases, you can exclude the protocol for a cleaner link.
+:::
+
 ### Send successful candidates to the next assessment
 
 You can easily have the candidate move through several assessments based on if they are successful.
