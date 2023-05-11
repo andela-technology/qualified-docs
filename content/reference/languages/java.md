@@ -93,6 +93,7 @@ Java 17 has multiple presets for different kinds of challenges.
 - `org.dom4j:dom4j:2.1.3`
 - `com.fasterxml.jackson.core:jackson-annotations:2.13.2`
 - `org.xerial:sqlite-jdbc:3.36.0.3`
+- `redis.clients:jedis:4.3.1`
 
 #### Spring (`spring` preset)
 

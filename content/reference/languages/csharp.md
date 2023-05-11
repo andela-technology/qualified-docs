@@ -40,6 +40,7 @@ The sandbox environment will timeout the code within 12 seconds.
 - `NUnit`: `3.12`
 - `NewtonSoft.Json`: `12.0`
 - `NSubstitute`: `4.2`
+- `StackExchange.Redis`: `2.6.111`
 
 ## Testing
 
