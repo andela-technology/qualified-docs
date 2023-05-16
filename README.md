@@ -8,7 +8,23 @@ Provides public & private documentation for Qualified.
 
 ## Documentation
 
-* Additional documentation can be found [here](https://docc-theme.netlify.com/).
+### Quickstart:
+
+This uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
+
+```bash
+npm install -g @gridsome/cli@0.3.4
+```
+
+Then inside the repository, run this command
+
+```bash
+gridsome develop
+```
+
+### Detailed docs on this theme
+
+Additional documentation can be found [here](https://docc-theme.netlify.com/).
 
 ### Content Structure
 
