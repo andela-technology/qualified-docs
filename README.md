@@ -10,6 +10,12 @@ Provides public & private documentation for Qualified.
 
 ### Quickstart:
 
+All project dependencies can be installed automatically by running
+
+```bash
+yarn install
+```
+
 This uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
 
 ```bash
