@@ -7,7 +7,7 @@ next: '/docs/sidebar/'
 
 # Settings
 
-When creating your markdown files, there is some configuration to do, if we want to utilise all features of this starter theme.
+When creating your markdown files, there is some configuration to do, if we want to utilize all features of this starter theme.
 
 ## Sidebar
 
