@@ -170,7 +170,7 @@ export default {
 }
 
 html[lights-out] .full-logo-st6,
-.full-logo-st7 {
+html[lights-out] .full-logo-st7 {
     fill: #FFF !important;
 }
 </style>
