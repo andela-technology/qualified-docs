@@ -291,11 +291,11 @@ Our most powerful documentation block. You use JSON to define a method, its argu
 
 This example would render as follows when viewing a Java challenge:
 
-<img src="https://www.evernote.com/l/AAW0Pg1N2h5LarPpk_v8SY79QM_BPCINEAIB/image.png" style="max-width: 700px" />
+<img src="https://www.evernote.com/l/AAW0Pg1N2h5LarPpk_v8SY79QM_BPCINEAIB/image.png" style="max-width: 100%" />
 
 And the same markdown would render as follows when viewing a Ruby challenge:
 
-<img src="https://www.evernote.com/l/AAWxBvhw47lKkJzXZC-ustDU11RxZipCmZsB/image.png" style="max-width: 700px" />
+<img src="https://www.evernote.com/l/AAWxBvhw47lKkJzXZC-ustDU11RxZipCmZsB/image.png" style="max-width: 100%" />
 
 
 ## Links
