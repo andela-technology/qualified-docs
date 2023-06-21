@@ -9,7 +9,7 @@
                        title="Qualified.io Home"
                        rel="noopener noreferrer"
                     >
-                        <Logo :width="40"/>
+                        <Logo :width="50"/>
                     </a>
 
                 </div>

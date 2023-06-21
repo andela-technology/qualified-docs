@@ -3,7 +3,7 @@
         <div class="pt-8 md:pt-16">
             <div class="flex flex-col items-center">
                 <div class="flex flex-col items-center text-ui-primary mb-4">
-                    <FullLogo :height="40"/>
+                    <FullLogo :height="90"/>
                 </div>
                 <h1 class="text-xl lg:text-xl2 text-center">
                     Documentation &amp; Developer Portal
