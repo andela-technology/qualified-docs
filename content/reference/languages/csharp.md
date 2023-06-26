@@ -18,6 +18,7 @@ Qualified supports the following versions:
 - C# 6.0 (Mono 4.8)
 - C# 7.3 (.Net Core 2.1)
 - C# 8.0 (.Net Core 3.1)
+- C# 10.0 (.Net Core 6.0)
 
 ## Timeout
 
@@ -40,6 +41,13 @@ The sandbox environment will timeout the code within 12 seconds.
 - `NUnit`: `3.12`
 - `NewtonSoft.Json`: `12.0`
 - `NSubstitute`: `4.2`
+- `StackExchange.Redis`: `2.6.111`
+
+### C# 10.0 (.Net Core 6.0)
+
+- `NUnit`: `3.13.3`
+- `NewtonSoft.Json`: `13.0.1`
+- `NSubstitute`: `4.3.0`
 - `StackExchange.Redis`: `2.6.111`
 
 ## Testing
