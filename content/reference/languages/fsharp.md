@@ -13,20 +13,15 @@ NOTE: "had to trick the markdown parsers by wrapping the trailing "#" in a span 
 
 ## Environment
 
-Qualified supports F# 4.0 with Mono 4.8.
+Qualified supports F# 6.0 (tested with NUnit) and F# 4.0 with Mono 4.8 (tested with Fuchu).
 
 ## Timeout
 
 The sandbox environment will timeout the code within 12 seconds.
 
-## 3rd Party Libraries
-
-The following additional libraries are currently loaded onto the C# runtime.
-
-- Fuchu
-
 ## Testing
 
 Our F# environment supports the following testing frameworks:
 
-- [fsharp/fuchu](/reference/languages/fsharp/fuchu)
+- [fsharp/nunit](/reference/languages/fsharp/nunit) (F# 6.0 only)
+- [fsharp/fuchu](/reference/languages/fsharp/fuchu) (F# 4.0 only)
