@@ -306,6 +306,7 @@ TypeScript 4.2 (Node 12) has multiple presets for different kinds of challenges.
 - `@angular/router`: `^12.1.0`
 - `@angular-builders/jest`: `^12.0.2`
 - `@angular-devkit/build-angular`: `^12.1.2`
+- `@ngrx/store`: `12.5.1`
 - `@types/jest`: `^27.0.3`
 - `@types/node`: `^12.11.1`
 - `jest`: `^27.4.5`
