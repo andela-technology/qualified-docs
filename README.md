@@ -8,7 +8,13 @@ Provides public & private documentation for Qualified.
 
 ## Documentation
 
-### Quickstart:
+### Setup
+
+Configure git blame to ignore certain formatting commits:
+
+```bash
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+```
 
 All project dependencies can be installed automatically by running
 
@@ -16,7 +22,7 @@ All project dependencies can be installed automatically by running
 yarn install
 ```
 
-This uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
+This project uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
 
 ```bash
 npm install -g @gridsome/cli@0.3.4
@@ -34,10 +40,9 @@ Additional documentation can be found [here](https://docc-theme.netlify.com/).
 
 [Prism.js syntax highlighting](https://www.npmjs.com/package/prism-themes) can be adjusted in [MarkdownPage.vue](/src/templates/MarkdownPage.vue).
 
-
 ### Content Structure
 
-The `/content` folder contains all markdown articles used within these docs. Each directory represents a level of depth. Up to 3 levels of depth are shown within the applications sidebar. The 2nd level of depth is treated only as a section header, so the only information the `/content/[depth 1 folder]/[depth 2 folder]/index.html` file should contain is `title` and `order` front-matter. 
+The `/content` folder contains all markdown articles used within these docs. Each directory represents a level of depth. Up to 3 levels of depth are shown within the applications sidebar. The 2nd level of depth is treated only as a section header, so the only information the `/content/[depth 1 folder]/[depth 2 folder]/index.html` file should contain is `title` and `order` front-matter.
 
 ### API Docs
 
@@ -50,5 +55,5 @@ The private API is available at [docs.qualified.io/integrations/custom-integrati
 ### Remark Markdown Extensions
 
 #### Content Containers
-![Content Containers](https://p191.p3.n0.cdn.getcloudapp.com/items/9ZuB6pXv/Image%202020-11-04%20at%2012.45.31%20PM.png?source=viewer&v=19cacb18db0da80c607a80a983100112)
 
+![Content Containers](https://p191.p3.n0.cdn.getcloudapp.com/items/9ZuB6pXv/Image%202020-11-04%20at%2012.45.31%20PM.png?source=viewer&v=19cacb18db0da80c607a80a983100112)
