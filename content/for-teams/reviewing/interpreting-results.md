@@ -3,14 +3,14 @@ title: Interpreting Assessment Results
 description: "How to Interpret Your Candidate's Completed Assessments"
 order: 1
 tags:
-- getting started
-- tips
-- assessments
-- results
-- reviewing
+  - getting started
+  - tips
+  - assessments
+  - results
+  - reviewing
 ---
 
-# Interpreting Assessment Results 
+# Interpreting Assessment Results
 
 Let's look at some specific steps you can take when reviewing and interpreting the results of a developer assessment. We’ll provide details on how you can look from a top-down perspective to funnel in on the best candidates, without spending too much time on poor candidates.
 
@@ -69,24 +69,24 @@ Look over the final solution for the following:
 - Does the solution appear to be actually **solving the challenge**, or simply working around the tests?
 - If they did work around the tests, is the shortcut a valid one? Or are they simply making sure the code passes? This should stand out clearly, as low-effort solutions often just step through the inputs and return the expected output. This should be a major red flag.
 - Look at the **general code quality** of the solution:
-    - Good method and variable naming
-    - Adherence to the coding standards for the given language: This doesn’t mean that they need to follow your team’s standards, but that they matched general conventions.
-    - Consistent code style: Even if they didn’t match a specific style, if they were consistent across the entire solution, that’s a big plus.
-    - Does the solution look **maintainable**? Look for:
-    - Clear logic, no weird hacks
-    - Using existing library functionality
-    - Useful comments
-    - Function and class documentation
+  - Good method and variable naming
+  - Adherence to the coding standards for the given language: This doesn’t mean that they need to follow your team’s standards, but that they matched general conventions.
+  - Consistent code style: Even if they didn’t match a specific style, if they were consistent across the entire solution, that’s a big plus.
+  - Does the solution look **maintainable**? Look for:
+  - Clear logic, no weird hacks
+  - Using existing library functionality
+  - Useful comments
+  - Function and class documentation
 - Did the developer go **above-and-beyond** the expectations? Bonus points for:
   - Covering edge cases
   - Validating input
   - Reporting helpful errors
-  
+
 :::tip Subjective vs Objective Scoring
 For light weight processes, you may want to simply rollup your thoughts into a single subjective
-score, using a solution review's rating. The general rubric above will work fine. 
+score, using a solution review's rating. The general rubric above will work fine.
 
-For processes where you care about tracking performance against competencies, or simply want to ensure a consistent review process, utilizing challenge specific rubrics will be a better fit.    
+For processes where you care about tracking performance against competencies, or simply want to ensure a consistent review process, utilizing challenge specific rubrics will be a better fit.  
 :::
 
 ### Output
@@ -128,6 +128,8 @@ The code playback can give you further insight in the following ways:
 These are contrived just to highlight some common issues.
 
 ### Fantastic Solution
+
+<!-- prettier-ignore -->
 ```javascript
 var solution = {  
     /**
@@ -159,6 +161,7 @@ function validateNumber(num) {
     }
 }
 ```
+
 - Has documentation
 - Consistent code style (braces, spacing, string style, etc.)
 - Function naming is clear (validateNumber)
@@ -167,6 +170,7 @@ function validateNumber(num) {
 
 ### Decent Solution
 
+<!-- prettier-ignore -->
 ```javascript
 var solution = {
     square: function(num) {
@@ -185,6 +189,7 @@ var solution = {
 
 ### Poor Solution
 
+<!-- prettier-ignore -->
 ```javascript
 solution = {  
 "square": function(n) { return n * n },
@@ -204,6 +209,7 @@ Technically valid, but…
 
 ### No Effort Solution
 
+<!-- prettier-ignore -->
 ```javascript
 var solution = {  
     square: function(num) {
