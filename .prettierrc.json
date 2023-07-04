@@ -19,7 +19,7 @@
         "embeddedLanguageFormatting": "auto",
         "htmlWhitespaceSensitivity": "css",
         "insertPragma": false,
-        "jsxSingleQuote": true,
+        "jsxSingleQuote": false,
         "printWidth": 65,
         "proseWrap": "preserve",
         "quoteProps": "consistent",
