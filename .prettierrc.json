@@ -11,7 +11,7 @@
   "vueIndentScriptAndStyle": false,
   "overrides": [
     {
-      "files": "*.{md,yaml,json}",
+      "files": "*.{md,yml,yaml,json}",
       "options": {
         "arrowParens": "avoid",
         "bracketSameLine": false,
