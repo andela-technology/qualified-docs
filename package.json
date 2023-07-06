@@ -2,7 +2,6 @@
   "name": "qualified-docs",
   "private": true,
   "scripts": {
-    "prepare": "husky install",
     "postinstall": "patch-package",
     "build": "gridsome build",
     "develop": "gridsome develop",
