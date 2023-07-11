@@ -30,13 +30,14 @@ module Challenge =
 ```fsharp
 namespace Challenge.Tests
 
-open System
 open NUnit.Framework
 open Challenge
 
 [<TestFixture>]
 type TestClass () =
+    let add = Challenge.add
+
     [<Test>]
     member this.TestAddsTwoNumbers() =
-        Assert.AreEqual(Challenge.add 1 2, 3)
+        Assert.AreEqual(add 1 2, 3)
 ```
