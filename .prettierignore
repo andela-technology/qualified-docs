@@ -1,6 +1,8 @@
 _docs
+content
 content/api
 patches
 static
 *.json
+*.md
 *.svg
