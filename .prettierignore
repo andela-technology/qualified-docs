@@ -6,3 +6,5 @@ static
 *.json
 *.md
 *.svg
+*.yml
+*.yaml
