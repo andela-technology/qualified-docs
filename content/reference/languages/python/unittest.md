@@ -20,14 +20,16 @@ From Python 3.7, the solution module is no longer imported implicitly to avoid c
 Here is a minimal example of unit testing in Qualified's Python 3.7 environment (or more recent) by explicitly importing the `solution` and `preloaded` modules. For [Project Code Challenges](/reference/features/challenges/multi-file-code), these imports can be any module name in the workspace.
 
 ```python
-import unittest
+from unittest import TestCase
 
 import preloaded # preloaded code you can provide the solution 
                  # and/or test module (omit if preloaded is empty)
 
 import solution  # the candidate's solution
 
-class Test(unittest.TestCase):
+TestCase.maxDiff = None
+
+class Test(TestCase):
     def test_add(self):
         "add two numbers"
         self.assertEqual(solution.add(2, 1), 3)
