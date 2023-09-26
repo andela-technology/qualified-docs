@@ -33,7 +33,7 @@ This timer will begin as soon as the assessment is started and will count until 
 
 When an Enforced Time Limit is set on an assessment it uses the Wall Clock Timer in order to discourage candidates from working offline to cheat the timer. If candidates choose to use their own IDE against an enforced time limit, their timing will be affected in the same way.
 
-If an Enforced Time Limit is enabled on the assessment, the timer will count down and will indicate how much time remains to complete the assessment. With no enforced limit set, the timer will count up, showing the candidate how long they've spent on the assessment.
+If an Enforced Time Limit is enabled on the assessment, the timer will count down and indicates the remaining time to complete the assessment. With no enforced limit set, the timer will count up, showing the candidate how long they've spent on the assessment.
 
 ## Assessment Opened vs Started
 
