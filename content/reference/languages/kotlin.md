@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Kotlin version 1.3.
+Qualified supports Kotlin versions 1.3 and 1.5.
 
 ## Timeout
 
