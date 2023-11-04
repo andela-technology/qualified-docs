@@ -17,7 +17,7 @@ Qualified supports the following TypeScript environments:
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
 - TypeScript 3.3 with Node 10 (Mocha, Jest)
 - TypeScript 3.8 with Node 12 (Mocha, Jest)
-- TypeScript 4.2 with Node 12 (Mocha, Jest)
+- TypeScript 4.2 with Node 14 (Mocha, Jest)
 - TypeScript 4.9 with Node 18 (Mocha, Jest)
 
 ### How different TypeScript code sections are treated
@@ -224,7 +224,7 @@ TypeScript 3.8 (Node 12) has multiple presets for different kinds of challenges.
 
 ### TypeScript 4.2
 
-TypeScript 4.2 (Node 12) has multiple presets for different kinds of challenges.
+TypeScript 4.2 (Node 14) has multiple presets for different kinds of challenges.
 
 #### Default (no preset)
 
