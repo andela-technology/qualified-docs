@@ -18,6 +18,7 @@ Qualified supports the following TypeScript environments:
 - TypeScript 3.3 with Node 10 (Mocha, Jest)
 - TypeScript 3.8 with Node 12 (Mocha, Jest)
 - TypeScript 4.2 with Node 12 (Mocha, Jest)
+- TypeScript 4.9 with Node 18 (Mocha, Jest)
 
 ### How different TypeScript code sections are treated
 
@@ -315,6 +316,79 @@ TypeScript 4.2 (Node 12) has multiple presets for different kinds of challenges.
 - `tslib`: `^2.3.0`
 - `typescript`: `4.2.2`
 - `zone.js`: `^0.11.4`
+
+
+### TypeScript 4.9
+
+TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
+
+#### Default (no preset)
+
+- `@codewars/jest-reporter`: `1.0.3`
+- `@codewars/mocha-reporter`: `1.0.0`
+- `@types/chai`: `4.3.4`
+- `@types/jest`: `29.2.4`
+- `@types/lodash`: `4.14.191`
+- `@types/mocha`: `10.0.1`
+- `@types/node`: `18.11.15`
+- `@types/supertest`: `2.0.12`
+- `axios`: `1.2.1`
+- `chai`: `4.3.7`
+- `chai-http`: `4.3.0`
+- `fast-check`: `3.4.0`
+- `jest`: `29.3.1`
+- `lodash`: `4.17.21`
+- `mocha`: `10.2.0`
+- `rxjs`: `7.8.0`
+- `supertest`: `6.3.3`
+- `ts-jest`: `29.0.3`
+- `ts-node`: `10.9.1`
+- `typescript`: `4.9.4`
+
+#### React (`react` preset)
+
+- `@codewars/jest-reporter`: `1.0.3`
+- `@testing-library/dom`: `8.19.0`
+- `@testing-library/jest-dom`: `5.16.5`
+- `@testing-library/react`: `13.4.0`
+- `@testing-library/user-event`: `14.4.3`
+- `@types/escape-html`: `1.0.2`
+- `@types/jest`: `29.2.4`
+- `@types/lodash`: `4.14.191`
+- `@types/prop-types`: `15.7.5`
+- `@types/ramda`: `0.28.20`
+- `@types/react`: `18.0.26`
+- `@types/react-dom`: `18.0.9`
+- `@types/react-redux`: `7.1.24`
+- `@types/react-test-renderer`: `18.0.0`
+- `@types/sinon`: `10.0.13`
+- `@types/styled-components`: `5.1.26`
+- `@types/styled-system`: `5.1.15`
+- `@types/testing-library__jest-dom`: `5.14.5`
+- `axios`: `1.2.1`
+- `escape-html`: `1.0.3`
+- `immer`: `9.0.16`
+- `jest`: `29.3.1`
+- `jest-environment-jsdom`: `29.3.1`
+- `jest-snapshot`: `29.3.1`
+- `lodash`: `4.17.21`
+- `mobx`: `6.7.0`
+- `mobx-react`: `7.6.0`
+- `prop-types`: `15.8.1`
+- `ramda`: `0.28.0`
+- `react`: `18.2.0`
+- `react-dom`: `18.2.0`
+- `react-is`: `18.2.0`
+- `react-redux`: `8.0.5`
+- `react-test-renderer`: `18.2.0`
+- `redux`: `4.2.0`
+- `rxjs`: `7.8.0`
+- `sinon`: `15.0.1`
+- `styled-components`: `5.3.6`
+- `styled-system`: `5.1.5`
+- `ts-jest`: `29.0.3`
+- `typescript`: `4.9.4`
+- `use-immer`: `0.8.1`
 
 
 ## Testing
