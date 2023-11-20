@@ -326,6 +326,23 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 - `styled-system`: `5.1.5`
 - `use-immer`: `0.4.0`
 
+#### React Native (`react-native` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@babel/core`: `^7.13.15`
+- `@codewars/jest-reporter`: `^1.0.3`
+- `@testing-library/jest-native`: `^4.0.1`
+- `@testing-library/react-native`: `^7.2.0`
+- `babel-jest`: `^26.6.3`
+- `jest`: `^26.6.3`
+- `metro-react-native-babel-preset`: `^0.65.2`
+- `react`: `^17.0.2`
+- `react-dom`: `^17.0.2`
+- `react-native`: `^0.64.0`
+- `react-native-web`: `^0.15.6`
+- `react-test-renderer`: `^17.0.2`
+
 #### Vue (`vue` preset)
 
 > Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
