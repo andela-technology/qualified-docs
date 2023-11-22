@@ -390,6 +390,33 @@ TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
 - `typescript`: `4.9.4`
 - `use-immer`: `0.8.1`
 
+#### Angular (`angular` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@angular-builders/jest`: `^16.0.1`
+- `@angular-devkit/build-angular`: `^16.2.2`
+- `@angular/animations`: `^16.2.12`
+- `@angular/cli`: `16.2.2`
+- `@angular/common`: `^16.2.12`
+- `@angular/compiler`: `^16.2.12`
+- `@angular/compiler-cli`: `^16.2.12`
+- `@angular/core`: `^16.2.12`
+- `@angular/forms`: `^16.2.12`
+- `@angular/platform-browser`: `^16.2.12`
+- `@angular/platform-browser-dynamic`: `^16.2.12`
+- `@angular/router`: `^16.2.12`
+- `@codewars/jest-reporter`: `^1.0.3`
+- `@ngrx/store`: `^16.2.12`
+- `@types/jest`: `^29.5.1`
+- `@types/node`: `^18.15.11`
+- `jest`: `^29.5.0`
+- `jest-preset-angular`: `^13.1.0`
+- `rxjs`: `^7.8.1`
+- `tslib`: `^2.6.2`
+- `typescript`: `^4.9.4`
+- `zone.js`: `~0.13.0`
+
 
 ## Testing
 
