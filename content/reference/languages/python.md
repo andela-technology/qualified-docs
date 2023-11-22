@@ -187,6 +187,7 @@ Since Python 3.7, we have presets for different kinds of challenges. Use the Run
 - `networkx`: `3.0`
 - `numpy`: `1.24.2`
 - `pandas`: `1.5.3`
+- `psycopg2`: `2.9.9`
 - `pysparkling`: `0.6.2`
 - `regex`: `2022.10.31`
 - `requests`: `2.28.2`
