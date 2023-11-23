@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Swift 3.1, 4.0, 5.0 and 5.3.
+Qualified supports Swift 3.1, 4.0, 5.0, 5.3 and 5.9.
 
 ## Timeout
 
