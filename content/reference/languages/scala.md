@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Scala version 2.12 and 2.13.
+Qualified supports Scala version 2.13.
 
 ## Timeout
 
