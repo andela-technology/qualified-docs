@@ -15,7 +15,6 @@ Qualified supports the following TypeScript environments:
 
 - TypeScript 2.4 with Node 8 (Mocha)
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
-- TypeScript 3.3 with Node 10 (Mocha, Jest)
 - TypeScript 3.8 with Node 12 (Mocha, Jest)
 - TypeScript 4.2 with Node 14 (Mocha, Jest)
 - TypeScript 4.9 with Node 18 (Mocha, Jest)
@@ -24,7 +23,7 @@ Qualified supports the following TypeScript environments:
 
 For TypeScript 2.4, the solution and optional setup/preloaded code are combined into one "solution" file. The test suite is its own file.
 
-For TypeScript 3.3+, the optional setup/preloaded code is written to a separate file that can be imported with path: "./preloaded".
+For TypeScript 3.8+, the optional setup/preloaded code is written to a separate file that can be imported with path: "./preloaded".
 
 ## Timeout
 
@@ -69,80 +68,6 @@ Mainly used for Angular 4 challenges.
 - `rxjs`: `5.4.3`
 - `typescript`: `2.4.2`
 - `zone.js`: `0.8.18`
-
-### TypeScript 3.3
-
-TypeScript 3.3 (Node 10) has multiple presets for different kinds of challenges.
-
-#### Default (no preset)
-
-- `axios`: `0.18.0`
-- `chai`: `4.2.0`
-- `fast-check`: `1.10.1`
-- `jest`: `24.7.1`
-- `lodash`: `4.17.11`
-- `mocha`: `5.2.0`
-- `ts-jest`: `24.0.2`
-- `ts-node`: `8.0.2`
-- `typescript`: `3.3.3`
-
-#### React (`react` preset)
-
-- `@testing-library/dom`: `5.2.1`
-- `@testing-library/react-hooks`: `1.0.2`
-- `@testing-library/react`: `8.0.1`
-- `@testing-library/user-event`: `4.1.0`
-- `axios`: `0.18.0`
-- `enzyme-adapter-react-16`: `1.12.1`
-- `enzyme-to-json`: `3.3.5`
-- `enzyme`: `3.9.0`
-- `escape-html`: `1.0.3`
-- `immer`: `3.1.3`
-- `jest-dom`: `3.5.0`
-- `jest-environment-jsdom`: `24.7.1`
-- `jest-snapshot`: `24.7.1`
-- `jest`: `24.7.1`
-- `lodash`: `4.17.11`
-- `mobx`: `5.9.4`
-- `prop-types`: `15.7.2`
-- `ramda`: `0.26.1`
-- `react-dom`: `16.8.6`
-- `react-mobx`: `0.0.4`
-- `react-redux`: `7.0.3`
-- `react-test-renderer`: `16.8.6`
-- `react`: `16.8.6`
-- `rebass`: `3.1.2`
-- `redux`: `4.0.1`
-- `sinon`: `7.3.2`
-- `styled-components`: `4.3.2`
-- `styled-system`: `5.0.16`
-- `ts-jest`: `24.0.2`
-- `typescript`: `3.3.4000`
-- `use-immer`: `0.3.3`
-
-#### Angular (`angular` preset)
-
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
-
-- `@angular-builders/jest`: `8.0.4`
-- `@angular/animations`: `8.1.3`
-- `@angular/common`: `8.1.3`
-- `@angular/compiler`: `8.1.3`
-- `@angular/core`: `8.1.3`
-- `@angular/forms`: `8.1.3`
-- `@angular/platform-browser-dynamic`: `8.1.3`
-- `@angular/platform-browser`: `8.1.3`
-- `@angular/router`: `8.1.3`
-- `core-js`: `3.1.4`
-- `jest-environment-jsdom-thirteen`: `1.0.1`
-- `jest-preset-angular`: `7.1.1`
-- `jest`: `24.8.0`
-- `rxjs`: `6.4.0`
-- `ts-jest`: `24.0.2`
-- `ts-node`: `7.0.1`
-- `tslib`: `1.10.0`
-- `typescript`: `3.3.4000`
-- `zone.js`: `0.9.1`
 
 ### TypeScript 3.8
 
