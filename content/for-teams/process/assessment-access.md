@@ -9,7 +9,7 @@ There are a number of options available for limiting candidate access to take an
 Options span from giving candidates access for only a specific period of time, to locking the assessment until a team member manually unlocks. Later on we will also cover re-opening access to a previously submitted assessment.
 
 ## Time Based Access
-There are a number of ways to limit candidates to only accessing and taking an assessment for a specific period of time. Many of these options are only available through a candidate specific invitation. If you are unfamiliar with the difference between invitations and public links, please see ["sending assessments"](../invitations) to learn more.
+There are a number of ways to limit candidates to only accessing and taking an assessment for a specific period of time. Many of these options are only available through a candidate specific invitation. If you are unfamiliar with the difference between invitations and public links, please see ["sending assessments"](/for-teams/process/invitations) to learn more.
 
 ### Time Limits
 

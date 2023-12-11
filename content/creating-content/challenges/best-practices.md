@@ -19,7 +19,7 @@ Instructions are an often overlooked but critical component to the challenge des
 - Keep in mind browser and screen sizes when using HTML, tables and images.
 - Explain any terminology and context the candidate can't be expected to understand (error heavily on the side of caution—there's little gain in proving that a candidate couldn't figure out which CFG was intended, for example).
 - If information is intentionally to be withheld from the candidate, it's best to explain it to the extent possible to avoid creating a "gotcha" situation.
-- Include a [rubric](../rubrics) so the candidate knows how they'll be evaluated and what the goals and deliverables are. The objectives of the challenge should be clearly stated. The purpose of the challenge should be obvious.
+- Include a rubric so the candidate knows how they'll be evaluated and what the goals and deliverables are. The objectives of the challenge should be clearly stated. The purpose of the challenge should be obvious.
 - State assumptions, guarantees and edge cases the candidate should consider. If you want a candidate to detect an edge case on their own, make sure the constraints of the problem allow it.
 
 ### Test Setup

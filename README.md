@@ -39,6 +39,10 @@ Additional documentation can be found [here](https://docc-theme.netlify.com/).
 
 The `/content` folder contains all markdown articles used within these docs. Each directory represents a level of depth. Up to 3 levels of depth are shown within the applications sidebar. The 2nd level of depth is treated only as a section header, so the only information the `/content/[depth 1 folder]/[depth 2 folder]/index.html` file should contain is `title` and `order` front-matter. 
 
+### Internal Links
+
+Internal markdown content links should be absolute (i.e. `/foo`) rather than relative (i.e. `foo`, `./foo`, `../foo`, etc), which can cause inconsistencies and broken links on some browsers. The command `grep -RP '\]\((?!http|#|/|mailto)' content` should return nothing.
+
 ### API Docs
 
 The API docs are generated based on JSON files exported from the main Qualified Rails API. There are two files, one that only contains public APIs, and one that contains both public and private APIs.
