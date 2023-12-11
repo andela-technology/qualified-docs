@@ -41,7 +41,7 @@ var _ = Describe("Add", func() {
 
 #### Note
 
-The package name (`challenge` in above example) can be arbitrary (`[a-z](a-z\d)*`).
+The package name (`challenge` in above example) can be arbitrary (`[a-z][a-z\d]*`).
 
 The import path can be configured with [canonical import path](https://golang.org/doc/go1.4#canonicalimports).
 The default is `codewarrior/{package name}`.
