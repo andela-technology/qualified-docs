@@ -15,7 +15,10 @@ export default function (Vue, {router, head, isClient}) {
         head.meta.push({
             key: 'og:url',
             name: 'og:url',
-            content: process.env.GRIDSOME_BASE_PATH + to.path,
+            content: (
+                process.env.GRIDSOME_BASE_PATH ||
+                "https://docs.qualified.io"
+            ) + to.path,
         });
         next();
     });
