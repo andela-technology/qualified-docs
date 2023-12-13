@@ -32,7 +32,7 @@ Let's briefly go over some common usages for labels. These are examples, but fee
 #### Organize By Cohorts
 If you are assessing candidates for hiring process, you could use labels to organize candidates by how they were sourced, or perhaps by which jobs they are applying to.
 
-If you are assessing students in an educational setting, you could use labels to organize candidates by classroom. Cohort and classroom organization is discussed further in our [education article](../education). 
+If you are assessing students in an educational setting, you could use labels to organize candidates by classroom. Cohort and classroom organization is discussed further in our [education article](/for-teams/process/education).
 
 #### Organize by Process Stage     
 

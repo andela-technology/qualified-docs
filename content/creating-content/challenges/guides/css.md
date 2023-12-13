@@ -93,7 +93,7 @@ The pixel-perfect diffing approach's major drawback of being too precise can be 
 
 The upside is reduction of false negatives, but this comes at the cost of increased false positives, a heavier testing suite and potentially more work and time required to write the tests or the basic diffing utility.
 
-Check out our article [Browser Diff Testing with Puppeteer](browser-diff-testing-with-puppeteer) for one strategy.
+Check out our article [Browser Diff Testing with Puppeteer](/creating-content/challenges/guides/browser-diff-testing-with-puppeteer) for one strategy.
 
 ### Browser automation tools
 
