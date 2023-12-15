@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Elixir 1.6, 1.9 and 1.11.
+Qualified supports Elixir 1.6, 1.9, 1.11 and 1.15.
 
 ## Timeout
 
