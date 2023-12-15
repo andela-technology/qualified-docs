@@ -28,7 +28,7 @@ For TypeScript 3.3+, the optional setup/preloaded code is written to a separate 
 
 ## Timeout
 
-The sandbox environment will timeout the code within 12 seconds.
+The sandbox environment will timeout the code within 12 seconds. Qualified's Angular library challenges have an extended timeout of 16 seconds.
 
 
 ## Packages
