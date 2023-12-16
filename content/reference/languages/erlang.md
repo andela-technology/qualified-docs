@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Erlang 20.
+Qualified supports Erlang 20 and 26.
 
 ## Timeout
 
