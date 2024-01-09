@@ -108,9 +108,9 @@ If enabled on your account, you can add overall notes about a candidate or stude
 
 ## Assessments
 
-At the bottom you'll find a tabbed section that contains all the details about the assessments taken by the developer.
+At the bottom, you'll find a tabbed section that contains all the details about the assessments taken by the developer.
 
-Each assessment is in it's own tab, and you can switch between them by clicking the title.  The icon next to the tab shows you the status of the assessment: _Started_ (<span class="icon-status-new"></span>) or _Submitted_ (<span class="icon-status-done"></span>). If an assessment was interactive, you'll see an Interact icon (<span class="icon-interact-session"/>) as well.
+Each assessment is in its own tab. You can switch between assessments by clicking the title. The icon next to the tab shows you the status of the assessment: _Started_ (<span class="icon-status-new"></span>) or _Submitted_ (<span class="icon-status-done"></span>). If an assessment was interactive, you'll see an Interact icon (<span class="icon-interact-session"/>) as well.
 
 Each assessment includes a list of the solutions within that assessment.  You can quickly see how well the developer did on a particular challenge within that table, or click on the title of a challenge to jump down to learn more about their solution.
 
