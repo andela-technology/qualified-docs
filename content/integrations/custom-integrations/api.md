@@ -21,7 +21,7 @@ will be able to find your key by going to [Team Settings > Integrations](https:/
 
 ### Generating an API Key
 
-On the API Access page you'll be able to generate a new API key if you don't have one
+On the [API Access page](https://www.qualified.io/hire/account/integrations) you'll be able to generate a new API key if you don't have one
 already or in case you believe your current API key could have been compromised. Once you
 generate a new key, the old key is no longer valid. Keep it a secret!
 
