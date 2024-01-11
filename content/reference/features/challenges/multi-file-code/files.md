@@ -127,3 +127,7 @@ Under _Run Configuration_ is an option to add one or more **Submission Ignore Pa
 Using submission ignore paths allows the candidate to create files that can help them test their code—such as additional unit tests or specs—without affecting the submission scoring process.
 
 The way they work is any candidate-created file that matches an ignore path is not included in the runtime files. If a _Project File_ matches an ignore path, the original, unedited _Project File_ will be used instead of the candidate modified one.
+
+## Downloading Project Files
+
+Under _Challenge Configuration_ → _Description &amp; Categorization_ → _Advanced Options_, you can enable the ability for candidates to download a zip of all files within a challenge while taking an assessment.
