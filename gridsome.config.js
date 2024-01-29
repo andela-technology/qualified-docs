@@ -77,7 +77,6 @@ module.exports = {
             use: '@gridsome/plugin-sitemap',
             options: {},
         },
-
     ],
     templates: {
         MarkdownPage: [
@@ -87,5 +86,11 @@ module.exports = {
                 }
             }
         ]
+    },
+    chainWebpack: config => {
+        config.module
+            .rule("vue")
+            .use("vue-svg-inline-loader")
+            .loader("vue-svg-inline-loader")
     }
 };
