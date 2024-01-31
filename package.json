@@ -5,7 +5,8 @@
     "postinstall": "patch-package",
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "import-product-releases": "python scripts/import_product_releases.py"
   },
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.6",
