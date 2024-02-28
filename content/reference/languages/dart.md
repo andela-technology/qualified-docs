@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Dart 2.8 and 2.14.
+Qualified supports Dart 2.8, 2.14 and 3.3.
 
 ## Timeout
 
