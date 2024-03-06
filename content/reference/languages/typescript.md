@@ -327,6 +327,7 @@ TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
 - `@codewars/jest-reporter`: `1.0.3`
 - `@codewars/mocha-reporter`: `1.0.0`
 - `@types/chai`: `4.3.4`
+- `@types/express`: `4.17.21`
 - `@types/jest`: `29.2.4`
 - `@types/lodash`: `4.14.191`
 - `@types/mocha`: `10.0.1`
@@ -334,6 +335,7 @@ TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
 - `@types/supertest`: `2.0.12`
 - `axios`: `1.2.1`
 - `chai`: `4.3.7`
+- `express`: `4.18.2`
 - `chai-http`: `4.3.0`
 - `fast-check`: `3.4.0`
 - `jest`: `29.3.1`
