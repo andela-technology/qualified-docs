@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Rust 1.44 (Rust 2018) and Rust 1.66.
+Qualified supports Rust 1.66 and Rust 1.44 (Rust 2018).
+
+Rust 1.44 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Rust 1.66.
 
 ## Timeout
 

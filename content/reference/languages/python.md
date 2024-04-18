@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Python 2.7, 3.4, 3.6, 3.7, 3.8 and 3.11.
+Qualified supports Python 3.11, 3.8, 3.7, 3.6, 3.4 and 2.7.
+
+Python versions older than 3.8 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Python 3.8 or greater.
 
 ## Timeout
 

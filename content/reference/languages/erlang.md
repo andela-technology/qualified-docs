@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Erlang 20 and 26.
+Qualified supports Erlang 26 and 20.
+
+Erlang 20 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Erlang 26.
 
 ## Timeout
 

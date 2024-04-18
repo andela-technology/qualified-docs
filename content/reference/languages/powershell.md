@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports PowerShell 7.2
+Qualified supports PowerShell 7.2.
 
 ## Timeout
 

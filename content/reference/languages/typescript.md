@@ -13,12 +13,14 @@ tags:
 
 Qualified supports the following TypeScript environments:
 
-- TypeScript 2.4 with Node 8 (Mocha)
-- TypeScript 2.4 with headless Chrome (Karma+Mocha)
-- TypeScript 3.3 with Node 10 (Mocha, Jest)
-- TypeScript 3.8 with Node 12 (Mocha, Jest)
-- TypeScript 4.2 with Node 14 (Mocha, Jest)
 - TypeScript 4.9 with Node 18 (Mocha, Jest)
+- TypeScript 4.2 with Node 14 (Mocha, Jest)
+- TypeScript 3.8 with Node 12 (Mocha, Jest)
+- TypeScript 3.3 with Node 10 (Mocha, Jest)
+- TypeScript 2.4 with headless Chrome (Karma+Mocha)
+- TypeScript 2.4 with Node 8 (Mocha)
+
+TypeScript versions older than 4.2 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use TypeScript 4.2 or greater.
 
 ### How different TypeScript code sections are treated
 
