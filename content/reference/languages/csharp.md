@@ -29,15 +29,12 @@ The sandbox environment will timeout the code within 12 seconds.
 
 ## Packages
 
-### C# 6.0 (Mono 4.8)
+### C# 10.0 (.Net Core 6.0)
 
-- `NUnit`: `2.x`
-
-### C# 7.3 (.Net Core 2.1)
-
-- `NUnit`: `3.10`
-- `Newtonsoft.Json`: `11.0`
-- `NSubstitute`: `4.2`
+- `NUnit`: `3.13.3`
+- `NewtonSoft.Json`: `13.0.1`
+- `NSubstitute`: `4.3.0`
+- `StackExchange.Redis`: `2.6.111`
 
 ### C# 8.0 (.Net Core 3.1)
 
@@ -46,12 +43,15 @@ The sandbox environment will timeout the code within 12 seconds.
 - `NSubstitute`: `4.2`
 - `StackExchange.Redis`: `2.6.111`
 
-### C# 10.0 (.Net Core 6.0)
+### C# 7.3 (.Net Core 2.1)
 
-- `NUnit`: `3.13.3`
-- `NewtonSoft.Json`: `13.0.1`
-- `NSubstitute`: `4.3.0`
-- `StackExchange.Redis`: `2.6.111`
+- `NUnit`: `3.10`
+- `Newtonsoft.Json`: `11.0`
+- `NSubstitute`: `4.2`
+
+### C# 6.0 (Mono 4.8)
+
+- `NUnit`: `2.x`
 
 ## Testing
 
