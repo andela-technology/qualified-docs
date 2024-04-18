@@ -15,10 +15,13 @@ NOTE: "had to trick the markdown parsers by wrapping the trailing "#" in a span 
 
 Qualified supports the following versions:
 
-- C# 6.0 (Mono 4.8)
-- C# 7.3 (.Net Core 2.1)
-- C# 8.0 (.Net Core 3.1)
 - C# 10.0 (.Net Core 6.0)
+- C# 8.0 (.Net Core 3.1)
+- C# 7.3 (.Net Core 2.1)
+- C# 6.0 (Mono 4.8)
+
+C# versions older than 8.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use C# 8.0 or greater.
+
 
 ## Timeout
 

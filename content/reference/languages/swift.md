@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Swift 3.1, 4.0, 5.0, 5.3 and 5.9.
+Qualified supports Swift 5.9, 5.3, 5.0, 4.0 and 3.1.
+
+Swift versions older than 5.9 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Swift 5.9.
 
 ## Timeout
 

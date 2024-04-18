@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Kotlin versions 1.3, 1.5 and 1.9.
+Qualified supports Kotlin versions 1.9, 1.5 and 1.3.
+
+Kotlin versions older than 1.9 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Kotlin 1.9.
 
 ## Timeout
 

@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports C11 with Clang 3.8 and C18 with Clang 8.
+Qualified supports C18 with Clang 8 and C11 with Clang 3.8.
+
+C11 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use C18.
 
 ## Timeout
 

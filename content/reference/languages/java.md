@@ -11,7 +11,9 @@ tags:
 
 ## Environment
 
-Qualified supports Java 8, 11 and 17.
+Qualified supports Java 17, 11 and 8.
+
+Java versions older than 17 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Java 17.
 
 ## Timeout
 

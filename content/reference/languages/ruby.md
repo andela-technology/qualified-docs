@@ -12,6 +12,8 @@ tags:
 
 Qualified supports Ruby MRI 2.3, 2.5 and 3.0.
 
+Ruby versions older than 3.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Ruby 3.0.
+
 ## Timeout
 
 The sandbox environment will timeout the code within 12 seconds.
