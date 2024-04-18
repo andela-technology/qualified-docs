@@ -10,7 +10,7 @@ tags:
 
 ## Environment
 
-Qualified supports Ruby MRI 2.3, 2.5 and 3.0.
+Qualified supports Ruby MRI 3.0, 2.5 and 2.3.
 
 Ruby versions older than 3.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Ruby 3.0.
 
@@ -22,7 +22,52 @@ The sandbox environment will timeout the code within 12 seconds.
 
 The following gems are available for use:
 
-<!-- TODO organize gems by type/categories -->
+### Ruby MRI 3.0
+
+#### Default (no preset)
+
+- [`faker`](https://rubygems.org/gems/faker/)
+- [`faraday`](https://rubygems.org/gems/faraday/)
+- [`mongo`](https://rubygems.org/gems/mongo/)
+- [`nokogiri`](https://rubygems.org/gems/nokogiri/)
+- [`pg`](https://rubygems.org/gems/pg/)
+- [`rack`](https://rubygems.org/gems/rack/)
+- [`rack-test`](https://rubygems.org/gems/rack-test/)
+- [`redis`](https://rubygems.org/gems/redis/)
+- [`rspec`](https://rubygems.org/gems/rspec/)
+- [`sequel`](https://rubygems.org/gems/sequel/)
+- [`sqlite3`](https://rubygems.org/gems/sqlite3/)
+- [`webmock`](https://rubygems.org/gems/webmock/)
+
+#### Ruby on Rails preset
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- [`bcrypt ~> 3.1.7`](https://rubygems.org/gems/bcrypt/versions/3.1.7)
+- [`puma ~> 5.0`](https://rubygems.org/gems/puma/versions/5.0.0)
+- [`rails ~> 6.1.3`](https://rubygems.org/gems/rails/versions/6.1.3)
+- [`sqlite3 ~> 1.4`](https://rubygems.org/gems/sqlite3/versions/1.4.0)
+- [`rspec-rails`](https://rubygems.org/gems/rspec-rails)
+
+### Ruby MRI 2.5
+
+- [`activesupport ~> 5.2.0`](https://rubygems.org/gems/activesupport/versions/5.2.0)
+- [`factory_bot ~> 4.8.2`](https://rubygems.org/gems/factory_bot/versions/4.8.2)
+- [`faker ~> 1.8.7`](https://rubygems.org/gems/faker/versions/1.8.7)
+- [`faraday ~> 0.15.1`](https://rubygems.org/gems/faraday/versions/0.15.1)
+- [`mongo ~> 2.5.3`](https://rubygems.org/gems/mongo/versions/2.5.3)
+- [`mongoid ~> 6.2.0`](https://rubygems.org/gems/mongoid/versions/6.2.0)
+- [`nokogiri ~> 1.8.2`](https://rubygems.org/gems/nokogiri/versions/1.8.2)
+- [`pg ~> 1.0.0`](https://rubygems.org/gems/pg/versions/1.0.0)
+- [`rack ~> 2.0.5`](https://rubygems.org/gems/rack/versions/2.0.5)
+- [`rails ~> 5.2.0`](https://rubygems.org/gems/rails/versions/5.2.0)
+- [`redis ~> 4.0.1`](https://rubygems.org/gems/redis/versions/4.0.1)
+- [`rspec ~> 3.7.0`](https://rubygems.org/gems/rspec/versions/3.7.0)
+- [`rspec-its ~> 1.2.0`](https://rubygems.org/gems/rspec-its/versions/1.2.0)
+- [`sequel ~> 5.8.0`](https://rubygems.org/gems/sequel/versions/5.8.0)
+- [`sinatra ~> 2.0.1`](https://rubygems.org/gems/sinatra/versions/2.0.1)
+- [`sqlite3 ~> 1.3.13`](https://rubygems.org/gems/sqlite3/versions/1.3.13)
+- [`webmock ~> 3.4.2`](https://rubygems.org/gems/webmock/versions/3.4.2)
 
 ### Ruby MRI 2.3
 
@@ -61,53 +106,6 @@ The following gems are available for use:
 - [`timecop ~> 0.9.1`](https://rubygems.org/gems/timecop/versions/0.9.1)
 - [`timers ~> 4.1.2`](https://rubygems.org/gems/timers/versions/4.1.2)
 - [`webmock ~> 3.0.1`](https://rubygems.org/gems/webmock/versions/3.0.1)
-
-### Ruby MRI 2.5
-
-- [`activesupport ~> 5.2.0`](https://rubygems.org/gems/activesupport/versions/5.2.0)
-- [`factory_bot ~> 4.8.2`](https://rubygems.org/gems/factory_bot/versions/4.8.2)
-- [`faker ~> 1.8.7`](https://rubygems.org/gems/faker/versions/1.8.7)
-- [`faraday ~> 0.15.1`](https://rubygems.org/gems/faraday/versions/0.15.1)
-- [`mongo ~> 2.5.3`](https://rubygems.org/gems/mongo/versions/2.5.3)
-- [`mongoid ~> 6.2.0`](https://rubygems.org/gems/mongoid/versions/6.2.0)
-- [`nokogiri ~> 1.8.2`](https://rubygems.org/gems/nokogiri/versions/1.8.2)
-- [`pg ~> 1.0.0`](https://rubygems.org/gems/pg/versions/1.0.0)
-- [`rack ~> 2.0.5`](https://rubygems.org/gems/rack/versions/2.0.5)
-- [`rails ~> 5.2.0`](https://rubygems.org/gems/rails/versions/5.2.0)
-- [`redis ~> 4.0.1`](https://rubygems.org/gems/redis/versions/4.0.1)
-- [`rspec ~> 3.7.0`](https://rubygems.org/gems/rspec/versions/3.7.0)
-- [`rspec-its ~> 1.2.0`](https://rubygems.org/gems/rspec-its/versions/1.2.0)
-- [`sequel ~> 5.8.0`](https://rubygems.org/gems/sequel/versions/5.8.0)
-- [`sinatra ~> 2.0.1`](https://rubygems.org/gems/sinatra/versions/2.0.1)
-- [`sqlite3 ~> 1.3.13`](https://rubygems.org/gems/sqlite3/versions/1.3.13)
-- [`webmock ~> 3.4.2`](https://rubygems.org/gems/webmock/versions/3.4.2)
-
-### Ruby MRI 3.0
-
-#### Default (no preset)
-
-- [`faker`](https://rubygems.org/gems/faker/)
-- [`faraday`](https://rubygems.org/gems/faraday/)
-- [`mongo`](https://rubygems.org/gems/mongo/)
-- [`nokogiri`](https://rubygems.org/gems/nokogiri/)
-- [`pg`](https://rubygems.org/gems/pg/)
-- [`rack`](https://rubygems.org/gems/rack/)
-- [`rack-test`](https://rubygems.org/gems/rack-test/)
-- [`redis`](https://rubygems.org/gems/redis/)
-- [`rspec`](https://rubygems.org/gems/rspec/)
-- [`sequel`](https://rubygems.org/gems/sequel/)
-- [`sqlite3`](https://rubygems.org/gems/sqlite3/)
-- [`webmock`](https://rubygems.org/gems/webmock/)
-
-#### Ruby on Rails preset
-
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
-
-- [`bcrypt ~> 3.1.7`](https://rubygems.org/gems/bcrypt/versions/3.1.7)
-- [`puma ~> 5.0`](https://rubygems.org/gems/puma/versions/5.0.0)
-- [`rails ~> 6.1.3`](https://rubygems.org/gems/rails/versions/6.1.3)
-- [`sqlite3 ~> 1.4`](https://rubygems.org/gems/sqlite3/versions/1.4.0)
-- [`rspec-rails`](https://rubygems.org/gems/rspec-rails)
 
 ## Testing
 

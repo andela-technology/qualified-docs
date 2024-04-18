@@ -22,22 +22,6 @@ The sandbox environment will timeout the code within 12 seconds.
 
 The following crates are available:
 
-### 1.44 (Rust 2018)
-
-- `bit-set`: `0.5.2`
-- `chrono`: `0.4.11`
-- `itertools`: `0.9.0`
-- `lazy_static`: `1.4.0`
-- `num`: `0.2.1`
-- `quickcheck`: `0.9.2`
-  - `quickcheck_macros`: `0.9.1`
-- `rand`: `0.7.3`
-- `regex`: `1.3.9`
-- `serde`: `1.0.111`
-  - `serde_derive`: `1.0.111`
-  - `serde_json`: `1.0.53`
-- `text_io`: `0.1.8`
-
 ### 1.66
 
 - `bit-set`: `0.5.3`
@@ -62,6 +46,22 @@ The following crates are available:
 - `thiserror`: `1.0.37`
 - `tokio`: `1.23.0`
 - `tokio-util`: `0.7.4`
+
+### 1.44 (Rust 2018)
+
+- `bit-set`: `0.5.2`
+- `chrono`: `0.4.11`
+- `itertools`: `0.9.0`
+- `lazy_static`: `1.4.0`
+- `num`: `0.2.1`
+- `quickcheck`: `0.9.2`
+  - `quickcheck_macros`: `0.9.1`
+- `rand`: `0.7.3`
+- `regex`: `1.3.9`
+- `serde`: `1.0.111`
+  - `serde_derive`: `1.0.111`
+  - `serde_json`: `1.0.53`
+- `text_io`: `0.1.8`
 
 ## Testing
 
