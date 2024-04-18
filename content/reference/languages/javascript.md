@@ -13,7 +13,7 @@ tags:
 
 Qualified supports Node 18, 14, 12, 10, 8 and 6.
 
-Node versions older than 12 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Node 18, except for Puppeteer challenges (use Node 12) and Vue challenges (use Node 14).
+Node versions older than 12 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Node 18, except for Puppeteer and React Native challenges (use Node 12) and Vue challenges (use Node 14).
 
 ## Timeout
 
