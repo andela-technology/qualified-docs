@@ -8,6 +8,46 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## January, 2024 
+
+### Features 
+ 
+- **Learnosity Partnership Integration** 
+
+    [Learnosity](https://learnosity.com/) has officially announced our partnership and integration into their platform to their custom base, via website, newsletter, and socials! 
+
+    This integration allows us to expand our reach into the L&D space, acting as an important add-on component within Learnosity's deep offering across many different learning domains. We've closed our first partner sale via iCEV, and already have other potential deals beginning to surface.       We will be presenting internally to their sales team later this month to further deepen our partnership and enable their sales team to bring more business to us.  
+
+    [Release Announcement](https://help.learnosity.com/hc/en-us/articles/14870489871133-2024-1-LTS-Release-Announcement)
+
+    [Partner Page](https://learnosity.com/company/partners/partners-directory/qualified/)
+
+
+### Improvements 
+
+- **Erlang 26** 
+
+    Erlang 26 is now supported within project challenges. 
+
+- **Elixir 1.15** 
+
+    Elixir 1.15 is now supported within project challenges.
+
+- **Add deprecated language version labels** 
+
+    A new “deprecated” label was added on old language versions in the challenge edit and detail views, visible to teams and content managers with the purpose of providing our users with more legibility of what are the available language versions to use. For further information please check       our [documentation](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions) 
+  
+- **Performance issue when loading "Portfolio" tab of report card** 
+
+    Users were experiencing heavy lag, especially with scrolls, once Portfolio tab was activated and the number of assessments results was exceeding 6 or more. This issue was successfully fixed.  
+
+### Challenges
+
+- **ASCII 7 Segment Display challenge** 
+
+    This challenge tests the candidate's basic array and string manipulation.  
+
+
 ## July 13, 2023
 
 ### Features
