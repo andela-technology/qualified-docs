@@ -35,7 +35,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Add deprecated language version labels** 
 
-    A new “deprecated” label was added on old language versions in the challenge edit and detail views, visible to teams and content managers with the purpose of providing our users with more legibility of what are the available language versions to use. For further information please check       our [documentation](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions) 
+    A new "deprecated" label was added to old language versions in the challenge edit and detail views. This helps content managers identify which language versions will be removed in the future. For further information and tips on upgrading your content, please check our [guide for upgrading language versions](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions).
   
 - **Performance issue when loading "Portfolio" tab of report card** 
 
