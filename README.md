@@ -8,6 +8,13 @@ Provides documentation for Qualified.
 
 ## Documentation
 
+### Setup
+
+Configure git blame to ignore certain formatting commits:
+
+```bash
+git config blame.ignoreRevsFile .git-blame-ignore-revs
+```
 ### Issues and Contributions
 
 Feel free to [report issues](https://github.com/andela-technology/qualified-docs/issues). Pull requests are welcome.
@@ -22,7 +29,7 @@ All project dependencies can be installed automatically by running
 yarn install
 ```
 
-This uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
+This project uses Gridsome to develop the docs. You'll need to install gridsome globally, as in
 
 ```bash
 npm install -g @gridsome/cli@0.3.4
@@ -42,7 +49,7 @@ Additional documentation can be found [here](https://docc-theme.netlify.com/).
 
 ### Content Structure
 
-The `/content` folder contains all markdown articles used within these docs. Each directory represents a level of depth. Up to 3 levels of depth are shown within the applications sidebar. The 2nd level of depth is treated only as a section header, so the only information the `/content/[depth 1 folder]/[depth 2 folder]/index.html` file should contain is `title` and `order` front-matter. 
+The `/content` folder contains all markdown articles used within these docs. Each directory represents a level of depth. Up to 3 levels of depth are shown within the applications sidebar. The 2nd level of depth is treated only as a section header, so the only information the `/content/[depth 1 folder]/[depth 2 folder]/index.html` file should contain is `title` and `order` front-matter.
 
 ### Internal Links
 
