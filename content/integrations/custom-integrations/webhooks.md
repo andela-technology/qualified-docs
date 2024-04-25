@@ -96,6 +96,27 @@ These methods are specific to updates concerning team candidates so they emit a 
 - **Team Candidate Label Added** (team_candidate_label_added) - This event will fire whenever a team candidate has a label added. If multiple labels are added at the same time, a unique event for each one will be fired.
 - **Team Candidate Label Removed** (team_candidate_label_removed) - This event will fire whenever a team candidate has a label removed. If multiple labels are removed at the same time, a unique event for each one will be fired.
 
+### Pathway Result Events
+
+These methods are specific to updates concerning team candidates so they emit a [TeamCandidate](#team-candidate) in the `data` property.
+
+- **Pathway Result Created** (pathway_result_created) - This event will fire whenever a team candidate is invited to a Pathway and a Pathway Result is created for them.
+- **Pathway Result State Changed** (pathway_result_state_changed) - This event will fire whenever a Pathway Result's state changes.
+
+### Pathway Step Result Events
+
+These methods are specific to updates concerning team candidates so they emit a [TeamCandidate](#team-candidate) in the `data` property.
+
+- **Pathway Step Result Created** (pathway_step_result_created) - This event will fire whenever a Pathway Step Result is created on creation of their Pathway Result.
+- **Pathway Step Result State Changed** (pathway_step_result_state_changed) - This event will fire whenever a Pathway Step Result's state changes.
+
+### Pathway Step Result Events
+
+These methods are specific to updates concerning team candidates so they emit a [TeamCandidate](#team-candidate) in the `data` property.
+
+- **External Evidence Invite Created** (external_evidence_invite_created) - This event will fire whenever a Pathway Step Result is activated with an External Evidence option, creating and returning an External Evidence Result related to it.
+
+
 ## Simulating and Firing events for development
 
 See the API docs at https://qualified.io/api/docs#webhook-examples for a set of APIs for simulating and triggering webhook events.
@@ -165,6 +186,60 @@ Represents a challenge within your library.
 - topics
 - summary
 - purpose
+
+### Pathway Result
+
+Represents a candidate's attempt at a Pathway.
+
+**Properties**
+
+- id
+- labels
+- state
+- updatedAt
+- createdAt
+- passedAt
+- progressStartedAt
+- closedAt
+- invitedAt
+- failedAt
+- terminatedAt
+- pathway: The pathway this pathway result pertains to
+- teamCandidate: The team candidate this pathway result pertains to
+- pathwayStepResults: The set of [pathway step results](#pathway-step-results) pertaining to these pathway result
+
+### Pathway Step Results
+
+Represents the step results pertaining to a pathway result.
+
+**Properties**
+
+- id
+- pathwayResultId
+- state
+- assessmentId
+- externalEvidenceId
+- createdAt
+- passedAt
+- failedAt
+- skippedAt
+- skipReasonNote
+- erroredAt
+- passing
+- flagged
+
+### External Evidence Result
+
+Represents the result to an external evidence on a pathway step's option.
+
+**Properties**
+
+- id
+- passed
+- url: URL for the invitation
+- invitationId
+- content
+- metadata
 
 ### Solution
 

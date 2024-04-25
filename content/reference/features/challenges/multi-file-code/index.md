@@ -76,6 +76,38 @@ This page provides all the general information about the challenge, such as titl
 If you've imported a library challenge, it will be [**linked to the library version**](/reference/features/challenges/library/versions), and other options won't be editable until you unlink it.
 :::
 
+#### Basic Options
+
+##### Enable public embedding this challenge
+
+This option allows you to enable public [embedding](/integrations/custom-integrations/embed) for the challenge so candidates can work on it on an external page.
+
+##### Challenge-Specific Time Limit
+
+This option allows you to set a challenge-specific time limit, which will cause the challenge to be locked from further editing once a timer expires.
+
+##### Allow Solving with SmartIDE
+
+This option allows you to provide the candidate with Qualified's [smart in-browser IDE](/creating-content/challenges/smart-ide) with intelligent autocompletion, code inspections, and more.
+
+#### Advanced Options
+
+##### Validate reference solution against tests
+
+This allows you to publish your challenge without a working solution. This may prevent accurate scoring if the system isn't able to determine total test cases.
+
+##### Show Feedback on Submission
+
+If enabled, the names of failed tests are shown to the candidate after submission.
+
+##### Limit Submission Attempts
+
+If enabled, the candidate will only be able to click Submit a limited number of times, after which the challenge will be locked from further editing.
+
+##### Enable Candidates to Download Project Files
+
+If enabled, candidates will be able to download a zip of all files within a challenge while taking an assessment.
+
 ### Instructions
 
 This page provides a side-by-side Markdown editor that allows you to provide detailed instructions to the developer.

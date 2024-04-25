@@ -48,7 +48,7 @@ When in doubt, we recommend erring on the side of keeping challenge scope simple
 ### Validating Qualified's environments against the proposed technology stack
 The next step is to ensure your desired packages and tech stack for each environment you've identified will work with Qualified, and making adjustments as necessary before developing the challenge(s). You can do this by visiting the relevant pages per language and scanning the environment presets and templates we offer.
 
-In our example above, we might identify the [Node 14.x](/reference/languages/javascript/#node-14) environment as containing all of the relevant packages for the back-end component, and the [React](/reference/languages/javascript/#react-react-preset) preset for the front-end component.
+In our example above, we might identify the [Node 18.x](/reference/languages/javascript/#node-18) environment as containing all of the relevant packages for the back-end component, and the [React preset](/reference/languages/javascript/#react-react-preset-3) for the front-end component.
 
 When the environment isn't a perfect match for your desired stack, consider the skills you seek to test on a per-challenge basis and try tightening challenge scope to focus on one, two or three key skills.
 

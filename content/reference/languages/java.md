@@ -11,7 +11,9 @@ tags:
 
 ## Environment
 
-Qualified supports Java 8, 11 and 17.
+Qualified supports Java 17, 11 and 8.
+
+Java versions older than 17 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Java 17.
 
 ## Timeout
 
@@ -20,58 +22,6 @@ The sandbox environment will timeout the code within 16 seconds.
 ## Packages
 
 The following packages are available:
-
-### Java 8
-
-- `junit:junit`
-- `org.mockito:mockito-core`
-- `org.assertj:assertj-core`
-- `org.assertj:assertj-guava`
-- `org.apache.commons:commons-lang3`
-- `org.apache.commons:commons-math3`
-- `com.google.guava:guava`
-- `org.jsoup:jsoup`
-- `org.dom4j:dom4j`
-- `org.projectlombok:lombok`
-- `com.fasterxml.jackson.core:jackson-annotations`
-- `org.hibernate:hibernate-core`
-- `org.mongodb:mongo-java-driver`
-- `org.xerial:sqlite-jdbc`
-- `org.postgresql:postgresql`
-- `org.springframework.boot:spring-boot-starter-web`
-- `org.springframework.boot:spring-boot-starter-data-rest`
-- `org.springframework.boot:spring-boot-starter-validation`
-- `org.springframework.boot:spring-boot-starter-test`
-
-
-### Java 11
-
-- `junit:junit`
-- `org.junit.jupiter:junit-jupiter-api`
-- `org.junit.jupiter:junit-jupiter-engine`
-- `org.junit.platform:junit-platform-launcher`
-- `org.junit.vintage:junit-vintage-engine`
-- `net.jqwik:jqwik`
-- `org.mockito:mockito-core`
-- `org.assertj:assertj-core`
-- `org.assertj:assertj-guava`
-- `org.apache.commons:commons-lang3`
-- `org.apache.commons:commons-math3`
-- `com.google.guava:guava`
-- `org.jsoup:jsoup`
-- `org.dom4j:dom4j`
-- `com.fasterxml.jackson.core:jackson-annotations`
-- `org.hibernate:hibernate-core`
-- `org.mongodb:mongo-java-driver`
-- `org.xerial:sqlite-jdbc`
-- `org.postgresql:postgresql`
-- `org.springframework.boot:spring-boot-starter-web`
-- `org.springframework.boot:spring-boot-starter-data-rest`
-- `org.springframework.boot:spring-boot-starter-validation`
-- `org.springframework.boot:spring-boot-starter-test`
-- `org.springframework.boot:spring-boot-starter-data-jpa`
-- `com.h2database:h2`
-
 
 ### Java 17
 
@@ -114,6 +64,55 @@ Java 17 has multiple presets for different kinds of challenges.
 - `org.springframework.boot:spring-boot-starter-test`
 - `org.springframework.security:spring-security-test`
 
+### Java 11
+
+- `junit:junit`
+- `org.junit.jupiter:junit-jupiter-api`
+- `org.junit.jupiter:junit-jupiter-engine`
+- `org.junit.platform:junit-platform-launcher`
+- `org.junit.vintage:junit-vintage-engine`
+- `net.jqwik:jqwik`
+- `org.mockito:mockito-core`
+- `org.assertj:assertj-core`
+- `org.assertj:assertj-guava`
+- `org.apache.commons:commons-lang3`
+- `org.apache.commons:commons-math3`
+- `com.google.guava:guava`
+- `org.jsoup:jsoup`
+- `org.dom4j:dom4j`
+- `com.fasterxml.jackson.core:jackson-annotations`
+- `org.hibernate:hibernate-core`
+- `org.mongodb:mongo-java-driver`
+- `org.xerial:sqlite-jdbc`
+- `org.postgresql:postgresql`
+- `org.springframework.boot:spring-boot-starter-web`
+- `org.springframework.boot:spring-boot-starter-data-rest`
+- `org.springframework.boot:spring-boot-starter-validation`
+- `org.springframework.boot:spring-boot-starter-test`
+- `org.springframework.boot:spring-boot-starter-data-jpa`
+- `com.h2database:h2`
+
+### Java 8
+
+- `junit:junit`
+- `org.mockito:mockito-core`
+- `org.assertj:assertj-core`
+- `org.assertj:assertj-guava`
+- `org.apache.commons:commons-lang3`
+- `org.apache.commons:commons-math3`
+- `com.google.guava:guava`
+- `org.jsoup:jsoup`
+- `org.dom4j:dom4j`
+- `org.projectlombok:lombok`
+- `com.fasterxml.jackson.core:jackson-annotations`
+- `org.hibernate:hibernate-core`
+- `org.mongodb:mongo-java-driver`
+- `org.xerial:sqlite-jdbc`
+- `org.postgresql:postgresql`
+- `org.springframework.boot:spring-boot-starter-web`
+- `org.springframework.boot:spring-boot-starter-data-rest`
+- `org.springframework.boot:spring-boot-starter-validation`
+- `org.springframework.boot:spring-boot-starter-test`
 
 ## Testing
 

@@ -9,7 +9,7 @@ Addressing cheating starts with planning, both when creating new content and whe
 
 We suggest starting by defining "cheating" as it applies to your unique case. What may be cheating in certain contexts may be permissible in others.
 
-Some forms of cheating such as impersonation or live human assistance are universally apparent, but other potential cheating risks may not be so clear-cut. For example, powerful tools such as large language models like [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) and [Copilot](https://en.wikipedia.org/wiki/GitHub_Copilot) are part of normal developer workflows and may be allowed in some assessments.
+Some forms of cheating such as impersonation or live human assistance are universally apparent, but other potential cheating risks may not be so clear-cut. For example, powerful tools such as generative pre-trained transformers ([GPTs](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer)) and large language models ([LLMs](https://en.wikipedia.org/wiki/Large_language_model)) like [ChatGPT](https://en.wikipedia.org/wiki/ChatGPT) and [GitHub Copilot](https://en.wikipedia.org/wiki/GitHub_Copilot) are part of normal developer workflows and may be allowed in some assessments.
 
 :::info
 There is no silver bullet when it comes to cheating. You'll likely need a combination of approaches at every stage of the assessment process to deal with cheating effectively.
@@ -33,7 +33,7 @@ Some of these forms may not apply to your case.
 
 ## Mitigation Strategies
 
-### Anticipate LLM Usage
+### Anticipate LLM/GPT Usage
 
 We suggest two general approaches for preparing for candidates using large language models (LLMs) and other forms of AI coding assistance to write solutions:
 

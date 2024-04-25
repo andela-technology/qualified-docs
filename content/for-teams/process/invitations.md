@@ -100,7 +100,7 @@ As a reminder, assessments are only considered billable once a candidate has sub
 :::
 
 :::important Security Considerations
-Since a public link isn't specific to a candidate, you will have limited options in how you restrict access to the assessment from a time-based perspective. See [controlling access to assessments](../assessment-access) for more information about what options you might be missing out on.
+Since a public link isn't specific to a candidate, you will have limited options in how you restrict access to the assessment from a time-based perspective. See [controlling access to assessments](/for-teams/process/assessment-access) for more information about what options you might be missing out on.
 :::
 
 ### Enabling

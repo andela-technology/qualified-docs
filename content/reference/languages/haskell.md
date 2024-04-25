@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports GHC 7.10 and 8.2. 
+Qualified supports GHC 8.2 and 7.10.
+
+Haskell 7.10 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Haskell 8.2.
 
 ## Timeout
 

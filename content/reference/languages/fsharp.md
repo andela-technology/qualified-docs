@@ -15,6 +15,8 @@ NOTE: "had to trick the markdown parsers by wrapping the trailing "#" in a span 
 
 Qualified supports F# 6.0 (tested with NUnit) and F# 4.0 with Mono 4.8 (tested with Fuchu).
 
+F# 4.0 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use F# 6.0.
+
 ## Timeout
 
 The sandbox environment will timeout the code within 12 seconds.

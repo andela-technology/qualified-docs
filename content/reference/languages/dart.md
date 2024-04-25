@@ -10,7 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports Dart 2.8 and 2.14.
+Qualified supports Dart 3.3, 2.14 and 2.8.
+
+Dart versions older than 3.3 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Dart 3.3.
 
 ## Timeout
 

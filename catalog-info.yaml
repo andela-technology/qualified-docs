@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: qualified-docs
+  description: Qualified application documentation.
+  annotations:
+    github.com/project-slug: andela-technology/qualified-docs
+  links:
+    - url: https://docs.qualified.io/
+      title: Production Environment
+      icon: url
+    
+    - url: https://github.com/andela-technology/qualified/actions
+      title: CI/CD Pipelines
+      icon: jenkins
+  tags:
+    - nodejs
+spec:
+  type: service
+  lifecycle: production
+  owner: qualified-codewars

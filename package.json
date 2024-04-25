@@ -7,6 +7,7 @@
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "prepare": "husky install"
+    "import-product-releases": "python scripts/import_product_releases.py"
   },
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.6",
@@ -34,7 +35,9 @@
     "prettier": "^2.8.8",
     "prism-themes": "^1.9.0",
     "tailwindcss": "^1.2.0",
-    "vue-feather-icons": "^5.1.0"
+    "vue-feather-icons": "^5.1.0",
+    "vue-svg-inline-loader": "^2.1.5",
+    "vue-svg-loader": "^0.16.0"
   },
   "lint-staged": {
     "*.{js,css,md,html,vue,tsx,jsx}": "prettier --write"

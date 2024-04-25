@@ -16,12 +16,12 @@ The Evidence Engine is based on the idea that the evaluation process produces da
 
 The purpose of the engine is to allow your team to design challenges that fit your process, by opening up a number of "signals" that can be translated into meaningful understandings about the candidates you wish to evaluate. A signal could be how many unit tests a candidate passed on a coding challenge, how many answers they got correct on a Q&A challenge, how they are scored by your own team, or even things like how quickly they were able to solve the coding task.
 
-What the engine ultimately is, is a tunable AI that assists your challenge design by allowing you to configure an advanced set of tunings that determine how a candidate is scored on each challenge. For each challenge the engine enables you to select which signals are important, target specific subject areas through subscores, set minimum thresholds (cut scores), and weight the important of each signal and how it impacts various scores.
+The engine is a tunable AI that assists your challenge design by allowing you to configure an advanced set of tunings that determine how a candidate is scored on each challenge. For each challenge the engine enables you to select which signals are important, target specific subject areas through subscores, set minimum thresholds (cut scores), and weight the important of each signal and how it impacts various scores.
 
 We call it an engine because it opens up a whole world of flexibility in how you conduct your evaluation process. It allows you to create structure in your process and it drives that process to help you get maximum efficiency and output out of it.
 
 ## What is considered evidence?
-Evidence is considered anything which can produce a signal that can be scored by the engine. There is currently two key types of evidence in the system, more may be added later:
+Evidence is considered anything which can produce a signal that can be scored by the engine. There are currently two key types of evidence in the system. More may be added later:
 
 - **Candidate Solutions**
 - **Reviewer Scorecards**
@@ -30,7 +30,7 @@ Candidate solutions are scored when their assessment result is submitted. Review
 
 ## What is it designed to measure?
 ### Criterion Referenced
-The ultimate purpose of the Evidence Engine is to measure competency and job fitness. The measurements taken are criterion referenced, and have a "perfect score". What this means is that the focus is on determining if a candidate meets minimum expectations for what is necessary to succeed on the job. It also means that there is a chance that a candidate can get a perfect score, which always represents their performance related to the criteria covered on the assessment. The measurements are not norm-referenced. Perfect scores show that the candidate met the full objectives assessed for that item, but later we will cover how [cut scores](/creating-content/evidence-engine/cut-scores) can be used to set minimum thresholds that should be met. A perfect score is not always required. 
+The ultimate purpose of the Evidence Engine is to measure competency and job fitness. The measurements taken are criterion referenced, and have a "perfect score". This places the focus on determining if a candidate meets minimum expectations for what is necessary to succeed on the job. It also means that there is a chance that a candidate can get a perfect score, which always represents their performance related to the criteria covered on the assessment. The measurements are not norm-referenced. Perfect scores show that the candidate met the full objectives assessed for that item, but later we will cover how [cut scores](/creating-content/evidence-engine/cut-scores) can be used to set minimum thresholds that should be met. A perfect score is not always required.
 
 [Here is a good article](https://www.theclassroom.com/difference-between-criterionreferenced-normreferenced-tests-8674246.html) that introduces the differences between norm and criterion referenced tests.
 

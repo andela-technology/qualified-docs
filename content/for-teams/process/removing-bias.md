@@ -17,7 +17,7 @@ There are a few team settings that you should be aware of when setting up your r
 - Do you want reviewers to see other reviews before leaving their own?
 - Do you want blind reviewers to eventually see real names?
 
-These settings can be configured within the team settings. We touched on this back when [going over the team settings](../team#assessment-reviews-visibility).
+These settings can be configured within the team settings. We touched on this back when [going over the team settings](/for-teams/process/team).
 
 ## Assessment Options
 

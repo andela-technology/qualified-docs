@@ -7,6 +7,10 @@ export default function (Vue, {router, head, isClient}) {
         rel: 'stylesheet',
         href: '//fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,300italic,400italic,600italic',
     });
+    head.link.push({
+        rel: 'stylesheet',
+        href: '/css/global.css',
+    });
 
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout);
@@ -15,7 +19,10 @@ export default function (Vue, {router, head, isClient}) {
         head.meta.push({
             key: 'og:url',
             name: 'og:url',
-            content: process.env.GRIDSOME_BASE_PATH + to.path,
+            content: (
+                process.env.GRIDSOME_BASE_PATH ||
+                "https://docs.qualified.io"
+            ) + to.path,
         });
         next();
     });

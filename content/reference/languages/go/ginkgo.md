@@ -39,14 +39,22 @@ var _ = Describe("Add", func() {
 })
 ```
 
-#### Note
+#### Notes
 
-The package name (`challenge` in above example) can be arbitrary (`[a-z](a-z\d)*`).
+The package name (`challenge` in above example) can be arbitrary (`[a-z][a-z\d]*`).
 
 The import path can be configured with [canonical import path](https://golang.org/doc/go1.4#canonicalimports).
 The default is `codewarrior/{package name}`.
 
-Preloaded code is just another file in the same package and can be used to add auxiliary code.
+Preloaded code is just another file in the `challenge` package and can be used to add auxiliary code callable from the solution or test suite:
+
+```go
+package challenge // import "qualified.io/challenge"
+
+func MeaningOfLife() int {
+  return 42
+}
+```
 
 ### Matchers
 

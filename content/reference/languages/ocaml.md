@@ -10,7 +10,9 @@ tags:
 
 # Environment
 
-Qualified supports OCaml 4.02.3 and 4.07.
+Qualified supports OCaml 4.07 and 4.02.3.
+
+OCaml 4.02 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use OCaml 4.07.
 
 ## Timeout
 

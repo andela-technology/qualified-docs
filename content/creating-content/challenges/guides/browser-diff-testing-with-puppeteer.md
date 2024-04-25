@@ -24,7 +24,7 @@ Given this potential for frustrating false positives, such an approach is pretty
 
 ### CSS properties?
 
-For HTML and CSS user interfaces, the [Testing CSS Skills](css) guide offers another strategy, using a browser automation library like [Puppeteer](https://github.com/puppeteer/puppeteer/) to select DOM elements and validate that they have the correct properties and positions. This allows for more flexibility than a pixel-perfect match. Tolerances and ranges are possible. Test cases can assert that an element has a color in a range or is positioned to the left of another element by a rough amount, among other possibilities.
+For HTML and CSS user interfaces, the [Testing CSS Skills](/creating-content/challenges/guides/css) guide offers another strategy, using a browser automation library like [Puppeteer](https://github.com/puppeteer/puppeteer/) to select DOM elements and validate that they have the correct properties and positions. This allows for more flexibility than a pixel-perfect match. Tolerances and ranges are possible. Test cases can assert that an element has a color in a range or is positioned to the left of another element by a rough amount, among other possibilities.
 
 This is great for a good deal of situations, but it has a few downsides:
 

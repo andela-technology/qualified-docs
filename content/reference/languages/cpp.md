@@ -11,7 +11,9 @@ tags:
 
 ## Environment
 
-Qualified supports C++14 with Clang 3.8 and C++17 with Clang 8.
+Qualified supports C++17 with Clang 8 and C++14 with Clang 3.8.
+
+C++14 is [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use C++17.
 
 ## Timeout
 

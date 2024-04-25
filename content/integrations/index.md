@@ -8,9 +8,9 @@ description: "View documentation on our API, webhooks and partner integrations"
 From pre-built integrations to comprehensive APIs and SDKs, Qualified is built to integrate into your process.
 
 ## Integrations for Educators 
-For educators, check out our [LMS integrations page](lms) for more info about integrating with existing LMS solutions.
+For educators, check out our [LMS integrations page](/integrations/lms) for more info about integrating with existing LMS solutions.
 
-If you are looking to integrate Qualified into your own learning platform, embedding Qualified directly within it is possible using our [Embed SDK](integrations/custom-integrations/embed). You will also want to check out our [API](integrations/custom-integrations/api) and [Webhook](integrations/custom-integrations/webhooks) documentation for in-depth details on integrating platforms together.  
+If you are looking to integrate Qualified into your own learning platform, embedding Qualified directly within it is possible using our [Embed SDK](/integrations/custom-integrations/embed). You will also want to check out our [API](/integrations/custom-integrations/api) and [Webhook](/integrations/custom-integrations/webhooks) documentation for in-depth details on integrating platforms together.
 
 ## Integrations for Recruiters
 Qualified currently has integrations with the following HR systems:
