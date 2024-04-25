@@ -44,6 +44,7 @@ Reviewers perform two main actions when reviewing assessments:
 1. They provide their own subjective opinion as to whether or not they would move forward with the candidate in the process.
 
 The overall review opinion score is where the subjective opinions enter the picture. As each member on your team gives their opinion (on a "Strong No" to "Strong Yes" scale), those opinions will be averaged together into one overall opinion. All opinions, from all reviewed assessments, which be aggregated.
+The overall review opinion score is where the subjective opinions enter the picture. As each member on your team gives their opinion (on a "Strong No" to "Strong Yes" scale), those opinions will be averaged together into one overall opinion. All opinions, from all reviewed assessments, will be aggregated.
 
 :::tip
 Utilize overall opinion to determine if you should either move candidates forward in the process, or disqualify them. 
