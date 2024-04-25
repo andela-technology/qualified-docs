@@ -6,7 +6,7 @@
     "build": "gridsome build",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "prepare": "husky install"
+    "prepare": "husky install",
     "import-product-releases": "python scripts/import_product_releases.py"
   },
   "dependencies": {
@@ -32,7 +32,7 @@
     "postcss-nested": "^4.2.3",
     "postcss-preset-env": "^6.7.1",
     "postinstall-postinstall": "^2.1.0",
-    "prettier": "^2.8.8",
+    "prettier": "^3.2.5",
     "prism-themes": "^1.9.0",
     "tailwindcss": "^1.2.0",
     "vue-feather-icons": "^5.1.0",
