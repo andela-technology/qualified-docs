@@ -8,20 +8,13 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
-## January, 2024 
+## January 31, 2024 
 
 ### Features 
  
 - **Learnosity Partnership Integration** 
 
-    [Learnosity](https://learnosity.com/) has officially announced our partnership and integration into their platform to their custom base, via website, newsletter, and socials! 
-
-    This integration allows us to expand our reach into the L&D space, acting as an important add-on component within Learnosity's deep offering across many different learning domains. We've closed our first partner sale via iCEV, and already have other potential deals beginning to surface.       We will be presenting internally to their sales team later this month to further deepen our partnership and enable their sales team to bring more business to us.  
-
-    [Release Announcement](https://help.learnosity.com/hc/en-us/articles/14870489871133-2024-1-LTS-Release-Announcement)
-
-    [Partner Page](https://learnosity.com/company/partners/partners-directory/qualified/)
-
+    [Qualified and Learnosity Partnership: Bridging the Skills Gap with Developer Assessments](https://andela.com/blog-posts/qualified-and-learnosity-partnership-bridging-the-skills-gap-with-developer-assessments)
 
 ### Improvements 
 
@@ -37,7 +30,11 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
     A new "deprecated" label was added to old language versions in the challenge edit and detail views. This helps content managers identify which language versions will be removed in the future. For further information and tips on upgrading your content, please check our [guide for upgrading language versions](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions).
   
-- **Performance issue when loading "Portfolio" tab of report card** 
+- **Performance issue when loading "Portfolio" tab of report card**
+
+  :::note
+  Signal’s customers only
+  ::: 
 
     Users were experiencing heavy lag, especially with scrolls, once Portfolio tab was activated and the number of assessments results was exceeding 6 or more. This issue was successfully fixed.  
 
@@ -47,6 +44,9 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
     This challenge tests the candidate's basic array and string manipulation.  
 
+:::info
+Note that Product Updates was on hiatus for 6 months. No major updates occurred during this time beyond standard bug fixes and challenges. We'll continue on a monthly basis going forward.
+:::
 
 ## July 13, 2023
 
