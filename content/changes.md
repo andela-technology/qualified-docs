@@ -12,7 +12,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Features 
  
-- **Learnosity Partnership Integration** 
+- **Qualified and Learnosity Integration** 
 
     [Qualified and Learnosity Partnership: Bridging the Skills Gap with Developer Assessments](https://andela.com/blog-posts/qualified-and-learnosity-partnership-bridging-the-skills-gap-with-developer-assessments)
 
