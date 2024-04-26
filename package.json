@@ -40,6 +40,6 @@
     "vue-svg-loader": "^0.16.0"
   },
   "lint-staged": {
-    "*.{js,css,md,html,vue,tsx,jsx}": "prettier --write"
+    "*.{js,cjs,mjs,json,css,md,html,vue,tsx,jsx}": "prettier --write"
   }
 }
