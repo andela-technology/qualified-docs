@@ -14,7 +14,9 @@ Learn about notable new features, fixes, and other improvements to the applicati
  
 - **Qualified and Learnosity Integration** 
 
-    [Qualified and Learnosity Partnership: Bridging the Skills Gap with Developer Assessments](https://andela.com/blog-posts/qualified-and-learnosity-partnership-bridging-the-skills-gap-with-developer-assessments)
+   We've partnered with Learnosity to integrate Qualified coding challenges into Learnosity assessments! Our custom question type enables students to solve project and classic coding challenges in a Learnosity assessment, powered by Qualified's Embed engine. 
+
+  Check our post [Qualified and Learnosity Partnership: Bridging the Skills Gap with Developer Assessments](https://andela.com/blog-posts/qualified-and-learnosity-partnership-bridging-the-skills-gap-with-developer-assessments) to learn more.
 
 ### Improvements 
 
