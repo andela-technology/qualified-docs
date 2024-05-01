@@ -12,32 +12,48 @@
 <script>
 export const LIGHTS_OUT = "lights-out";
 
-export const getThemeFromURL = () => {
-  const match =
-    process.isClient &&
-    (window.location.search || "").match(/\btheme=(light|dark)\b/);
-  return match && match[1];
+export const getThemeFromURL = () =>
+  process.isClient &&
+  (window.location.search || "").match(/\btheme=(light|dark)\b/)?.[1];
+
+const _localStorageEnabled = () => {
+  try {
+    localStorage.getItem(LIGHTS_OUT);
+    return true;
+  } catch (err) {
+    console.warn(err);
+    return false;
+  }
 };
 
-// try to set theme before loading to avoid content flash
 const _hasInStorage = () => localStorage.getItem(LIGHTS_OUT) !== null;
-const _getFromStorage = () =>
-  localStorage.getItem(LIGHTS_OUT) === "true" ? true : false;
+
+const _getFromStorage = () => localStorage.getItem(LIGHTS_OUT) === "true";
+
 const _detectPreferred = () =>
   window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-let darkMode = false;
-if (process.isClient) {
+const _setDarkMode = () => {
+  if (!process.isClient) {
+    return;
+  }
+
   const urlTheme = getThemeFromURL();
+
   if (urlTheme) {
     darkMode = urlTheme === "dark";
-  } else if (_hasInStorage()) {
+  } else if (_localStorageEnabled() && _hasInStorage()) {
     darkMode = _getFromStorage();
-  } else if (process.isClient && window.matchMedia) {
+  } else if (window.matchMedia) {
     darkMode = _detectPreferred();
   }
+
   document.documentElement.toggleAttribute(LIGHTS_OUT, darkMode);
-}
+};
+
+// try to set theme before loading to avoid content flash
+let darkMode = false;
+_setDarkMode();
 
 export default {
   data() {
@@ -59,7 +75,9 @@ export default {
 
       this.isDarkMode = shouldBeDark;
 
-      this.writeToStorage(shouldBeDark);
+      if (_localStorageEnabled()) {
+        this.writeToStorage(shouldBeDark);
+      }
 
       return shouldBeDark;
     },
