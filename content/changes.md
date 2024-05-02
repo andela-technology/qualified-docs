@@ -46,7 +46,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **ASCII 7 Segment Display challenge** 
 
-    This challenge tests the candidate's basic array and string manipulation.  
+    This challenge tests the candidate's basic array and string manipulation skills.
 
 :::info
 Note that Product Updates was on hiatus for 6 months. No major updates occurred during this time beyond standard bug fixes and challenges. We'll continue on a monthly basis going forward.
