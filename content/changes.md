@@ -40,7 +40,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
   Signals customers only
   ::: 
 
-    Users were experiencing heavy lag, especially with scrolls, once Portfolio tab was activated and the number of assessments results was exceeding 6 or more. This issue was successfully fixed.  
+    We fixed an issue with users experiencing heavy lag in the report card Portfolio tab when many assessment results were present.
 
 ### Challenges
 
