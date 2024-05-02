@@ -8,6 +8,50 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## January 31, 2024 
+
+### Features 
+ 
+- **Qualified and Learnosity Integration** 
+
+   We've partnered with Learnosity to integrate Qualified coding challenges into Learnosity assessments! Our custom question type enables students to solve project and classic coding challenges in a Learnosity assessment, powered by Qualified's Embed engine. 
+
+  Check our post [Qualified and Learnosity Partnership: Bridging the Skills Gap with Developer Assessments](https://andela.com/blog-posts/qualified-and-learnosity-partnership-bridging-the-skills-gap-with-developer-assessments) to learn more.
+
+### Improvements 
+
+- **Erlang 26** 
+
+    Erlang 26 is now supported within project challenges. 
+
+- **Elixir 1.15** 
+
+    Elixir 1.15 is now supported within project challenges.
+
+- **Add deprecated language version labels** 
+
+    A new "deprecated" label was added to old language versions in the challenge edit and detail views. This helps content managers identify which language versions will be removed in the future. For further information and tips on upgrading your content, please check our [guide for upgrading language versions](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions).
+  
+### Bug Fixes
+
+- **Fixed report card "Portfolio" tab performance issue**
+
+  :::note
+  Signals customers only
+  ::: 
+
+    Users were experiencing heavy lag, especially with scrolls, once the Portfolio tab was activated and the number of assessment results was 6 or more. This issue was fixed.
+    
+### Challenges
+
+- **ASCII 7 Segment Display challenge** 
+
+    This challenge tests the candidate's basic array and string manipulation skills.
+
+:::info
+Note that Product Updates was on hiatus for 6 months. No major updates occurred during this time beyond standard bug fixes and challenges. We'll continue on a monthly basis going forward.
+:::
+
 ## July 13, 2023
 
 ### Features
