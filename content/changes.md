@@ -32,7 +32,9 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
     A new "deprecated" label was added to old language versions in the challenge edit and detail views. This helps content managers identify which language versions will be removed in the future. For further information and tips on upgrading your content, please check our [guide for upgrading language versions](https://docs.qualified.io/creating-content/challenges/upgrading-language-versions/#upgrading-language-versions).
   
-- **Performance issue when loading "Portfolio" tab of report card**
+### Bug Fixes
+
+- **Fixed report card "Portfolio" tab performance issue**
 
   :::note
   Signals customers only
