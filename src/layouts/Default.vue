@@ -127,6 +127,7 @@ export default {
 
 <style>
 :root {
+  color-scheme: dark light;
   --color-ui-text-background: #fff;
   --color-ui-background: theme("colors.brand.complementBg");
   --image-ui-background: url("/images/general-bg-light.svg");

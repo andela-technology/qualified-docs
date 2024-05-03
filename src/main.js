@@ -23,6 +23,11 @@ export default function (Vue, { router, head, isClient }) {
         (process.env.GRIDSOME_BASE_PATH || "https://docs.qualified.io") +
         to.path,
     });
+    head.meta.push({
+      key: "color-scheme",
+      name: "color-scheme",
+      content: "dark light",
+    });
     next();
   });
 }
