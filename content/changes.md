@@ -456,7 +456,7 @@ Many bug fixes and some small improvements throughout the application in this re
 
 ## June 27, 2022
 
-This release includes a lot of smaller behind-the-scene improvements, some changes to how candidates are listed, better CodeMirror history, and a bunch of new challenges.
+This release includes a lot of smaller behind-the-scenes improvements, some changes to how candidates are listed, better CodeMirror history, and a bunch of new challenges.
 
 ### Improvements
 
