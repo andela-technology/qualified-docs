@@ -8,6 +8,47 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## February 29, 2024  
+
+### Improvements 
+
+- **Dart 3.3** 
+
+Upgrade Dart library content from 2.x to 3.3 
+
+-**Add translations to Bar Graph challenges**- 
+
+	These are good basic CCC challenges but are only available in Java. We added translations for most of the standard languages to make them easier to use  
+
+-**Qualified docs repository is public**- 
+
+	Check the [README](https://github.com/andela-technology/qualified-docs) file to learn more about how to contribute to it.  
+
+### Challenges 
+
+-**Browser DevTools Quiz** 
+
+	This quiz tests a candidate's basic skill in working with the browser developer tools, 	an essential part of every developer's toolkit. 
+
+-**LLM/GPT Basics Quiz** 
+
+  This quiz tests baseline candidate grasp of large language models (LLMs) and 	generative pre-trained transformers (GPTs). 
+
+-**Python, Flask and psycopg2** 
+
+  This template provides a starter for Flask and the psycopg2 connector for Postgres. 
+
+-**Create ASCII 7 Segment Display challenge**- 
+
+	This challenge tests the candidate's basic array and string manipulation. It's a bit 	tricky to represent the pivoted matrix, so candidates can get stuck, even though the 	algorithm is not exactly technical or demanding preexisting knowledge. 
+
+### Bug Fixes 
+
+-**Missing Starter Code** 
+
+	We found some challenges, Groovy and PHP, have missed starter code. 
+  With the purpose of keeping our challenge’s data consistency we monitor it periodically and fix any inconsistencies detected.  
+
 ## January 31, 2024 
 
 ### Features 
