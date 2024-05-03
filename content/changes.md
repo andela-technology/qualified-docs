@@ -22,11 +22,11 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Erlang 26** 
 
-    Erlang 26 is now supported within project challenges. 
+    Erlang 26 is now supported within classic code challenges.
 
 - **Elixir 1.15** 
 
-    Elixir 1.15 is now supported within project challenges.
+    Elixir 1.15 is now supported within Qualified.
 
 - **Add deprecated language version labels** 
 
@@ -64,11 +64,11 @@ Note that Product Updates was on hiatus for 6 months. No major updates occurred 
 
 - **C# 10**
 
-  C# 10 is now supported within project challenges.
+  C# 10 is now supported within Qualified.
 
 - **Elixir 1.11**
 
-  Elixir version 1.11 is now supported within Project Challenges.
+  Elixir version 1.11 is now supported within Qualified.
 
 ## June 15, 2023
 
