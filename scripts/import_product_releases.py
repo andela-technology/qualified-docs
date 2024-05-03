@@ -15,6 +15,8 @@ Here's the new markdown format for an announcement:
 ```
 ## July 3, 2023
 
+Brief synopsis of the changes.
+
 ### Features
 
 - **Feature 1 Name**
