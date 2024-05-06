@@ -28,7 +28,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Browser DevTools Quiz** 
 
-	This quiz tests a candidate's basic skill in working with the browser developer tools, 	an essential part of every developer's toolkit. 
+	This quiz tests a candidate's basic skill in working with the browser developer tools, an essential part of every developer's toolkit. 
 
 - **LLM/GPT Basics Quiz** 
 
