@@ -28,7 +28,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **LLM/GPT Basics Quiz** 
 
-  This quiz tests baseline candidate grasp of large language models (LLMs) and 	generative pre-trained transformers (GPTs). 
+  This quiz tests baseline candidate grasp of large language models (LLMs) and generative pre-trained transformers (GPTs). 
 
 - **Python, Flask and psycopg2** 
 
