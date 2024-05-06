@@ -8,6 +8,32 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## February 29, 2024  
+
+### Improvements 
+
+- **Dart 3.3** 
+
+  Dart 3.3 is now supported in Qualified.
+
+### Challenges 
+
+- **Browser DevTools Quiz** 
+
+  This quiz tests a candidate's basic skill in working with the browser developer tools, an essential part of every developer's toolkit.
+
+- **LLM/GPT Basics Quiz** 
+
+  This quiz tests baseline candidate grasp of large language models (LLMs) and generative pre-trained transformers (GPTs). 
+
+- **Python, Flask and psycopg2** 
+
+  This template provides a starter for Flask and the psycopg2 connector for Postgres. 
+
+- **Create ASCII 7 Segment Display challenge**
+
+  This challenge tests the candidate's basic array and string manipulation. It's a bit tricky to represent the pivoted matrix, so candidates can get stuck, even though the algorithm is not exactly technical or demanding preexisting knowledge.
+
 ## January 31, 2024 
 
 ### Features 
