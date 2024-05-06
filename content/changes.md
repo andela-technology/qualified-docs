@@ -16,10 +16,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   Dart 3.3 is now supported in Qualified.
 
-- **Qualified docs repository is public** 
-
-	Check the [README](https://github.com/andela-technology/qualified-docs) file to learn more about how to contribute to it.  
-
 ### Challenges 
 
 - **Browser DevTools Quiz** 
