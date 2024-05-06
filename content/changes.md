@@ -16,11 +16,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   Dart 3.3 is now supported in Qualified.
 
-- **Add translations to Bar Graph challenges**- 
-
-	These are good basic CCC challenges but are only available in Java. We added translations for most of the standard languages to make them easier to use  
-
-- **Qualified docs repository is public**- 
+- **Qualified docs repository is public** 
 
 	Check the [README](https://github.com/andela-technology/qualified-docs) file to learn more about how to contribute to it.  
 
@@ -41,13 +37,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 - **Create ASCII 7 Segment Display challenge**
 
 	This challenge tests the candidate's basic array and string manipulation. It's a bit tricky to represent the pivoted matrix, so candidates can get stuck, even though the algorithm is not exactly technical or demanding preexisting knowledge. 
-
-### Bug Fixes 
-
-- **Missing Starter Code** 
-
-	We found some challenges, Groovy and PHP, have missed starter code. 
-  With the purpose of keeping our challenge’s data consistency we monitor it periodically and fix any inconsistencies detected.  
 
 ## January 31, 2024 
 
