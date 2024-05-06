@@ -38,7 +38,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   This template provides a starter for Flask and the psycopg2 connector for Postgres. 
 
-- **Create ASCII 7 Segment Display challenge**- 
+- **Create ASCII 7 Segment Display challenge**
 
 	This challenge tests the candidate's basic array and string manipulation. It's a bit 	tricky to represent the pivoted matrix, so candidates can get stuck, even though the 	algorithm is not exactly technical or demanding preexisting knowledge. 
 
