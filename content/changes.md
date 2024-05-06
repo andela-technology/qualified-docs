@@ -14,7 +14,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Dart 3.3** 
 
-  Upgrade Dart library content from 2.x to 3.3 
+  Dart 3.3 is now supported in Qualified.
 
 - **Add translations to Bar Graph challenges**- 
 
