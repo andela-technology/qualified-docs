@@ -17,7 +17,7 @@ Qualified uses the semantic versioning scheme for its challenges, where there ar
 
 ## Automatic Updates
 
-If you import (or have imported) your challenges from Qualified, you be able to select the option to automatically update your challenge whenever a minor change or a patch change to the Qualified challenge occurs.
+If you import (or have imported) your challenges from Qualified, you will be able to select the option to automatically update your challenge whenever a minor change or a patch change to the Qualified challenge occurs.
 
 If a challenge is linked to a Qualified version, it can configure the level of updates it would like to receive at the top of the Challenge Editor:
 
