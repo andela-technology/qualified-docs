@@ -8,6 +8,28 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## March 31, 2024  
+
+### Improvements 
+
+- **Added preloaded examples** 
+
+  Add preloaded example for Rust and Go 
+
+- **Directory To Tree: allow async function** 
+
+  Directory To Tree required sync code, which was not great for a file system call. We updated the challenge tests to await any promises returned by the solution, giving candidates more flexibility to choose a better practice. 
+
+- **Update Vue challenges to use `<script setup>`** 
+
+  In order to ensure our Vue debugging challenges use modern practices we upgraded all Vue content to use script setup. 
+
+### Challenges 
+
+- **Add Express to TypeScript** 
+
+  Added Express version 4.18.2 to TypeScript 4.9 
+
 ## February 29, 2024  
 
 ### Improvements 
