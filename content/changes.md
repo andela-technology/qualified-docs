@@ -16,15 +16,9 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   Add preloaded example for Rust and Go 
 
-- **Directory To Tree: allow async function** 
-
-  Directory To Tree required sync code, which was not great for a file system call. We updated the challenge tests to await any promises returned by the solution, giving candidates more flexibility to choose a better practice. 
-
 - **Update Vue challenges to use `<script setup>`** 
 
   We upgraded all of our Vue 3 library content to use `<script setup>`.
-
-### Challenges 
 
 - **Add Express to TypeScript** 
 
