@@ -22,7 +22,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Update Vue challenges to use `<script setup>`** 
 
-  In order to ensure our Vue debugging challenges use modern practices we upgraded all Vue content to use script setup. 
+  We upgraded all of our Vue 3 library content to use `<script setup>`.
 
 ### Challenges 
 
