@@ -28,7 +28,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Add Express to TypeScript** 
 
-  Added Express version 4.18.2 to TypeScript 4.9 
+  We added support for Express 4.18 to our TypeScript 4.9 image and released a corresponding challenge template.
 
 ## February 29, 2024  
 
