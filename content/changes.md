@@ -12,10 +12,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Improvements 
 
-- **Added preloaded examples** 
-
-  Add preloaded example for Rust and Go 
-
 - **Update Vue challenges to use `<script setup>`** 
 
   We upgraded all of our Vue 3 library content to use `<script setup>`.
