@@ -8,6 +8,18 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## March 31, 2024  
+
+### Improvements 
+
+- **Update Vue challenges to use `<script setup>`** 
+
+  We upgraded all of our Vue 3 library content to use `<script setup>`.
+
+- **Add Express to TypeScript** 
+
+  We added support for Express 4.18 to our TypeScript 4.9 image and released a corresponding challenge template.
+
 ## February 29, 2024  
 
 ### Improvements 
