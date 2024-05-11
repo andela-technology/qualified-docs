@@ -8,6 +8,38 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## April 30, 2024 
+
+### Improvements 
+
+- **Make quiz cutoffs more consistent** 
+
+  Some quizzes had the score pass/fail set up in 100% as a default. Generally, the cutoff should be around 70-80%, give or take, in order to get reasonable pass rates.  
+
+  - React Quiz from 100% to 70%
+  - Vanilla JS in the browser from 100% to 70%
+  - Computer Architecture Concepts from 100% to 70%
+  - Data Structures and Algorithms from 100% to 70%
+  - Jest Testing Quiz from 80% to 70%
+  - LLM/GPT Basics Quiz from 100% to 70% 
+
+### Challenges 
+
+- **Create Drupal quiz** 
+
+  This Drupal quiz ensures your candidates have a basic understanding of the CMS's common terms, functions and idioms. 
+
+- **Fill in Missing Weeks** 
+
+  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and computing. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily
+  handleable with a natural algorithm. 
+
+### Bug Fixes 
+
+- **Allow skipping failed assessments with limited submission attempts** 
+
+  Now the users can submit the partial solution without being forced to keep working on the assessments because it had a limited number of submissions.  
+
 ## March 31, 2024  
 
 ### Improvements 
