@@ -8,11 +8,29 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## April 30, 2024 
+
+### Improvements 
+
+- **Allow candidates to move forward with partial solutions in certain Project Code Challenges**
+
+  For Project Code Challenges that enforce a limited number of submissions, candidates with incomplete solutions are no longer forced to use their remaining submission attempts in order to proceed with the assessment.
+
+### Challenges 
+
+- **Drupal Quiz** 
+
+  This Drupal quiz ensures your candidates have a basic understanding of the CMS's common terms, functions and idioms. 
+
+- **Fill in Missing Weeks** 
+
+  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and date object manipulation. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily handleable with a natural algorithm. 
+
 ## March 31, 2024  
 
 ### Improvements 
 
-- **Update Vue challenges to use `<script setup>`** 
+- **Updated Vue challenges to use `<script setup>`**
 
   We upgraded all of our Vue 3 library content to use `<script setup>`.
 
