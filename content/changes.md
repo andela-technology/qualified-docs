@@ -24,7 +24,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Fill in Missing Weeks** 
 
-  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and datetime manipulation. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily handleable with a natural algorithm. 
+  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and date object manipulation. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily handleable with a natural algorithm. 
 
 ## March 31, 2024  
 
