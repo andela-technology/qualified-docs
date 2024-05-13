@@ -38,7 +38,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Allow skipping failed assessments with limited submission attempts** 
 
-  Now the users can submit the partial solution without being forced to keep working on the assessments because it had a limited number of submissions.  
+  For Project Code Challenges that enforce a limited number of submissions, candidates with incomplete solutions are no longer forced to use their remaining submission attempts in order to proceed with the assessment.
 
 ## March 31, 2024  
 
