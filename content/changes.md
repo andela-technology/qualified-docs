@@ -18,7 +18,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Challenges 
 
-- **Create Drupal quiz** 
+- **Drupal Quiz** 
 
   This Drupal quiz ensures your candidates have a basic understanding of the CMS's common terms, functions and idioms. 
 
