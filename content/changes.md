@@ -30,7 +30,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Improvements 
 
-- **Update Vue challenges to use** `<script setup>`
+- **Updated Vue challenges to use `<script setup>`**
 
   We upgraded all of our Vue 3 library content to use `<script setup>`.
 
