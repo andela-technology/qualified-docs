@@ -36,7 +36,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Bug Fixes 
 
-- **Allow skipping failed assessments with limited submission attempts** 
+- **Allow candidates to move forward with partial solutions in certain Project Code Challenges**
 
   For Project Code Challenges that enforce a limited number of submissions, candidates with incomplete solutions are no longer forced to use their remaining submission attempts in order to proceed with the assessment.
 
