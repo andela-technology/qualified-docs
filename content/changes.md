@@ -12,16 +12,9 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Improvements 
 
-- **Make quiz cutoffs more consistent** 
+- **Allow candidates to move forward with partial solutions in certain Project Code Challenges**
 
-  Some quizzes had the score pass/fail set up in 100% as a default. Generally, the cutoff should be around 70-80%, give or take, in order to get reasonable pass rates.  
-
-  - React Quiz from 100% to 70%
-  - Vanilla JS in the browser from 100% to 70%
-  - Computer Architecture Concepts from 100% to 70%
-  - Data Structures and Algorithms from 100% to 70%
-  - Jest Testing Quiz from 80% to 70%
-  - LLM/GPT Basics Quiz from 100% to 70% 
+  For Project Code Challenges that enforce a limited number of submissions, candidates with incomplete solutions are no longer forced to use their remaining submission attempts in order to proceed with the assessment.
 
 ### Challenges 
 
@@ -31,20 +24,13 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Fill in Missing Weeks** 
 
-  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and computing. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily
-  handleable with a natural algorithm. 
-
-### Bug Fixes 
-
-- **Allow candidates to move forward with partial solutions in certain Project Code Challenges**
-
-  For Project Code Challenges that enforce a limited number of submissions, candidates with incomplete solutions are no longer forced to use their remaining submission attempts in order to proceed with the assessment.
+  This realistic challenge exercises candidate skill in working with dates in their language of choice. The date work involves a bit of parsing, formatting and computing. Since time is out of the picture, handling daylight savings time isn't a factor, and leap years should be easily handleable with a natural algorithm. 
 
 ## March 31, 2024  
 
 ### Improvements 
 
-- **Update Vue challenges to use `<script setup>`** 
+- **Update Vue challenges to use** `<script setup>`
 
   We upgraded all of our Vue 3 library content to use `<script setup>`.
 
