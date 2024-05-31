@@ -49,6 +49,6 @@ Now simply click **Save** at the top, and you will have a ready-made PDF.
 
 When using the system dialog on MacOS, there's a button at the bottom-right that says **PDF**. Click this, and choose _Save as PDF…_.
 
-### Windows 7, 8, or 10 (Any Browser)
+### Windows (Any Browser)
 
-In the print dialog on Windows 7, 8, or 10, change your printer to _Microsoft Print To PDF_, then print as normal.
+In the print dialog on Windows, change your printer to _Microsoft Print To PDF_, then print as normal.
