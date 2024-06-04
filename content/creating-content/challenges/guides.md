@@ -34,3 +34,6 @@ This guide walks you through the ins and outs of testing code that uses standard
 
 ### [Testing SQL Skills Without RSpec](/creating-content/challenges/guides/sql-without-rspec)
 Qualified uses Ruby and RSpec as the harness for running SQL solutions by default. This guide provides ideas for testing SQL skills with other languages and testing frameworks.
+
+### [Managing Third-Party Dependencies](/creating-content/challenges/guides/managing-third-party-dependencies)
+This guide provides tips for managing third-party dependencies in your Qualified challenges.
