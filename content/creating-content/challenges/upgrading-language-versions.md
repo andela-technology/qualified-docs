@@ -33,7 +33,7 @@ The simple scenario described above may not be isolated to one language feature.
 
 ## Upgrade Process
 
-Most upgrades are straightforward, a matter of choosing the new language from the challenge edit screen or project code challenge configuration menu. However, breaking changes are possible. Some upgrades can involve a bit of manual technical work to upgrade the code to work in the target version. Consult the documentation for your language, packages, and our [language documentation](/reference/languages) for guidance.
+Most upgrades are straightforward, a matter of choosing the new language from the challenge edit screen or project code challenge configuration menu. However, breaking changes are possible. Some upgrades can involve manual technical work to upgrade the code to work in the target version. Consult the documentation for your language, packages, and our [language documentation](/reference/languages) for guidance.
 
 ## Deprecation Process
 
