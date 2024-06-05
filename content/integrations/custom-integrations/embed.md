@@ -13,9 +13,7 @@ Integrate Qualified's first-in-class code editing and powerful testing suite dir
 We have several places you can see embeds in action:
 
 * [View an interactive demo here.](https://www.qualified.io/embedded) This demo lets you see different challenges embedded right in the page, as well as see some events & data.
-
-* [View a collection of example use cases.](https://qualified.github.io/embed-demos/) Use these to get inspired for how you can use the Embed SDK to build creative solutions to your own code testing needs.
-
+* [View a collection of example use cases.](https://qualified.github.io/embed-demos/demos) Use these to get inspired for how you can use the Embed SDK to build creative solutions to your own code testing needs.
 * [Visit the in-app embed settings page.](https://www.qualified.io/hire/account/embed) If you have an account with us, you can configure and start using Embed today.
 
 
@@ -26,12 +24,12 @@ Qualified Embed is a premium feature, if you do not have it enabled, please cont
 ## Tutorials
 
 :::tip Complete SDK Docs
-[Use our complete SDK docs](https://www.qualified.io/embed/api-docs/) for an in-depth guide on how to use the embedded feature.
+[Use our complete SDK docs](https://andela-technology.github.io/qualified-embed/docs) for an in-depth guide on how to use the embedded feature.
 :::
 
 ### Embedding Individual Challenges
 
-The Embed tool makes it easy to [embed single code challenges](https://www.qualified.io/embed/api-docs/tutorial-challenges.html) in your page. This makes it possible to use Qualified for training, low-stakes testing, and other creative uses.
+The Embed tool makes it easy to [embed single code challenges](https://andela-technology.github.io/qualified-embed/docs/tutorial-challenges.html) in your page. This makes it possible to use Qualified for training, low-stakes testing, and other creative uses.
 
 This is the best method if you want to have more control over the experience. With this method, you can:
 
@@ -40,11 +38,11 @@ This is the best method if you want to have more control over the experience. Wi
 * Override or limit some functionality.
 * Dynamically change file contents.
 
-➔ &nbsp; [**Embedding Challenges**](https://www.qualified.io/embed/api-docs/tutorial-challenges.html)
+➔ &nbsp; [**Embedding Challenges**](https://andela-technology.github.io/qualified-embed/docs/tutorial-challenges.html)
 
 ### Embedding Full Assessments
 
-You also can [embed entire assessments easily](https://www.qualified.io/embed/api-docs/tutorial-assessments.html). This requires using the Qualified API to generate invitations, but provides the complete assessment experience, including Q&A challenges.
+You also can [embed entire assessments easily](https://andela-technology.github.io/qualified-embed/docs/tutorial-assessments.html). This requires using the Qualified API to generate invitations, but provides the complete assessment experience, including Q&A challenges.
 
 This is the method to use if you require any of the following:
 
@@ -54,12 +52,12 @@ This is the method to use if you require any of the following:
 
 It's also a good method if you don't really want to customize the experience, but just want to use Qualified Assessments inside your own page.
 
-➔ &nbsp; [**Embedding Assessments**](https://www.qualified.io/embed/api-docs/tutorial-assessments.html)
+➔ &nbsp; [**Embedding Assessments**](https://andela-technology.github.io/qualified-embed/docs/tutorial-assessments.html)
 
 
 ## Example Use Cases
 
-There's a list of ideas below to get you started, but you can also check out our [collection of example use cases here](https://qualified.github.io/embed-demos/). These examples are available as starter code to make it easy to try out some usage ideas immediately.
+There's a list of ideas below to get you started, but you can also check out our [collection of example use cases here](https://qualified.github.io/embed-demos/demos). These examples are available as starter code to make it easy to try out some usage ideas immediately.
 
 ### Code Challenges
 
@@ -88,7 +86,7 @@ If the limitations or complexity of embedding individual challenges doesn't work
 
 ## Learn More
 
-We have [complete docs for our SDK](https://www.qualified.io/embed/api-docs/), which makes setting up and using Qualified embeds easy, without a framework, or integrating with your framework.
+We have [complete docs for our SDK](https://andela-technology.github.io/qualified-embed/docs/), which makes setting up and using Qualified embeds easy, without a framework, or integrating with your framework.
 
-➔ &nbsp; [**In-depth SDK documentation**](https://www.qualified.io/embed/api-docs/)
+➔ &nbsp; [**In-depth SDK documentation**](https://andela-technology.github.io/qualified-embed/docs/)
 
