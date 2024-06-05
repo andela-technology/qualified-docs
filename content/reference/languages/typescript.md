@@ -52,9 +52,11 @@ TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
 - `axios`: `1.2.1`
 - `chai`: `4.3.7`
 - `express`: `4.18.2`
+- `express-joi-validation`: `^5.0.1`
 - `chai-http`: `4.3.0`
 - `fast-check`: `3.4.0`
 - `jest`: `29.3.1`
+- `joi`: `^17.13.1`
 - `lodash`: `4.17.21`
 - `mocha`: `10.2.0`
 - `rxjs`: `7.8.0`
