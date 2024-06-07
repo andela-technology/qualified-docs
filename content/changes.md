@@ -44,7 +44,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Review Scorecard Considerations were displaying as an array** 
 
-  When hovering over considerations, array data was showing up instead of a text. Now this data is well displayed in a formatted text.  
+  We fixed an issue where hovering over review consideration guidelines showed raw JSON rather than plain text.
 
 - **Allow skipping failed assessments with limited submission attempts** 
 
