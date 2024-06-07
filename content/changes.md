@@ -16,19 +16,13 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   We've released our standalone browser embed.js script as an [open source npm package](https://www.npmjs.com/package/@qualified/embed). This lets you easily integrate it into your application's modern build system, while facilitating package fixes, improvements and breaking changes.
 
-  We'll continue to support the legacy standalone script and documentation indefinitely, but we encourage teams using Embed to upgrade to a non-legacy version to benefit from the build and be prepared for forthcoming improvements.
+  We'll continue to support the legacy standalone script and documentation until further notice, but we encourage teams using Embed to upgrade to a non-legacy version to benefit from the build and be prepared for forthcoming improvements.
 
   Check out the [npm package](https://www.npmjs.com/package/@qualified/embed) and see it in action in our [React, Webpack and Embed demo](https://github.com/qualified/embed-demos/tree/master/demos/react).
 
 - **Embed React Demo**
 
   This demo provides a basic starter for using Embed via [npm](https://www.npmjs.com/package/@qualified/embed) with React and Webpack. The setup can be adapted to other Node builds and libraries such as Vite, Parcel, Vue and Angular. 
-
-### Improvements 
-
-- **Java Quiz** 
-
-  Increased time on a few code questions based on candidate’s feedback. The current total time limit is 29 minutes. 
 
 ### Challenges 
 
@@ -40,10 +34,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   This quiz tests candidate understanding of Vue idioms, patterns, best practices, gotchas, terminology and ecosystem. 
 
-- **Front-End: Limit Checked Checkboxes**
-
-  Improved boilerplate to allow candidates to more easily run their code in web preview. 
-
  ### Bug Fixes 
 
 - **Review Scorecard Considerations were displaying as an array** 
@@ -53,10 +43,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 - **Allow skipping failed challenges in assessments with limited submission attempts** 
 
   Now candidates can submit partial solutions without being forced to keep working on challenges in assessments with limited submissions.
-  
-- **Vue assembly line has incorrect awaits in the tests** 
-
-  Various async  .trigger() and .setValue() calls in the Vue: Assembly Line challenge were missing awaits. 
 
 
 ## April 30, 2024 
