@@ -8,6 +8,53 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## May 31, 2024 
+
+### Features 
+
+- **New Versioning Embed App**
+
+  Our new versioning embed app, released by NPM packages, provides our customers with a way to introduce improvements without affecting their current use cases ensuring consistency and quality. Visit our [embed repository](https://github.com/qualified/embed-demos) to learn more. 
+
+- **Embed React Demo**
+
+  This demo provides a basic starter for using Embed via [npm](https://www.npmjs.com/package/@qualified/embed) with React and Webpack. The setup can be adapted to other Node builds and libraries such as Vite, Parcel, Vue and Angular. 
+
+### Improvements 
+
+- **Java Quiz** 
+
+  Increased time on a few code questions based on candidate’s feedback. The current total time limit is 29 minutes. 
+
+### Challenges 
+
+- **Agile Quiz**  
+
+  This assessment is designed to evaluate your familiarity and expertise in Agile environments and methodologies, which are essential for success in product related positions. Question difficulty ranges from basic to intermediate, so the challenge should be suitable for any experienced Agile professional. Most of the questions are inspired by Agile certifications and frequent Agile interview questions.  
+
+- **Vue Quiz** 
+
+  This quiz tests candidate understanding of Vue idioms, patterns, best practices, gotchas, terminology and ecosystem. 
+
+- **Front-End: Limit Checked Checkboxes**
+
+  Improved boilerplate to allow candidates to more easily run their code in web preview. 
+
+ ### Bug Fixes 
+
+- **Review Scorecard Considerations were displaying as an array** 
+
+  When hovering over considerations, array data was showing up instead of a text. Now this data is well displayed in a formatted text.  
+
+- **Allow skipping failed assessments with limited submission attempts** 
+
+  Now the users can submit the partial solution without being forced to keep working on the assessments because it had a limited number of submissions.
+  
+- **Vue assembly line has incorrect awaits in the tests** 
+
+  Various async  .trigger() and .setValue() calls in the Vue: Assembly Line challenge were missing awaits. 
+
+
 ## April 30, 2024 
 
 ### Improvements 
