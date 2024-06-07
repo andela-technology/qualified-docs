@@ -14,7 +14,11 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Qualified Embed SDK Released on NPM**
 
-  Our new versioning embed app, released by NPM packages, provides our customers with a way to introduce improvements without affecting their current use cases ensuring consistency and quality. Visit our [embed repository](https://github.com/qualified/embed-demos) to learn more. 
+  We've released our standalone browser embed.js script as an [open source npm package](https://www.npmjs.com/package/@qualified/embed). This lets you easily integrate it into your application's modern build system, while facilitating package fixes, improvements and breaking changes.
+
+  We'll continue to support the legacy standalone script and documentation indefinitely, but we encourage teams using Embed to upgrade to a non-legacy version to benefit from the build and be prepared for forthcoming improvements.
+
+  Check out the [npm package](https://www.npmjs.com/package/@qualified/embed) and see it in action in our [React, Webpack and Embed demo](https://github.com/qualified/embed-demos/tree/master/demos/react).
 
 - **Embed React Demo**
 
