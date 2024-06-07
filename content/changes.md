@@ -46,7 +46,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   We fixed an issue where hovering over review consideration guidelines showed raw JSON rather than plain text.
 
-- **Allow skipping failed assessments with limited submission attempts** 
+- **Allow skipping failed challenges in assessments with limited submission attempts** 
 
   Now candidates can submit partial solutions without being forced to keep working on challenges in assessments with limited submissions.
   
