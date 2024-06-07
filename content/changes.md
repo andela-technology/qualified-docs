@@ -12,7 +12,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Features 
 
-- **New Versioning Embed App**
+- **Qualified Embed SDK Released on NPM**
 
   Our new versioning embed app, released by NPM packages, provides our customers with a way to introduce improvements without affecting their current use cases ensuring consistency and quality. Visit our [embed repository](https://github.com/qualified/embed-demos) to learn more. 
 
