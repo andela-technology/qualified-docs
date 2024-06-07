@@ -48,7 +48,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Allow skipping failed assessments with limited submission attempts** 
 
-  Now the users can submit the partial solution without being forced to keep working on the assessments because it had a limited number of submissions.
+  Now candidates can submit partial solutions without being forced to keep working on challenges in assessments with limited submissions.
   
 - **Vue assembly line has incorrect awaits in the tests** 
 
