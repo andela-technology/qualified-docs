@@ -8,6 +8,37 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## May 31, 2024 
+
+### Features 
+
+- **Qualified Embed SDK Released on NPM**
+
+  We've released our standalone browser embed.js script as an [open source npm package](https://www.npmjs.com/package/@qualified/embed). This lets you easily integrate it into your application's modern build system, while facilitating package fixes, improvements and breaking changes.
+  We'll continue to support the legacy standalone script and documentation for the foreseeable future, but we encourage teams using Embed to upgrade to a non-legacy version to benefit from the build and be prepared for forthcoming improvements.
+  Check out the [npm package](https://www.npmjs.com/package/@qualified/embed) and see it in action in our [React, Webpack and Embed demo](https://github.com/qualified/embed-demos/tree/master/demos/react).
+  
+### Challenges 
+
+- **Agile Quiz**  
+
+  This assessment is designed to evaluate your familiarity and expertise in Agile environments and methodologies, which are essential for success in product related positions. Question difficulty ranges from basic to intermediate, so the challenge should be suitable for any experienced Agile professional. Most of the questions are inspired by Agile certifications and frequent Agile interview questions.  
+
+- **Vue Quiz** 
+
+  This quiz tests candidate understanding of Vue idioms, patterns, best practices, gotchas, terminology and ecosystem. 
+
+ ### Bug Fixes 
+
+- **Review Scorecard Considerations were displaying as an array** 
+
+  We fixed an issue where hovering over review consideration guidelines showed raw JSON rather than plain text.
+
+- **Allow skipping failed challenges in assessments with limited submission attempts** 
+
+  Now candidates can submit partial solutions without being forced to keep working on challenges in assessments with limited submissions.
+
+
 ## April 30, 2024 
 
 ### Improvements 
