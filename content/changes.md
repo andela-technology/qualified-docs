@@ -17,10 +17,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
   We've released our standalone browser embed.js script as an [open source npm package](https://www.npmjs.com/package/@qualified/embed). This lets you easily integrate it into your application's modern build system, while facilitating package fixes, improvements and breaking changes.
   We'll continue to support the legacy standalone script and documentation for the foreseeable future, but we encourage teams using Embed to upgrade to a non-legacy version to benefit from the build and be prepared for forthcoming improvements.
   Check out the [npm package](https://www.npmjs.com/package/@qualified/embed) and see it in action in our [React, Webpack and Embed demo](https://github.com/qualified/embed-demos/tree/master/demos/react).
-
-- **Embed React Demo**
-
-  This demo provides a basic starter for using Embed via [npm](https://www.npmjs.com/package/@qualified/embed) with React and Webpack. The setup can be adapted to other Node builds and libraries such as Vite, Parcel, Vue and Angular.
   
 ### Challenges 
 
