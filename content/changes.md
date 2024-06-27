@@ -8,6 +8,25 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## June 30, 2024
+
+### Bug Fixes 
+
+- **Demo Data - Scoring Inaccurate** 
+
+  We disabled the option to generate demo data on new teams in order to keep our demo data consistent for all our customers. 
+ 
+- **Billing Page Displaying Wrong Number of Active Users**
+ 
+  The blind reviewers were not counting as restricted seats generating inconsistencies in the total number of active users.
+
+- **'See all of the programming languages we support' link is broken**
+ 
+  In our website the ‘See all of the programming languages we support was broken it went nowhere and now it’s fixed redirecting this [page](https://www.qualified.io/features#languages) 
+  Coding Interview Questions - Hire The Best Software Developers - Qualified
+  Qualified has designed assessments to make your hiring process smoother. If you are a scaling software company or a recruiter, we will help you interview software engineer.
+  
+
 ## May 31, 2024 
 
 ### Features 
