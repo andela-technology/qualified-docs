@@ -12,10 +12,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Bug Fixes 
 
-- **Demo Data - Scoring Inaccurate** 
-
-  We disabled the option to generate demo data on new teams in order to keep our demo data consistent for all our customers. 
- 
 - **Billing Page Displaying Wrong Number of Active Users**
  
   The blind reviewers were not counting as restricted seats generating inconsistencies in the total number of active users.
