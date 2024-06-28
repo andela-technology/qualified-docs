@@ -22,9 +22,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **'See all of the programming languages we support' link is broken**
  
-  In our website the ‘See all of the programming languages we support was broken it went nowhere and now it’s fixed redirecting this [page](https://www.qualified.io/features#languages) 
-  Coding Interview Questions - Hire The Best Software Developers - Qualified
-  Qualified has designed assessments to make your hiring process smoother. If you are a scaling software company or a recruiter, we will help you interview software engineer.
+  In our website the ‘See all of the programming languages we support was broken it went nowhere and now it’s fixed redirecting this [page](https://www.qualified.io/features#languages)
 
 ## May 31, 2024 
 
