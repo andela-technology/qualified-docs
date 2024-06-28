@@ -16,10 +16,6 @@ Learn about notable new features, fixes, and other improvements to the applicati
  
   The blind reviewers were not counting as restricted seats generating inconsistencies in the total number of active users.
 
-- **'See all of the programming languages we support' link is broken**
- 
-  In our website the ‘See all of the programming languages we support was broken it went nowhere and now it’s fixed redirecting this [page](https://www.qualified.io/features#languages)
-
 ## May 31, 2024 
 
 ### Features 
