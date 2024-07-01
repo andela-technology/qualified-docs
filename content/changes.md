@@ -14,7 +14,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Billing Page Displaying Wrong Number of Active Users**
  
-  The blind reviewers were not counting as restricted seats generating inconsistencies in the total number of active users.
+  Blind reviewers were not being counted as restricted seats, generating inconsistencies in the total number of active users.
 
 ## May 31, 2024 
 
