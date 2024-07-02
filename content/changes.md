@@ -8,6 +8,14 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## June 30, 2024
+
+### Bug Fixes 
+
+- **Billing Page Displaying Wrong Number of Active Users**
+ 
+  Blind reviewers were not being counted as restricted seats, generating inconsistencies in the total number of active users.
+
 ## May 31, 2024 
 
 ### Features 
