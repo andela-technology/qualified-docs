@@ -5,6 +5,9 @@ order: 5
 
 This page offers guides for developing challenges in specific frameworks and languages to get you up and running in your preferred technology stack. The guidance on this page can help you get the most out of the platform and serve as a reference for the nuts and bolts of a particular technology in the context of Qualified.
 
+### [Validating Code with a GPT](/creating-content/challenges/guides/gpt-validation)
+This guide provides a starter for using a GPT to validate candidate and student code submissions with OpenAI's API.
+
 ### [Testing React Skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 
