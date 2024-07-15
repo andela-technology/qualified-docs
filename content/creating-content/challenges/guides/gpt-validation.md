@@ -238,13 +238,13 @@ You can also ask the GPT to err on the side of being generous with scoring, sinc
 
 ### Performance
 
-Making calls to the OpenAI API takes time. Use the latest model (`"gpt-4o"` used in the above code may be outdated by the time you read this, necessitating an update), or try a few to see which runs fastest for your use case (keeping in mind other metrics, like accuracy).
+Making calls to the OpenAI API takes time. Use the latest model (`"gpt-4o"` used in the above code may be outdated by the time you read this, necessitating an update), or try a few to see which runs fastest for your use case, keeping in mind other metrics, like accuracy.
 
 The above code runs in about 3 seconds with the OpenAI call and about 1 second without it, so there is little performance impact. The limit for a submission is currently 12 seconds. Asking the GPT to provide brief responses dramatically speeds up the response time, as done in this example.
 
 ### Rate Limits, Cost and Security
 
-GPTs cost a bit per call, and you may want to proxy your request to add rate limits to particular candidates. Realistically, the risk of abuse is low, but it's worth keeping in the back of the mind. Keep an account limit and watch out for emails that. You could use fail-safes in challenges and remove the analytics if the API call fails due to a billing reason, to avoid inconveniencing candidates who run up against a rate limit through no fault of their own.
+GPTs incur cost per token generated, and you may want to proxy your request to add rate limits to particular candidates. Realistically, the risk of abuse is low, but it's worth keeping in the back of the mind. Keep an account limit and watch out for emails that. You could use fail-safes in challenges and remove the analytics if the API call is unsuccessful due to a billing reason. This avoids inconveniencing candidates who run up against a rate limit through no fault of their own and allows them to complete the challenge.
 
 Keep your API keys secure in the submission tests in classic code challenges, or in a hidden file in a project code challenge. You can rotate keys if exposed or use a proxy service (such as a Google Cloud Function) to hide them entirely.
 
@@ -263,3 +263,86 @@ As with any third-party dependency, expect some amount of monitoring and mainten
 GPT validation is a powerful feature. Use it judiciously! Poor prompt engineering, carelessly-chosen metrics, hallucinations and performance issues can cause a poor candidate or student experience.
 
 When used well, GPT validation can help you quickly develop content, provide immediate feedback to candidates, help students write high-quality code, automate reviewing, and enable you to easily validate solutions deeply in ways that weren't accessible or possible until recently.
+
+## Ideas and Use Cases
+
+Here are some ideas for using a GPT in a Qualified code challenge.
+
+Note that GPTs may not be optimal for all of these use cases. Some are interesting and powerful ideas, but entail risks of false positives and negatives which should be managed on a case-by-case basis.
+
+### Enforcing and Reporting on Code Quality
+
+Detecting code quality issues and enforcing standards is probably the most straightforward and obvious use case for GPT validation in coding challenges. Examples of metrics you can easily test include:
+
+- Time complexity
+- Memory complexity
+- Cyclomatic complexity
+- Security (such as SQL injection, XSS, CSRF, exposed keys, catastrophic backtracking, etc)
+- Variable naming
+- Web accessibility
+- Documentation and commenting
+- Solution simplicity
+- Usage of a particular design, like breaking out helper functions or sub-components
+- Adherence to style guidelines like [PEP-8](https://peps.python.org/pep-0008/), [ESLint](https://eslint.org/), [Rubocop](https://rubocop.org/), etc
+
+### Evaluating Solution Correctness
+
+Solution correctness is best validated with tests, but a GPT can act as a supplementary check, and can even help verify solutions in languages not yet supported in Qualified.
+
+Here are some examples where a GPT can lend a hand to a traditional test suite:
+
+- Pseudocode
+- Proprietary languages like DAX, MDX, ABAP, MATLAB, Salesforce's Apex, Trading View's Pine Script
+- a [DSL](https://en.wikipedia.org/wiki/Domain-specific_language) of your invention
+- Configuration files (Nginx, Apache `httpd.conf`, Terraform, Ansible, Gradle, Dockerfiles, Kubernetes, GitHub actions, Jenkins, CircleCI, Travis CI, GitLab CI, Azure Pipelines, Chef, Puppet, Cloudformation, Grafana, etc)
+- Machine learning and data science libraries like Pytorch, Tensorflow, and Spark that are otherwise prohibitive for the code runner to handle (the candidate may wish to write code locally, then paste their solution in)
+- SQL flavors like MySQL and Oracle PL/SQL
+- CSS, CSS preprocessors like Sass, Tailwind, and layout
+- Allowing a candidate to write their solution in any language they choose
+
+### Detecting Feature Usage
+
+You can use a GPT to detect usage (or lack thereof) of particular language features or techniques, such as particular data structures or libraries or implementation details that are difficult to reliably unit test.
+
+For example:
+
+- "Does the solution correctly implement a quicksort algorithm?"
+- "Does the solution use a trie?"
+- "Does the solution use functional React components and hooks rather than class components?"
+- "Does the solution use Tailwind for all CSS styling?"
+
+### Cheating Detection
+
+Without [random tests](/creating-content/challenges/guides/random-tests/), candidates may be able to pass tests by hardcoding solutions. Asking the GPT whether the solution code truly solves the problem can help mitigate this risk, without the trouble of writing random tests.
+
+### Validating Candidate-Written Tests
+
+A GPT can validate candidate-written test suites, particularly in heavier frameworks like Cucumber, Playwright and Cypress, and estimate code and edge case coverage.
+
+This is typically difficult to do in Qualified, since you'd need a "meta test suite" to run and assert on the candidate's solution.
+
+### Scoring Written Responses
+
+Written answers, essays, and free text quizzes can be checked by a GPT. Here are some metrics that could be scored:
+
+- Correctness and accuracy
+- Grammar and syntax
+- Writing skill
+- Thoroughness
+- Ensuring that specific topics were discussed
+
+### Scoring Systems Design Responses
+
+GPTs can validate candidate-generated systems architecture or API designs, both in free text and in ASCII diagram formats.
+
+### Providing Hints
+
+A GPT can provide brief hints, code reviews and interactive feedback, either live during a challenge or after the fact as part of automated review or hidden scoring.
+
+### Validating Pull Requests
+
+A GPT can validate pull requests and code reviews written by the candidate by integrating with the GitHub API.
+
+### Visualizing Output
+
+A GPT could be prompted to provide visualizers for candidate solutions. The visualizers can be shown on the code runner or web preview. The code they generate would need to be short, so supplementary pre-generated boilerplate in [D3](https://d3js.org/) or [Chart.js](https://www.chartjs.org/) could save precious time during a code run.
