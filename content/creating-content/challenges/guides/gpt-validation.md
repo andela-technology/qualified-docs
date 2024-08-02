@@ -90,7 +90,7 @@ const twoSum = require("./solution");
 // It won't be exposed to the candidate as long as it remains in the
 // "Test Cases" file in classic code challenges, or in a hidden file
 // in a project code challenge.
-const OPENAI_API_KEY = "sk-proj-w7yQJB...";
+const OPENAI_API_KEY = "sk-proj-S0...";
 
 describe("Two Sum", () => {
   it("should handle a small array with a two sum", () => {
@@ -114,27 +114,23 @@ describe("Two Sum analytics", () => {
   });
 
   it("should solve the two sum problem", () => {
-    expect(analysis.doesSolutionSolveTwoSumProblem).toBe(true);
+    expect(analysis.solutionSolvesTwoSumProblem).toBe(true);
   });
 
   it("should have linear time complexity", () => {
-    expect(analysis.doesSolutionHaveLinearTimeComplexity).toBe(true);
-  });
-
-  it("should be cleanly coded", () => {
-    expect(analysis.isSolutionCleanlyCoded).toBe(true);
-  });
-
-  it("should not use globals", () => {
-    expect(analysis.doesSolutionUseGlobals).toBe(false);
+    expect(analysis.solutionHasLinearTimeComplexity).toBe(true);
   });
 
   it("should have a correct JSDoc", () => {
-    expect(analysis.doesSolutionHaveCorrectJSDoc).toBe(true);
+    expect(analysis.solutionHasCorrectJSDoc).toBe(true);
   });
 
-  it("should use clear variable names", () => {
-    expect(analysis.doesSolutionUseGoodVariableNames).toBe(true);
+  it("should use clear function parameter names", () => {
+    expect(analysis.solutionUsesClearFunctionParameterNames).toBe(true);
+  });
+
+  it("should keep variables local and not pollute the global scope", () => {
+    expect(analysis.solutionKeepsVariablesLocal).toBe(true);
   });
 });
 
@@ -165,31 +161,37 @@ const fetchCompletion = async (messages) => {
 
 const fetchAnalytics = async () => {
   const solution = await fs.readFile("./src/solution.js", "utf-8");
-  const content = `Return a JSON structure with analytics for
-the following code which should solve the 'two sum' algorithm problem:
+    const content = `Return a JSON structure with analytics for
+the following code which should solve the 'two sum' algorithm problem (return true if two distinct numbers in an array add up to a target sum):
 
 \`\`\`js\n${solution}\n\`\`\`
 
-Your response should use the following structure,
-filled out withrespect to the solution code:
+Your response should use the following structure, filled out with respect to the solution code:
 
 \`\`\`json
 {
-  "doesSolutionSolveTwoSumProblem": boolean,
-  "doesSolutionHaveLinearTimeComplexity": boolean,
-  "isSolutionCleanlyCoded": boolean,
-  "doesSolutionHaveCorrectJSDoc": boolean,
-  "doesSolutionUseGoodVariableNames": boolean,
-  "doesSolutionUseGlobals": boolean
+  "solutionSolvesTwoSumProblem": boolean,
+  "solutionHasLinearTimeComplexity": boolean,
+  "solutionHasCorrectJSDoc": boolean,
+  "solutionUsesClearFunctionParameterNames": boolean,
+  "solutionKeepsVariablesLocal": boolean
 }
 \`\`\`
+
+Here's the rubric for each key you should use for scoring:
+
+- solutionSolvesTwoSumProblem: Is the solution code a 100% correct solution to the Two Sum problem described above? It's OK if it's not performant, but it must be totally bug-free.
+- solutionHasLinearTimeComplexity: Does the solution run in O(n) time? Hash/object/set lookups are considered O(1).
+- solutionHasCorrectJSDoc: Solution must have a complete and correct JSDoc (no wrong types, correct JSDoc syntax, multiline-style comments (/* */), so slash comment syntax // is not acceptable)
+- solutionUsesClearFunctionParameterNames: twoSum function parameters must use clear variable names like \`nums\`, \`numbers\` or \`target\`. \`t\` and \`n\` are unclear. It's OK if abbreviated variable names are used in the function body.
+- solutionKeepsVariablesLocal: Solution must not pollute the global scope with variables (for example, forgetting to add \`let\` or \`const\`, especially to loop control variables).
 `;
   const messages = [{ role: "user", content }];
   return JSON.parse(await fetchCompletion(messages));
 };
 ```
 
-You're welcome to use this as a starter for your GPT challenges and experiments. The prompt here is cursory--many more analytics could be collected and enforced than these.
+You're welcome to use this as a starter for your GPT challenges and experiments. The prompt here is just a starting point--many more analytics could be collected and enforced than these.
 
 You can clean up the test file by moving `fetchCompletion` to the preloaded file, but make sure to keep your API key and prompt in the submission tests for security.
 
@@ -230,7 +232,7 @@ GPTs [hallucinate](https://en.wikipedia.org/wiki/Hallucination\_(artificial_inte
 
 [Best practice](https://towardsdatascience.com/llm-evals-setup-and-the-metrics-that-matter-2cc27e8e35f3#ac42) is to use temperature 0. Prompt engineering and choosing reasonably objective metrics (or subjective metrics that aren't likely to cause false negatives) can help ensure that scoring is performed correctly.
 
-From our experiences, the above prompt should be reliable, though. The problem domain is very constrained and the metrics are clear and leave enough wiggle room that the LLM should not make any mistakes that might penalize the candidate unfairly.
+We'll soon be adding an in-depth guide to validating your GPT-driven solution analytics. We've tested the test suite presented here on hundreds of tests and dozens of solutions and found it to achieve consistent results. The problem domain is constrained and the metrics are clear and leave enough wiggle room that the LLM should not make mistakes that might penalize the candidate unfairly very often.
 
 If you're concerned about false negatives, you can log the GPT response rather than assert on it, and use the analysis as a basis for human review. In this case, a more verbose prompt like "Provide a code review of the solution in a couple sentences" could be useful to facilitate quick human review, in addition to itemized metrics, but be careful when generating long responses since the request will take longer to return.
 
@@ -297,6 +299,7 @@ Here are some examples where a GPT can lend a hand to a traditional test suite:
 - Configuration files (Nginx, Apache `httpd.conf`, Terraform, Ansible, Gradle, Dockerfiles, Kubernetes, GitHub actions, Jenkins, CircleCI, Travis CI, GitLab CI, Azure Pipelines, Chef, Puppet, Cloudformation, Grafana, etc)
 - Machine learning and data science libraries like Pytorch, Tensorflow, and Spark that are otherwise prohibitive for the code runner to handle (the candidate may wish to write code locally, then paste their solution in)
 - SQL flavors like MySQL and Oracle PL/SQL
+- Excel formulas and VBA
 - CSS, CSS preprocessors like Sass, Tailwind, and layout
 - Allowing a candidate to write their solution in any language they choose
 
