@@ -110,7 +110,7 @@ describe("Two Sum analytics", () => {
   let analysis;
 
   beforeAll(async () => {
-    analysis = await fetchAnalytics();
+    analysis = await fetchAnalysis();
   });
 
   it("should solve the two sum problem", () => {
@@ -134,35 +134,10 @@ describe("Two Sum analytics", () => {
   });
 });
 
-const fetchCompletion = async (messages) => {
-  const endpoint = "https://api.openai.com/v1/chat/completions";
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      messages,
-      model: "gpt-4o",
-      temperature: 0,
-      response_format: { type: "json_object" },
-    }),
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw Error(data.error.message);
-  }
-
-  return data.choices[0].message.content;
-};
-
-const fetchAnalytics = async () => {
+const fetchAnalysis = async () => {
   const solution = await fs.readFile("./src/solution.js", "utf-8");
-    const content = `Return a JSON structure with analytics for
-the following code which should solve the 'two sum' algorithm problem (return true if two distinct numbers in an array add up to a target sum):
+  const content = `Return a JSON structure with analytics for
+the following code which should solve the 'two sum' algorithm problem (return true if two distinct numbers at different indexes in an array add up to a target sum):
 
 \`\`\`js\n${solution}\n\`\`\`
 
@@ -178,16 +153,40 @@ Your response should use the following structure, filled out with respect to the
 }
 \`\`\`
 
-Here's the rubric for each key you should use for scoring:
+Use this rubric for each scoring key:
 
-- solutionSolvesTwoSumProblem: Is the solution code a 100% correct solution to the Two Sum problem described above? It's OK if it's not performant, but it must be totally bug-free.
+- solutionSolvesTwoSumProblem: Is the solution code a 100% logically correct solution to the Two Sum problem described above? It's OK if it's not performant, or has non-logical issues. Make sure that the two numbers are distinct.
 - solutionHasLinearTimeComplexity: Does the solution run in O(n) time? Hash/object/set lookups are considered O(1).
-- solutionHasCorrectJSDoc: Solution must have a complete and correct JSDoc (no wrong types, correct JSDoc syntax, multiline-style comments (/* */), so slash comment syntax // is not acceptable)
+- solutionHasCorrectJSDoc: Solution must have a complete and correct JSDoc (no wrong types, correct JSDoc syntax, multiline-style comments (/* */), so slash comment syntax // is not acceptable, no logical inconsistencies or mistakes)
 - solutionUsesClearFunctionParameterNames: twoSum function parameters must use clear variable names like \`nums\`, \`numbers\` or \`target\`. \`t\` and \`n\` are unclear. It's OK if abbreviated variable names are used in the function body.
-- solutionKeepsVariablesLocal: Solution must not pollute the global scope with variables (for example, forgetting to add \`let\` or \`const\`, especially to loop control variables).
-`;
+- solutionKeepsVariablesLocal: Solution must not pollute the global scope with variables (for example, forgetting to add \`let\` or \`const\`, especially to loop control variables).`;
+  // TODO could add one-shot or few-shot code examples to prompt
+  return fetchCompletion(content);
+};
+
+const fetchCompletion = async (content) => {
   const messages = [{ role: "user", content }];
-  return JSON.parse(await fetchCompletion(messages));
+  const endpoint = "https://api.openai.com/v1/chat/completions";
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      messages,
+      model: "gpt-4o",
+      temperature: 0,
+      response_format: { type: "json_object" },
+    }),
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw Error(data.error.message);
+  }
+
+  return JSON.parse(data.choices[0].message.content);
 };
 ```
 
