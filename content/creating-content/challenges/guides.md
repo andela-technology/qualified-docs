@@ -8,6 +8,9 @@ This page offers guides for developing challenges in specific frameworks and lan
 ### [Validating Code with a GPT](/creating-content/challenges/guides/gpt-validation)
 This guide provides a starter for using a GPT to validate candidate and student code submissions with OpenAI's API.
 
+### [Testing GPT Validations](/creating-content/challenges/guides/gpt-validation-testing)
+This guide extends the [GPT validation guide](/creating-content/challenges/guides/gpt-validation) to show how to verify that the prompts and analytics will work on a variety of solutions over many runs.
+
 ### [Testing React Skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 

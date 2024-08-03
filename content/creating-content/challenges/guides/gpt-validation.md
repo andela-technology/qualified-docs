@@ -232,7 +232,7 @@ GPTs [hallucinate](https://en.wikipedia.org/wiki/Hallucination\_(artificial_inte
 
 [Best practice](https://towardsdatascience.com/llm-evals-setup-and-the-metrics-that-matter-2cc27e8e35f3#ac42) is to use temperature 0. Prompt engineering and choosing reasonably objective metrics (or subjective metrics that aren't likely to cause false negatives) can help ensure that scoring is performed correctly.
 
-We'll soon be adding an in-depth guide to validating your GPT-driven solution analytics. We've tested the test suite presented here on hundreds of tests and dozens of solutions and found it to achieve consistent results. The problem domain is constrained and the metrics are clear and leave enough wiggle room that the LLM should not make mistakes that might penalize the candidate unfairly very often.
+We have an in-depth guide to [testing your GPT-driven challenge validations](/creating-content/challenges/guides/gpt-validation-testing). Following that guide, we've tested the validation code presented here on hundreds of tests and dozens of candidate solutions and found it to achieve consistent results. The problem domain is constrained and the metrics are clear and leave enough wiggle room that the LLM should not make mistakes that might penalize the candidate unfairly very often.
 
 If you're concerned about false negatives, you can log the GPT response rather than assert on it, and use the analysis as a basis for human review. In this case, a more verbose prompt like "Provide a code review of the solution in a couple sentences" could be useful to facilitate quick human review, in addition to itemized metrics, but be careful when generating long responses since the request will take longer to return.
 
