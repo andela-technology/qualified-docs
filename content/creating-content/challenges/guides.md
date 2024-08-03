@@ -5,12 +5,6 @@ order: 5
 
 This page offers guides for developing challenges in specific frameworks and languages to get you up and running in your preferred technology stack. The guidance on this page can help you get the most out of the platform and serve as a reference for the nuts and bolts of a particular technology in the context of Qualified.
 
-### [Validating Code with a GPT](/creating-content/challenges/guides/gpt-validation)
-This guide provides a starter for using a GPT to validate candidate and student code submissions with OpenAI's API.
-
-### [Testing GPT Validations](/creating-content/challenges/guides/gpt-validation-testing)
-This guide extends the [GPT validation guide](/creating-content/challenges/guides/gpt-validation) to show how to verify that the prompts and analytics will work on a variety of solutions over many runs.
-
 ### [Testing React Skills](/creating-content/challenges/guides/react)
 This guide aims to help content creators get started and navigate common pitfalls testing React skills in Qualified.
 
@@ -43,3 +37,9 @@ Qualified uses Ruby and RSpec as the harness for running SQL solutions by defaul
 
 ### [Managing Third-Party Dependencies](/creating-content/challenges/guides/managing-third-party-dependencies)
 This guide provides tips for managing third-party dependencies in your Qualified challenges.
+
+### [Validating Code with a GPT](/creating-content/challenges/guides/gpt-validation)
+This guide provides a starter for using a GPT to validate candidate and student code submissions with OpenAI's API.
+
+### [Testing GPT Validations](/creating-content/challenges/guides/gpt-validation-testing)
+This guide extends the [GPT validation guide](/creating-content/challenges/guides/gpt-validation) to show how to verify that the prompts and analytics will work on a variety of solutions over many runs.
