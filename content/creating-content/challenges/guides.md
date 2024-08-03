@@ -38,6 +38,9 @@ Qualified uses Ruby and RSpec as the harness for running SQL solutions by defaul
 ### [Managing Third-Party Dependencies](/creating-content/challenges/guides/managing-third-party-dependencies)
 This guide provides tips for managing third-party dependencies in your Qualified challenges.
 
+### [Making HTTP requests from challenges](/creating-content/challenges/guides/making-http-requests-from-challenges)
+This guide provides an overview of our HTTP request capabilities in our challenges. This is useful for content creators who want to integrate with APIs or pull datasets into their challenges.
+
 ### [Validating Code with a GPT](/creating-content/challenges/guides/gpt-validation)
 This guide provides a starter for using a GPT to validate candidate and student code submissions with OpenAI's API.
 
