@@ -19,7 +19,7 @@ tags:
 
 This guide shows how you can integrate [GPT](https://en.wikipedia.org/wiki/Generative_pre-trained_transformer) analysis on your candidate and student's code submissions using [OpenAI's API](https://openai.com/api/).
 
-This is an extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among other things.
+This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among other things.
 
 This enables you to automatically analyze submissions on a much deeper level than naive correctness, without necessarily resorting to human review.
 
@@ -110,7 +110,7 @@ describe("Two Sum analytics", () => {
   let analysis;
 
   beforeAll(async () => {
-    analysis = await fetchAnalytics();
+    analysis = await fetchAnalysis();
   });
 
   it("should solve the two sum problem", () => {
@@ -134,35 +134,10 @@ describe("Two Sum analytics", () => {
   });
 });
 
-const fetchCompletion = async (messages) => {
-  const endpoint = "https://api.openai.com/v1/chat/completions";
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      messages,
-      model: "gpt-4o",
-      temperature: 0,
-      response_format: { type: "json_object" },
-    }),
-  });
-
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw Error(data.error.message);
-  }
-
-  return data.choices[0].message.content;
-};
-
-const fetchAnalytics = async () => {
+const fetchAnalysis = async () => {
   const solution = await fs.readFile("./src/solution.js", "utf-8");
-    const content = `Return a JSON structure with analytics for
-the following code which should solve the 'two sum' algorithm problem (return true if two distinct numbers in an array add up to a target sum):
+  const content = `Return a JSON structure with analytics for
+the following code which should solve the 'two sum' algorithm problem (return true if two distinct numbers at different indexes in an array add up to a target sum):
 
 \`\`\`js\n${solution}\n\`\`\`
 
@@ -178,16 +153,40 @@ Your response should use the following structure, filled out with respect to the
 }
 \`\`\`
 
-Here's the rubric for each key you should use for scoring:
+Use this rubric for each scoring key:
 
-- solutionSolvesTwoSumProblem: Is the solution code a 100% correct solution to the Two Sum problem described above? It's OK if it's not performant, but it must be totally bug-free.
+- solutionSolvesTwoSumProblem: Is the solution code a 100% logically correct solution to the Two Sum problem described above? It's OK if it's not performant, or has non-logical issues. Make sure that the two numbers are distinct.
 - solutionHasLinearTimeComplexity: Does the solution run in O(n) time? Hash/object/set lookups are considered O(1).
-- solutionHasCorrectJSDoc: Solution must have a complete and correct JSDoc (no wrong types, correct JSDoc syntax, multiline-style comments (/* */), so slash comment syntax // is not acceptable)
+- solutionHasCorrectJSDoc: Solution must have a complete and correct JSDoc (no wrong types, correct JSDoc syntax, multiline-style comments (/* */), so slash comment syntax // is not acceptable, no logical inconsistencies or mistakes)
 - solutionUsesClearFunctionParameterNames: twoSum function parameters must use clear variable names like \`nums\`, \`numbers\` or \`target\`. \`t\` and \`n\` are unclear. It's OK if abbreviated variable names are used in the function body.
-- solutionKeepsVariablesLocal: Solution must not pollute the global scope with variables (for example, forgetting to add \`let\` or \`const\`, especially to loop control variables).
-`;
+- solutionKeepsVariablesLocal: Solution must not pollute the global scope with variables (for example, forgetting to add \`let\` or \`const\`, especially to loop control variables).`;
+  // TODO could add one-shot or few-shot code examples to prompt
+  return fetchCompletion(content);
+};
+
+const fetchCompletion = async (content) => {
   const messages = [{ role: "user", content }];
-  return JSON.parse(await fetchCompletion(messages));
+  const endpoint = "https://api.openai.com/v1/chat/completions";
+  const response = await fetch(endpoint, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${OPENAI_API_KEY}`,
+    },
+    body: JSON.stringify({
+      messages,
+      model: "gpt-4o",
+      temperature: 0,
+      response_format: { type: "json_object" },
+    }),
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw Error(data.error.message);
+  }
+
+  return JSON.parse(data.choices[0].message.content);
 };
 ```
 
@@ -232,11 +231,13 @@ GPTs [hallucinate](https://en.wikipedia.org/wiki/Hallucination\_(artificial_inte
 
 [Best practice](https://towardsdatascience.com/llm-evals-setup-and-the-metrics-that-matter-2cc27e8e35f3#ac42) is to use temperature 0. Prompt engineering and choosing reasonably objective metrics (or subjective metrics that aren't likely to cause false negatives) can help ensure that scoring is performed correctly.
 
-We'll soon be adding an in-depth guide to validating your GPT-driven solution analytics. We've tested the test suite presented here on hundreds of tests and dozens of solutions and found it to achieve consistent results. The problem domain is constrained and the metrics are clear and leave enough wiggle room that the LLM should not make mistakes that might penalize the candidate unfairly very often.
+We have an in-depth guide to [testing your GPT-driven challenge validations](/creating-content/challenges/guides/gpt-validation-testing). Following that guide, we've tested the validation code presented here on hundreds of tests and dozens of candidate solutions and found it to achieve fairly consistent results. The problem domain is constrained and the metrics are clear and leave enough wiggle room that the LLM should not make mistakes that might penalize the candidate unfairly very often.
 
 If you're concerned about false negatives, you can log the GPT response rather than assert on it, and use the analysis as a basis for human review. In this case, a more verbose prompt like "Provide a code review of the solution in a couple sentences" could be useful to facilitate quick human review, in addition to itemized metrics, but be careful when generating long responses since the request will take longer to return.
 
 You can also ask the GPT to err on the side of being generous with scoring, since false negatives are probably worse than false positives.
+
+Many other techniques exist for combatting hallucinations, such as running multiple completions at once and choosing the majority vote, potentially amongst multiple models or LLM brands.
 
 ### Performance
 
@@ -264,13 +265,13 @@ As with any third-party dependency, expect some amount of monitoring and mainten
 
 GPT validation is a powerful feature. Use it judiciously! Poor prompt engineering, carelessly-chosen metrics, hallucinations and performance issues can cause a poor candidate or student experience.
 
-When used well, GPT validation can help you quickly develop content, provide immediate feedback to candidates, help students write high-quality code, automate reviewing, and enable you to easily validate solutions deeply in ways that weren't accessible or possible until recently.
+When used carefully, tested thoroughly and monitored, GPTs can help you quickly develop content, provide immediate feedback to candidates, help students write high-quality code, automate reviewing, and enable you to easily validate solutions deeply in ways that weren't accessible or possible until recently.
 
 ## Ideas and Use Cases
 
 Here are some ideas for using a GPT in a Qualified code challenge.
 
-Note that GPTs may not be optimal for all of these use cases. Some are interesting and powerful ideas, but entail risks of false positives and negatives which should be managed on a case-by-case basis.
+Note that GPTs may not be optimal for all of these use cases. Some are interesting and powerful ideas, but entail risks of false positives and negatives which should be managed on a case-by-case basis. Treat GPT validation as an experimental feature.
 
 ### Enforcing and Reporting on Code Quality
 
