@@ -442,6 +442,8 @@ GPTs may be useful in generating larger suites (but should be spot checked for o
 
 More practically, tune your prompts to a dozen or so best-effort solutions initially, then monitor your newly-released challenge and adjust the validator whenever you find that it doesn't perform well on a particular input, integrating those failing inputs into the test suite.
 
+You can also test drive a GPT validation suite by logging its output or using soft assertions, enabling you to run it on real code submissions as part of a traditional coding challenge test suite, but without penalizing your candidates. You can analyze, iterate on the prompt and only release it once you're confident in the results. Exporting a large set of existing candidate submissions for a particular challenge can give you a dataset to begin testing against.
+
 Be wary of overfitting your prompt to your specific solution inputs. Adding plenty of diverse solutions reduces the chances of overfitting.
 
 Note that the test code has a TODO, suggesting using one-shot or few-shot prompt examples. This adds complexity to the prompt, but may improve reliability. Use caution to ensure that the GPT isn't over-indexed on solutions that look like the examples and struggles as soon as an unforeseen input arrives.
