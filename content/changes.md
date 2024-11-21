@@ -8,6 +8,26 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## July 31, 2024
+
+### Features 
+
+  - **Validating Code with a GPT** 
+
+    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among       other things. [Read more in the Docs]( https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
+
+### Improvements 
+
+  - **Testing GPT Validations - Bump to gpt-4o** 
+
+    This bumps our model to gpt-4o. Read more about [Testing GPT Validations in the Docs](https://docs.qualified.io/creating-content/challenges/guides/gpt-validation-testing/#overview) 
+
+### Challenges 
+
+  - **Tailwind quiz** 
+
+    This quiz tests candidate understanding of Tailwind and exposure to key concepts in the Tailwind ecosystem. 
+
 ## June 30, 2024
 
 ### Bug Fixes 
