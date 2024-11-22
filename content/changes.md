@@ -14,7 +14,8 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   - **Validating Code with a GPT** 
 
-    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among       other things. [Read more in the Docs]( https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
+    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among other things.
+    [Read more in the Docs](https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
 
 ### Improvements 
 
