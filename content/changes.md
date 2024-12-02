@@ -8,14 +8,31 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## August 31, 2024 
+
+### Improvements 
+
+- **Enhance explanation for 'incomplete' in assessment review screen** 
+
+  The explanation for ‘incomplete’ in assessment review screen has been updated to make it clearer for candidates.
+
+  :::note
+  Challenges marked incomplete may use additional scoring beyond the provided tests. Please review the specific requirements for each challenge.
+  :::
+
+### Challenges 
+
+- **Next.js Quiz8** 
+
+  This quiz validates many aspects of your candidates' conceptual skills in the Next.js framework, current as of v14. You'll likely want to pair this with a React coding challenge to test the hands-on side of the Next.js framework. 
+
 ## July 31, 2024
 
 ### Features 
 
   - **Validating Code with a GPT** 
 
-    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among other things.
-    [Read more in the Docs](https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
+    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines, among       other things.[Read more in the Docs](https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
 
 ### Improvements 
 
@@ -57,7 +74,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   This quiz tests candidate understanding of Vue idioms, patterns, best practices, gotchas, terminology and ecosystem. 
 
- ### Bug Fixes 
+### Bug Fixes 
 
 - **Review Scorecard Considerations were displaying as an array** 
 
