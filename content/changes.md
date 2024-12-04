@@ -22,7 +22,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 ### Challenges 
 
-- **Next.js Quiz8** 
+- **Next.js Quiz** 
 
   This quiz validates many aspects of your candidates' conceptual skills in the Next.js framework, current as of v14. You'll likely want to pair this with a React coding challenge to test the hands-on side of the Next.js framework. 
 
