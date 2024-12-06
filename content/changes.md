@@ -13,6 +13,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 ### Improvements
 
 - **Searching**
+- 
   Enhanced the search functionality to include results where the search term appears as part of a larger word, making it easier to find relevant content. 
 
 - **Quick Review as part of the action menu**
