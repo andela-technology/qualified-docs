@@ -8,6 +8,22 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
+## September 30,2024
+
+### Improvements
+
+- **Searching**
+
+  Enhanced the search functionality to include results where the search term appears as part of a larger word, making it easier to find relevant content. 
+
+- **Quick Review as part of the action menu**
+
+  Added the ability to quickly review candidate assessments directly from the action menu. 
+  
+  :::note
+  This feature is only accessible for specific enabled features (External Ide, Solutions Review Dialog Preview) and applies only if the candidate has submitted assessments.
+  :::
+
 ## August 31, 2024 
 
 ### Improvements 
