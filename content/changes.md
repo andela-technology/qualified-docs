@@ -21,7 +21,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
   Added the ability to quickly review candidate assessments directly from the action menu. 
   
   :::note
-  This feature is only accessible for specific enabled features (External Ide, Solutions Review Dialog Preview) and applies only if the candidate has submitted assessments.
+  This feature is only accessible when the following Labs Features are enabled:  External Ide and Solutions Review Dialog Preview and applies only if the candidate has submitted assessments.
   :::
 
 ## August 31, 2024 
