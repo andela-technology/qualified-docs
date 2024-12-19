@@ -8,7 +8,41 @@ summary: 'Learn about new features, fixes, and other improvements'
 
 Learn about notable new features, fixes, and other improvements to the application!
 
-## September 30,2024
+## December 23,2024 
+
+### Improvements 
+
+- **Added SmartIDE support for Java 17** 
+
+  Added JUnit 5 framework to the config to enable SmartIDE support for new Java challenges. 
+
+## November 30, 2024
+
+### Improvements
+
+- **Add Tooltips to Explain Report Card Failures**
+
+  We added a tooltip with the text: `Minimum cut score not met` to provide more clarity on report card failures.
+
+### Bug Fixes 
+
+- **Resolve Time Difference Issue Preventing Progress from the Welcome Page** 
+
+  To ensure a seamless user experience, the Qualified application compares the server time with the browser time to identify any significant delays. If a discrepancy is detected, the application flags this internally. The update now ensures more accurate detection and improving the overall      user flow by addressing delays more effectively 
+
+- **Correcting Incorrect Active Time in Quiz Challenges** 
+
+  Implemented autocorrection for accumulated seconds in quiz solutions, along with logging to track when the issue occurs.
+
+## October 31, 2024
+
+### Bug Fixes 
+
+- **Missing Stats in the Report Card** 
+
+  We have expanded the data scope beyond quarterly intervals to include previously missing statistics, such as accuracy and effort, within the Report Card. This enhancement provides a more comprehensive view of performance metrics.
+
+## September 30, 2024
 
 ### Improvements
 
@@ -48,7 +82,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
   - **Validating Code with a GPT** 
 
-    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines,among other things.[Read more in the Docs]              (https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
+    This is an experimental, but extremely powerful feature, allowing you to automate fuzzy analysis beyond basic test case assertions. You can use the GPT to check code quality, test performance characteristics of a solution, validate a written response, and enforce style guidelines,among other things.[Read more in the Docs](https://docs.qualified.io/creating-content/challenges/guides/gpt-validation/) 
 
 ### Improvements 
 
