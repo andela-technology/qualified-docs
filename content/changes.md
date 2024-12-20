@@ -28,7 +28,7 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Resolve Time Difference Issue Preventing Progress from the Welcome Page** 
 
-  To ensure a seamless user experience, the Qualified application compares the server time with the browser time to identify any significant delays. If a discrepancy is detected, the application flags this internally. The update now ensures more accurate detection and improving the overall      user flow by addressing delays more       
+  To ensure a seamless user experience, the Qualified application compares the server time with the browser time to identify any significant delays. If a discrepancy is detected, the application flags this internally. The update now ensures more accurate detection and improving the overall user flow by addressing delays more       
   effectively 
 
 - **Correcting Incorrect Active Time in Quiz Challenges** 
