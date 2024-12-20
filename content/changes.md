@@ -28,7 +28,8 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Resolve Time Difference Issue Preventing Progress from the Welcome Page** 
 
-  To ensure a seamless user experience, the Qualified application compares the server time with the browser time to identify any significant delays. If a discrepancy is detected, the application flags this internally. The update now ensures more accurate detection and improving the overall      user flow by addressing delays more effectively 
+  To ensure a seamless user experience, the Qualified application compares the server time with the browser time to identify any significant delays. If a discrepancy is detected, the application flags this internally. The update now ensures more accurate detection and improving the overall      user flow by addressing delays more       
+  effectively 
 
 - **Correcting Incorrect Active Time in Quiz Challenges** 
 
@@ -118,7 +119,8 @@ Learn about notable new features, fixes, and other improvements to the applicati
 
 - **Agile Quiz**  
 
-  This assessment is designed to evaluate your familiarity and expertise in Agile environments and methodologies, which are essential for success in product related positions. Question difficulty ranges from basic to intermediate, so the challenge should be suitable for any experienced Agile professional. Most of the questions are inspired by Agile certifications and frequent Agile interview questions.  
+  This assessment is designed to evaluate your familiarity and expertise in Agile environments and methodologies, which are essential for success in product related positions. Question difficulty ranges from basic to intermediate, so the challenge should be suitable for any experienced Agile professional. Most of the questions are 
+  inspired by Agile certifications and frequent Agile interview questions.  
 
 - **Vue Quiz** 
 
