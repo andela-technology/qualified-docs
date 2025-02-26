@@ -10518,7 +10518,7 @@
   "resource_explanation": "An interview result is a collection of evidence from a candidate's interview.",
   "http_method": "PUT",
   "route": "/v1/interview_results/:id",
-  "description": "Create",
+  "description": "Update",
   "explanation": "Updates an existing interview result.",
   "parameters": [
     {
