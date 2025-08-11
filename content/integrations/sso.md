@@ -56,7 +56,7 @@ If you are asked to provide this value, you should set it to `https://qualified.
 Your users should initially login through your identity provider's portal. Once this is done, a cookie to your application specific login URL will be set for each user, which makes it possible for them to login via the login page. They will simply need to click "SSO LOG IN".
 
 ## SCIM Integration with Okta
-Qualified currently supports SCIM User provisioning with Okta, creating team members on your Qualified team for any Okta users who have the integration assigned to them.
+Qualified currently supports SCIM User provisioning with Okta as a paid feature, creating team members and managing on your Qualified team for any Okta users who have the integration assigned to them.
 
 ### Features
 The following provisioning features are supported by Qualified:
@@ -73,11 +73,13 @@ If you're interested in SCIM provisioning, your team needs API Access. You also 
 #### Step 1
 Add the `Qualified.io` application on your Okta Admin Dashboard.
 
+<img src="../../static/images/qualifiedioapp.png" alt="qualifiedioapp" style="width:700px;"/>
+
 #### Step 2
 On the `Qualified.io` application, choose the `Provisioning` tab and select `Configure API Integration`.
 
 #### Step 3
-Select `Enable API Integration`, then input your Qualified `API key` in the `API Token` field. Finally, click `Save`.
+Select `Enable API Integration`, then input your Qualified `API key` ([Qualified Integrations API Access](https://www.qualified.io/hire/account/integrations#api-key)) in the `API Token` field. Finally, click `Save`.
 
 After following these steps, you're ready to start using SCIM Provisioning with Okta. If you have any issues, please contact our team so we can assist you.
 
