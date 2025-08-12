@@ -73,7 +73,11 @@ If you're interested in SCIM provisioning, your team needs API Access. You also 
 #### Step 1
 Add the `Qualified.io` application on your Okta Admin Dashboard.
 
-<img src="../../static/images/qualifiedioapp.png" alt="qualifiedioapp" style="width:700px;"/>
+<figure style="max-width: 800px">
+
+![Qualified.io App](/images/qualifiedioapp.png)
+
+</figure>
 
 #### Step 2
 On the `Qualified.io` application, choose the `Provisioning` tab and select `Configure API Integration`.
