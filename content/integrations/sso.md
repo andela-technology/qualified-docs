@@ -55,5 +55,32 @@ If you are asked to provide this value, you should set it to `https://qualified.
 ### Logging in with SAML
 Your users should initially login through your identity provider's portal. Once this is done, a cookie to your application specific login URL will be set for each user, which makes it possible for them to login via the login page. They will simply need to click "SSO LOG IN".
 
-### SCIM Integration
-If you are looking to support user provisioning with your SSO integration, please contact us.
+## SCIM Integration with Okta
+Qualified currently supports SCIM User provisioning with Okta as a paid feature, creating team members and managing on your Qualified team for any Okta users who have the integration assigned to them.
+
+### Features
+The following provisioning features are supported by Qualified:
+* Push Users: Users in Okta assigned to the Qualified.io application are automatically added as members to your team.
+* Import Users: Users created in Qualified can be imported into Okta.
+* Update User Attributes: First Name, Last Name, Given Name, and a user's primary Email are pushed to Qualified when changed in Okta.
+* Deactivate/reactivate Users: Users who are deactivated in Okta will be set as Inactive in Qualified.
+
+### Requirements
+If you're interested in SCIM provisioning, your team needs API Access. You also need to reach out to our sales team to enable access to the SCIM feature.
+
+### SCIM Provisioning Setup
+
+#### Step 1
+Add the `Qualified.io` application on your Okta Admin Dashboard.
+
+<img src="../../static/images/qualifiedioapp.png" alt="qualifiedioapp" style="width:700px;"/>
+
+#### Step 2
+On the `Qualified.io` application, choose the `Provisioning` tab and select `Configure API Integration`.
+
+#### Step 3
+Select `Enable API Integration`, then input your Qualified `API key` ([Qualified Integrations API Access](https://www.qualified.io/hire/account/integrations#api-key)) in the `API Token` field. Finally, click `Save`.
+
+After following these steps, you're ready to start using SCIM Provisioning with Okta. If you have any issues, please contact our team so we can assist you.
+
+
