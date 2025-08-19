@@ -55,6 +55,18 @@ If you are asked to provide this value, you should set it to `https://qualified.
 ### Logging in with SAML
 Your users should initially login through your identity provider's portal. Once this is done, a cookie to your application specific login URL will be set for each user, which makes it possible for them to login via the login page. They will simply need to click "SSO LOG IN".
 
+## SAML 2.0 with Okta
+
+### Supported Features
+The Okta/Qualified.io SAML integration currently supports IdP-initiated SSO.
+
+### Configuration Steps
+1. In Okta, select the Sign On tab for the Qualified.io SAML app, go to Sign on methods > SAML 2.0 > Metadata details, and then locate and copy your Metadata URL.
+2. Contact your Qualified.io account executive about using SAML 2.0 on your team.
+3. Provide the Metadata URL when asked by your account executive.
+4. Your account executive will contact you when the setup is complete. SAML 2.0 is ready to be used on your Qualified.io team.
+
+
 ## SCIM Integration with Okta
 Qualified currently supports SCIM User provisioning with Okta as a paid feature, creating team members and managing on your Qualified team for any Okta users who have the integration assigned to them.
 
