@@ -66,6 +66,21 @@ The Okta/Qualified.io SAML integration currently supports IdP-initiated SSO.
 3. Provide the Metadata URL when asked by your account executive.
 4. Your account executive will contact you when the setup is complete. SAML 2.0 is ready to be used on your Qualified.io team.
 
+## Setting up SAML 2.0 with Microsoft Entra ID
+To set up SSO for an application, you'll need an admin user with an Entra ID Premium license.
+
+### Configuration Steps
+1. Sign in to the Entra ID Portal.
+2. On the left menu, select Enterprise Applications.
+3. Click on *New application* at the top of the applications pane.![newapplication.png](/images/entra-setup/newapplication.png)
+4. Click on *Create your own application* at the top of the Browse Microsoft Entra Gallery Screen.![Screenshot 2025-09-05 at 3.29.13 PM.png](/images/entra-setup/createapplication.png)
+5. Name your app as you want, preferably identifiable as pertaining to Qualified. Choose *Integrate any other application you don't find in the gallery (Non-gallery)* on the radio buttons below.![nameandintegrate.png](/images/entra-setup/nameandintegrate.png)
+6. In the app overview, choose *Single sign-on* on the left menu and subsequently choose SAML as the method.![saml.png](/images/entra-setup/saml.png)
+7. On the SAML configuration page, enter `https://qualified.io` in the *Identifier (Entity ID) field and `https://www.qualified.io/api/saml/consume` as the *Reply URL* by clicking the *Edit* button on the *Basic SAML Configuration* pane.![configuration.png](/images/entra-setup/configuration.png)
+8. Under *Attributes & Claims*, make sure `user.userprincipalname` is set as the *Unique User Identifier*.
+9. Copy the values for `App Federation Metadata Url` under *SAML Certificates* and `Microsoft Entra Identifier` under *Set up {Name of your App}*. You'll need to send these values to your account executive in order for us to finish setting up on our side.![copyvalues.jpg](/images/entra-setup/copyvalues.jpg)
+10. Add any users you want to give access to Qualified to to this finished app. Make sure they're added to Qualified with the same email as their principal user name on Microsoft Entra.
+11. Valid users will now be able to access Qualified through the app on Microsoft 365.
 
 ## SCIM Integration with Okta
 Qualified currently supports SCIM User provisioning with Okta as a paid feature, creating team members and managing on your Qualified team for any Okta users who have the integration assigned to them.
