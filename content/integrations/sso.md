@@ -77,6 +77,8 @@ The following provisioning features are supported by Qualified:
 * Update User Attributes: First Name, Last Name, Given Name, and a user's primary Email are pushed to Qualified when changed in Okta.
 * Deactivate/reactivate Users: Users who are deactivated in Okta will be set as Inactive in Qualified.
 
+Qualified does not currently support Groups Provisioning.
+
 ### Requirements
 If you're interested in SCIM provisioning, your team needs API Access. You also need to reach out to our sales team to enable access to the SCIM feature.
 
