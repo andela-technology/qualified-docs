@@ -112,8 +112,8 @@ Add the `Qualified.io` application on your Okta Admin Dashboard.
 On the `Qualified.io` application, choose the `Provisioning` tab and select `Configure API Integration`.
 
 #### Step 3
-Select `Enable API Integration`, then input your Qualified `API key` ([Qualified Integrations API Access](https://www.qualified.io/hire/account/integrations#api-key)) in the `API Token` field. Finally, click `Save`.
+Select `Enable API Integration`, then input your Qualified `API key` ([Qualified Integrations API Access](https://www.qualified.io/hire/account/integrations#api-key)) in the `API Token` field. `Import Groups` should be left unchecked. Finally, click `Save`.
 
-After following these steps, you're ready to start using SCIM Provisioning with Okta. If you have any issues, please contact our team so we can assist you.
+After following these steps, you're ready to start using SCIM Provisioning with Okta. Please note when a user is pushed to the app from Okta, they'll remain in the invited state. If you have any issues, please contact our team so we can assist you.
 
 
