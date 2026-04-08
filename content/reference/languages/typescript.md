@@ -13,6 +13,7 @@ tags:
 
 Qualified supports the following TypeScript environments:
 
+- TypeScript 5.7 with Node 18 (Mocha, Jest)
 - TypeScript 4.9 with Node 18 (Mocha, Jest)
 - TypeScript 4.2 with Node 14 (Mocha, Jest)
 - TypeScript 3.8 with Node 12 (Mocha, Jest)
@@ -20,7 +21,7 @@ Qualified supports the following TypeScript environments:
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
 - TypeScript 2.4 with Node 8 (Mocha)
 
-TypeScript versions older than 4.2 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use TypeScript 4.2 or greater.
+TypeScript 4.9 remains the current baseline. TypeScript 4.2 and older versions are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
 
 ### How different TypeScript code sections are treated
 
@@ -33,6 +34,109 @@ For TypeScript 3.3+, the optional setup/preloaded code is written to a separate 
 The sandbox environment will timeout the code within 12 seconds. Qualified's Angular library challenges have an extended timeout of 16 seconds.
 
 ## Packages
+
+### TypeScript 5.7
+
+TypeScript 5.7 (Node 18) has multiple presets for different kinds of challenges.
+
+#### Default (no preset)
+
+- `@codewars/jest-reporter`: `1.0.3`
+- `@codewars/mocha-reporter`: `1.0.0`
+- `@types/chai`: `4.3.4`
+- `@types/express`: `4.17.21`
+- `@types/jest`: `29.2.4`
+- `@types/lodash`: `4.14.191`
+- `@types/mocha`: `10.0.1`
+- `@types/node`: `18.11.15`
+- `@types/supertest`: `2.0.12`
+- `axios`: `1.2.1`
+- `chai`: `4.3.7`
+- `express`: `4.18.2`
+- `express-joi-validation`: `^5.0.1`
+- `chai-http`: `4.3.0`
+- `fast-check`: `3.4.0`
+- `jest`: `29.3.1`
+- `joi`: `^17.13.1`
+- `lodash`: `4.17.21`
+- `mocha`: `10.2.0`
+- `rxjs`: `7.8.0`
+- `supertest`: `6.3.3`
+- `ts-jest`: `29.2.5`
+- `ts-node`: `10.9.1`
+- `typescript`: `5.7.3`
+
+#### React (`react` preset)
+
+- `@codewars/jest-reporter`: `1.0.3`
+- `@testing-library/dom`: `8.19.0`
+- `@testing-library/jest-dom`: `5.16.5`
+- `@testing-library/react`: `13.4.0`
+- `@testing-library/user-event`: `14.4.3`
+- `@types/escape-html`: `1.0.2`
+- `@types/jest`: `29.2.4`
+- `@types/lodash`: `4.14.191`
+- `@types/prop-types`: `15.7.5`
+- `@types/ramda`: `0.28.20`
+- `@types/react`: `18.0.26`
+- `@types/react-dom`: `18.0.9`
+- `@types/react-redux`: `7.1.24`
+- `@types/react-test-renderer`: `18.0.0`
+- `@types/sinon`: `10.0.13`
+- `@types/styled-components`: `5.1.26`
+- `@types/styled-system`: `5.1.15`
+- `@types/testing-library__jest-dom`: `5.14.5`
+- `axios`: `1.2.1`
+- `escape-html`: `1.0.3`
+- `immer`: `9.0.16`
+- `jest`: `29.3.1`
+- `jest-environment-jsdom`: `29.3.1`
+- `jest-snapshot`: `29.3.1`
+- `lodash`: `4.17.21`
+- `mobx`: `6.7.0`
+- `mobx-react`: `7.6.0`
+- `prop-types`: `15.8.1`
+- `ramda`: `0.28.0`
+- `react`: `18.2.0`
+- `react-dom`: `18.2.0`
+- `react-is`: `18.2.0`
+- `react-redux`: `8.0.5`
+- `react-test-renderer`: `18.2.0`
+- `redux`: `4.2.0`
+- `rxjs`: `7.8.0`
+- `sinon`: `15.0.1`
+- `styled-components`: `5.3.6`
+- `styled-system`: `5.1.5`
+- `ts-jest`: `29.2.5`
+- `typescript`: `5.7.3`
+- `use-immer`: `0.8.1`
+
+#### Angular (`angular` preset)
+
+> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+
+- `@angular-builders/jest`: `^16.0.1`
+- `@angular-devkit/build-angular`: `^16.2.2`
+- `@angular/animations`: `^16.2.12`
+- `@angular/cli`: `16.2.2`
+- `@angular/common`: `^16.2.12`
+- `@angular/compiler`: `^16.2.12`
+- `@angular/compiler-cli`: `^16.2.12`
+- `@angular/core`: `^16.2.12`
+- `@angular/forms`: `^16.2.12`
+- `@angular/platform-browser`: `^16.2.12`
+- `@angular/platform-browser-dynamic`: `^16.2.12`
+- `@angular/router`: `^16.2.12`
+- `@codewars/jest-reporter`: `^1.0.3`
+- `@ngrx/store`: `^16.2.12`
+- `@types/jest`: `^29.5.1`
+- `@types/node`: `^18.15.11`
+- `jest`: `^29.5.0`
+- `jest-preset-angular`: `^13.1.0`
+- `rxjs`: `^7.8.1`
+- `tslib`: `^2.6.2`
+- `typescript`: `5.7.3`
+- `zone.js`: `~0.13.0`
 
 ### TypeScript 4.9
 
