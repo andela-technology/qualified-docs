@@ -10,9 +10,9 @@ tags:
 
 ## Environment
 
-Qualified supports PHP 7.0, 7.4 and 8.0.
+Qualified supports PHP 7.0, 7.4, 8.0, and 8.4.
 
-PHP versions older than 8.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use PHP 8.0.
+PHP 8.0 remains the current baseline. PHP versions older than 8.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
 
 ## Timeout
 
