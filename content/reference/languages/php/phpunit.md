@@ -14,7 +14,8 @@ Qualified supports the PHPUnit testing framework:
 
 - PHPUnit 5 (PHP 7.0)
 - PHPUnit 9 (PHP 7.4)
-- PHPUnit 9.5 (PHP 8)
+- PHPUnit 9.5 (PHP 8.0)
+- PHPUnit 9.6 (PHP 8.4)
 
 ## PHPUnit Quick Start
 
