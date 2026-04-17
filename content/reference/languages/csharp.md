@@ -15,12 +15,14 @@ NOTE: "had to trick the markdown parsers by wrapping the trailing "#" in a span 
 
 Qualified supports the following versions:
 
+- C# 13.0 (.Net Core 9.0)
+- C# 12.0 (.Net Core 8.0)
 - C# 10.0 (.Net Core 6.0)
 - C# 8.0 (.Net Core 3.1)
 - C# 7.3 (.Net Core 2.1)
 - C# 6.0 (Mono 4.8)
 
-C# versions older than 8.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use C# 8.0 or greater.
+C# 10.0 remains the current baseline. C# versions older than 8.0 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
 
 
 ## Timeout
@@ -28,6 +30,20 @@ C# versions older than 8.0 are [deprecated](/creating-content/challenges/upgradi
 The sandbox environment will timeout the code within 12 seconds.
 
 ## Packages
+
+### C# 13.0 (.Net Core 9.0)
+
+- `NUnit`: `4.2.2`
+- `NewtonSoft.Json`: `13.0.3`
+- `NSubstitute`: `5.1.0`
+- `StackExchange.Redis`: `2.8.16`
+
+### C# 12.0 (.Net Core 8.0)
+
+- `NUnit`: `4.2.2`
+- `NewtonSoft.Json`: `13.0.3`
+- `NSubstitute`: `5.1.0`
+- `StackExchange.Redis`: `2.8.16`
 
 ### C# 10.0 (.Net Core 6.0)
 
