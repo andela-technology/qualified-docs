@@ -59,7 +59,7 @@ Please search the challenge library for Qualified's Advanced Output Syntax Walkt
 
 ## Using PCC to test SQL with any language
 
-While it's possible to use either a [Classic Code Challenge (CCC)](/reference/features/challenges/code) or a [Project Code Challenge (PCC)](/reference/features/challenges/multi-file-code) to build a SQL testing harness with another language besides Ruby, we strongly recommend using a Project Code Challenge. A few advantages of PCC over CCC for custom SQL testing include:
+While it's possible to use either a [Classic Code Challenge (CCC)](/reference/challenges/code) or a [Project Code Challenge (PCC)](/reference/challenges/multi-file-code) to build a SQL testing harness with another language besides Ruby, we strongly recommend using a Project Code Challenge. A few advantages of PCC over CCC for custom SQL testing include:
 
 - Support for as many files as you want, which is useful for uploading CSVs as data sources for test cases
 - More flexibility for visibility; you can easily add read-only or hidden CSVs, test suites and helper files and you can hide irrelevant parts of the UI entirely, such as the workspace file tree

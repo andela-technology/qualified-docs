@@ -177,7 +177,7 @@ Use simple-yet-powerful workflows to automate processing a candidate's assessmen
 
 These workflows can be used to automatically approve or reject a candidate, show a custom message, send them to a new assessment or external website, assign them to team members or labels, or even trigger custom webhooks.
 
-[Learn more about automated workflows here.](/reference/features/assessments/workflows)
+[Learn more about automated workflows here.](/reference/assessments/workflows)
 
 # Viewing Assessment Details
 
@@ -186,4 +186,4 @@ When you click on an assessment, you'll be provided with some extra commands for
 - **DELETE**: Permanently delete an assessment not in use
 - **ARCHIVE**: Archive an assessment to prevent further use
 - **DUPLICATE**: Create a copy of this assessment, which you can then edit
-- **COMPARE SOLUTIONS**: [Compare all solutions to challenges within this assessment](/reference/features/challenges/library/solutions)
+- **COMPARE SOLUTIONS**: [Compare all solutions to challenges within this assessment](/reference/challenges/library/solutions)

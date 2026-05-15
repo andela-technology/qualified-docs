@@ -80,7 +80,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.20.5`
 - `@babel/plugin-proposal-class-properties`: `7.18.6`
@@ -176,7 +176,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.16.5`
 - `@babel/plugin-proposal-class-properties`: `7.16.5`
@@ -219,7 +219,7 @@ The following packages have been installed:
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.16.5`
 - `@babel/plugin-transform-runtime`: `7.16.5`
@@ -298,7 +298,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-proposal-class-properties`: `7.10.4`
@@ -345,7 +345,7 @@ The following packages have been installed:
 
 #### React Native (`react-native` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `^7.13.15`
 - `@codewars/jest-reporter`: `^1.0.3`
@@ -362,7 +362,7 @@ The following packages have been installed:
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-transform-runtime`: `7.10.5`
@@ -434,7 +434,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.4.3`
 - `@babel/plugin-proposal-class-properties`: `7.4.4`
@@ -480,7 +480,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.4.4`
 - `@babel/plugin-transform-runtime`: `7.4.4`

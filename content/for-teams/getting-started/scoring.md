@@ -33,7 +33,7 @@ Each question can also allow partial scores, which means that only a portion of 
 
 You can assign choices different weights. In this way, particular responses to a question can be worth more or less than others in determining the total score for the question.
 
-You can review these options in more detail within our [Q&A question reference documentation](/reference/features/challenges/quiz/questions).
+You can review these options in more detail within our [Q&A question reference documentation](/reference/challenges/quiz/questions).
 
 ## Ratings
 Quantitative and some qualitative scoring can be handled autonomously. However, a typical hiring team will manually inspect work samples in order to distinguish among top automatically-scored candidates. Qualified offers guided scoring and reviews as a framework for teams to review work samples. One or more members of the team can review each assessment result and provide subjective and objective ratings of candidate performance.   

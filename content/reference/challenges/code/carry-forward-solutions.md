@@ -9,7 +9,7 @@ bodyClass: 'employer-focused'
 Carry-forward solutions allow you to inject a candidate's previous solution into the next challenge as part of an assessment. Challenges that use carried solutions are useful for testing more complex or evolving sets of requirements than would be in scope for a single challenge.
 
 :::note
-With the introduction of [Project Code Challenges](/reference/features/challenges/multi-file-code/#project-code-challenges) and [Embed](/integrations/custom-integrations/embed/#embedding-full-assessments), we no longer encourage using the carry-forward feature of classic code challenges in most cases.
+With the introduction of [Project Code Challenges](/reference/challenges/multi-file-code/#project-code-challenges) and [Embed](/integrations/custom-integrations/embed/#embedding-full-assessments), we no longer encourage using the carry-forward feature of classic code challenges in most cases.
 
 Information on this page exists for historical purposes and for very specific use-cases not covered by PCC and Embed.
 :::
