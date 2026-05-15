@@ -1,4 +1,5 @@
 ---
+title: Challenge Library
 summary: "Managing challenges in your challenge library"
 bodyClass: 'employer-focused'
 ---
