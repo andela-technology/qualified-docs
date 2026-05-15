@@ -1,4 +1,5 @@
 ---
+title: Assessments
 description: "Create and manage your assessments"
 bodyClass: 'employer-focused'
 ---
