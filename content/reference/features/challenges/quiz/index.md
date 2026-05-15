@@ -1,4 +1,5 @@
 ---
+title: Q&A Challenges
 summary: 'Viewing, solving, and creating Q&A challenges'
 bodyClass: 'employer-focused'
 ---

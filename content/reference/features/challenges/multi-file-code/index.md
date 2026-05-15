@@ -1,4 +1,5 @@
 ---
+title: Project Code Challenges
 summary: 'Viewing, solving, and creating project code challenges'
 bodyClass: 'employer-focused'
 ---

@@ -1,4 +1,5 @@
 ---
+title: Classic Code Challenges
 summary: 'Viewing, solving, and creating classic code challenges'
 bodyClass: 'employer-focused'
 ---
