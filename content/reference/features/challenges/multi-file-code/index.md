@@ -170,6 +170,12 @@ If your candidates or students are encountering issues with web preview persiste
 This gives the candidate a chance to fix their solution code to remove the infinite loop before resuming the web preview.
 :::
 
+<div class="see-also-links">
+
+* [Learn more about bundler versions and framework compatibility](/reference/features/challenges/multi-file-code/web-preview-bundler-versions)
+
+</div>
+
 ### Files Sent to Runner
 
 This tab shows a listing of which files that will be sent to the runner based on which mode in use (_Run Fileset_ and Candidate vs Submission tests).
