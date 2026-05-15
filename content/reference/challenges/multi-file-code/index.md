@@ -6,7 +6,7 @@ bodyClass: 'employer-focused'
 
 # Project Code Challenges
 
-Project code challenges allow you to deeply test a candidate's skill using complete, realistic code bases. Unlike our [classic code challenges](/reference/features/challenges/code), these can only be created against a single language, but the advantage is your candidate is able to come up with more advanced solutions that show off their experience.
+Project code challenges allow you to deeply test a candidate's skill using complete, realistic code bases. Unlike our [classic code challenges](/reference/challenges/code), these can only be created against a single language, but the advantage is your candidate is able to come up with more advanced solutions that show off their experience.
 
 ## Project-Code-Challenge-Specific Details
 
@@ -74,7 +74,7 @@ Normally, you'll want to run the tests against the [_Reference_ fileset](#refere
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
 :::note
-If you've imported a library challenge, it will be [**linked to the library version**](/reference/features/challenges/library/versions), and other options won't be editable until you unlink it.
+If you've imported a library challenge, it will be [**linked to the library version**](/reference/challenges/library/versions), and other options won't be editable until you unlink it.
 :::
 
 #### Basic Options
@@ -115,7 +115,7 @@ This page provides a side-by-side Markdown editor that allows you to provide det
 
 <div class="see-also-links">
 
-* [Learn more about editing instructions](/reference/features/challenges/instructions)
+* [Learn more about editing instructions](/reference/challenges/instructions)
 
 </div>
 
@@ -129,7 +129,7 @@ These are all the base files that make up a challenge. These are what are provid
 
 <div class="see-also-links">
 
-* [Learn more about creating, editing, and configuring files](/reference/features/challenges/multi-file-code/files)
+* [Learn more about creating, editing, and configuring files](/reference/challenges/multi-file-code/files)
 
 </div>
 
@@ -141,7 +141,7 @@ If you want to preview which files are sent to the runner at any time, open the 
 
 <div class="see-also-links">
 
-* [Learn more about creating, editing, and configuring files](/reference/features/challenges/multi-file-code/files)
+* [Learn more about creating, editing, and configuring files](/reference/challenges/multi-file-code/files)
 
 </div>
 
@@ -173,7 +173,7 @@ This gives the candidate a chance to fix their solution code to remove the infin
 
 <div class="see-also-links">
 
-* [Learn more about bundler versions and framework compatibility](/reference/features/challenges/multi-file-code/web-preview-bundler-versions)
+* [Learn more about bundler versions and framework compatibility](/reference/challenges/web-preview-bundler-versions)
 
 </div>
 

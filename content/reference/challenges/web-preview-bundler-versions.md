@@ -13,7 +13,7 @@ tags:
 
 # Web Preview Bundler Versions
 
-The [Web Preview](/reference/features/challenges/multi-file-code/#web-preview) panel that renders front-end challenges in real time is powered by [Sandpack](https://sandpack.codesandbox.io/docs), a browser-based bundler built by the CodeSandbox team. Qualified hosts several versions of the Sandpack bundler, each with different capabilities and framework support.
+The [Web Preview](/reference/challenges/multi-file-code/#web-preview) panel that renders front-end challenges in real time is powered by [Sandpack](https://sandpack.codesandbox.io/docs), a browser-based bundler built by the CodeSandbox team. Qualified hosts several versions of the Sandpack bundler, each with different capabilities and framework support.
 
 ## Default Version
 
@@ -154,5 +154,5 @@ The top-level `sandpackVersion` key is still supported but deprecated. Prefer `w
 
 - [Sandpack documentation](https://sandpack.codesandbox.io/docs) — official docs for the bundler powering the web preview
 - [sandpack-client changelog](https://github.com/codesandbox/sandpack/blob/main/packages/sandpack-client/CHANGELOG.md) — detailed release notes for each `@codesandbox/sandpack-client` version
-- [Web Preview](/reference/features/challenges/multi-file-code/#web-preview) — general overview of the web preview panel in project code challenges
+- [Web Preview](/reference/challenges/multi-file-code/#web-preview) — general overview of the web preview panel in project code challenges
 - [Managing Third-Party Dependencies](/creating-content/challenges/guides/managing-third-party-dependencies) — how `package.json` works in Qualified challenges

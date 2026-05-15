@@ -23,7 +23,7 @@ This section details technologies and tools the platform offers which can be use
 
 ### Web Preview
 
-Qualified offers a feature called [Web Preview](/reference/features/challenges/multi-file-code/#web-preview) which renders the candidate's front-end code in an iframe sandbox, enabling them to interact with it live. No testing or validation is performed in Web Preview; instead, Qualified runs the code on the server and scores it using a testing library such as [Jest](https://jestjs.io/).
+Qualified offers a feature called [Web Preview](/reference/challenges/multi-file-code/#web-preview) which renders the candidate's front-end code in an iframe sandbox, enabling them to interact with it live. No testing or validation is performed in Web Preview; instead, Qualified runs the code on the server and scores it using a testing library such as [Jest](https://jestjs.io/).
 
 ### Puppeteer and web drivers
 
