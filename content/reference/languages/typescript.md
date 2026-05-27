@@ -21,7 +21,7 @@ Qualified supports the following TypeScript environments:
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
 - TypeScript 2.4 with Node 8 (Mocha)
 
-TypeScript 4.9 remains the current baseline. TypeScript 4.2 and older versions are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
+TypeScript 5.7 remains the current baseline. TypeScript 4.2 and older versions are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
 
 ### How different TypeScript code sections are treated
 
