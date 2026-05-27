@@ -11,9 +11,9 @@ tags:
 
 ## Environment
 
-Qualified supports Java 17, 11 and 8.
+Qualified supports Java 21, 17, 11 and 8.
 
-Java versions older than 17 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Java 17.
+Java versions older than 17 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Java 21.
 
 ## Timeout
 
@@ -22,6 +22,45 @@ The sandbox environment will timeout the code within 16 seconds.
 ## Packages
 
 The following packages are available:
+
+### Java 21
+
+Java 21 has multiple presets for different kinds of challenges.
+
+#### Default (no preset)
+
+- `org.junit.jupiter:junit-jupiter`: `5.8.2`
+- `junit:junit`: `4.13.2`
+- `org.junit.vintage:junit-vintage-engine`: `5.8.2`
+- `net.jqwik:jqwik`: `1.6.5`
+- `org.mockito:mockito-core`: `5.7.0`
+- `org.assertj:assertj-core`: `3.24.2`
+- `org.assertj:assertj-guava`: `3.5.0`
+- `org.apache.commons:commons-lang3`: `3.14.0`
+- `org.apache.commons:commons-math3`: `3.6.1`
+- `com.google.guava:guava`: `33.0.0-jre`
+- `org.jsoup:jsoup`: `1.17.2`
+- `org.dom4j:dom4j`: `2.1.4`
+- `com.fasterxml.jackson.core:jackson-annotations`: `2.16.1`
+- `org.xerial:sqlite-jdbc`: `3.44.1.0`
+- `redis.clients:jedis`: `5.1.0`
+
+#### Spring (`spring` preset)
+
+- `org.junit.jupiter:junit-jupiter`: `5.8.2`
+- `org.mockito:mockito-core`: `5.7.0`
+- `org.assertj:assertj-core`: `3.24.2`
+- `org.apache.commons:commons-lang3`: `3.14.0`
+- `com.google.guava:guava`: `33.0.0-jre`
+- `com.fasterxml.jackson.core:jackson-annotations`: `2.16.1`
+- `com.h2database:h2`: `2.2.224`
+- `org.springframework.boot:spring-boot-starter-data-jpa`: `3.2.2`
+- `org.springframework.boot:spring-boot-starter-data-rest`: `3.2.2`
+- `org.springframework.boot:spring-boot-starter-security`: `3.2.2`
+- `org.springframework.boot:spring-boot-starter-validation`: `3.2.2`
+- `org.springframework.boot:spring-boot-starter-web`: `3.2.2`
+- `org.springframework.boot:spring-boot-starter-test`: `3.2.2`
+- `org.springframework.security:spring-security-test`: `6.2.1`
 
 ### Java 17
 

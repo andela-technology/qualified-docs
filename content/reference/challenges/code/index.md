@@ -1,4 +1,5 @@
 ---
+title: Classic Code Challenges
 summary: 'Viewing, solving, and creating classic code challenges'
 bodyClass: 'employer-focused'
 ---
@@ -56,7 +57,7 @@ The following sections are available:
 This page provides all the general information about the challenge, such as title, summary, difficulty, and estimated time.
 
 :::note
-If you've imported a library challenge, it will be [**linked to the library version**](/reference/features/challenges/library/versions), and other options won't be editable until you unlink it.
+If you've imported a library challenge, it will be [**linked to the library version**](/reference/challenges/library/versions), and other options won't be editable until you unlink it.
 :::
 
 ### Challenge Instructions
@@ -65,7 +66,7 @@ This page provides a side-by-side Markdown editor that allows you to provide det
 
 <div class="see-also-links">
 
-[Learn more about editing instructions](/reference/features/challenges/instructions)
+[Learn more about editing instructions](/reference/challenges/instructions)
 
 </div>
 
@@ -81,7 +82,7 @@ If you are starting from a blank challenge, or want to add a new language, click
 
 <div class="see-also-links">
  
-[Using the challenge editor IDE](/reference/features/challenges/code/lang)
+[Using the challenge editor IDE](/reference/challenges/code/lang)
 
 </div>
 
@@ -91,6 +92,6 @@ Qualified offers the ability to generate classic code challenge languages from a
 
 <div class="see-also-links">
 
-[Learn more about language generation](/reference/features/challenges/code/language-generator)
+[Learn more about language generation](/reference/challenges/code/language-generator)
 
 </div>

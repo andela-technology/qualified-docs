@@ -41,7 +41,7 @@ The following gems are available for use:
 
 #### Ruby on Rails preset
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - [`bcrypt ~> 3.1.7`](https://rubygems.org/gems/bcrypt/versions/3.1.7)
 - [`puma ~> 5.0`](https://rubygems.org/gems/puma/versions/5.0.0)

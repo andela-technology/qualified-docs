@@ -58,7 +58,7 @@ For example, if you wish to test React routing skills as well as the candidate's
 After planning iterations stabilize, the development process of the individual challenges can get underway.
 
 ### Choosing between quizzes, classic and project code challenges
-Qualified offers [classic](/reference/features/challenges/code/#classic-code-challenges) and [project](/reference/features/challenges/multi-file-code/#project-code-challenges) challenge modes as well as quizzes. An advantage of increasing granularity on challenges is that focused content can be delivered in lightweight formats as quizzes or classic code challenges, lowering the bar of entry, shortening the assessment duration and honing the signal the challenge provides. 
+Qualified offers [classic](/reference/challenges/code/#classic-code-challenges) and [project](/reference/challenges/multi-file-code/#project-code-challenges) challenge modes as well as quizzes. An advantage of increasing granularity on challenges is that focused content can be delivered in lightweight formats as quizzes or classic code challenges, lowering the bar of entry, shortening the assessment duration and honing the signal the challenge provides. 
 
 This technique of mixing quizzes alongside long and short challenge lengths gives candidates variety and lets you emphasize certain skills without completely abandoning others.
 

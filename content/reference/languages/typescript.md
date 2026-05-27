@@ -21,7 +21,7 @@ Qualified supports the following TypeScript environments:
 - TypeScript 2.4 with headless Chrome (Karma+Mocha)
 - TypeScript 2.4 with Node 8 (Mocha)
 
-TypeScript 4.9 remains the current baseline. TypeScript 4.2 and older versions are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
+TypeScript 5.7 remains the current baseline. TypeScript 4.2 and older versions are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process).
 
 ### How different TypeScript code sections are treated
 
@@ -113,7 +113,7 @@ TypeScript 5.7 (Node 18) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `^16.0.1`
 - `@angular-devkit/build-angular`: `^16.2.2`
@@ -216,7 +216,7 @@ TypeScript 4.9 (Node 18) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `^16.0.1`
 - `@angular-devkit/build-angular`: `^16.2.2`
@@ -312,7 +312,7 @@ TypeScript 4.2 (Node 14) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@angular/animations`: `^12.1.0`
 - `@angular/cli`: `^12.1.2`
@@ -391,7 +391,7 @@ TypeScript 3.8 (Node 12) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `9.0.0`
 - `@angular/animations`: `8.1.3`
@@ -465,7 +465,7 @@ TypeScript 3.3 (Node 10) has multiple presets for different kinds of challenges.
 
 #### Angular (`angular` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@angular-builders/jest`: `8.0.4`
 - `@angular/animations`: `8.1.3`

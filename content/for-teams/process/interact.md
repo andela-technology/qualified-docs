@@ -99,7 +99,7 @@ If you ever need to forcibly take over control, you can click the blue button in
 
 Once an Interact Session is complete, you still have access to all the review tools you have for normal assessments. This includes code playback, allowing you to play back the interview as it unfolded.
 
-To learn more about reviewing candidates, see [Candidate Details View](/reference/features/candidates#candidate-student-details-view).
+To learn more about reviewing candidates, see [Candidate Details View](/reference/candidates#candidate-student-details-view).
 
 ## Troubleshooting 
 If you are starting an interactive session with someone else, and you get the message _"Unable to start an interactive session"_, the following tips can help determine the root cause, and hopefully get your session going quickly.

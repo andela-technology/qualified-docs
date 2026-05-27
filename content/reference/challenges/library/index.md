@@ -1,4 +1,5 @@
 ---
+title: Challenge Library
 summary: "Managing challenges in your challenge library"
 bodyClass: 'employer-focused'
 ---
@@ -44,15 +45,15 @@ Team challenges have similar details available to them as Qualified challenges, 
 - **DELETE**: Let's you delete unused challenges
 - **PUBLISHED/DRAFT/ARCHIVED**: You can change the state of the challenge
 - **DUPLICATE** Clone the challenge into a new one
-- **FOLLOW UP CHALLENGE**: [Create a new challenge based off the solution to this one.](/reference/features/challenges/code/carry-forward-solutions) (Classic code challenges only).
-- **SOLUTIONS**: [Compare solutions for this challenge](/reference/features/challenges/library/solutions)
+- **FOLLOW UP CHALLENGE**: [Create a new challenge based off the solution to this one.](/reference/challenges/code/carry-forward-solutions) (Classic code challenges only).
+- **SOLUTIONS**: [Compare solutions for this challenge](/reference/challenges/library/solutions)
 
 ## Challenge Type Specifics
 
 <div class="see-also-links">
 
-* [Classic Code Challenges](/reference/features/challenges/code)
-* [Project Code Challenges](/reference/features/challenges/multi-file-code)
-* [Q&A Challenges](/reference/features/challenges/quiz)
+* [Classic Code Challenges](/reference/challenges/code)
+* [Project Code Challenges](/reference/challenges/multi-file-code)
+* [Q&A Challenges](/reference/challenges/quiz)
 
 </div>

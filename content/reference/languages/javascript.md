@@ -11,9 +11,9 @@ tags:
 
 ## Environment
 
-Qualified supports Node 18, 14, 12, 10, 8 and 6.
+Qualified supports Node 22, 18, 14, 12, 10, 8 and 6.
 
-Node versions older than 12 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Node 18, except for Puppeteer and React Native challenges (use Node 12) and Vue challenges (use Node 14).
+Node versions older than 18 are [deprecated](/creating-content/challenges/upgrading-language-versions/#deprecation-process). Use Node 22.
 
 ## Timeout
 
@@ -22,6 +22,63 @@ The sandbox environment will timeout the code within 12 seconds.
 ## Node Packages
 
 The following packages have been installed:
+
+### Node 22
+
+#### Default (no preset)
+
+- `@faker-js/faker`: `8.4.1`
+- `axios`: `1.6.8`
+- `canvas`: `3.0.0`
+- `chai`: `4.4.1`
+- `chai-http`: `4.3.0`
+- `cheerio`: `1.0.0`
+- `express`: `4.19.2`
+- `fast-check`: `3.17.2`
+- `jest`: `29.7.0`
+- `jsdom`: `24.0.0`
+- `knex`: `3.1.0`
+- `mocha`: `10.3.0`
+- `mongodb`: `6.5.0`
+- `mongoose`: `8.2.3`
+- `pg`: `8.11.3`
+- `ramda`: `0.29.1`
+- `redis`: `4.6.13`
+- `sequelize`: `6.37.1`
+- `sinon`: `17.0.1`
+- `socket.io`: `4.7.4`
+- `socket.io-client`: `4.7.4`
+- `sqlite3`: `5.1.7`
+- `supertest`: `6.3.4`
+
+#### React (`react` preset)
+
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
+
+- `@testing-library/dom`: `10.1.0`
+- `@testing-library/jest-dom`: `6.4.2`
+- `@testing-library/react`: `15.0.5`
+- `@testing-library/user-event`: `14.5.2`
+- `jest`: `29.7.0`
+- `mobx`: `6.12.0`
+- `mobx-react`: `9.1.1`
+- `react`: `18.2.0`
+- `react-dom`: `18.2.0`
+- `react-redux`: `9.1.0`
+- `react-router-dom`: `6.22.3`
+- `react-test-renderer`: `18.2.0`
+- `redux`: `5.0.1`
+
+#### Vue (`vue` preset)
+
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
+
+- `@testing-library/dom`: `10.1.0`
+- `@testing-library/jest-dom`: `6.4.2`
+- `@testing-library/vue`: `8.0.3`
+- `jest`: `29.7.0`
+- `vue`: `3.4.21`
+- `vuex`: `4.1.0`
 
 ### Node 18
 
@@ -80,7 +137,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.20.5`
 - `@babel/plugin-proposal-class-properties`: `7.18.6`
@@ -176,7 +233,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.16.5`
 - `@babel/plugin-proposal-class-properties`: `7.16.5`
@@ -219,7 +276,7 @@ The following packages have been installed:
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.16.5`
 - `@babel/plugin-transform-runtime`: `7.16.5`
@@ -298,7 +355,7 @@ The following packages have been installed:
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-proposal-class-properties`: `7.10.4`
@@ -345,7 +402,7 @@ The following packages have been installed:
 
 #### React Native (`react-native` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `^7.13.15`
 - `@codewars/jest-reporter`: `^1.0.3`
@@ -362,7 +419,7 @@ The following packages have been installed:
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.10.5`
 - `@babel/plugin-transform-runtime`: `7.10.5`
@@ -434,7 +491,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### React (`react` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.4.3`
 - `@babel/plugin-proposal-class-properties`: `7.4.4`
@@ -480,7 +537,7 @@ Since Node 10, we have multiple presets for different kinds of challenges.
 
 #### Vue (`vue` preset)
 
-> Only available in [Project Code Challenges](/reference/features/challenges/multi-file-code).
+> Only available in [Project Code Challenges](/reference/challenges/multi-file-code).
 
 - `@babel/core`: `7.4.4`
 - `@babel/plugin-transform-runtime`: `7.4.4`
